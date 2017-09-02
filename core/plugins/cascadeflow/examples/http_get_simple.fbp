@@ -1,0 +1,6 @@
+'{
+    "method":"GET",
+    "url":"http://gando.fit.fraunhofer.de:8091/rc/dimmerpi01/Plugwise/Dimmerpi01Power"
+}' -> REQ HttpClient(http/client)
+HttpClient RESP -> IN Response(core/console)
+HttpClient BODY -> IN Body(core/console)

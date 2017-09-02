@@ -9,8 +9,9 @@ export PATH=${PATH}:/usr/local/bin/
 export CURRENT_DIR=$(dirname "$0")
 export DOCKERHOST=${DOCKERHOST}
 
-if [ -f ${CURRENT_DIR}/common.sh ]; then
-	. ${CURRENT_DIR}/common.sh
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
 fi
 
 pwd
@@ -34,20 +35,7 @@ case "$1" in
 	;;
 
   'symlink')
-	clear
-	echo 	
-	DOCKER_SCRIPTS=$(find /app/shared/scripts/docker/shell -name "*.sh")
-	for FILE_PATH in ${DOCKER_SCRIPTS}; do
-		FILE_DIRNAME=$(dirname ${FILE_PATH})
-		FILE_NAME=$(basename ${FILE_PATH})
-		FILE_BASENAME=$(echo $FILE_NAME | cut -f 1 -d '.')
-		echo "FILE_BASENAME: ${FILE_BASENAME} / FILE_NAME: ${FILE_NAME}"		
-		echo 	
-		if [ -f /usr/local/sbin/${FILE_BASENAME} ]; then
-			rm -f /usr/local/sbin/${FILE_BASENAME}
-		fi
-		ln -s ${FILE_PATH} /usr/local/sbin/${FILE_BASENAME}
-	done
+		rebuild_install_scripts_symlinks
 	;;
 
   'dev')

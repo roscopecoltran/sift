@@ -8,3 +8,11 @@ sift_windows_amd64.exe
 ./external/*
 ./external/**
 
+./core/providers/move
+./core/providers/*.txt
+
+./core/engines/*.txt
+
+vendor
+vendor/
+vendor/**

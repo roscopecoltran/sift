@@ -1,8 +1,3 @@
-/*
- * Ferret
- * Copyright (c) 2016 Yieldbot, Inc.
- * For the full copyright and license information, please view the LICENSE.txt file.
- */
 
 // Package providers wraps the provider packages
 package providers
@@ -28,6 +23,7 @@ import (
 	"github.com/roscopecoltran/sniperkit-sift/core/providers/answerhub"
 
 	// social media
+	"github.com/roscopecoltran/sniperkit-sift/core/providers/facebook"
 	"github.com/roscopecoltran/sniperkit-sift/core/providers/twitter"
 
 	// CSHarp

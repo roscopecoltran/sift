@@ -23,6 +23,7 @@ services:
     build:
       context: "."
       dockerfile: Dockerfile
+    command: /app/shared/scripts/docker/entrypoint
     volumes:
     - type: volume
       source: "$PWD"

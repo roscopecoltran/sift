@@ -10,6 +10,7 @@
 vendor
 vendor/
 vendor/**
+
 Godeps
 Godeps/
 Godeps/**

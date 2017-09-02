@@ -1,0 +1,16 @@
+---
+tasks:
+  docker:
+    type: convert
+    targets:
+      images:
+        input: ubuntu:16.04
+        ouput: alpine:3.6
+    dependencies:
+      definitions:
+        search:
+          ubuntu: ./ubuntu.yml
+          alpine: ./alpine.yml
+        package-manager:
+          ubuntu: ./apt.yml
+          alpine: ./apk.yml

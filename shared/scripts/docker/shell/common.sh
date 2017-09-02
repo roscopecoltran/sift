@@ -9,8 +9,6 @@ export CONTAINER_MODE=${CONTAINER_MODE-"dev"}
 export CONTAINER_NB_CORES=${CONTAINER_NB_CORES-$(getconf _NPROCESSORS_CONF)}
 export CONTAINER_CMAKE_BUILD_TYPE=${CONTAINER_CMAKE_BUILD_TYPE-"Release"}
 
-
-
 function ensure_dir {
 	clear
 	echo -e " "

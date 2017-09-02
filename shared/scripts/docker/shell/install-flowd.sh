@@ -20,31 +20,17 @@ export BUILDPATH=${GOPATH}/src/${PROJECT_VCS_URI}
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 
 # Install build deps
-apk --no-cache --no-progress --virtual build-deps add go gcc musl-dev make cmake openssl-dev libssh2-dev 
+apk --no-cache --no-progress --virtual build-deps add go gcc musl-dev make openssl-dev libssh2-dev 
 
-# Install libgit2
-if [ ! -d /usr/local/include/git2 ]; then
-	./shared/scripts/docker/shell/install-libgit2.sh
-fi
-
-go get -v -d ${PROJECT_VCS_URI}
+go get -v ${PROJECT_VCS_URI}/...
 cd ${BUILDPATH}
 
-go get -v github.com/Masterminds/glide
-export GLIDE_TMP=/tmp/glide
-export GLIDE_HOME=${GOPATH}/glide
-
-if [ ! -d ${GLIDE_TMP} ]; then
-	mkdir -p ${GLIDE_TMP}
+export COMMON_GOLANG_SCRIPT=$(find /app/shared -name "common-golang.sh")
+if [ -f ${COMMON_GOLANG_SCRIPT} ]; then
+	source ${COMMON_GOLANG_SCRIPT}
 fi
-if [ ! -d ${GLIDE_HOME} ]; then
-	mkdir -p ${GLIDE_HOME}
-fi
-
-go get -v github.com/mitchellh/gox
 
 if [ ! -f glide.yaml ]; then
-	# rm -f glide.*
 	glide create --non-interactive
 fi
 
@@ -52,14 +38,11 @@ if [ -f glide.yaml ]; then
 	glide install --force --strip-vendor
 fi
 
-pwd
-
-# go get -v
-# go build luc
+# build
 gox -verbose -os="linux" -arch="amd64" -output="/usr/local/sbin/{{.Dir}}" $(glide novendor)
 
 # Cleanup GOPATH
-# rm -r ${GOPATH}
+# rm -r ${BUILDPATH}
 
 # Remove build deps
 # apk --no-cache --no-progress del build-deps

@@ -39,11 +39,11 @@ done
 # Compile & Install libgit2
 git clone -b ${LIBGIT2_VCS_CLONE_BRANCH} --recursive --depth ${LIBGIT2_VCS_CLONE_DEPTH} -- ${LIBGIT2_VCS_REPO} ${LIBGIT2_VCS_CLONE_PATH}
 
-mkdir -p ${LIBGIT2_VCS_PATH}/build
-cd ${LIBGIT2_VCS_PATH}/build
+mkdir -p ${LIBGIT2_VCS_CLONE_PATH}/build
+cd ${LIBGIT2_VCS_CLONE_PATH}/build
 
 cmake ${LIBGIT2_CMAKE_ARGS} ..
 cmake --build . --target install
 
 # Cleanup
-rm -r ${LIBGIT2_VCS_PATH}
+rm -r ${LIBGIT2_VCS_CLONE_PATH}

@@ -5,6 +5,11 @@ set -e
 clear
 echo
 
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
+fi
+
 # Set temp environment vars
 export LIBGIT2_VCS_REPO=${LIBGIT2_VCS_REPO:-"https://github.com/libgit2/libgit2"}
 export LIBGIT2_VCS_CLONE_BRANCH=${LIBGIT2_VCS_CLONE_BRANCH:-"v0.25.0"}
@@ -18,14 +23,16 @@ if [ -d ${LIBGIT2_VCS_CLONE_PATH} ]; then
 	rm -fR ${LIBGIT2_VCS_CLONE_PATH}
 fi
 
-export LIBGIT2_DEPS="cmake"
-for dep in ${LIBGIT2_DEPS}; do
-	DEP_EXECUTABLE=$(which $dep) 
-	if [ ! -f ${DEP_EXECUTABLE} ]; then
-		cd /app 
-		pwd
-		chmod a+x ./shared/scripts/docker/shell/install-${dep}.sh
-		./shared/scripts/docker/shell/install-${dep}.sh
+export SRC_BUILD_DEPS="cmake"
+for dep in ${SRC_BUILD_DEPS}; do
+	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
+			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
+			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
+			${COMMON_SCRIPT_DIR}/install-${dep}.sh
+		else
+			echo "missing ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
+		fi
 	fi
 done
 

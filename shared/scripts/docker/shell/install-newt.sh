@@ -5,6 +5,11 @@ set -e
 clear
 echo
 
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
+fi
+
 # Set temp environment vars
 export NEWT_VCS_REPO=https://github.com/apache/mynewt-newt
 export NEWT_VCS_BRANCH=mynewt_1_1_0_rc2_tag

@@ -1,0 +1,14 @@
+https://github.com/huytd/stackoverlazy
+https://github.com/Alexrs95/pop
+https://github.com/gophergala
+https://github.com/heridev/gophergala_repositories
+https://github.com/heridev/gophergala_repositories/blob/master/stk/README.md
+https://github.com/goeuro/myke
+https://github.com/dogtools/dogbot
+
+https://github.com/dogtools/dog
+https://github.com/tj/robo
+https://github.com/go-task/task#calling-another-task
+
+https://github.com/TechMantra/TechMantra/blob/master/task/bitbucket/bitbucket.go
+

@@ -5,7 +5,9 @@ set -e
 clear
 echo
 
-CURRENT_DIR=$(dirname "$0")
+export PATH=${PATH}:/usr/local/bin/
+export CURRENT_DIR=$(dirname "$0")
+export DOCKERHOST=${DOCKERHOST}
 
 if [ -f ${CURRENT_DIR}/common.sh ]; then
 	. ${CURRENT_DIR}/common.sh
@@ -31,7 +33,28 @@ case "$1" in
   	exec /bin/bash
 	;;
 
+  'symlink')
+	clear
+	echo 	
+	DOCKER_SCRIPTS=$(find /app/shared/scripts/docker/shell -name "*.sh")
+	for FILE_PATH in ${DOCKER_SCRIPTS}; do
+		FILE_DIRNAME=$(dirname ${FILE_PATH})
+		FILE_NAME=$(basename ${FILE_PATH})
+		FILE_BASENAME=$(echo $FILE_NAME | cut -f 1 -d '.')
+		echo "FILE_BASENAME: ${FILE_BASENAME} / FILE_NAME: ${FILE_NAME}"		
+		echo 	
+		ln -s ${FILE_PATH} /usr/local/sbin/${FILE_BASENAME}
+	done
+	;;
+
   'dev')
+	DOCKER_SCRIPTS=$(find /app/shared/scripts/docker/shell -name "*.sh")
+	for FILE_PATH in ${DOCKER_SCRIPTS}; do
+		FILE_DIRNAME=$(dirname ${FILE_PATH})
+		FILE_NAME=$(basename ${FILE_PATH})
+		FILE_BASENAME=$(echo $FILE_NAME | cut -f 1 -d '.')
+		echo "FILE_BASENAME: ${FILE_BASENAME} / FILE_NAME: ${FILE_NAME}"		
+	done
 	apk add --update --no-cache --no-progress --virtual interactive-deps ${APK_INTERACTIVE} ${APK_INTERACTIVE_CUSTOM}
 	apk add --update --no-cache --no-progress --virtual build-deps ${APK_BUILD} ${APK_BUILD_CUSTOM}
   	exec /bin/bash
@@ -42,7 +65,7 @@ case "$1" in
 	;;
 
   *)
-  	exec $@
+  	exec /bin/bash $@
 	;;
 
 esac

@@ -5,8 +5,9 @@ set -e
 clear
 echo
 
-if [ -f ./shared/scripts/docker/shell/common.sh ]; then
-	source ./shared/scripts/docker/shell/common.sh
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
 fi
 
 # Set temp environment vars
@@ -22,6 +23,19 @@ apk --no-cache --no-progress --virtual .nanomsg-build-deps add g++ gcc musl-dev 
 if [ -d ${NANOMSG_VCS_PATH} ];then
 	rm -fR ${NANOMSG_VCS_PATH}
 fi
+
+export SRC_BUILD_DEPS="cmake"
+for dep in ${SRC_BUILD_DEPS}; do
+	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
+			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
+			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
+			${COMMON_SCRIPT_DIR}/install-${dep}.sh
+		else
+			echo "missing ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
+		fi
+	fi
+done
 
 # Compile & Install libgit2 (v0.23)
 git clone -b ${NANOMSG_VCS_BRANCH} --depth 1 -- ${NANOMSG_VCS_REPO} ${NANOMSG_VCS_PATH}

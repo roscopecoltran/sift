@@ -5,6 +5,11 @@ set -e
 clear
 echo
 
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
+fi
+
 export PROJECT_VCS_URI=${PROJECT_VCS_URI:-"github.com/michaelsauter/crane"}
 export PROJECT_VCS_BRANCH=${PROJECT_VCS_BRANCH:-"master"}
 
@@ -17,10 +22,15 @@ export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 # Install build deps
 apk --no-cache --no-progress --virtual build-deps add go gcc musl-dev make cmake openssl-dev libssh2-dev 
 
-# Install libgit2
-if [ ! -d /usr/local/include/git2 ]; then
-	./shared/scripts/docker/shell/install-libgit2.sh
-fi
+# Install deps from source
+export SRC_BUILD_DEPS="libgit2"
+for dep in ${SRC_BUILD_DEPS}; do
+	export SRC_BUILD_DEP_EXECUTABLE=$(which $dep) 
+	if [ ! -f "${SRC_BUILD_DEP_EXECUTABLE}" ]; then
+		chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
+		${COMMON_SCRIPT_DIR}/install-${dep}.sh
+	fi
+done
 
 go get -v -d ${PROJECT_VCS_URI}
 cd ${BUILDPATH}

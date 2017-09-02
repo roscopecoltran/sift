@@ -5,6 +5,11 @@ set -e
 clear
 echo
 
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
+fi
+
 # Set temp environment vars
 export CPPLOGGING_VCS_REPO=https://github.com/chronoxor/CppLogging.git
 export CPPLOGGING_VCS_BRANCH=master

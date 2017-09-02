@@ -5,6 +5,11 @@ set -e
 clear
 echo
 
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
+fi
+
 export PROJECT_VCS_URI=${PROJECT_VCS_URI:-"github.com/google/zoekt"}
 export PROJECT_VCS_BRANCH=${PROJECT_VCS_BRANCH:-"master"}
 

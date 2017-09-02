@@ -5,15 +5,14 @@ set -e
 clear
 echo
 
-DIR=$(dirname "$0")
-echo "$DIR"
-cd /app
-if [ -f ${DIR}/common.sh ]; then
-	. ${DIR}/common.sh
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
 fi
 
-if [ -f ${DIR}/aliases.sh ]; then
-	. ${DIR}/aliases.sh
+export ALIASES_SCRIPT=$(find /app/shared -name "aliases.sh")
+if [ -f ${ALIASES_SCRIPT} ]; then
+	source ${ALIASES_SCRIPT}
 fi
 
 ## #################################################################

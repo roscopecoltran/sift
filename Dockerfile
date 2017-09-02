@@ -20,14 +20,14 @@ LABEL maintainer "Luc Michalski <michalski.luc@gmail.com>"
 ARG GOSU_VERSION=${GOSU_VERSION:-"1.10"}
 
 # default apks
-ARG APK_RUNTIME=${APK_RUNTIME:-"git ca-certificates libssh2 openssl bash python3 libxml2 libxslt"}
-ARG APK_BUILD_CUSTOM=${APK_BUILD_CUSTOM:-""}
-ARG APK_INTERACTIVE_CUSTOM=${APK_INTERACTIVE_CUSTOM:-""}
+ARG APK_RUNTIME=${APK_RUNTIME:-"git ca-certificates libssh2 openssl python3 libxml2 libxslt"}
+ARG APK_BUILD=${APK_BUILD:-"python3-dev libxml2-dev libxslt-dev"}
+ARG APK_INTERACTIVE=${APK_INTERACTIVE:-"nano bash tree jq"}
 
 # custom apks
 ARG APK_RUNTIME_CUSTOM=${APK_RUNTIME_CUSTOM:-""}
-ARG APK_BUILD=${APK_BUILD:-"python3-dev libxml2-dev libxslt-dev"}
-ARG APK_INTERACTIVE=${APK_INTERACTIVE:-"nano bash tree jq"}
+ARG APK_BUILD_CUSTOM=${APK_BUILD_CUSTOM:-""}
+ARG APK_INTERACTIVE_CUSTOM=${APK_INTERACTIVE_CUSTOM:-""}
 
 # golang
 ENV GOPATH=/go
@@ -44,8 +44,8 @@ ADD https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64 
 RUN \
 	chmod +x /usr/local/sbin/gosu \
 	\
-	&& apk add --update --no-cache --no-progress --virtual .container-runtime.deps ${APK_RUNTIME} {APK_RUNTIME_CUSTOM} \
-	&& apk add --update --no-cache --no-progress --virtual .container-build.deps ${APK_BUILD_CUSTOM} ${APK_RUNTIME_CUSTOM} \
+	&& apk add --update --no-cache --no-progress --virtual .container-runtime.deps ${APK_RUNTIME} ${APK_RUNTIME_CUSTOM} \
+	&& apk add --update --no-cache --no-progress --virtual .container-build.deps ${APK_BUILD_CUSTOM} ${APK_BUILD_CUSTOM} \
 	&& apk add --update --no-cache --no-progress --virtual .container-interactive.deps ${APK_INTERACTIVE} ${APK_INTERACTIVE_CUSTOM} \
 	\
 	&& adduser -D app -h /data -s /bin/sh
@@ -63,4 +63,5 @@ VOLUME ["/data"]
 EXPOSE 4242 6070 8888 8899
 
 ENTRYPOINT ["/app/shared/scripts/docker/entrypoint"]
+# CMD ["/bin/bash"]
 # CMD ["/usr/local/sbin/gosu", "app", "/app/sniperkit"]

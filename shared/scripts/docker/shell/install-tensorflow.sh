@@ -5,6 +5,11 @@ set -e
 clear
 echo
 
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
+fi
+
 # Set temp environment vars
 export TF_VCS_REPO=https://github.com/tensorflow/tensorflow.git
 export TF_VCS_BRANCH=v1.3.0

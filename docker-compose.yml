@@ -15,6 +15,7 @@ services:
   # https://stackoverflow.com/questions/24319662/from-inside-of-a-docker-container-how-do-i-connect-to-the-localhost-of-the-mach?noredirect=1&lq=1
   # https://stackoverflow.com/questions/23934425/parse-ifconfig-to-get-only-my-ip-address-using-bash/37212665#37212665
   sift:
+    command: dev
     image: roscopecoltran/snk-sift:go1.9-alpine3.6
     container_name: snk-sift1.0
     network_mode: "host"
@@ -23,7 +24,6 @@ services:
     build:
       context: "."
       dockerfile: Dockerfile
-    command: /app/shared/scripts/docker/entrypoint
     volumes:
     - type: volume
       source: "$PWD"

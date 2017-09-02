@@ -5,7 +5,20 @@ set -e
 clear
 echo
 
-if [ -f ./shared/scripts/docker/shell/common.sh ]; then
-	source ./shared/scripts/docker/shell/common.sh
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
 fi
 
+export SRC_BUILD_DEPS="cmake"
+for dep in ${SRC_BUILD_DEPS}; do
+	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
+			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
+			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
+			${COMMON_SCRIPT_DIR}/install-${dep}.sh
+		else
+			echo "missing ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
+		fi
+	fi
+done

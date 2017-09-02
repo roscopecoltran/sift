@@ -5,6 +5,11 @@ set -e
 clear
 echo
 
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
+fi
+
 export BAZEL_VERSION=${BAZEL_VERSION:-"0.5.4"}
 export JAVA_HOME="/usr/lib/jvm/java-1.8-openjdk"
 export LOCAL_RESOURCES="2048,.5,1.0"

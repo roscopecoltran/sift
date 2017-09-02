@@ -5,6 +5,11 @@ set -e
 clear
 echo
 
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
+fi
+
 # Set temp environment vars
 export CPPSERIALIZATION_VCS_REPO=https://github.com/chronoxor/CppSerialization.git
 export CPPSERIALIZATION_VCS_BRANCH=master
@@ -15,14 +20,16 @@ export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 # Install build deps
 apk --no-cache --no-progress --virtual .CppSerialization-build-deps add g++ gcc musl-dev make autoconf automake pkgconfig libtool
 
-export CPPSERIALIZATION_DEPS="cmake"
-for dep in ${CPPSERIALIZATION_DEPS}; do
-	DEP_EXECUTABLE=$(which $dep) 
-	if [ ! -f ${DEP_EXECUTABLE} ]; then
-		cd /app 
-		pwd
-		chmod a+x ./shared/scripts/docker/shell/install-${dep}.sh
-		./shared/scripts/docker/shell/install-${dep}.sh
+export SRC_BUILD_DEPS="cmake"
+for dep in ${SRC_BUILD_DEPS}; do
+	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
+			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
+			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
+			${COMMON_SCRIPT_DIR}/install-${dep}.sh
+		else
+			echo "missing ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
+		fi
 	fi
 done
 

@@ -5,14 +5,16 @@ set -e
 clear
 echo
 
-CURRENT_DIR=$(dirname "$0")
-
-if [ -f ${CURRENT_DIR}/common.sh ]; then
-	. ${CURRENT_DIR}/common.sh
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
 fi
 
-if [[ -f ./shared/scripts/docker/shell/install-$1.sh ]]; then
-	./shared/scripts/docker/shell/install-$1.sh
+export COMMON_GOLANG_SCRIPT=$(find /app/shared -name "common-golang.sh")
+if [ -f ${COMMON_GOLANG_SCRIPT} ]; then
+	source ${COMMON_GOLANG_SCRIPT}
 fi
 
-./shared/scripts/docker/shell/entrypoint.sh
+
+
+

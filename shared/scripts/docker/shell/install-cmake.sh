@@ -19,7 +19,7 @@ export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 # Install build deps
 apk --no-cache --no-progress --virtual .cmake-build-deps add g++ gcc musl-dev make autoconf automake
 
-if [ -d ${CMAKE_VCS_PATH}l ];then
+if [ -d ${CMAKE_VCS_PATH} ];then
 	rm -fR ${CMAKE_VCS_PATH}
 fi
 

@@ -33,10 +33,10 @@ RUN chmod +x /usr/local/sbin/gosu \
 # Copy source code to the container & build it
 COPY . /app
 WORKDIR /app
-# RUN ./docker/scripts/build.sh
+# RUN ./shared/scripts/docker/shell/build.sh
 
 # NSSwitch configuration file
-COPY ./docker/conf/nsswitch.conf /etc/nsswitch.conf
+COPY ./shared/scripts/docker/conf/nsswitch.conf /etc/nsswitch.conf
 
 # App configuration
 ENV SNK_REPO_PATH "/data/repo"
@@ -45,6 +45,6 @@ ENV SNK_REPO_PATH "/data/repo"
 VOLUME ["/data"]
 EXPOSE 4242 6070
 
-ENTRYPOINT ["/app/docker/scripts/entrypoint.sh"]
+ENTRYPOINT ["/app/shared/scripts/docker/shell/entrypoint.sh"]
 CMD ["/bin/bash"]
 # CMD ["/usr/local/sbin/gosu", "app", "/app/sniperkit"]

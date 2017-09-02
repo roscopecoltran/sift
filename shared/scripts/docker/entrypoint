@@ -43,6 +43,9 @@ case "$1" in
 		FILE_BASENAME=$(echo $FILE_NAME | cut -f 1 -d '.')
 		echo "FILE_BASENAME: ${FILE_BASENAME} / FILE_NAME: ${FILE_NAME}"		
 		echo 	
+		if [ -f /usr/local/sbin/${FILE_BASENAME} ]; then
+			rm -f /usr/local/sbin/${FILE_BASENAME}
+		fi
 		ln -s ${FILE_PATH} /usr/local/sbin/${FILE_BASENAME}
 	done
 	;;

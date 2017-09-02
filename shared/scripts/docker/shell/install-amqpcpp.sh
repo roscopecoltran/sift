@@ -12,20 +12,24 @@ if [ -f ${COMMON_SCRIPT} ]; then
 fi
 
 # Set temp environment vars
-export CURLPP_VCS_REPO=https://github.com/jpbarrette/curlpp
-export CURLPP_VCS_CLONE_BRANCH=master
-export CURLPP_VCS_CLONE_DEPTH=1
-export CURLPP_VCS_CLONE_PATH=/tmp/$(basename $CURLPP_VCS_REPO)
+export AMQPCPP_VCS_REPO=https://github.com/akalend/amqpcpp
+export AMQPCPP_VCS_CLONE_BRANCH=master
+export AMQPCPP_VCS_CLONE_DEPTH=1
+export AMQPCPP_VCS_CLONE_PATH=/tmp/$(basename $AMQPCPP_VCS_REPO)
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 
 # Install build deps
-apk --no-cache --no-progress --virtual .curlpp-build-deps add g++ gcc musl-dev make autoconf automake curl-dev curl
+apk upgrade
+apk --no-cache --no-progress --update \
+	--repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
+	--allow-untrusted \
+	--virtual .curlpp-build-deps add rabbitmq-c rabbitmq-c-dev libcrypto1.0
 
-if [ -d ${CURLPP_VCS_CLONE_PATH} ];then
-	rm -fR ${CURLPP_VCS_CLONE_PATH}
+if [ -d ${AMQPCPP_VCS_CLONE_PATH} ];then
+	rm -fR ${AMQPCPP_VCS_CLONE_PATH}
 fi
 
-export SRC_BUILD_DEPS="cmake"
+export SRC_BUILD_DEPS=""
 for dep in ${SRC_BUILD_DEPS}; do
 	if [ -z "$(which $dep)" ]; then
 		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
@@ -39,10 +43,10 @@ for dep in ${SRC_BUILD_DEPS}; do
 done
 
 # Compile & Install libgit2 (v0.23)
-git clone -b ${CURLPP_VCS_CLONE_BRANCH} --recursive --depth ${CURLPP_VCS_CLONE_DEPTH} -- ${CURLPP_VCS_REPO} ${CURLPP_VCS_CLONE_PATH}
+git clone -b ${AMQPCPP_VCS_CLONE_BRANCH} --recursive --depth ${AMQPCPP_VCS_CLONE_DEPTH} -- ${AMQPCPP_VCS_REPO} ${AMQPCPP_VCS_CLONE_PATH}
 
-mkdir -p ${CURLPP_VCS_CLONE_PATH}/build
-cd ${CURLPP_VCS_CLONE_PATH}/build
+mkdir -p ${AMQPCPP_VCS_CLONE_PATH}/build
+cd ${AMQPCPP_VCS_CLONE_PATH}/build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j${CONTAINER_NB_CORES} 
 make install
@@ -52,4 +56,4 @@ make install
 # apk --no-cache --no-progress del .curlpp-build-deps
 
 # Cleanup
-rm -r ${CURLPP_VCS_CLONE_PATH}
+rm -r ${AMQPCPP_VCS_CLONE_PATH}

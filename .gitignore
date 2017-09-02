@@ -1,0 +1,10 @@
+sift_darwin_amd64
+sift_linux_amd64
+sift_linux_386
+sift_windows_amd64.exe
+.env
+
+./external
+./external/*
+./external/**
+

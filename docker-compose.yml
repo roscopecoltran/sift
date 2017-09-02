@@ -1,0 +1,62 @@
+---
+version: '3.2'
+# extra_hosts:
+#  - "service.localhost:172.16.123.1"
+
+services:
+
+  data:
+    image: tianon/true
+    volumes:
+    - "/var/run/docker.sock:/var/run/docker.sock"
+    - "./shared:/shared"
+
+  # https://stackoverflow.com/questions/42669901/how-to-connect-to-localhost9092-from-docker-container-using-docker-compose-and
+  # https://stackoverflow.com/questions/24319662/from-inside-of-a-docker-container-how-do-i-connect-to-the-localhost-of-the-mach?noredirect=1&lq=1
+  # https://stackoverflow.com/questions/23934425/parse-ifconfig-to-get-only-my-ip-address-using-bash/37212665#37212665
+  sift:
+    image: roscopecoltran/snk-sift:go1.9-alpine3.6
+    container_name: snk-sift1.0
+    network_mode: "host"
+    extra_hosts:
+      - "dockerhost:$DOCKERHOST"
+    build:
+      context: "."
+      dockerfile: Dockerfile
+    volumes:
+    - type: volume
+      source: "$PWD"
+      target: "/app"
+    - type: volume
+      source: data
+      target: "/shared"
+      volume:
+        nocopy: true
+    - type: bind
+      source: "./bin"
+      target: "/app/bin"
+    - type: bind
+      source: "./dist"
+      target: "/app/dist"
+    ports:
+    - 4242:4242
+    - 6070:6070
+    - 3030:3030
+    expose:
+    - 6070
+    - 4242
+    - 3030
+
+  postgres:
+    image: postgres:10-alpine
+    container_name: snk-postgres10
+    network_mode: "host"
+    extra_hosts:
+      - "dockerhost:$DOCKERHOST"
+    volumes:
+    - "/var/run/postgres/postgres.sock:/var/run/postgres/postgres.sock"
+    - data_db:/var/lib/postgresql/data
+
+volumes:
+  data: 
+  data_db: 

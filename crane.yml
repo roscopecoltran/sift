@@ -1,0 +1,12 @@
+---
+services: 
+groups:
+  default:
+  - sift
+  - postgres
+  db:
+  - postgres
+  dev:
+  - sift
+  ai:
+  - sift

@@ -1,0 +1,4 @@
+---
+git:
+  hook:
+    type: commit

@@ -1,0 +1,26 @@
+#!/bin/sh
+set -x
+set -e
+
+clear
+echo
+
+# Install build deps
+apk add --no-cache --no-progress --virtual .gits-build-deps python3-dev
+
+if [ -d /app/external/gitsome ]; then
+	rm -fR /app/external/gitsome
+fi
+
+git clone --recursive --depth=1 https://github.com/donnemartin/gitsome /app/external/gitsome
+cd /app/external/gitsome
+
+for p in /app/external/gitsome/requirement*.txt; do pip3 install --no-cache --no-cache-dir -r $p; done
+pip3 install --no-cache -e .
+
+# pip3 install git+https://github.com/bblfsh/client-python
+# pip3 install ast2vec
+
+# apk del --no-cache .gits-build-deps
+
+

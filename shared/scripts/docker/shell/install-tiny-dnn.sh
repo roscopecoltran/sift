@@ -23,7 +23,7 @@ apk upgrade
 apk --no-cache --no-progress --update \
 	--repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
 	--allow-untrusted \
-	--virtual .$(basename $TINY_DNN_VCS_REPO)-build-deps add musl-dev make g++ gcc openblas opencv opencv-dev
+	--virtual .$(basename $TINY_DNN_VCS_REPO)-build-deps add musl-dev make g++ gcc openblas opencv opencv-dev boost-dev
 
 if [ -d ${TINY_DNN_VCS_CLONE_PATH} ];then
 	rm -fR ${TINY_DNN_VCS_CLONE_PATH}

@@ -25,7 +25,7 @@ apk --no-cache --no-progress --update \
 	--repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
 	--allow-untrusted \
 	--virtual .$(basename $DLIB_VCS_REPO)-build-deps add musl-dev make opencv opencv-dev \
-									 g++ gcc openblas openblas-dev libpng libpng-dev \
+									 g++ gcc openblas openblas-dev libpng libpng-dev boost-python boost-dev \
 									 libjpeg-turbo libjpeg-turbo-dev jpeg jpeg-dev giflib giflib-dev
 
 if [ -d ${DLIB_VCS_CLONE_PATH} ];then
@@ -58,7 +58,9 @@ make install
 # ./bootstrap && make -j${CONTAINER_NB_CORES} && make install
 
 # python
-python3 setup.py install --yes USE_AVX_INSTRUCTIONS
+# https://github.com/davisking/dlib#compiling-dlib-python-api
+cd ${DLIB_VCS_CLONE_PATH}
+python3 setup.py install
 
 # Remove build deps
 # apk --no-cache --no-progress del .$(basename $DLIB_VCS_REPO)-build-deps

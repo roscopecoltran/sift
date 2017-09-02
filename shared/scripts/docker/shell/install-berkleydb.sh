@@ -17,6 +17,29 @@ export DOCKER_BUILD_WORKSPACE=${DOCKER_BUILD_WORKSPACE:-"/tmp/berkeley-db"}
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 
 ## #################################################################
+## apk
+## #################################################################
+
+# Install build deps
+apk --no-cache --no-progress --update \
+	--repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
+	--allow-untrusted \
+	--virtual .$(basename $DLIB_VCS_REPO)-build-deps add musl-dev make g++ gcc openblas openblas-dev boost-dev boost
+
+export SRC_BUILD_DEPS=""
+for dep in ${SRC_BUILD_DEPS}; do
+	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
+			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
+			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
+			${COMMON_SCRIPT_DIR}/install-${dep}.sh
+		else
+			echo "missing ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
+		fi
+	fi
+done
+
+## #################################################################
 ## BerkleyDB - env variables
 ## #################################################################
 

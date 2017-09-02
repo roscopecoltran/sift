@@ -25,7 +25,7 @@ apk --no-cache --no-progress --update \
 	--repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
 	--allow-untrusted \
 	--virtual .$(basename $XGBOOST_VCS_REPO)-build-deps add musl-dev make g++ gcc openblas openblas-dev graphviz graphviz-dev \
-															libexecinfo-dev doxygen zip
+															libexecinfo-dev doxygen zip boost-dev
 
 if [ -d ${XGBOOST_VCS_CLONE_PATH} ];then
 	rm -fR ${XGBOOST_VCS_CLONE_PATH}

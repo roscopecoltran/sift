@@ -66,3 +66,4 @@ type RepositoryBySize []Repository
 func (a RepositoryBySize) Len() int           { return len(a) }
 func (a RepositoryBySize) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 func (a RepositoryBySize) Less(i, j int) bool { return a[i].Size > a[j].Size }
+

@@ -1,0 +1,451 @@
+# This file holds the configuration for all MediaWiki core related jobs.
+
+# Note that mediawiki/core branches may have a lot of submodules, we thus
+# use a specific git macro to prevents Jenkins from updating all the
+# submodules we do not care about. See bug 42455.
+
+- job-template:
+    name: 'mediawiki-core-npm-node-6-jessie'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - shell: |
+         zuul-cloner --version
+         zuul-cloner --color \
+           --verbose \
+           --workspace src \
+           --map /srv/deployment/integration/slave-scripts/etc/zuul-clonemap.yaml \
+           --cache-dir /srv/git \
+           https://gerrit.wikimedia.org/r/p \
+           mediawiki/core
+     - shell: |
+         node --version
+         npm --version
+         cd src/
+         npm install
+         npm test
+    publishers:
+     - castor-save
+
+- job-template:
+    name: 'mediawiki-core-qunit-selenium-jessie'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    triggers:
+     - zuul
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+    builders:
+     - castor-load
+     - prepare-mediawiki-zuul-project
+     - qunit-karma
+     - mw-wdio-nodepool
+     - assert-no-mediawiki-errors
+    publishers:
+     - castor-save
+     - archive-log-dir
+     - junit:
+        results: 'log/junit*.xml,log/WDIO.xunit*.xml'
+        # Qunit does not generate Junit file and we might skip selenium
+        allow-empty-results: true
+
+- job-template:
+    name: 'mediawiki-core-jsduck'
+    node: contintLabsSlave && UbuntuTrusty
+    defaults: use-remote-zuul-no-submodules
+    concurrent: true
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+    triggers:
+     - zuul
+    builders:
+     - jsduck
+
+- job:
+    name: 'mediawiki-core-jsduck-publish'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-no-submodules
+    concurrent: false
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+    triggers:
+     - zuul
+    builders:
+     - assert-env-doc_subpath
+     - castor-load
+     - npm-install
+     - npm-run:
+         script: doc
+     - doc-publish:
+        docsrc: 'docs/js'
+        docdest: 'mediawiki-core/$DOC_SUBPATH/js'
+    publishers:
+     - castor-save
+
+# Should be converted to poll scm (TT115755)
+- job: &mediawiki-core-doxygen-publish
+    name: 'mediawiki-core-doxygen-publish'
+    node: ci-jessie-wikimedia
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - shell: "/srv/deployment/integration/slave-scripts/bin/mw-setup.sh"
+     - assert-env-doc_subpath
+     - zuul-cloner:
+         projects: >
+             mediawiki/core
+             mediawiki/vendor
+     - shell: |
+         rm -rf build/doc
+         TARGET_BASEDIR="$WORKSPACE/build/doc" /srv/deployment/integration/slave-scripts/tools/mwcore-docgen.sh
+     - doc-publish:
+         docsrc: 'build/doc/html'
+         docdest: 'mediawiki-core/$DOC_SUBPATH/php'
+
+# Same but allow concurrent build for tags
+- job:
+    !!merge : *mediawiki-core-doxygen-publish
+    name: 'mediawiki-core-tag-doxygen-publish'
+    concurrent: true
+    # Reinject Zuul parameters since JJB strip for some reason
+    triggers:
+     - zuul
+
+# Runs all MediaWiki PHPUnit tests on Nodepool
+- job-template:
+    name: 'mediawiki-phpunit-{phpflavor}-{image}'
+    node: ci-{image}-wikimedia
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - assert-phpflavor:
+         phpflavor: '{phpflavor}'
+     - hhvm-clear-hhbc
+     - zuul-cloner:
+         projects: >
+             mediawiki/core
+             mediawiki/vendor
+     - mw-install-mysql
+     - mw-apply-settings
+     - mw-fetch-composer-dev
+     - shell: "/srv/deployment/integration/slave-scripts/bin/mw-phpunit.sh"
+     - assert-no-mediawiki-errors
+    publishers:
+     - phpunit-junit-2
+     - archive-log-dir
+     - castor-save
+
+# Same as mediawiki-phpunit-{phpflavor}, except uses composer instead of mediawiki/vendor.
+# Currently experimental, will eventually be used for `master`, and
+# wmf/ branches will use mediawiki/vendor. See T90303.
+- job-template:
+    name: 'mediawiki-phpunit-{phpflavor}-composer-{image}'
+    node: ci-{image}-wikimedia
+    concurrent: true
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - assert-phpflavor:
+         phpflavor: '{phpflavor}'
+     - hhvm-clear-hhbc
+     - zuul-cloner:
+         projects: >
+             mediawiki/core
+     - composer-validate:
+         dir: 'src'
+     - composer-update:
+         dir: 'src'
+     - mw-install-mysql
+     - mw-apply-settings
+     - shell: "/srv/deployment/integration/slave-scripts/bin/mw-phpunit.sh"
+     - assert-no-mediawiki-errors
+    publishers:
+     - phpunit-junit-2
+     - archive-log-dir
+     - castor-save
+
+- builder:
+    name: inject-experimental-extension
+    builders:
+     - shell: |
+         # When triggered from the experimental pipeline, add the project to
+         # the list of dependencies. Used to inject an extension which is not
+         # yet part of the list above.
+         if [ "$ZUUL_PIPELINE" == 'experimental' ] && ! grep -q "$ZUUL_PROJECT" deps.txt; then
+            echo "$ZUUL_PROJECT" >> deps.txt
+            # Evil copy paste of `zuul-cloner` macro
+            # FIXME maybe we should always pass $ZUUL_PROJECT in the macro
+            zuul-cloner --color --verbose \
+                --map /srv/deployment/integration/slave-scripts/etc/zuul-clonemap.yaml \
+                --workspace src \
+                https://gerrit.wikimedia.org/r/p \
+                "$ZUUL_PROJECT"
+         fi
+
+- builder:
+    name: assert-no-mediawiki-errors
+    builders:
+        - shell:
+            !include-raw:
+                - assert-no-mediawiki-errors.bash
+
+- job-template:
+    name: 'mediawiki-extensions-{phpflavor}-{image}'
+    node: ci-{image}-wikimedia
+    concurrent: true
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - assert-phpflavor:
+         phpflavor: '{phpflavor}'
+     - hhvm-clear-hhbc
+     - prepare-mediawiki-zuul-project
+     # When triggered by an extension/skin, run its 'composer test'
+     - conditional-step:
+         condition-kind: regex-match
+         label: '${{ENV,var="ZUUL_PROJECT"}}'
+         regex: '^mediawiki/extensions/.+'
+         steps:
+             - composer-test-mwextension
+     - mw-fetch-composer-dev
+     - mw-run-phpunit-allexts
+    publishers:
+     - junit:
+        results: 'log/junit*.xml'
+     - archive-log-dir
+     - castor-save
+
+# See 'mediawiki-phpunit-{phpflavor}'
+- job-template:
+    name: 'mediawiki-extensions-qunit-jessie'
+    node: 'ci-jessie-wikimedia'
+    concurrent: true
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - prepare-mediawiki-zuul-project
+     - qunit-karma
+     - assert-no-mediawiki-errors
+    publishers:
+     - castor-save
+     - archive-log-dir
+
+- project:
+    name: mediawiki-core
+    phpflavor:
+        - hhvm
+        - php55
+    jobs:
+      - 'mediawiki-core-qunit-selenium-jessie'
+      - 'mediawiki-core-jsduck'
+      - 'mediawiki-core-npm-node-6-jessie'
+      - 'mediawiki-core-jsduck-publish'
+      - 'mediawiki-core-doxygen-publish'
+      - '{name}-{phpflavor}lint':
+          phpflavor: php55
+      - 'mediawiki-phpunit-{phpflavor}-{image}': &phpflavor_images
+          phpflavor:
+              - php55:
+                  image: trusty
+              - php70:
+                  image: jessie
+              # Wikimedia runs HHVM on Jessie
+              - hhvm:
+                  image: jessie
+      - 'mediawiki-phpunit-{phpflavor}-composer-{image}':
+          phpflavor:
+              - hhvm:
+                  image: jessie
+      - 'mediawiki-extensions-{phpflavor}-{image}': *phpflavor_images
+      - 'mediawiki-extensions-qunit-jessie'
+
+# Used to decouple MediaWiki related projects from the rest of the projects in
+# gate-and-submit. See T107529.
+- project:
+    name: 'mwgate'
+    jobs:
+        - '{name}-composer-{phpflavor}-{image}': *phpflavor_images
+        - '{name}-composer-validate'
+        - '{name}-jsduck'
+        - '{name}-{phpflavor}lint':
+            phpflavor:
+                - php55
+                - php56
+        - '{name}-rake-jessie'
+        - '{name}-tox-jessie'
+        - '{name}-npm-node-6-jessie'
+
+- job:
+    name: 'mediawiki-core-code-coverage'
+    node: contintLabsSlave && DebianJessie
+    # Set env variables needed by zuul-cloner since job is not triggered by
+    # Zuul but is timed using Jenkins own scheduler.
+    parameters:
+     - string:
+         name: 'ZUUL_UUID'
+         default: 'mwcore-cover_not-very-random'
+     - string:
+         name: 'ZUUL_BRANCH'
+         default: 'master'
+     - string:
+         name: 'ZUUL_REF'
+         default: 'master'
+     - string:
+         name: 'ZUUL_CHANGE'
+         default: 'timed_build'
+     - string:
+         name: 'ZUUL_PATCHSET'
+         default: 'timed_build'
+     - string:
+         name: 'ZUUL_PIPELINE'
+         default: 'timed_build'
+     - string:
+         name: 'ZUUL_PROJECT'
+         default: 'mediawiki/core'
+     - string:
+         name: 'ZUUL_URL'
+         default: 'https://gerrit.wikimedia.org/r/p'
+    builders:
+     - zuul-cloner:
+         projects: >
+             mediawiki/core
+             mediawiki/vendor
+     - mw-install-sqlite
+     - mw-apply-settings
+     - mw-fetch-composer-dev
+     # FIXME should use the mw-phpunit.sh wrapper
+     - shell: |
+        . "/srv/deployment/integration/slave-scripts/bin/mw-set-env.sh"
+
+        mkdir -p log
+        rm -f log/clover.xml log/clover.bz2
+
+        # Since clover file are huge, compress them before archiving
+        # We need to keep the original though for the cloverphp plugin
+        function compress_clover_log() {
+            if [ -s "log/clover.xml" ]; then
+                echo "Compressing log/clover.xml with bz2..."
+                bzip2 --verbose --best --keep log/clover.xml
+                echo "Compression completed."
+            fi
+        }
+        trap compress_clover_log EXIT
+
+        rm -fR "$WORKSPACE/cover"
+        mkdir -p "$WORKSPACE/cover"
+
+        nice -n 19 php $MW_INSTALL_PATH/tests/phpunit/phpunit.php \
+            --exclude-group Dump,Broken,ParserFuzz,Stub \
+            --coverage-clover log/clover.xml \
+            --coverage-html "$WORKSPACE/cover" \
+            || :
+        # Above: Use "|| :" to ignore any non-zero exist status
+        # We want to publish code coverage even in case one of there
+        # being PHPUnit test failures. Normal test failures are not
+        # fatal and PHPUnit will stil generate console output, clover
+        # reports and and html reports. However don't blindly
+        # make the job pass either because if we do, then cover-publish
+        # will end up syncing an empty directory, which deletes the
+        # coverage report from doc.wikimedia.org. In case of "real" failure,
+        # let the job fail and don't publish a new report. "real" failures
+        # can be a PHP Fatal error, of a segfault, for example.
+        test -f cover/index.html
+
+     - cover-publish:
+         src: 'cover'
+         dest: 'mediawiki-core/$ZUUL_BRANCH/php'
+    publishers:
+     - archive:
+         artifacts: 'log/*'
+     - cloverphp:
+         xml-location: 'log/clover.xml'
+     - mw-teardown
+     - beta-irc  # Spam #wikimedia-releng on failure
+    triggers:
+     - timed: '0 3,15 * * *'
+    wrappers:
+     - ansicolor
+     - timestamps
+
+# Special job to run MW-CS against MediaWiki core.
+# Can't run it through composer because it'll timeout.
+- job:
+    name: 'mediawiki-core-phpcs-jessie'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - zuul-cloner:
+         projects: >
+             mediawiki/core
+     - composer-update:
+        dir: '$WORKSPACE/src'
+     - shell: |
+        cd $WORKSPACE/src
+        rm -fR "$WORKSPACE/log"
+        mkdir -p "$WORKSPACE/log"
+        vendor/bin/phpcs -p -s --report-full --report-checkstyle=$WORKSPACE/log/checkstyle.xml
+    publishers:
+     - castor-save
+     - checkstyle:
+        pattern: 'log/checkstyle.xml'
+        can-run-on-failed: true
+        thresholds:
+          failed:
+            total-all: 1
+
+# Phan! (T132636)
+- job:
+    name: 'mediawiki-core-php70-phan-jessie'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - zuul-cloner:
+         projects: >
+             mediawiki/core
+     - composer-update:
+        dir: '$WORKSPACE/src'
+     - shell: |
+        cd $WORKSPACE/src
+        composer require etsy/phan:0.8 --prefer-dist --dev --no-progress --ansi --profile -v # todo don't hardcode version here
+        PHAN=vendor/bin/phan ./tests/phan/bin/phan -m checkstyle
+    publishers:
+     - castor-save
+     - checkstyle:
+        pattern: 'src/tests/phan/issues/latest'
+        can-run-on-failed: true
+        thresholds:
+          failed:
+            total-all: 1

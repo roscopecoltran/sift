@@ -1,0 +1,177 @@
+- publisher:
+    name: email-qa-alerts
+    publishers:
+     - email-ext:
+         recipients: qa-alerts@lists.wikimedia.org
+         attach-build-log: false
+         first-failure: true
+         aborted: true
+         failure: false
+         fixed: true
+
+# Documentation for our puppet repository
+- job-template:
+    name: 'operations-puppet-doc'
+    node: ci-jessie-wikimedia
+    defaults: use-remoteonly-zuul
+    concurrent: false  # dont want to race doc creation!
+
+    # BUNDLE_PATH is usually injected by Zuul but this job is triggered by Jenkins
+    parameters:
+      - string:
+          name: 'BUNDLE_PATH'
+          default: '/home/jenkins/workspace/vendor/bundle'
+
+    triggers:
+     - pollscm:
+         cron: '@hourly'
+    scm:
+     - git:
+         url: 'https://gerrit.wikimedia.org/r/p/operations/puppet.git'
+         branches:
+             - production
+         reference-repo: '/srv/git/operations/puppet.git'
+         submodule:
+             disable: false
+             recursive: true
+    builders:
+     - bundle-nodepool:
+         command: 'rake doc'
+     - doc-publish:
+        docsrc: 'doc'
+        docdest: 'puppet'
+    publishers:
+     - email-qa-alerts
+
+- job:
+    name: 'operations-puppet-tests-jessie'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    # Reinject Zuul parameters since JJB strip for some reason
+    triggers:
+     - zuul
+    scm:
+     - git:
+         url: '$ZUUL_URL/$ZUUL_PROJECT'
+         reference-repo: '/srv/git/${ZUUL_PROJECT}.git'
+         branches:
+          - '$ZUUL_COMMIT'
+         refspec: '$ZUUL_REF'
+         submodule:
+             disable: false
+             recursive: true
+    builders:
+     - castor-load
+     - bundle-nodepool:
+         command: rake test
+    publishers:
+     - xunit:
+         types:
+          - junit:
+             pattern: 'log/junit*.xml'
+             # rspec integration is not merged yet
+             skip-if-no-test-files: true
+             stoponerror: false
+     - archive-log-allow-empty
+     # rake might invoke tox
+     - archive-tox-logs-allow-empty
+     # No castor-save. Done postmerge by operations-puppet-cache-update-jessie
+
+# Runs after merge when package manager dependencies have been updated
+- job:
+    name: operations-puppet-cache-update-jessie
+    node: ci-jessie-wikimedia
+    concurrent: false
+    triggers:
+     - zuul
+    scm:
+     - git:
+         url: '$ZUUL_URL/$ZUUL_PROJECT'
+         reference-repo: '/srv/git/${ZUUL_PROJECT}.git'
+         branches:
+          - '$ZUUL_COMMIT'
+         refspec: '$ZUUL_REF'
+         submodule:
+             disable: true
+    builders:
+     # no castor-load / empty cache
+     - shell: |
+         TOX_TESTENV_PASSENV=PY_COLORS PY_COLORS=1 tox --notest
+         bundle install --clean
+     - trigger-builds:
+         - project: castor-save
+           block: true
+           current-parameters: True
+           predefined-parameters: |
+               TRIGGERED_JOB_NAME=operations-puppet-tests-jessie
+               TRIGGERED_SSH_CONNECTION=$SSH_CONNECTION
+    publishers:
+     - email-qa-alerts
+
+- job:
+    name: 'operations-puppet-tests-docker'
+    node: DebianJessieDocker
+    concurrent: true
+    # Reinject Zuul parameters since JJB strip for some reason
+    triggers:
+     - zuul
+    builders:
+     - shell: |
+        #!/bin/bash -eu
+
+        set -x
+
+        rm -rf log
+        rm -rf .env
+
+        cat <<ZUUL > .env
+        ZUUL_URL=$ZUUL_URL
+        ZUUL_PROJECT=$ZUUL_PROJECT
+        ZUUL_COMMIT=$ZUUL_COMMIT
+        ZUUL_REF=$ZUUL_REF
+        HOME=/var/lib/jenkins
+        ZUUL
+
+        mkdir -p "log"
+
+        docker run \
+            --rm --tty \
+            --env-file .env \
+            --volume "$(pwd)"/log:/var/lib/jenkins/log \
+            wmfreleng/operations-puppet:0.1.0
+    wrappers:
+     - timeout:
+         timeout: 1 # minute
+     - timestamps
+     - ansicolor
+    publishers:
+     - xunit:
+         types:
+          - junit:
+             pattern: 'log/junit*.xml'
+             # rspec integration is not merged yet
+             skip-if-no-test-files: true
+             stoponerror: false
+     - archive-log-dir
+     # No castor-save. Done postmerge by operations-puppet-cache-update-jessie
+
+- project:
+    name: 'operations-puppet'
+    jobs:
+     - operations-puppet-doc
+
+- project:
+    name: 'puppet-modules'
+    jobs:
+     - '{name}-rake-jessie':
+         name:
+          - puppet-cdh
+          - puppet-cdh4
+          - puppet-jmxtrans
+          - puppet-kafka
+          - puppet-kafkatee
+          - puppet-mariadb
+          - puppet-nginx
+          - puppet-varnishkafka
+          - puppet-wikimetrics
+          - puppet-zookeeper

@@ -1,0 +1,466 @@
+# This is the non-generic npm job. Most extensions
+# should just need to add "npm" in their zuul config.
+# Only VisualEditor uses this as it needs to checkout
+# submodules.
+- job:
+    name: 'mwext-VisualEditor-npm-node-6-jessie'
+    node: ci-jessie-wikimedia
+    defaults: use-remoteonly-zuul
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - assert-node-version-6
+     # FIXME: we should save node_modules and run npm prune
+     - castor-load
+     - shell: |
+         # For archiving build artifacts
+         mkdir -p "$WORKSPACE/log"
+
+         node --version
+         npm --version
+         npm install
+         npm test
+    publishers:
+     - archive-log-allow-empty
+     - castor-save
+
+# Parameters:
+#
+# dependencies: comma or spaces/newlines separated list of extensions to clone
+#
+- builder:
+    name: 'zuul-cloner-extdeps'
+    builders:
+     - shell: |
+         set +x
+         echo "Building dependencies list..."
+         rm -f deps.txt
+         touch deps.txt
+         echo "mediawiki/core" >> deps.txt
+         if [ "{dependencies}" != "" ]; then
+             echo "> rest of dependencies..."
+             echo "$(IFS=', '; for dep in `echo {dependencies}`; do echo mediawiki/extensions/$dep; done;)" >> deps.txt
+         fi
+         echo "Dependencies list complete."
+     - zuul-cloner:
+         projects: >
+             $(cat deps.txt)
+     - ext-skins-submodules-update
+
+# Workaround zuul-cloner not processing submodules
+- builder:
+    name: ext-skins-submodules-update
+    builders:
+     - shell: |
+         find src/extensions src/skins -maxdepth 2 \
+            -name .gitmodules \
+            -execdir bash -xe -c '
+                git submodule foreach git clean -xdff -q
+                git submodule update --init --recursive
+                git submodule status
+                ' \;
+
+- builder:
+    name: prepare-mediawiki-zuul-project
+    builders:
+     - shell: "echo $ZUUL_PROJECT > deps.txt"
+     - shell: "echo -e $EXT_DEPENDENCIES >> deps.txt"
+     - shell: "echo -e $SKIN_DEPENDENCIES > deps_skins.txt"
+     # Clone both extensions and skins, but only extensions get listed for the
+     # extensions autoloader in integration/jenkins.git, skins are
+     # automatically injected by MediaWiki upon installation.
+     - zuul-cloner:
+         projects: >
+             mediawiki/core
+             mediawiki/vendor
+             $(cat deps.txt)
+             $(cat deps_skins.txt)
+     - ext-skins-submodules-update
+     - shell: "mv deps.txt src/extensions_load.txt"
+     - mw-install-mysql
+     - mw-apply-settings
+     - mw-run-update-script
+
+# same except for use with composer instead of cloning vendor
+- builder:
+    name: prepare-mediawiki-zuul-project-no-vendor
+    builders:
+     - shell: "echo $ZUUL_PROJECT > deps.txt"
+     - shell: "echo -e $EXT_DEPENDENCIES >> deps.txt"
+     - shell: "echo -e $SKIN_DEPENDENCIES > deps_skins.txt"
+     - zuul-cloner:
+         projects: >
+             mediawiki/core
+             $(cat deps.txt)
+             $(cat deps_skins.txt)
+     - ext-skins-submodules-update
+     - shell: "mv deps.txt src/extensions_load.txt"
+     - composer-validate:
+         dir: 'src'
+     - composer-local-create:
+         deps: 'extensions_load.txt'
+     - composer-update:
+         dir: 'src'
+     - mw-install-mysql
+     - mw-apply-settings
+     - mw-run-update-script
+
+- builder:
+    name: prepare-mediawiki-zuul-project-no-vendor-no-sql
+    builders:
+     - shell: "echo $ZUUL_PROJECT > deps.txt"
+     - shell: "echo -e $EXT_DEPENDENCIES >> deps.txt"
+     - shell: "echo -e $SKIN_DEPENDENCIES > deps_skins.txt"
+     # Use composer to install dependencies instead cloning mediawiki/vendor,
+     # Clone both extensions and skins, but only extensions get listed for the
+     # extensions autoloader in integration/jenkins.git, skins are
+     # automatically injected by MediaWiki upon installation.
+     - zuul-cloner:
+         projects: >
+             mediawiki/core
+             $(cat deps.txt)
+             $(cat deps_skins.txt)
+     - ext-skins-submodules-update
+     - shell: "mv deps.txt src/extensions_load.txt"
+     - composer-validate:
+         dir: 'src'
+     - composer-local-create:
+         deps: 'extensions_load.txt'
+     - composer-update:
+         dir: 'src'
+
+# Generic qunit job for extensions.
+- job:
+    name: 'mwext-qunit-jessie'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - prepare-mediawiki-zuul-project
+     - qunit-karma
+    publishers:
+     - castor-save
+     - archive-log-dir
+
+# Generic qunit job for extensions with composer update.
+- job:
+    name: 'mwext-qunit-composer-jessie'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - prepare-mediawiki-zuul-project-no-vendor
+     - qunit-karma
+    publishers:
+     - castor-save
+     - archive-log-dir
+
+# Same as mwext-mw-selenium-jessie but runs `bundle exec rake spec` instead of `bundle exec cucumber` T146916
+- job:
+    name: 'mwext-ruby-jessie'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - prepare-mediawiki-zuul-project
+     - ruby-nodepool
+    publishers:
+     - castor-save
+     - archive-log-dir
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+         artifact-days-to-keep: 3
+
+# Generic mw-selenium job for extensions.
+- job:
+    name: 'mwext-mw-selenium-jessie'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - prepare-mediawiki-zuul-project
+     - mw-selenium-nodepool:
+         tests-dir: src/extensions/$EXT_NAME/tests/browser
+    publishers:
+     - castor-save
+     - archive-log-dir
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+         artifact-days-to-keep: 3
+
+# Generic mw-selenium job for extensions with composer install
+# Same as mwext-mw-selenium-composer but on Nodepool T137112
+- job:
+    name: 'mwext-mw-selenium-composer-jessie'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - prepare-mediawiki-zuul-project-no-vendor
+     - mw-selenium-nodepool:
+         tests-dir: src/extensions/$EXT_NAME/tests/browser
+    publishers:
+     - castor-save
+     - archive-log-dir
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+         artifact-days-to-keep: 3
+
+- job-template:
+    name: 'mwext-{name}-whitespaces'
+    node: contintLabsSlave && UbuntuTrusty
+    defaults: use-remoteonly-zuul
+    concurrent: true
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+    triggers:
+     - zuul
+    builders:
+     - lint-whitespaces
+
+# composer test in src/extensions/$EXT_NAME
+- builder:
+    name: composer-test-mwextension
+    builders:
+     - composer-validate:
+         dir: 'src/extensions/$EXT_NAME'
+     - composer-install:
+         dir: 'src/extensions/$EXT_NAME'
+     - composer-test:
+         dir: 'src/extensions/$EXT_NAME'
+     # Clear up the above composer install
+     - shell:
+         git -C "src/extensions/$EXT_NAME" clean -xqdf
+
+- job-template: &job_mwext-testextension-image
+    name: 'mwext-testextension-{phpflavor}-{image}'
+    node: ci-{image}-wikimedia
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - assert-phpflavor:
+         phpflavor: '{phpflavor}'
+     - hhvm-clear-hhbc
+     - prepare-mediawiki-zuul-project
+     - composer-test-mwextension
+     - mw-fetch-composer-dev
+     - mw-run-phpunit-allexts
+    publishers:
+     - junit:
+        results: 'log/junit*.xml'
+     - castor-save
+     - archive-log-dir
+
+- job-template:
+    name: 'mwext-testextension-{phpflavor}-{image}-non-voting'
+    !!merge : *job_mwext-testextension-image
+    # Reinject Zuul parameters since JJB strip for some reason
+    triggers:
+     - zuul
+
+- job-template: &job_mwext-testextension-composer-image
+    name: 'mwext-testextension-{phpflavor}-composer-{image}'
+    node: ci-{image}-wikimedia
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - assert-phpflavor:
+         phpflavor: '{phpflavor}'
+     - hhvm-clear-hhbc
+     - prepare-mediawiki-zuul-project-no-vendor
+     - composer-test-mwextension
+     - mw-run-phpunit-allexts
+    publishers:
+     - junit:
+        results: 'log/junit*.xml'
+     - archive-log-dir
+     - castor-save
+
+- job-template:
+    name: 'mwext-testextension-{phpflavor}-composer-{image}-non-voting'
+    !!merge : *job_mwext-testextension-composer-image
+    # Reinject Zuul parameters since JJB strip for some reason
+    triggers:
+     - zuul
+
+- project:
+    name: 'mwext-testextension-generic'
+    jobs:
+     # Nodepool
+     - 'mwext-testextension-{phpflavor}-{image}': &phpflavor_images
+         phpflavor:
+             # Change image to jessie once php 5.5 is avilable.
+             - php55:
+                 image: trusty
+             - hhvm:
+                 image: jessie
+     - 'mwext-testextension-{phpflavor}-{image}-non-voting': *phpflavor_images
+     - 'mwext-testextension-{phpflavor}-composer-{image}': *phpflavor_images
+     - 'mwext-testextension-{phpflavor}-composer-{image}-non-voting': *phpflavor_images
+
+- job:
+    name: 'mwext-jsduck-publish'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - jsduck
+     - doc-publish:
+        docsrc: 'docs'
+        docdest: '$DOC_BASENAME/$ZUUL_BRANCH/js'
+
+- job-template:
+    name: 'mwext-PoolCounter-build-jessie'
+    node: ci-jessie-wikimedia
+    defaults: use-remoteonly-zuul
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - shell: |
+        cd daemon
+        make test
+    publishers:
+     - archive:
+         artifacts: daemon/poolcounterd
+     - castor-save
+
+- job:
+    name: 'mwext-VisualEditor-publish'
+    node: ci-jessie-wikimedia
+    defaults: use-remoteonly-zuul
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - npm-install
+     - npm-run:
+         script: doc
+     - doc-publish:
+        docsrc: 'docs'
+        docdest: 'VisualEditor/$ZUUL_BRANCH'
+    publishers:
+     - castor-save
+
+- job:
+    name: 'mwext-doxygen-publish'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - shell: doxygen
+     - doc-publish:
+        docsrc: 'docs/php'
+        docdest: '$DOC_BASENAME/$DOC_SUBPATH/php'
+
+# Phan! (T153039)
+- job:
+    name: 'mwext-php70-phan-jessie'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - prepare-mediawiki-zuul-project-no-vendor-no-sql
+     - mw-fetch-composer-dev
+     - shell: |
+        cd $WORKSPACE/src
+        mkdir -p $WORKSPACE/log
+        composer require etsy/phan:0.8 --prefer-dist --dev --no-progress --ansi --profile -v # todo don't hardcode version here
+        PHAN=$WORKSPACE/src/vendor/bin/phan ./tests/phan/bin/phan ./extensions/$EXT_NAME -m checkstyle
+        mv $WORKSPACE/src/extensions/$EXT_NAME/tests/phan/issues/latest $WORKSPACE/log/phan-issues
+    publishers:
+     - castor-save
+     - checkstyle:
+        pattern: 'log/phan-issues'
+        can-run-on-failed: true
+        thresholds:
+          failed:
+            total-all: 1
+
+
+- project:
+    name: 'mwext-CirrusSearch'
+    jobs:
+     - 'mwext-{name}-whitespaces':
+        name: CirrusSearch
+- project:
+    name: 'mwext-MobileFrontend'
+    jobs:
+     - 'mwext-MobileFrontend-npm-run-lint-modules'
+
+- project:
+    name: 'mwext-PoolCounter'
+    jobs:
+     - 'mwext-PoolCounter-build-jessie'
+
+- project:
+    name: 'mwext-VisualEditor'
+    jobs:
+     - '{name}-jsduck'
+     - 'mwext-VisualEditor-npm-node-6-jessie'
+
+# Run RelatedArticles Selenium tests daily targeting beta cluster
+# similar to mediawiki-core-qunit-selenium-jessie
+- job:
+    name: 'selenium-RelatedArticles-jessie'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    triggers:
+     - timed: '@daily'
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+    parameters:
+     - string:
+         name: ZUUL_PROJECT
+         default: mediawiki/extensions/RelatedArticles
+     - string:
+         name: ZUUL_BRANCH
+         default: master
+    builders:
+     - castor-load
+     - prepare-mediawiki-zuul-project
+     - npm-install-selenium
+     - shell: |
+         . /srv/deployment/integration/slave-scripts/bin/mw-set-env.sh
+         chromedriver --url-base=/wd/hub --port=4444 &
+         cd $MW_INSTALL_PATH
+         MEDIAWIKI_USER='Selenium user' MW_SERVER=https://en.wikipedia.beta.wmflabs.org:443 MW_SCRIPT_PATH=/w ./node_modules/.bin/wdio tests/selenium/wdio.conf.jenkins.js --spec extensions/RelatedArticles/tests/selenium/specs/*.js
+     - assert-no-mediawiki-errors
+    publishers:
+     - castor-save
+     - archive-log-dir
+     - junit:
+        results: 'log/junit*.xml,log/WDIO.xunit*.xml'
+        # Qunit does not generate Junit file and we might skip selenium
+        allow-empty-results: true
+

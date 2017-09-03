@@ -1,0 +1,433 @@
+
+# Publish Doxygen-generated docs to doc.wikimedia.org
+# NOTE: Only use this generic job if the desired public directory name
+# matches the Git repository name.
+- job:
+    name: 'doxygen-publish'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - shell: doxygen
+     - doc-publish:
+        docsrc: 'doc/html'
+        docdest: '$DOC_PROJECT/$DOC_SUBPATH'
+
+- job:
+    name: 'phpunit-coverage-publish'
+    node: ci-trusty-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - composer-update:
+        dir: '.'
+     # Use php5 instead of php (hhvm) because it doesn't do coverage as well as
+     # php5-xdebug. And also slow.
+     - shell: |
+         rm -rf coverage
+         php5 ./vendor/bin/phpunit --coverage-html coverage/
+     - cover-publish:
+        src: 'coverage'
+        dest: '$DOC_PROJECT'
+    publishers:
+     - castor-save
+
+- job:
+    name: 'remexhtml-phpunit-coverage-publish'
+    node: ci-trusty-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - composer-update:
+        dir: '.'
+     # Use php5 instead of php (hhvm) because it doesn't do coverage as well as
+     # php5-xdebug. And also slow.
+     - shell: |
+         rm -rf coverage
+         php5 ./vendor/bin/phpunit --coverage-html coverage/
+     - cover-publish:
+        src: 'coverage'
+        dest: '$DOC_PROJECT'
+    publishers:
+     - castor-save
+    wrappers:
+      - timeout:
+          timeout: 65 # increased to 65 due to lots of tests
+          fail: true
+
+
+- job:
+    name: 'unicodejs-publish'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - npm-install
+     - npm-run:
+         script: doc
+     - doc-publish:
+        docsrc: 'docs'
+        docdest: 'unicodejs/$DOC_SUBPATH'
+    publishers:
+     - castor-save
+
+- job:
+    name: 'unicodejs-coverage'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - npm
+     - cover-publish:
+        src: 'coverage'
+        dest: 'unicodejs'
+    publishers:
+     - castor-save
+
+- project:
+    name: mapdata
+    jobs:
+        - '{name}-npm-node-6-jessie'
+
+- project:
+    name: marvin
+    jobs:
+        - '{name}-npm-node-6-jessie'
+
+- project:
+    name: unicodejs
+    jobs:
+        - '{name}-jsduck-jessie'
+
+- job:
+    name: 'oojs-core-publish'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - npm-install
+     - npm-run:
+         script: doc
+     - doc-publish:
+        docsrc: 'docs'
+        docdest: 'oojs/$DOC_SUBPATH'
+    publishers:
+     - castor-save
+
+- job:
+    name: 'oojs-core-coverage'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - npm
+     - cover-publish:
+        src: 'coverage'
+        dest: 'oojs'
+    publishers:
+     - castor-save
+
+- job:
+    name: 'oojs-ui-jsduck-publish'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - npm-install
+     - npm-run:
+         script: doc
+     - doc-publish:
+        docsrc: 'docs'
+        docdest: 'oojs-ui/$DOC_SUBPATH/js'
+    publishers:
+     - castor-save
+
+- job:
+    name: 'oojs-ui-coverage'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - npm
+     - cover-publish:
+        src: 'coverage'
+        dest: 'oojs-ui'
+    publishers:
+     - castor-save
+
+- job:
+    name: 'oojs-ui-doxygen-publish'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - shell: doxygen
+     - doc-publish:
+        docsrc: 'doc/html'
+        docdest: 'oojs-ui/$DOC_SUBPATH/php'
+
+- job:
+    name: 'oojs-ui-demos-publish'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - npm-install
+     - npm-run:
+         script: demos
+     - doc-publish:
+        docsrc: 'demos'
+        docdest: 'oojs-ui/$DOC_SUBPATH/demos'
+    publishers:
+     - castor-save
+
+- job:
+    name: 'visualeditor-coverage'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - castor-load
+     - npm
+     - cover-publish:
+        src: 'coverage'
+        dest: 'visualeditor'
+    publishers:
+     - castor-save
+
+- project:
+    name: visualeditor
+    jobs:
+        - '{name}-npm-node-6-jessie'
+        - '{name}-npm-run-{script}-node-6-jessie':
+           script: 'doc'
+        - '{name}-rake-jessie'
+
+- job:
+    name: 'performance-webpagetest-wmf'
+    node: WebPerformance
+    defaults: global
+    properties:
+     - build-discarder:
+         days-to-keep: 60
+    concurrent: false
+    scm:
+      - git:
+          url: 'https://gerrit.wikimedia.org/r/p/performance/WebPageTest.git'
+          branches:
+            - master
+          wipe-workspace: true
+    triggers:
+     - timed: 'H * * * *'
+    wrappers:
+      - timeout:
+          timeout: 150
+          abort: true
+      - timestamps
+      - ansicolor
+      # Values from Jenkins credentials store
+      # https://integration.wikimedia.org/ci/credential-store/domain/webpagetest/
+      - credentials-binding:
+          - text:
+              credential-id: 'd5ee743e-b2e4-43eb-bc16-0bf11bcdec43'
+              variable: WMF_WPT_KEY
+          - text:
+              credential-id: 'e0131e1d-c45a-468c-b163-439769f21a20'
+              variable: WPT_ORG_WPT_KEY
+          - text:
+              credential-id: 'f9a95f38-76cc-456d-bc8c-2cf126c604c3'
+              variable: WPT_USER
+          - text:
+              credential-id: '867612a5-40cd-4789-9cda-ebfc7da1ef33'
+              variable: WPT_USER_PASSWORD
+    builders:
+     - shell: |
+        #!/bin/bash
+        declare -i RESULT=0
+        # These tests runs on our own WebPageTest instance
+        export STATSV_ENDPOINT="https://www.wikimedia.org/beacon/statsv"
+        export WPT_RUNS="5"
+        export WPT_MOBILE_RUNS="5"
+        export WMF_WPT_LOCATION="us-east-1"
+        npm install --production
+        ./bin/index.js --batch ./scripts/batch/mobile.txt
+        RESULT+=$?
+        ./bin/index.js --batch ./scripts/batch/desktop.txt
+        RESULT+=$?
+        ./bin/index.js --batch ./scripts/batch/login-mobile.txt
+        RESULT+=$?
+        ./bin/index.js --batch ./scripts/batch/login-desktop.txt
+        RESULT+=$?
+        ./bin/index.js --batch ./scripts/batch/second-view-mobile.txt
+        RESULT+=$?
+        ./bin/index.js --batch ./scripts/batch/second-view-desktop.txt
+        RESULT+=$?
+        exit $RESULT
+    publishers:
+      - webpagetest-irc
+      - workspace-cleanup
+
+- job:
+    name: 'performance-webpagetest-wpt-org'
+    node: WebPerformance
+    defaults: global
+    properties:
+     - build-discarder:
+         days-to-keep: 60
+    concurrent: false
+    scm:
+      - git:
+          url: 'https://gerrit.wikimedia.org/r/p/performance/WebPageTest.git'
+          branches:
+            - master
+          wipe-workspace: true
+    triggers:
+     - timed: 'H */4 * * *'
+    wrappers:
+      - timeout:
+          timeout: 60
+          abort: true
+      - timestamps
+      - ansicolor
+      # Values from Jenkins credentials store
+      # https://integration.wikimedia.org/ci/credential-store/domain/webpagetest/
+      - credentials-binding:
+          - text:
+              credential-id: 'e0131e1d-c45a-468c-b163-439769f21a20'
+              variable: WPT_ORG_WPT_KEY
+          - text:
+              credential-id: 'f9a95f38-76cc-456d-bc8c-2cf126c604c3'
+              variable: WPT_USER
+          - text:
+              credential-id: '867612a5-40cd-4789-9cda-ebfc7da1ef33'
+              variable: WPT_USER_PASSWORD
+    builders:
+     - shell: |
+        #!/bin/bash
+        declare -i RESULT=0
+        # These tests run on WebPageTest.org
+        # Note: We can make 1000 runs per day
+        export STATSV_ENDPOINT="https://www.wikimedia.org/beacon/statsv"
+        export WPT_ORG_MOBILE_RUNS="3"
+        export WPT_ORG_RUNS="5"
+        npm install --production
+        ./bin/index.js --batch ./scripts/batch/mobile-wpt-org.txt
+        RESULT+=$?
+        ./bin/index.js --batch ./scripts/batch/desktop-wpt-org.txt
+        RESULT+=$?
+        exit $RESULT
+    publishers:
+      - webpagetest-irc
+      - workspace-cleanup
+
+- project:
+    name: 'translatewiki'
+
+    jobs:
+     - '{name}-composer-hhvm-jessie'
+     - '{name}-rake-jessie'
+
+# Find out common typos in any files based on list of typos in a /typos file
+- job-template:
+    name: '{name}-typos'
+    # Bound to Trusty since we need grep v2.11-8 for -r to not follow symlinks
+    node: contintLabsSlave && UbuntuTrusty
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: true
+
+    triggers:
+     - zuul
+
+    builders:
+     - shell: |
+        #!/bin/bash -e
+        echo "Looking potential typos from '/typos' file"
+
+        # Ignore grep errors, we handle them manually
+        set +e
+            # -r does not follow symlinks
+            # Skip processing files detected as being binary
+            (grep -E -r --binary-files=without-match --color=always --file=typos --exclude=typos --exclude-dir=.git .)
+            ERR="$?"
+        set -e
+
+        # The grep utility exits with one of the following values:
+        #
+        # 0     One or more lines were selected.
+        # 1     No lines were selected.
+        # >1    An error occurred.
+        #
+        # Flip 0 and 1 meanings:
+        case $ERR in
+            "0")
+                echo "Typos found!"
+                exit 1
+                ;;
+            "1")
+                echo "No typos found!"
+                exit 0
+                ;;
+            *)
+                echo "Some error occured."
+                exit $ERR
+                ;;
+        esac
+
+- publisher:
+    name: webpagetest-irc
+    publishers:
+      - ircbot:
+          strategy: new-failure-and-fixed
+          notify-start: false
+          notify-committers: false
+          notify-culprits: false
+          notify-upstream: false
+          notify-fixers: false
+          message-type: 'summary'
+          channels:
+            - name: '#wikimedia-perf-bots'
+              notify-only: true
+
+-
+ job:
+    name: 'fail-archived-repositories'
+    node: contintLabsSlave
+    defaults: global
+    concurrent: false
+    triggers:
+     - zuul
+    builders:
+     - shell: "exit 1"

@@ -1,0 +1,13 @@
+- project:
+    name: oojs-ui
+    jobs:
+        - '{name}-npm-run-{script}-node-6-jessie':
+            script:
+                - jenkins
+        - '{name}-rake-jessie'
+
+- project:
+    name: oojs-core
+    jobs:
+        - '{name}-jsduck-jessie'
+        - '{name}-npm-node-6-jessie'

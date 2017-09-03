@@ -1,0 +1,53 @@
+version: '2'
+
+services:
+  l5d:
+    image: buoyantio/linkerd:0.8.6
+    ports:
+    - "4140:4140"
+    - "4142:4142"
+    - "9990:9990"
+    # we must mount the config file and the disco directory
+    volumes:
+    - ./linkerd.yaml:/io.buoyant/linkerd.yaml:ro
+    - ./disco:/io.buoyant/disco
+    command: >
+      /io.buoyant/linkerd.yaml
+    restart: unless-stopped
+
+  namerd:
+    image: buoyantio/namerd:0.8.6
+    ports:
+      - "4180:4180"
+      - "4100:4100"
+      - "9991:9991"
+    volumes:
+    - ./namerd.yaml:/io.buoyant/namerd.yaml:ro
+    - ./disco:/io.buoyant/disco
+    command: >
+      /io.buoyant/namerd.yaml
+      -com.twitter.finagle.tracing.debugTrace=true
+
+  appscanner:
+    build: ./app_scanner
+    environment:
+      - HTTP_PROXY=l5d:4140
+      - NAMERCTL_BASE_URL=http://namerd
+    command: bash -c "app_scanner"
+    restart: unless-stopped
+
+  orchestrator:
+    build: ./orchestrator
+    environment:
+      - HTTP_PROXY=l5d:4140
+      - NAMERCTL_BASE_URL=http://namerd
+    command: bash -c "orchestrator"
+    restart: unless-stopped
+
+  portscanner:
+    build: ./port_scanner
+    environment:
+      - HTTP_PROXY=l5d:4140
+      - NAMERCTL_BASE_URL=http://namerd
+    command: bash -c "orchestrator"
+    restart: unless-stopped

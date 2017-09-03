@@ -50,4 +50,4 @@ make install
 # apk --no-cache --no-progress del .nanomsg-build-deps
 
 # Cleanup
-rm -r ${NNG_VCS_PATH}
+# rm -r ${NNG_VCS_PATH}

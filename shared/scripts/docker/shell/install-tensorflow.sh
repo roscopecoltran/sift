@@ -76,4 +76,4 @@ rm -rf 	/root/.[acpw]* \
     	/usr/local/bin/bazel
 
 # Cleanup
-rm -r ${TF_VCS_CLONE_PATH}
+# rm -r ${TF_VCS_CLONE_PATH}

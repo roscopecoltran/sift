@@ -67,4 +67,4 @@ make test
 # apk --no-cache --no-progress del .$(basename $LIBCCV_VCS_REPO)-build-deps
 
 # Cleanup
-rm -r ${LIBCCV_VCS_CLONE_PATH}
+# # rm -r ${LIBCCV_VCS_CLONE_PATH}

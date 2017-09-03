@@ -48,4 +48,4 @@ cd ${CPPSERIALIZATION_VCS_PATH}/build
 # apk --no-cache --no-progress del .CppSerialization-build-deps
 
 # Cleanup
-rm -r ${CPPSERIALIZATION_VCS_PATH}
+# rm -r ${CPPSERIALIZATION_VCS_PATH}

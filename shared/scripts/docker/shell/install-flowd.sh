@@ -42,7 +42,7 @@ fi
 gox -verbose -os="linux" -arch="amd64" -output="/usr/local/sbin/{{.Dir}}" $(glide novendor)
 
 # Cleanup GOPATH
-# rm -r ${BUILDPATH}
+# # rm -r ${BUILDPATH}
 
 # Remove build deps
 # apk --no-cache --no-progress del build-deps

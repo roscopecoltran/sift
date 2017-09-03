@@ -24,7 +24,7 @@ export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 apk --no-cache --no-progress --update \
 	--repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
 	--allow-untrusted \
-	--virtual .$(basename $DLIB_VCS_REPO)-build-deps add musl-dev make g++ gcc openblas openblas-dev boost-dev boost
+	--virtual .$(basename $DLIB_VCS_REPO)-build-deps add musl-dev make g++ gcc openblas openblas-dev boost-dev boost 
 
 export SRC_BUILD_DEPS=""
 for dep in ${SRC_BUILD_DEPS}; do

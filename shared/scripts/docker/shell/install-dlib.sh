@@ -66,4 +66,4 @@ python3 setup.py install
 # apk --no-cache --no-progress del .$(basename $DLIB_VCS_REPO)-build-deps
 
 # Cleanup
-rm -r ${DLIB_VCS_CLONE_PATH}
+# rm -r ${DLIB_VCS_CLONE_PATH}

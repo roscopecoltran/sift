@@ -63,7 +63,7 @@ gox -verbose -os="linux" -arch="amd64" -output="/usr/local/sbin/{{.Dir}}" $(glid
 
 
 # Cleanup GOPATH
-# rm -r ${GOPATH}
+# # rm -r ${GOPATH}
 
 # Remove build deps
 # apk --no-cache --no-progress del build-deps

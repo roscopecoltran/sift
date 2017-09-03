@@ -33,4 +33,4 @@ cd ${CMAKE_VCS_PATH}
 # apk --no-cache --no-progress del .cmake-build-deps
 
 # Cleanup
-rm -r ${CMAKE_VCS_PATH}
+# rm -r ${CMAKE_VCS_PATH}

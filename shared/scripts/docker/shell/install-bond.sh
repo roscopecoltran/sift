@@ -53,4 +53,4 @@ make install
 # apk --no-cache --no-progress del .curlpp-build-deps
 
 # Cleanup
-rm -r ${MS_BOND_VCS_CLONE_PATH}
+# rm -r ${MS_BOND_VCS_CLONE_PATH}

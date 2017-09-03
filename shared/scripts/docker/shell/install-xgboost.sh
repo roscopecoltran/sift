@@ -66,4 +66,4 @@ python3 setup.py install --yes
 # apk --no-cache --no-progress del .$(basename $XGBOOST_VCS_REPO)-build-deps
 
 # Cleanup
-rm -r ${XGBOOST_VCS_CLONE_PATH}
+# rm -r ${XGBOOST_VCS_CLONE_PATH}

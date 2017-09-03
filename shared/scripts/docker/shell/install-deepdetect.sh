@@ -58,4 +58,4 @@ cd ${DEEPDETECT_VCS_PATH}
 # apk --no-cache --no-progress del .deepdetect-build-deps
 
 # Cleanup
-rm -r ${DEEPDETECT_VCS_PATH}
+# rm -r ${DEEPDETECT_VCS_PATH}

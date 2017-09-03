@@ -55,4 +55,4 @@ pip3 install git+https://github.com/msgflo/msgflo-python
 # apk --no-cache --no-progress del .$(basename $MSGFLO_VCS_REPO)-build-deps
 
 # Cleanup
-rm -r ${MSGFLO_VCS_CLONE_PATH}
+# rm -r ${MSGFLO_VCS_CLONE_PATH}

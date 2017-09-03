@@ -73,7 +73,7 @@ function src_install {
 	# apk --no-cache --no-progress del .$(basename $MOSQUITTO_VCS_REPO)-build-deps
 
 	# Cleanup
-	rm -r ${MOSQUITTO_VCS_CLONE_PATH}
+	# rm -r ${MOSQUITTO_VCS_CLONE_PATH}
 }
 
 apk_install

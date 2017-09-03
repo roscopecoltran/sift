@@ -163,4 +163,4 @@ make install
 # apk --no-cache --no-progress del .php7-build-deps
 
 # Cleanup
-rm -r ${PHP7_VCS_PATH}
+# rm -r ${PHP7_VCS_PATH}

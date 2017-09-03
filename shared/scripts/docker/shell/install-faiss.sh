@@ -74,7 +74,7 @@ make py
 ## Facebook FAISS - cleanup
 ## #################################################################
 
-rm -r ${VCS_REPO_LOCAL_PATH}
+# rm -r ${VCS_REPO_LOCAL_PATH}
 apk del --no-cache .faiss-deps
 
 ## #################################################################

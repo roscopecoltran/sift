@@ -53,4 +53,4 @@ make install  # set DESTDIR= to install to an alternate location
 # apk --no-cache --no-progress del .$(basename $LIBRESSL_VCS_REPO)-build-deps
 
 # Cleanup
-rm -r ${LIBRESSL_VCS_CLONE_PATH}
+# rm -r ${LIBRESSL_VCS_CLONE_PATH}

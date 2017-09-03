@@ -42,4 +42,4 @@ export PATH=$PATH:${CMAKE_POLLY_VCS_PATH}/bin
 # apk --no-cache --no-progress del .$(basename $CMAKE_POLLY_VCS_PATH)-build-deps
 
 # Cleanup
-rm -r ${CMAKE_POLLY_VCS_PATH}
+# rm -r ${CMAKE_POLLY_VCS_PATH}

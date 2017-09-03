@@ -12,23 +12,19 @@ if [ -f ${COMMON_SCRIPT} ]; then
 fi
 
 # Set temp environment vars
-export PROJECT_VCS_REPO=https://github.com/github/hub
-export PROJECT_VCS_CLONE_BRANCH=unstable
-
-export PROJECT_VCS_CLONE_DEPTH=1
-export PROJECT_VCS_CLONE_PATH=/tmp/$(basename $PROJECT_VCS_REPO)
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
+export PACKAGE_NAME=node-gcloud
 
 # Install build deps
-apk upgrade
+# apk upgrade
 apk --no-cache --no-progress --update \
 	--repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
 	--allow-untrusted \
-	--virtual .$(basename $PROJECT_VCS_REPO)-build-deps add musl musl-dev make g++ gcc
+	--virtual .${PACKAGE_NAME}-build-deps libc6-compat gcc g++ python make
 
 ensure_dir ${PROJECT_VCS_CLONE_PATH}
 
-export SRC_BUILD_DEPS="golang libgit2"
+export SRC_BUILD_DEPS=""
 for dep in ${SRC_BUILD_DEPS}; do
 	if [ -z "$(which $dep)" ]; then
 		if [ -f ${COMMON_SCRIPT_DIR}/common-${dep}.sh ]; then
@@ -43,25 +39,25 @@ for dep in ${SRC_BUILD_DEPS}; do
 	fi
 done
 
-# Compile & Install libgit2 (v0.23)
-git clone -b ${PROJECT_VCS_CLONE_BRANCH} --recursive --depth ${PROJECT_VCS_CLONE_DEPTH} -- ${PROJECT_VCS_REPO} ${PROJECT_VCS_CLONE_PATH}
+npm install \@google-cloud/bigquery \
+			\@google-cloud/datastore \
+			\@google-cloud/pubsub \
+			\@google-cloud/storage \
+			bcrypt node-sass
 
-# lib
-cd ${PROJECT_VCS_CLONE_PATH}/lib 
-if [ ! -f glide.yaml ]; then
-	glide create --non-interactive
-fi
-
-if [ -f glide.yaml ]; then
-	glide install --force --strip-vendor
-fi
-
-make install prefix=/usr/local
-# gox -verbose -os="linux" -arch="amd64" -output="/usr/local/sbin/{{.Dir}}" $(glide novendor)
-# golang_cross_build `pwd`
+rm -rf 	/etc/ssl \
+		/usr/share/man \
+		/tmp/* \
+		/var/cache/apk/* \
+		/root/.npm \
+		/root/.node-gyp \
+		/root/.gnupg \
+		/usr/lib/node_modules/npm/man \
+		/usr/lib/node_modules/npm/doc \
+		/usr/lib/node_modules/npm/html
 
 # Remove build deps
-# apk --no-cache --no-progress del .$(basename $PROJECT_VCS_REPO)-build-deps
+# apk --no-cache --no-progress del .${PACKAGE_NAME}-build-deps
 
 # Cleanup
 # rm -r ${PROJECT_VCS_CLONE_PATH}

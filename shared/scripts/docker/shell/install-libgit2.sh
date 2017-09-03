@@ -46,4 +46,4 @@ cmake ${LIBGIT2_CMAKE_ARGS} ..
 cmake --build . --target install
 
 # Cleanup
-rm -r ${LIBGIT2_VCS_CLONE_PATH}
+# rm -r ${LIBGIT2_VCS_CLONE_PATH}

@@ -39,4 +39,4 @@ make install
 # apk --no-cache --no-progress del .libtap-build-deps
 
 # Cleanup
-rm -r ${LIBTAP_VCS_PATH}
+# rm -r ${LIBTAP_VCS_PATH}

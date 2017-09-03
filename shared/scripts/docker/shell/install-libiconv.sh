@@ -33,4 +33,4 @@ make -j${CONTAINER_NB_CORES} && make install && libtool --finish /usr/local/lib
 # apk --no-cache --no-progress del .libiconv-build-deps
 
 # Cleanup
-rm -r ${LIBICONV_VCS_PATH}
+# rm -r ${LIBICONV_VCS_PATH}

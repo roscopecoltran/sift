@@ -19,10 +19,8 @@ export LOCAL_RESOURCES="2048,.5,1.0"
 # apk add --no-cache --update --no-progress python3 python3-dev python3-tkinter py3-numpy py3-numpy-f2py freetype libpng libjpeg-turbo imagemagick graphviz
 # apk add --no-cache --no-progress --virtual .cmake-build-deps g++ gcc musl-dev make autoconf automake py-numpy-dev rsync swig libjpeg-turbo-dev freetype-dev 
 
-if [ -d /tmp/bazel ];then
-	rm -fR /tmp/bazel
-fi
-mkdir -p /tmp/bazel
+# clean previous install
+ensure_dir /tmp/bazel
 
 wget -q -O /tmp/bazel-dist.zip https://github.com/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-dist.zip
 unzip -q -d /tmp/bazel /tmp/bazel-dist.zip

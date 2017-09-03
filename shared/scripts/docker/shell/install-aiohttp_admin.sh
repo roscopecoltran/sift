@@ -20,9 +20,8 @@ export PROJECT_VCS_BRANCH=${PROJECT_VCS_BRANCH:-"master"}
 export PROJECT_VCS_CLONE_DEPTH=${PROJECT_VCS_CLONE_DEPTH:-"1"}
 export PROJECT_VCS_CLONE_PATH=${PROJECT_VCS_CLONE_PATH:-"/app/aiohttp_admin"}
 
-if [[ -d ${PROJECT_VCS_CLONE_PATH} ]]; then
-	rm -fR ${PROJECT_VCS_CLONE_PATH}
-fi
+# clean previous install
+ensure_dir ${PROJECT_VCS_CLONE_PATH}
 
 # Clone, Compile & Install
 git clone -b ${PROJECT_VCS_BRANCH} --recursive --depth ${PROJECT_VCS_CLONE_DEPTH} -- https://${PROJECT_VCS_URI} ${PROJECT_VCS_CLONE_PATH}

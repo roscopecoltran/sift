@@ -45,4 +45,4 @@ cd ${WEBSOCKETPP_VCS_PATH}/build
 # apk --no-cache --no-progress del .websocketpp-build-deps
 
 # Cleanup
-rm -r ${WEBSOCKETPP_VCS_PATH}
+# rm -r ${WEBSOCKETPP_VCS_PATH}

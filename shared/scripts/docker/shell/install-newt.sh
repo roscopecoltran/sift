@@ -63,4 +63,4 @@ pwd
 gox -verbose -os="linux" -arch="amd64" -output="/usr/local/sbin/{{.Dir}}" $(glide novendor)
 
 # Cleanup
-# rm -r ${NEWT_VCS_PATH}
+# # rm -r ${NEWT_VCS_PATH}

@@ -48,4 +48,4 @@ cd ${CPPSERVER_VCS_PATH}/build
 # apk --no-cache --no-progress del .CppServer-build-deps
 
 # Cleanup
-rm -r ${CPPSERVER_VCS_PATH}
+# rm -r ${CPPSERVER_VCS_PATH}

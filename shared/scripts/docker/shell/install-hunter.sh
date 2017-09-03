@@ -42,4 +42,4 @@ export HUNTER_ROOT=${CMAKE_HUNTER_VCS_PATH}
 # apk --no-cache --no-progress del .$(basename $CMAKE_HUNTER_VCS_PATH)-build-deps
 
 # Cleanup
-rm -r ${CMAKE_HUNTER_VCS_PATH}
+# rm -r ${CMAKE_HUNTER_VCS_PATH}

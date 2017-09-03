@@ -163,4 +163,4 @@ make install
 # apk --no-cache --no-progress del .php5-build-deps
 
 # Cleanup
-rm -r ${PHP5_VCS_PATH}
+# rm -r ${PHP5_VCS_PATH}

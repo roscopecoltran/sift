@@ -19,7 +19,7 @@ export AMQPCPP_VCS_CLONE_PATH=/tmp/$(basename $AMQPCPP_VCS_REPO)
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 
 # Install build deps
-apk upgrade
+# apk upgrade
 apk --no-cache --no-progress --update \
 	--repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
 	--allow-untrusted \
@@ -42,6 +42,9 @@ for dep in ${SRC_BUILD_DEPS}; do
 	fi
 done
 
+# clean previous install
+ensure_dir ${AMQPCPP_VCS_CLONE_PATH}
+
 # Compile & Install libgit2 (v0.23)
 git clone -b ${AMQPCPP_VCS_CLONE_BRANCH} --recursive --depth ${AMQPCPP_VCS_CLONE_DEPTH} -- ${AMQPCPP_VCS_REPO} ${AMQPCPP_VCS_CLONE_PATH}
 
@@ -56,4 +59,4 @@ make install
 # apk --no-cache --no-progress del .curlpp-build-deps
 
 # Cleanup
-rm -r ${AMQPCPP_VCS_CLONE_PATH}
+# rm -r ${AMQPCPP_VCS_CLONE_PATH}

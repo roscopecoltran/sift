@@ -12,7 +12,7 @@ if [ -f ${COMMON_SCRIPT} ]; then
 fi
 
 # Set temp environment vars
-export PROJECT_VCS_REPO=https://github.com/github/hub
+export PROJECT_VCS_REPO=https://github.com/henrylee2cn/pholcus
 export PROJECT_VCS_CLONE_BRANCH=unstable
 
 export PROJECT_VCS_CLONE_DEPTH=1
@@ -45,6 +45,8 @@ done
 
 # Compile & Install libgit2 (v0.23)
 git clone -b ${PROJECT_VCS_CLONE_BRANCH} --recursive --depth ${PROJECT_VCS_CLONE_DEPTH} -- ${PROJECT_VCS_REPO} ${PROJECT_VCS_CLONE_PATH}
+
+golang_uri_analyze_print ${PROJECT_VCS_REPO}
 
 # lib
 cd ${PROJECT_VCS_CLONE_PATH}/lib 

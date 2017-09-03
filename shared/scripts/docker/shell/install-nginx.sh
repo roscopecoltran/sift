@@ -61,4 +61,4 @@ make install
 # apk --no-cache --no-progress del .cmake-build-deps
 
 # Cleanup
-rm -r ${NGINX_VCS_PATH}
+# rm -r ${NGINX_VCS_PATH}

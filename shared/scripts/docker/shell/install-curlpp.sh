@@ -52,4 +52,4 @@ make install
 # apk --no-cache --no-progress del .curlpp-build-deps
 
 # Cleanup
-rm -r ${CURLPP_VCS_CLONE_PATH}
+# rm -r ${CURLPP_VCS_CLONE_PATH}

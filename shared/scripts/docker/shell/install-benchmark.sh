@@ -16,9 +16,8 @@ export GOOGLE_BENCHMARK_VCS_BRANCH=master
 export GOOGLE_BENCHMARK_VCS_PATH=/tmp/benchmark
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 
-if [ -d ${GOOGLE_BENCHMARK_VCS_PATH} ];then
-	rm -fR ${GOOGLE_BENCHMARK_VCS_PATH}
-fi
+# clean previous install
+ensure_dir ${GOOGLE_BENCHMARK_VCS_PATH}
 
 # Install build deps
 apk --no-cache --no-progress --virtual .benchmark-build-deps add g++ gcc musl-dev make autoconf automake boost-dev gtest-dev gtest
@@ -37,4 +36,4 @@ make install
 # apk --no-cache --no-progress del .benchmark-build-deps
 
 # Cleanup
-rm -r ${GOOGLE_BENCHMARK_VCS_PATH}
+# rm -r ${GOOGLE_BENCHMARK_VCS_PATH}

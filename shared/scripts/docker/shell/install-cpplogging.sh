@@ -45,4 +45,4 @@ cd ${CPPLOGGING_VCS_PATH}/build
 # apk --no-cache --no-progress del .CppLogging-build-deps
 
 # Cleanup
-rm -r ${CPPLOGGING_VCS_PATH}
+# rm -r ${CPPLOGGING_VCS_PATH}

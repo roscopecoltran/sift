@@ -56,4 +56,4 @@ make install
 # apk --no-cache --no-progress del .$(basename $TINY_DNN_VCS_REPO)-build-deps
 
 # Cleanup
-rm -r ${TINY_DNN_VCS_CLONE_PATH}
+# rm -r ${TINY_DNN_VCS_CLONE_PATH}

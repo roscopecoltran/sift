@@ -34,4 +34,4 @@ make -j${CONTAINER_NB_CORES} && make install && libtool --finish /usr/local/lib
 # apk --no-cache --no-progress del .sqlite-build-deps
 
 # Cleanup
-rm -r ${SQLITE_VCS_PATH}
+# rm -r ${SQLITE_VCS_PATH}

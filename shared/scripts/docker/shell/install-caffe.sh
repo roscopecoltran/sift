@@ -65,4 +65,4 @@ make install
 # apk --no-cache --no-progress del .caffe2-build-deps
 
 # Cleanup
-rm -r ${CAFFE2_VCS_PATH}
+# rm -r ${CAFFE2_VCS_PATH}

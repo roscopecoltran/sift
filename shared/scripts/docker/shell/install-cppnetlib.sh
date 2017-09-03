@@ -38,4 +38,4 @@ make install
 # apk --no-cache --no-progress del .cpp-netlib-build-deps
 
 # Cleanup
-rm -r ${CPPNETLIB_VCS_PATH}
+# rm -r ${CPPNETLIB_VCS_PATH}

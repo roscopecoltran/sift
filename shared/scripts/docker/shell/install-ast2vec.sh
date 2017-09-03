@@ -16,9 +16,8 @@ apk add --no-cache --no-progress --virtual .ast2vec-build-deps gcc make python3-
 pip3 install git+https://github.com/bblfsh/client-python
 # pip3 install ast2vec
 
-if [ -d /app/external/ast2vec ]; then
-	rm -fR /app/external/ast2vec
-fi
+# clean previous install
+ensure_dir /app/external/ast2vec
 
 git clone --recursive --depth=1 https://github.com/src-d/ast2vec /app/external/ast2vec
 cd /app/external/ast2vec

@@ -46,4 +46,4 @@ ldconfig
 # apk --no-cache --no-progress del .libmaxminddb-build-deps
 
 # Cleanup
-rm -r ${LIBMAXMINDDB_VCS_PATH}
+# rm -r ${LIBMAXMINDDB_VCS_PATH}

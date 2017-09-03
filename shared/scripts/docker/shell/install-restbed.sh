@@ -47,4 +47,4 @@ cd ${RESTBED_VCS_PATH}/build
 # apk --no-cache --no-progress del .restbed-build-deps
 
 # Cleanup
-rm -r ${RESTBED_VCS_PATH}
+# rm -r ${RESTBED_VCS_PATH}

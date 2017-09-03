@@ -47,4 +47,4 @@ cd ${CPPBENCHMARK_VCS_PATH}/build
 # apk --no-cache --no-progress del .CppBenchmark-build-deps
 
 # Cleanup
-rm -r ${CPPBENCHMARK_VCS_PATH}
+# rm -r ${CPPBENCHMARK_VCS_PATH}

@@ -1,0 +1,42 @@
+<div id="edit_form">
+	<h2><%= translate("CURRENT_SOLR")%></h2>
+	<div id="form_field">
+		<span class="form_left">
+			<label for="harvested">
+				Solr master 
+			</label>
+		</span>
+		<span class="form_right" style="<%= @solr_requests == @solr_master ? 'font-weight:bold' : '' %>">
+			<%=h @solr_master %>
+		</span>
+	</div>
+	<div id="form_field">
+		<span class="form_left">
+			<label for="harvested">
+				Solr slave
+			</label>
+		</span>
+		<span class="form_right" style="<%= @solr_requests == @solr_slave ? 'font-weight:bold' : '' %>">
+			<%=h @solr_slave %>
+		</span>
+		<span class="form_right" style="color:<%= @solr_slave_state[:color] %>">
+			<%=h @solr_slave_state[:status] %>
+		</span>
+	</div>
+	<div id="form_field">
+		<span class="form_left"></span>
+		<span class="form_right">
+			<% unless @solr_slave_state[:action].empty? %>
+				<%= link_to @solr_slave_state[:action], send(@solr_slave_state[:action_link], :command => @solr_slave_state[:command]) %>
+			<% end %>
+		</span>
+	</div>
+	<div id="form_field">
+		<span class="form_left"></span>
+		<span class="form_right">
+			<% if @solr_slave_state[:command] == "disable" %>
+				<%= link_to "Répliquer maintenant", replicate_solr_admin_parameters_path %>
+			<% end %>
+		</span>
+	</div>
+</div>

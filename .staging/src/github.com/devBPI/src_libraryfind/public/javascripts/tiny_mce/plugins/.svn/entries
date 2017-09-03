@@ -1,0 +1,130 @@
+9
+
+dir
+6222
+https://svn.bsiforge.com/svn/bpifs/trunk/bpifs/public/javascripts/tiny_mce/plugins
+https://svn.bsiforge.com/svn/bpifs
+
+
+
+2009-11-26T09:09:46.025838Z
+774
+jhazan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+171cada2-f8fe-4419-b9ec-09dd45d71e2d
+
+media
+dir
+
+pagebreak
+dir
+
+insertdatetime
+dir
+
+noneditable
+dir
+
+inlinepopups
+dir
+
+autoresize
+dir
+
+example
+dir
+
+emotions
+dir
+
+iespell
+dir
+
+save
+dir
+
+advhr
+dir
+
+safari
+dir
+
+tabfocus
+dir
+
+layer
+dir
+
+advimage
+dir
+
+preview
+dir
+
+directionality
+dir
+
+visualchars
+dir
+
+wordcount
+dir
+
+table
+dir
+
+autosave
+dir
+
+advlink
+dir
+
+print
+dir
+
+nonbreaking
+dir
+
+fullpage
+dir
+
+style
+dir
+
+searchreplace
+dir
+
+fullscreen
+dir
+
+spellchecker
+dir
+
+contextmenu
+dir
+
+template
+dir
+
+paste
+dir
+
+bbcode
+dir
+
+xhtmlxtras
+dir
+

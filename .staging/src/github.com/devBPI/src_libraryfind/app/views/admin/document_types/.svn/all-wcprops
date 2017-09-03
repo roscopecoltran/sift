@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/1673/trunk/bpifs/app/views/admin/document_types
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/1673/trunk/bpifs/app/views/admin/document_types/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/1673/trunk/bpifs/app/views/admin/document_types/index.html.erb
+END

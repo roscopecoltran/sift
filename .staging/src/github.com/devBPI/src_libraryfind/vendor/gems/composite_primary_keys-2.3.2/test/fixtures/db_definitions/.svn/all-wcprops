@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/fixtures/db_definitions
+END
+db2-drop-tables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/fixtures/db_definitions/db2-drop-tables.sql
+END
+sqlite.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/fixtures/db_definitions/sqlite.sql
+END
+postgresql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/fixtures/db_definitions/postgresql.sql
+END
+mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/fixtures/db_definitions/mysql.sql
+END
+oracle.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/fixtures/db_definitions/oracle.sql
+END
+oracle.drop.sql
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/fixtures/db_definitions/oracle.drop.sql
+END
+db2-create-tables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/fixtures/db_definitions/db2-create-tables.sql
+END

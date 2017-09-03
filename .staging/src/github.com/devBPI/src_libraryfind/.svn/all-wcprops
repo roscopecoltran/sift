@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/bpifs/!svn/ver/6222/trunk/bpifs
+END
+purge.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/purge.sql
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/bpifs/!svn/ver/97/trunk/bpifs/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/bpifs/!svn/ver/97/trunk/bpifs/Rakefile
+END
+INSTALL.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/bpifs/!svn/ver/97/trunk/bpifs/INSTALL.txt
+END
+purge_community.sql
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bpifs/!svn/ver/3409/trunk/bpifs/purge_community.sql
+END
+vider_sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/bpifs/!svn/ver/107/trunk/bpifs/vider_sql
+END
+LICENCE_AOI
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/LICENCE_AOI
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/bpifs/!svn/ver/97/trunk/bpifs/README
+END
+purge_stats.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bpifs/!svn/ver/3625/trunk/bpifs/purge_stats.sql
+END

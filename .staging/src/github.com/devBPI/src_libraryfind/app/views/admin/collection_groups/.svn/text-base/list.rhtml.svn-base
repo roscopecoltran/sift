@@ -1,0 +1,52 @@
+<div id="page_contents">
+	<%= render(:partial => "admin/navigation") %>
+	<%= render :partial => "collection_group_filter" %>
+	<div id="center" class="column">
+		<h2><%=translate("COLLECTION_GROUPS_HEADER") %></h2>
+		<br/>
+		<%= link_to translate('ADD_A_NEW_COLLECTION_GROUP'), new_admin_collection_group_path %>
+		<%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@collection_group_pages, :params=> params} %>
+        
+		<div id="edit_form">
+			<div class="admin-list">
+				<% @display_columns.each do |column| %>
+					<label class="<%= column == "full_name" ? "large-column" : "medium-column"  %>">
+						<%= translate("#{@columns_hash[column].name.upcase}_COLUMN") %>
+					</label>
+				<% end %>
+				<span class="action-links">&nbsp;</span>
+			</div>
+
+			<br/>
+
+			<% @collection_groups.each do |collection_group| %>
+				<div class="admin-list">
+					<% @display_columns.each do |column| %>
+						<% class_name = column == "full_name" ? "large-column" : "medium-column" %>
+						<% if collection_group.send(column).nil? or collection_group.send(column).blank? %>
+							<span class="<%= class_name  %>">&nbsp;</span>
+						<% elsif column == "full_name" %>
+							<span class="<%= class_name %>">
+								<%= link_to h(collection_group.send(column)), :action => 'show', :id => collection_group %>
+							</span>
+						<% else %>
+							<span class="<%= class_name %>">
+								<%=h collection_group.send(column) %>
+							</span>
+						<% end %>
+					<% end %>
+					<span class="action-links">
+						<%= link_to translate('EDIT'), { :action => 'edit', :id => collection_group } %>
+						<%= link_to translate("DESTROY"), { :action => 'destroy', :id => collection_group }, :confirm => translate("ARE_YOU_SURE"), :method => "post" %>
+					</span>
+				</div>
+				<br/>
+			<% end %>
+
+			<br/>
+
+		</div>
+	</div>
+
+	<%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@collection_group_pages, :params=> params} %>
+</div>

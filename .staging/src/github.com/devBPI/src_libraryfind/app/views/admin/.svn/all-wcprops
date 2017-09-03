@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bpifs/!svn/ver/6440/trunk/bpifs/app/views/admin
+END
+_navigation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/6440/trunk/bpifs/app/views/admin/_navigation.rhtml
+END
+_admin_pagination.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/2544/trunk/bpifs/app/views/admin/_admin_pagination.rhtml
+END

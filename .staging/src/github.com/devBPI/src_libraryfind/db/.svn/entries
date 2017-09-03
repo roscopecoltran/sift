@@ -1,0 +1,43 @@
+9
+
+dir
+6486
+https://svn.bsiforge.com/svn/bpifs/trunk/bpifs/db
+https://svn.bsiforge.com/svn/bpifs
+
+
+
+2014-09-09T09:10:13.867002Z
+6475
+arouaux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+171cada2-f8fe-4419-b9ec-09dd45d71e2d
+
+schema.rb
+file
+6346
+
+
+
+
+9c7e3b1521a5f6e02736986b0d202c8f
+2013-04-24T11:59:11.304468Z
+6245
+amangot
+
+migrate
+dir
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/tasks
+END
+activerecord_selection.rake
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/tasks/activerecord_selection.rake
+END
+deployment.rake
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/tasks/deployment.rake
+END
+website.rake
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/tasks/website.rake
+END
+databases.rake
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/tasks/databases.rake
+END
+local_setup.rake
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/tasks/local_setup.rake
+END

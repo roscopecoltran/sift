@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/6097/trunk/bpifs/app/views/admin/log_view_generic
+END
+save_notice.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/5487/trunk/bpifs/app/views/admin/log_view_generic/save_notice.rhtml
+END
+docstat.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/5763/trunk/bpifs/app/views/admin/log_view_generic/docstat.rhtml
+END
+top_liste.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/5443/trunk/bpifs/app/views/admin/log_view_generic/top_liste.rhtml
+END
+comment.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/5487/trunk/bpifs/app/views/admin/log_view_generic/comment.rhtml
+END
+top_notice.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/5487/trunk/bpifs/app/views/admin/log_view_generic/top_notice.rhtml
+END
+consult_account.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/5487/trunk/bpifs/app/views/admin/log_view_generic/consult_account.rhtml
+END
+_formulaire.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/5507/trunk/bpifs/app/views/admin/log_view_generic/_formulaire.rhtml
+END
+note.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/5487/trunk/bpifs/app/views/admin/log_view_generic/note.rhtml
+END
+save_request.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/app/views/admin/log_view_generic/save_request.rhtml
+END
+index.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/app/views/admin/log_view_generic/index.rhtml
+END
+rebonce_tag.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/app/views/admin/log_view_generic/rebonce_tag.rhtml
+END
+tag.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/app/views/admin/log_view_generic/tag.rhtml
+END
+requests.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/app/views/admin/log_view_generic/requests.rhtml
+END
+facette.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/5487/trunk/bpifs/app/views/admin/log_view_generic/facette.rhtml
+END
+carts.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/5487/trunk/bpifs/app/views/admin/log_view_generic/carts.rhtml
+END
+rebonce_liste.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/5487/trunk/bpifs/app/views/admin/log_view_generic/rebonce_liste.rhtml
+END
+document.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/5487/trunk/bpifs/app/views/admin/log_view_generic/document.rhtml
+END
+list_consult.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/app/views/admin/log_view_generic/list_consult.rhtml
+END
+_generic_table.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/5528/trunk/bpifs/app/views/admin/log_view_generic/_generic_table.rhtml
+END
+_stats_index.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/6097/trunk/bpifs/app/views/admin/log_view_generic/_stats_index.rhtml
+END
+consult.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/5487/trunk/bpifs/app/views/admin/log_view_generic/consult.rhtml
+END
+rebonce_profil.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/5487/trunk/bpifs/app/views/admin/log_view_generic/rebonce_profil.rhtml
+END

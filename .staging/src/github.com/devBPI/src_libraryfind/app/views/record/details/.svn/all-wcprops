@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/2357/trunk/bpifs/app/views/record/details
+END
+_generic.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/2357/trunk/bpifs/app/views/record/details/_generic.rhtml
+END
+_image_citation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/details/_image_citation.rhtml
+END
+_del_article_citation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/362/trunk/bpifs/app/views/record/details/_del_article_citation.rhtml
+END
+_image.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/details/_image.rhtml
+END
+_book_citation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/409/trunk/bpifs/app/views/record/details/_book_citation.rhtml
+END
+_image_full.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/details/_image_full.rhtml
+END
+_book_list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/436/trunk/bpifs/app/views/record/details/_book_list.rhtml
+END
+_generic_citation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/362/trunk/bpifs/app/views/record/details/_generic_citation.rhtml
+END
+_del_article.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/362/trunk/bpifs/app/views/record/details/_del_article.rhtml
+END
+_generic_list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/app/views/record/details/_generic_list.rhtml
+END
+_book.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/409/trunk/bpifs/app/views/record/details/_book.rhtml
+END
+_del_article_abstract.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/362/trunk/bpifs/app/views/record/details/_del_article_abstract.rhtml
+END

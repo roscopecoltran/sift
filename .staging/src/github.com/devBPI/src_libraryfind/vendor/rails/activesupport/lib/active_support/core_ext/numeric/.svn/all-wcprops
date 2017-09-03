@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/numeric
+END
+time.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/numeric/time.rb
+END
+bytes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/numeric/bytes.rb
+END
+conversions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/numeric/conversions.rb
+END

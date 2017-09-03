@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/1471/trunk/bpifs/vendor/plugins/spawn
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/spawn/LICENSE
+END
+._CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/577/trunk/bpifs/vendor/plugins/spawn/._CHANGELOG
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/spawn/.gitignore
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/spawn/init.rb
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/spawn/CHANGELOG
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bpifs/!svn/ver/577/trunk/bpifs/vendor/plugins/spawn/README
+END

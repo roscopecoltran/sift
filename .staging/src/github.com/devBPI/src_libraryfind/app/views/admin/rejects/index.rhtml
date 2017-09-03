@@ -1,0 +1,19 @@
+<div id="page_contents">
+	<%= render(:partial => "admin/navigation") %>
+	<div id="center" class="column middle">
+		<h1><b>Exporter les notices mediaview rejetées lors de la moisson</b></h1><br/>
+		<% if @rejects.nil? or @rejects.empty? %>
+			<br/>
+			<h1><b>Aucun rejet</b></h1>
+		<% else %>
+			<ul class="list_csv">
+				<% @rejects.each do |reject| %>
+					<li>
+						<h3><%= "#{reject.name} (#{reject.created_at.strftime("%d/%m/%y %H:%M")})" %></h3>
+						<%= link_to image_tag('download.png', :alt => reject.name, :title => reject.name), reject %>
+					</li>
+				<% end %>
+			<% end %>
+		</ul>
+	</div>
+</div>

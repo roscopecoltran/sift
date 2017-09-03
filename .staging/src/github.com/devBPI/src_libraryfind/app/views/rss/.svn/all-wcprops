@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/app/views/rss
+END
+feed.rxml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/app/views/rss/feed.rxml
+END
+search.rxml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/app/views/rss/search.rxml
+END

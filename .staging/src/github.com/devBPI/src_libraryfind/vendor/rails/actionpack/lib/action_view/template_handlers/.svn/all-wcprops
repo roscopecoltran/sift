@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/lib/action_view/template_handlers
+END
+rjs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/lib/action_view/template_handlers/rjs.rb
+END
+builder.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/lib/action_view/template_handlers/builder.rb
+END
+erb.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/lib/action_view/template_handlers/erb.rb
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/float
+END
+time.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/float/time.rb
+END
+rounding.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/float/rounding.rb
+END

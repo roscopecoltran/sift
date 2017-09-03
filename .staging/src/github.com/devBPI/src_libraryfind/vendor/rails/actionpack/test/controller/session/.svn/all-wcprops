@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/test/controller/session
+END
+cookie_store_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/test/controller/session/cookie_store_test.rb
+END
+mem_cache_store_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/test/controller/session/mem_cache_store_test.rb
+END

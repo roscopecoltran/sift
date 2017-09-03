@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/transaction-simple-1.3.0/lib/transaction/simple
+END
+threadsafe.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/transaction-simple-1.3.0/lib/transaction/simple/threadsafe.rb
+END
+group.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/transaction-simple-1.3.0/lib/transaction/simple/group.rb
+END

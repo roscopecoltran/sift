@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/test
+END
+testblankslate.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/test/testblankslate.rb
+END
+performance.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/test/performance.rb
+END
+test_xchar.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/test/test_xchar.rb
+END
+preload.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/test/preload.rb
+END
+testmarkupbuilder.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/test/testmarkupbuilder.rb
+END
+testeventbuilder.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/test/testeventbuilder.rb
+END

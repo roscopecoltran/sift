@@ -1,0 +1,40 @@
+<div id="page_contents">
+	<%= render :partial => "admin/navigation" %>
+	<div id="center" class="column">
+		<p style="color: green"><%= flash[:notice] %></p>
+		<p style="color: red">
+			<% if flash[:errors] %>
+				<ul>
+					<% flash[:errors].each do |e| %>
+						<li><%= e %></li>
+					<% end %>
+				</ul>
+			<% end %>
+		</p>
+	<div id="center" class="middle">
+		<h1><%= translate('PARAMETERS_LIST') %></h1>
+		<%= link_to translate('SWITCH'), switch_admin_parameters_path, :confirm => translate('CONFIRM_SWITCH') %>
+		<%= render :partial => 'solr' %>
+		<%= render :partial => 'mysql' %>
+		<div class="admin-list">
+			<label class="large-column">Nom</label>
+			<label class="large-column">Valeur</label>
+			<label class="medium-column">Description</label>
+			<span class="action-links"><%= link_to translate("NEW_PARAMETER"), new_admin_parameter_path %></span>
+		</div>
+		<br />
+		<% @parameters.each do |parameter| %>
+			<div class="admin-list">
+				<span class="large-column"><%= link_to parameter.name, :action => 'show', :id => parameter %></span>
+				<span class="large-column"><%= parameter.value %></span>
+				<span class="medium-column"><%= truncate(parameter.description, 15) %></span>
+				<span class="action-links">
+					<% if parameter.editable %>
+						<%= link_to translate("EDIT"), :action => 'edit', :id => parameter %>&nbsp;&nbsp;
+						<%= link_to translate("DESTROY"), { :action => 'destroy', :id => parameter }, :confirm => translate("DELETE_PARAMETER_CONFIRM"), :method => "post" %>
+					<% end %>
+				</span>		
+			</div>
+		<% end %>
+	</div>
+</div>

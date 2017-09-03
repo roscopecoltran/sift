@@ -1,0 +1,26 @@
+<%= render(:partial => "admin/navigation") %>
+
+<div class="middle">
+    <div>
+    <%= render(:partial => "admin/log_view_generic/stats_index") %>
+    	 <h1><%= @title %></h1>
+    	 <br/>
+		 <div id="center" class="column middle">
+	        <h2>Exporter les fichiers des statistiques sur les documents générés:</h2><br/>
+	        <% if @fils.nil? or @fils.empty? %>
+			<br/>
+	        <h1><b>Aucun fichier</b></h1>
+	        <% else %>
+	        <ul class="list_csv">
+	            <% for item in @fils %>
+	            <li>
+	            	<% title = item.split(".csv") %>
+					<h3><%= title %> </h3>
+	                <%= link_to  "<img src='/images/download.png' title='#{title}' alt='#{title}' />", :action => "show", :id => title, :status => @status %>
+	            </li>
+	            <%	end %>
+	            <% end %>
+        	</ul>
+    	 </div>
+    </div>
+</div>

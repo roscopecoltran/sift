@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/lib/ferret
+END
+document.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/lib/ferret/document.rb
+END
+field_infos.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/lib/ferret/field_infos.rb
+END
+browser.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/lib/ferret/browser.rb
+END
+index.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/lib/ferret/index.rb
+END
+number_tools.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/lib/ferret/number_tools.rb
+END

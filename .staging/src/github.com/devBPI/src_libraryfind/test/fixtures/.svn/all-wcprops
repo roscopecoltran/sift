@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bpifs/!svn/ver/776/trunk/bpifs/test/fixtures
+END
+collection_group_members.yml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/fixtures/collection_group_members.yml
+END
+cached_searches.yml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/fixtures/cached_searches.yml
+END
+cached_records.yml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/fixtures/cached_records.yml
+END
+collection_groups.yml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/fixtures/collection_groups.yml
+END
+admin_search_tab_filters.yml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/240/trunk/bpifs/test/fixtures/admin_search_tab_filters.yml
+END
+search_tab_subjects.yml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/279/trunk/bpifs/test/fixtures/search_tab_subjects.yml
+END
+records.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/fixtures/records.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/fixtures/users.yml
+END
+document_types.yml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/126/trunk/bpifs/test/fixtures/document_types.yml
+END
+primary_document_types.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/126/trunk/bpifs/test/fixtures/primary_document_types.yml
+END
+hits.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/fixtures/hits.yml
+END
+admin_editorials.yml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/776/trunk/bpifs/test/fixtures/admin_editorials.yml
+END
+site_configs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/fixtures/site_configs.yml
+END
+collections.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/fixtures/collections.yml
+END
+search_tabs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/240/trunk/bpifs/test/fixtures/search_tabs.yml
+END

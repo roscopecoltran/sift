@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bpifs/!svn/ver/6422/trunk/bpifs/app/languages/admin
+END
+search_tabs_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/618/trunk/bpifs/app/languages/admin/search_tabs_lang.yml
+END
+collections_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/6422/trunk/bpifs/app/languages/admin/collections_lang.yml
+END
+coverages_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/6148/trunk/bpifs/app/languages/admin/coverages_lang.yml
+END
+search_tab_filters_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/239/trunk/bpifs/app/languages/admin/search_tab_filters_lang.yml
+END
+themes_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/6148/trunk/bpifs/app/languages/admin/themes_lang.yml
+END
+themes_references_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/6220/trunk/bpifs/app/languages/admin/themes_references_lang.yml
+END
+dashboard_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/6245/trunk/bpifs/app/languages/admin/dashboard_lang.yml
+END
+collection_groups_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/6148/trunk/bpifs/app/languages/admin/collection_groups_lang.yml
+END
+manage_roles_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/1835/trunk/bpifs/app/languages/admin/manage_roles_lang.yml
+END
+search_tab_subjects_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/1006/trunk/bpifs/app/languages/admin/search_tab_subjects_lang.yml
+END
+editorials_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/775/trunk/bpifs/app/languages/admin/editorials_lang.yml
+END
+rejects_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/6148/trunk/bpifs/app/languages/admin/rejects_lang.yml
+END
+users_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/6148/trunk/bpifs/app/languages/admin/users_lang.yml
+END
+document_types_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/1671/trunk/bpifs/app/languages/admin/document_types_lang.yml
+END
+parameters_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/6273/trunk/bpifs/app/languages/admin/parameters_lang.yml
+END
+primary_document_types_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/1671/trunk/bpifs/app/languages/admin/primary_document_types_lang.yml
+END
+log_view_generic_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/5426/trunk/bpifs/app/languages/admin/log_view_generic_lang.yml
+END
+harvest_schedules_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/6148/trunk/bpifs/app/languages/admin/harvest_schedules_lang.yml
+END
+manage_droits_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/1835/trunk/bpifs/app/languages/admin/manage_droits_lang.yml
+END
+rss_feeds_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/6148/trunk/bpifs/app/languages/admin/rss_feeds_lang.yml
+END
+providers_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/6148/trunk/bpifs/app/languages/admin/providers_lang.yml
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/lib
+END
+sql_session.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/lib/sql_session.rb
+END
+sqlite_session.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/lib/sqlite_session.rb
+END
+smart_session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/lib/smart_session_store.rb
+END
+postgresql_session.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/lib/postgresql_session.rb
+END
+mysql_session.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/lib/mysql_session.rb
+END
+oracle_session.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/lib/oracle_session.rb
+END

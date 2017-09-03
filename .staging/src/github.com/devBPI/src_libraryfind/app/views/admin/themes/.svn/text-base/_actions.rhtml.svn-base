@@ -1,0 +1,7 @@
+<span class="hide <%= theme.reference %>">
+	<% if theme.parent.to_i == 0 %>
+		<%= link_to image_tag('new-document.png', :size => '20x20'), new_admin_theme_path(:parent => theme.reference) %>
+	<% end %>
+	<%= link_to image_tag('edit.png', :size => '20x20'), {:action => 'edit', :id => theme} %>	
+	<%= link_to image_tag('delete.png', :size => '20x20'), { :action => 'destroy', :id => theme }, :confirm => translate('DELETE_ROOT_THEME_CONFIRM'), :method => "post" %>
+</span>

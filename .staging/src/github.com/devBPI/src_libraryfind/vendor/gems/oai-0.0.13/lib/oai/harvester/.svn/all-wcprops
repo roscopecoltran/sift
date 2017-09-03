@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/harvester
+END
+config.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/harvester/config.rb
+END
+logging.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/harvester/logging.rb
+END
+shell.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/harvester/shell.rb
+END
+mailer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/harvester/mailer.rb
+END
+harvest.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/harvester/harvest.rb
+END

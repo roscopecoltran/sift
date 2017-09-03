@@ -1,0 +1,79 @@
+9
+
+dir
+6486
+https://svn.bsiforge.com/svn/bpifs/trunk/bpifs/app/views
+https://svn.bsiforge.com/svn/bpifs
+
+
+
+2014-04-02T15:55:29.042425Z
+6440
+arouaux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+171cada2-f8fe-4419-b9ec-09dd45d71e2d
+
+admin
+dir
+
+cart
+dir
+
+webservice
+dir
+
+xml
+dir
+
+layouts
+dir
+
+log_rebonce_usage
+dir
+
+collection_admin
+dir
+
+search
+dir
+
+document_mailer
+dir
+
+log_view_generic
+dir
+
+result_mailer
+dir
+
+rss
+dir
+
+text_mailer
+dir
+
+emailer
+dir
+
+record
+dir
+
+user
+dir
+
+document
+dir
+

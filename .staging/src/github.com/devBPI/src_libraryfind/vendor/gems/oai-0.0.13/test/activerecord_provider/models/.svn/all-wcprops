@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/test/activerecord_provider/models
+END
+dc_set.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/test/activerecord_provider/models/dc_set.rb
+END
+oai_token.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/test/activerecord_provider/models/oai_token.rb
+END
+dc_field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/test/activerecord_provider/models/dc_field.rb
+END

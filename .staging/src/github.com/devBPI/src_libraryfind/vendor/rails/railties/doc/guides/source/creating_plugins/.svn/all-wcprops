@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins
+END
+helpers.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/helpers.txt
+END
+acts_as_yaffle.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/acts_as_yaffle.txt
+END
+models.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/models.txt
+END
+odds_and_ends.txt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/odds_and_ends.txt
+END
+controllers.txt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/controllers.txt
+END
+generator_method.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/generator_method.txt
+END
+index.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/index.txt
+END
+appendix.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/appendix.txt
+END
+core_ext.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/core_ext.txt
+END
+custom_route.txt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/custom_route.txt
+END
+gem.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/gem.txt
+END
+migration_generator.txt
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/migration_generator.txt
+END
+test_setup.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/creating_plugins/test_setup.txt
+END

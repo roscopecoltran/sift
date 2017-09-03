@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/lib/rails/rack
+END
+logger.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/lib/rails/rack/logger.rb
+END
+static.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/lib/rails/rack/static.rb
+END

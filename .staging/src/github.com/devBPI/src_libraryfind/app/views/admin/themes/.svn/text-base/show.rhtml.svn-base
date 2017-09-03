@@ -1,0 +1,20 @@
+<div id="page_contents">
+	<%= render :partial => "admin/navigation" %>
+	<div id="center" class="column">
+		<p style="color: green"><%= flash[:notice] %></p>
+		<p style="color: red">
+			<% if flash[:errors] %>
+				<ul>
+					<% flash[:errors].each do |e| %>
+						<li><%= e %></li>
+					<% end %>
+				</ul>
+			<% end %>
+		</p>
+	<div id="center" class="middle">
+		<h1><%=h @theme.label %></h1>
+		<span><%= @theme.reference %></span>
+		<span><%= @theme.parent %></span>
+		<span><%= link_to translate("BACK"), admin_themes_path %></span>
+	</div>
+</div>

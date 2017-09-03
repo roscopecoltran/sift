@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bpifs/!svn/ver/6211/trunk/bpifs/app/helpers/admin
+END
+collections_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/6153/trunk/bpifs/app/helpers/admin/collections_helper.rb
+END
+themes_references_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/6211/trunk/bpifs/app/helpers/admin/themes_references_helper.rb
+END
+log_view_generic_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/3649/trunk/bpifs/app/helpers/admin/log_view_generic_helper.rb
+END
+collection_groups_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/6153/trunk/bpifs/app/helpers/admin/collection_groups_helper.rb
+END
+manage_droits_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/6141/trunk/bpifs/app/helpers/admin/manage_droits_helper.rb
+END

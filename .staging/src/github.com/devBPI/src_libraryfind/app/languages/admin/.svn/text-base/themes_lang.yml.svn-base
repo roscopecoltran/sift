@@ -1,0 +1,14 @@
+FR:
+
+  #Thèmes communs
+  THEMES_LIST: "Liste des thèmes"
+  NEW_THEME: "Créer un nouveau thème"
+  REFERENCE: "Référence"
+  LABEL: "Label"
+  PARENT: "Thème parent"
+  NO_PARENT: "Aucun parent"
+  THEME_CREATED: "Thème sauvegardé!"
+  THEME_UPDATED: "Thème mis à jour!"
+  DELETE_ROOT_THEME_CONFIRM: "Etes-vous sûr de vouloir supprimer ce thème? Les thèmes et mappings dépendants seront également supprimés."
+
+       

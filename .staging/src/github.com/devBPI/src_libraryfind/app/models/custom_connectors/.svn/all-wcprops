@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/6481/trunk/bpifs/app/models/custom_connectors
+END
+quinzaine_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/6275/trunk/bpifs/app/models/custom_connectors/quinzaine_search_class.rb
+END
+oxforddnb_browser_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/4119/trunk/bpifs/app/models/custom_connectors/oxforddnb_browser_class.rb
+END
+wcapi_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/5454/trunk/bpifs/app/models/custom_connectors/wcapi_search_class.rb
+END
+keesing.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/5230/trunk/bpifs/app/models/custom_connectors/keesing.rb
+END
+portfolio_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/6481/trunk/bpifs/app/models/custom_connectors/portfolio_search_class.rb
+END
+factiva_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/6287/trunk/bpifs/app/models/custom_connectors/factiva_search_class.rb
+END
+em_consulte_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/6287/trunk/bpifs/app/models/custom_connectors/em_consulte_search_class.rb
+END
+oxford_browser_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/4149/trunk/bpifs/app/models/custom_connectors/oxford_browser_class.rb
+END
+yahoo_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/5454/trunk/bpifs/app/models/custom_connectors/yahoo_search_class.rb
+END
+professionpolitique_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/bpifs/!svn/ver/6275/trunk/bpifs/app/models/custom_connectors/professionpolitique_search_class.rb
+END
+classiques_garnier_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/bpifs/!svn/ver/6287/trunk/bpifs/app/models/custom_connectors/classiques_garnier_search_class.rb
+END
+keesing_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/6287/trunk/bpifs/app/models/custom_connectors/keesing_search_class.rb
+END
+example_search_class.rb.example
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/369/trunk/bpifs/app/models/custom_connectors/example_search_class.rb.example
+END
+publie_net_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/6275/trunk/bpifs/app/models/custom_connectors/publie_net_search_class.rb
+END
+euro_presse_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/6287/trunk/bpifs/app/models/custom_connectors/euro_presse_search_class.rb
+END
+crawler_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/6287/trunk/bpifs/app/models/custom_connectors/crawler_search_class.rb
+END
+oxford_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/6287/trunk/bpifs/app/models/custom_connectors/oxford_search_class.rb
+END
+lextenso_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/6287/trunk/bpifs/app/models/custom_connectors/lextenso_search_class.rb
+END

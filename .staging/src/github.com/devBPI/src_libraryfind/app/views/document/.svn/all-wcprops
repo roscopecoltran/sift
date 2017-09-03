@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/bpifs/!svn/ver/2350/trunk/bpifs/app/views/document
+END
+_navigation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/2350/trunk/bpifs/app/views/document/_navigation.rhtml
+END
+refworks.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/628/trunk/bpifs/app/views/document/refworks.rhtml
+END
+display.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/1765/trunk/bpifs/app/views/document/display.rhtml
+END
+email.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/705/trunk/bpifs/app/views/document/email.rhtml
+END
+printpage.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/297/trunk/bpifs/app/views/document/printpage.rhtml
+END

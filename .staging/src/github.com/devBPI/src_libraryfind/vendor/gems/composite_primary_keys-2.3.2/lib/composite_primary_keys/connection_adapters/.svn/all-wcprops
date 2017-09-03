@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/lib/composite_primary_keys/connection_adapters
+END
+postgresql_adapter.rb
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/lib/composite_primary_keys/connection_adapters/postgresql_adapter.rb
+END
+sqlite3_adapter.rb
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/lib/composite_primary_keys/connection_adapters/sqlite3_adapter.rb
+END
+oracle_adapter.rb
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/lib/composite_primary_keys/connection_adapters/oracle_adapter.rb
+END
+ibm_db_adapter.rb
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/lib/composite_primary_keys/connection_adapters/ibm_db_adapter.rb
+END

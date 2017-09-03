@@ -1,0 +1,226 @@
+<div id="left" class="column">
+	<div id="browse">
+		<div class="xsnazzysearch">
+			<b class="xtop "><b class="xb1"></b><b class="xb4"></b></b>
+			<div class="xboxcontent left">
+				<h2 id="browsetitle"><%=translate('ADMINISTRATION') %></h2>
+				<div id="t_nav">
+
+					<!-- Accueil -->
+					<div id="dashboard" class="navigation">
+						<%=link_to translate('ADMIN_HOME'), :controller=>'/admin/dashboard', :action=>'index' %>
+					</div>
+
+					<!-- Collections -->
+					<span>
+						<a name="setEffectToggle" class="linkplus">+</a>
+						<div id="bCollections" class="navigation">
+							<%= link_to translate('COLLECTIONS'), admin_collections_path %>
+							<div name="menuItem" id="tCollections" class="expanded" init="0">
+								<%= link_to translate('LIST_COLLECTIONS'), admin_collections_path %>
+								<%= link_to translate('ADD_A_NEW_COLLECTION'), new_admin_collection_path %>
+							</div>
+						</div>
+					</span>
+
+					<!-- Groupes de collections -->
+					<span>
+						<a name="setEffectToggle" class="linkplus">+</a>
+						<div id="bCollectionGroups" class="navigation">
+							<%= link_to translate('COLLECTION_GROUPS'), admin_collection_groups_path %>
+							<div name="menuItem" id="tCollectionGroups" class="expanded" init="0">
+								<%= link_to translate('LIST_COLLECTION_GROUPS'), admin_collection_groups_path %>
+								<%= link_to translate('ADD_A_NEW_COLLECTION_GROUP'), new_admin_collection_group_path %>
+							</div>
+						</div>
+					</span>
+
+					<!-- Fournisseurs open url -->
+					<span>
+						<a name="setEffectToggle" class="linkplus">+</a>
+						<div id="bProviders" class="navigation">
+							<%= link_to translate('PROVIDERS'), admin_providers_path %>
+							<div name="menuItem" id="tProviders" class="expanded" init="0">
+								<%= link_to translate('LIST_PROVIDERS'), admin_providers_path %>
+								<%= link_to translate('ADD_A_NEW_PROVIDER'), new_admin_provider_path %>
+							</div>
+						</div>
+					</span>
+
+					<!-- Statistiques -->
+					<span>
+						<div id="bStats" class="navigation">
+							<%= link_to translate('STATS'), :controller => '/admin/log_view_generic', :action => 'index', :status => @status%>
+						</div>
+					</span>
+
+					<!-- Bases open url -->
+					<span>
+						<a name="setEffectToggle" class="linkplus">+</a>
+						<div id="bCoverages" class="navigation">
+							<%= link_to translate('COVERAGES'), admin_coverages_path %>
+							<div name="menuItem" id="tCoverages" class="expanded" init="0">
+								<%= link_to translate('LIST_COVERAGES'), admin_coverages_path %>
+								<%= link_to translate('ADD_A_NEW_COVERAGE'), new_admin_coverage_path %>
+							</div>
+						</div>
+					</span>
+
+					<!-- Utilisateurs -->
+					<span>
+						<a name="setEffectToggle" class="linkplus">+</a>
+						<div id="bUsers" class="navigation">
+							<%= link_to translate('USERS'), admin_users_path %>
+							<div name="menuItem" id="tUsers" class="expanded" init="0">
+								<%= link_to translate('LIST_USERS'), admin_users_path %>
+								<%= link_to translate('ADD_A_NEW_USER'), new_admin_user_path %>
+							</div>
+						</div>
+					</span>
+
+					<!-- Mapping de thèmes --> 
+					<span>
+						<a name="setEffectToggle" class="linkplus">+</a>
+						<div id="bThemesMapping" class="navigation">
+							<%= link_to translate('THEMES_MAPPING'), admin_themes_references_path %> 
+							<div name="menuItem" id="tThemesMapping" class="expanded" init="0">
+								<%= link_to translate('THEMES'), admin_themes_path %> 
+								<%= link_to translate('THEMES_REFERENCES'), admin_themes_references_path %>
+							</div>
+						</div>
+					</span>
+
+					<!-- Onglets de recherches -->
+					<span>
+						<a name="setEffectToggle" class="linkplus">+</a>
+						<div id="bTabSubjects" class="navigation">
+							<%= link_to translate('TABS_SUBJECT'), admin_search_tab_subjects_path %>
+							<div name="menuItem" id="tTabSubjects" class="expanded" init="0">
+								<%= link_to translate('LIST_TAB_SUBJECTS'), admin_search_tab_subjects_path %>
+								<%= link_to translate('ADD_A_NEW_TAB_SUBJECT'), new_admin_search_tab_subject_path %>
+							</div>
+						</div>
+					</span>
+
+				<!-- Filtres de recherches par onglet -->	
+				<span>
+					<a name="setEffectToggle" class="linkplus">+</a>
+					<div id="bTabFilters" class="navigation">
+						<%= link_to translate('TABS_FILTER'), admin_search_tab_filters_path %>
+						<div name="menuItem" id="tTabFilters" class="expanded" init="0">
+							<%= link_to translate('LIST_TAB_FILTERS'), admin_search_tab_filters_path %>
+							<%= link_to translate('ADD_A_NEW_TAB_FILTER'), new_admin_search_tab_filter_path %>
+						</div>
+					</div>
+				</span>
+	
+				<!-- Rejets -->
+				<span>
+					<div id="bRejects" class="navigation">
+						<%= link_to translate('REJECTED'), admin_rejects_path %>
+					</div>
+				</span>
+
+				<!-- Types de documents -->
+				<span>
+					<a name="setEffectToggle" class="linkplus">+</a>
+					<div id="bDocumentTypes" class="navigation">
+						<%= link_to translate('DOCUMENT_TYPES'), admin_document_types_path %>
+						<div name="menuItem" id="tDocTypes" class="expanded" init="0">
+							<%= link_to translate('PRIMARY_DOCUMENT_TYPE'), admin_document_types_path %>
+							<%= link_to translate('CUSTOM_DOCUMENT_TYPE'), admin_primary_document_types_path %>
+						</div>
+					</div>
+				</span>
+
+				<!-- Onglets -->
+				<span>
+					<div id="bTabs" class="navigation">
+						<%= link_to translate('DOCUMENT_TABS'), admin_search_tabs_path %>
+					</div>
+				</span>
+
+				<!-- Editoriaux -->
+				<span>
+					<a name="setEffectToggle" class="linkplus">+</a>
+					<div id="bEditorials" class="navigation">
+						<%= link_to translate('EDITORIAL'), admin_editorials_path %>
+						<div name="menuItem" id="bEditorial" class="expanded" init="0">
+							<%= link_to translate('LIST_EDITORIAL'), admin_editorials_path %>
+							<%= link_to translate('AFFECTE_EDITORIAL'), affecte_admin_editorials_path %>
+						</div>
+					</div>
+				</span>
+
+				<!-- Moissons -->
+				<span>
+					<a name="setEffectToggle" class="linkplus">+</a>
+					<div id="bSchedules" class="navigation">
+						<%= link_to translate('HARVEST'), admin_harvest_schedules_path %>
+						<div name="menuItem" id="tSchedules" class="expanded" init="0">
+							<%= link_to translate('LIST_HARVEST_SCHEDULES'), admin_harvest_schedules_path %>
+							<%= link_to translate('NEW_HARVEST_SCHEDULE'), new_admin_harvest_schedule_path %>
+							<%= link_to translate('HARVEST_LOG'), display_log_admin_harvest_schedules_path, :target=>'_blank' %>
+						</div>
+					</div>
+				</span>
+
+				<!-- Flux rss -->
+				<span>
+					<a name="setEffectToggle" class="linkplus">+</a>
+					<div id="bRssFeeds" class="navigation">
+						<%= link_to translate('RSS_FEEDS'), admin_rss_feeds_path %>
+						<div name="menuItem" id="tRssFeeds" class="expanded" init="0">
+							<%= link_to translate('LIST_RSS_FEEDS'), admin_rss_feeds_path %>
+							<%= link_to translate('NEW_RSS_FEED'), new_admin_rss_feed_path %>
+						</div>
+					</div>
+				</span>
+
+				<!-- Droits -->
+				<span>
+					<a name="setEffectToggle" class="linkplus">+</a>
+					<div id="bManageDroit" class="navigation">
+						<%= link_to translate('MANAGE_DROIT'), admin_manage_droits_path %>
+						<div name="menuItem" id="tManageDroit" class="expanded" init="0">
+							<%= link_to translate('MANAGE_DROIT_LIST'), admin_manage_droits_path %>
+							<%= link_to translate('MANAGE_ROLE_LIST'), admin_manage_roles_path %>
+							<%= link_to translate('ADD_NEW_ROLE'), new_admin_manage_role_path %>
+						</div>
+					</div>
+				</span>
+
+				<!-- Exports -->
+				<span>
+					<a name="setEffectToggle" class="linkplus">+</a>
+					<div id="bExports" class="navigation">
+						<%= link_to translate('EXPORT_RDF') %>
+						<div name="menuItem" id="tExports" class="expanded" init="0">
+							<%= link_to translate('EXPORT_XML'), :controller => '/admin/log_view_generic', :action => 'consult_account', :XML => 1, :mode => 'x', :tab => 2, :unit => 'day'  %>
+							<%= link_to translate('EXPORT_FOAF'), :controller => '/admin/log_view_generic', :action => 'consult_account', :foaf => 1, :mode => 'e', :tab => 2, :unit => 'day'  %>
+							<%= link_to translate('EXPORT_CRAWLER'), crawler_admin_exports_path %>
+						</div>
+					</div>
+				</span>
+
+				<!-- Parameters -->
+				<span>
+					<a name="setEffectToggle" class="linkplus">+</a>
+					<div id="bParameters" class="navigation">
+						<%= link_to translate('PARAMETERS'), admin_parameters_path %>
+						<div name="menuItem" id="tParameters" class="expanded" init="0">
+							<%= link_to translate('PARAMETERS_LIST'), admin_parameters_path %>
+							<%= link_to translate('NEW_PARAMETER'), new_admin_parameter_path %>
+						</div>
+					</div>
+				</span>
+
+			</div>
+			<b class="xbottom"><b class="xb4"></b><b class="xb1"></b></b>
+		</div>
+	</div>
+</div>
+
+<script>
+	initMenuAdmin();
+</script>

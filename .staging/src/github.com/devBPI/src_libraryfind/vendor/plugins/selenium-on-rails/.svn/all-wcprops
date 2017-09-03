@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails
+END
+config.yml.example
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/config.yml.example
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/Rakefile
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/routes.rb
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/init.rb
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/CHANGELOG
+END
+LICENSE-2.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/LICENSE-2.0.txt
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/README
+END

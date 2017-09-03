@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/performance
+END
+benchmarker
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/performance/benchmarker
+END
+profiler
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/performance/profiler
+END
+request
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/performance/request
+END

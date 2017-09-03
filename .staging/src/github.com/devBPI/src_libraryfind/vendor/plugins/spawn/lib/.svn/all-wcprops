@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/1471/trunk/bpifs/vendor/plugins/spawn/lib
+END
+patches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/577/trunk/bpifs/vendor/plugins/spawn/lib/patches.rb
+END
+spawn.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/1471/trunk/bpifs/vendor/plugins/spawn/lib/spawn.rb
+END

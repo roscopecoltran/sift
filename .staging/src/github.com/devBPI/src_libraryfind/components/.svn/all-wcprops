@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/bpifs/!svn/ver/6484/trunk/bpifs/components
+END
+hidden_indexed_files.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/1292/trunk/bpifs/components/hidden_indexed_files.rb
+END
+oai_dc.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/1892/trunk/bpifs/components/oai_dc.rb
+END
+update_rss_feeds.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/3486/trunk/bpifs/components/update_rss_feeds.rb
+END
+themes_import.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/6208/trunk/bpifs/components/themes_import.rb
+END
+sync_db.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/544/trunk/bpifs/components/sync_db.rb
+END
+profession_politique.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/2534/trunk/bpifs/components/profession_politique.rb
+END
+ged_harvester.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/6407/trunk/bpifs/components/ged_harvester.rb
+END
+classiques_garnier.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/6073/trunk/bpifs/components/classiques_garnier.rb
+END
+search_stats.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bpifs/!svn/ver/5784/trunk/bpifs/components/search_stats.rb
+END
+authorities_harvester.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/components/authorities_harvester.rb
+END
+publie_net.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/4470/trunk/bpifs/components/publie_net.rb
+END
+quinzaine_harvester.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/components/quinzaine_harvester.rb
+END
+coverage_load.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bpifs/!svn/ver/571/trunk/bpifs/components/coverage_load.rb
+END
+oai_harvester.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/6434/trunk/bpifs/components/oai_harvester.rb
+END
+check_notices_availability.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/6035/trunk/bpifs/components/check_notices_availability.rb
+END
+cache_cleaner.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/1888/trunk/bpifs/components/cache_cleaner.rb
+END
+mediaview_harvester.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/6245/trunk/bpifs/components/mediaview_harvester.rb
+END
+remove_cache_item.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/571/trunk/bpifs/components/remove_cache_item.rb
+END
+save_log.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/bpifs/!svn/ver/5428/trunk/bpifs/components/save_log.rb
+END
+portfolio_harvester.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/6484/trunk/bpifs/components/portfolio_harvester.rb
+END
+synonymes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/bpifs/!svn/ver/6245/trunk/bpifs/components/synonymes.rb
+END
+droits.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/6480/trunk/bpifs/components/droits.rb
+END
+profession_politique_harvester.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/components/profession_politique_harvester.rb
+END
+classiques_garnier_harvester.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/components/classiques_garnier_harvester.rb
+END
+publie_net_harvester.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/components/publie_net_harvester.rb
+END
+common_harvester.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/6428/trunk/bpifs/components/common_harvester.rb
+END
+harvest.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/bpifs/!svn/ver/6287/trunk/bpifs/components/harvest.rb
+END
+session_cleaner.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/571/trunk/bpifs/components/session_cleaner.rb
+END

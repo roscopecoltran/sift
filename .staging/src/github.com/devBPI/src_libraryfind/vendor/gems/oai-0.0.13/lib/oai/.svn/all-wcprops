@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/5540/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai
+END
+client.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/5540/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/client.rb
+END
+exception.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/exception.rb
+END
+harvester.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/harvester.rb
+END
+xpath.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/1893/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/xpath.rb
+END
+provider.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/provider.rb
+END
+set.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/set.rb
+END
+constants.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/lib/oai/constants.rb
+END

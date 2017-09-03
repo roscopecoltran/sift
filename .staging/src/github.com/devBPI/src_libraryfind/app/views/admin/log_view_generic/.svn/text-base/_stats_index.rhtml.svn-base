@@ -1,0 +1,337 @@
+<script>
+	// Read a page's GET URL variables and return them as an associative array.
+	function getUrlVars()
+		{
+		    var vars = [], hash;
+		    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+		    for(var i = 0; i < hashes.length; i++)
+		    {
+		        hash = hashes[i].split('=');
+		        vars.push(hash[0]);
+		        vars[hash[0]] = hash[1];
+		    }
+		    return vars;
+		}
+
+    $j(document).ready(function(){
+		var tab = getUrlVars()["tab"];
+		var option = {};
+		if (getUrlVars()["status"] == 1){
+		  	document.getElementById("active").style.display = 'none';
+		}
+		else{
+		  	document.getElementById("desactive").style.display = 'none';
+		}
+		option.collapsible = true;
+		<% if !defined? menu %>
+			option.selected = tab; 
+		<% end %>
+		
+        $j("#tabs_stat").tabs(option);
+    });
+</script>
+<div id="tabs_stat">
+    <ul>
+        <li>
+            <a href="#tabs-1">Requêtes</a>
+        </li>
+        <li>
+            <a href="#tabs-3">Consultations</a>
+        </li>
+	        <li>
+            <a href="#tabs-6">Fonctionnalités sociales</a>
+        </li>
+        <li>
+            <a href="#tabs-2">Paniers</a>
+        </li>
+        <li>
+            <a href="#tabs-15">Les Tops</a>
+        </li>
+    </ul>
+    <div id="tabs-1">
+        <h3>Requêtes</h3>
+        <ul>
+            <li>
+                <%= link_to "Requêtes total", :action => "requests", :mode => "all", :unit => "month" , :tab => 0%>
+            </li>
+            <li>
+                <%= link_to "Requêtes par couple d'index", :action => "requests", :mode => "c", :tab => 0 %>
+            </li>
+            <li>
+                <%= link_to "Liste des requêtes les plus fréquentes", :action => "requests", :mode => "t", :tab => 0%>
+            </li>
+            <li>
+                <%= link_to "Liste des requêtes infructueuses", :action => "requests", :unit => "month", :mode => "lif", :tab => 0%>
+            </li>
+            <li>
+                <%= link_to "Nombre de clics sur des requêtes préprogrammées", :action => "requests", :mode => "n", :tab => 0 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de clics sur le lien \"Voir Aussi\"", :action => "requests", :mode => "s", :unit => "month", :tab => 0 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de requêtes via des rebonds", :action => "requests", :mode => "r", :unit => "month", :tab => 0 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de requêtes via le correcteur orthographique", :action => "requests", :mode => "sp", :unit => "month", :tab => 0 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de requêtes infructueuses", :action => "requests", :mode => "frq", :unit => "month", :tab => 0 %>
+            </li>
+        </ul>
+            <h3>Statistiques des documents les plus recherchés </h3>
+        <ul>
+        	<div id="active">
+	        	<li>
+	                <%= link_to "Activer les statistiques sur les documents les plus recherchés", :action => "docstat", :mode => "docActive", :unit => "month", :tab => 0, :status => 1 %>
+	            </li>
+            </div>
+            <div id="desactive">
+	            <li>
+	                <%= link_to "Désactiver les statistiques sur les documents les plus recherchés", :action => "docstat", :mode => "docDesactive", :unit => "month", :tab => 0, :status => 0 %>
+	            </li>
+            </div>
+            <li>
+                <%= link_to "Afficher les statistiques des  documents les plus recherchés", :action => "docstat", :mode => "Affiche", :unit => "month", :tab => 0, :status => @status %>
+            </li>
+        </ul>
+    </div>
+    <div id="tabs-2">
+        <h3>Paniers</h3>
+        <ul>
+            <li>
+                <%= link_to "Nombre de paniers utilisés", :action => "carts", :mode => "f", :unit => "month", :tab => 3 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notices sauvegardées dans les paniers", :action => "carts", :mode => "s", :unit => "month", :tab => 3 %>
+            </li>
+        </ul>
+    </div>
+    <div id="tabs-3">
+        <h3>Consultations Notices</h3>
+        <ul>
+            <li>
+                <%= link_to "Notices les plus consultées", :action => "consult", :mode => "top", :order => "total", :max => "10", :tab => 1 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notices consultées", :action => "consult", :mode => "c", :unit => "month", :tab => 1 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notices consultées par collection", :action => "consult", :mode => "cc", :tab => 1 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notices imprimées", :action => "consult", :mode => "p", :unit => "month", :tab => 1 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notices envoyées par email", :action => "consult", :mode => "e", :unit => "month", :tab => 1 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notices générées en pdf", :action => "consult", :mode => "pdf", :unit => "month", :tab => 1 %>
+            </li>
+			<li>
+                <%= link_to "Nombre de notices exportées", :action => "consult", :mode => "export", :order => "total", :max => "10", :unit => "month", :tab => 1 %>
+            </li>
+            <h3>Ressources consultées</h3>
+        <ul>
+            <li>
+                <%= link_to "Nombre de documents consultés", :action => "document", :mode => "c", :unit => "day", :tab => 1 %>
+            </li>
+        </ul>
+            <h3>Rebonds Mots clés</h3>
+        <ul>
+            <li>
+                <%= link_to "Nombre de rebonds sur les mots clés", :action => "rebonce_tag", :mode => "all", :unit => "day", :tab => 1 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de rebonds sur les mots clés via une notice", :action => "rebonce_tag", :mode => "n", :unit => "day", :tab => 1 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de rebonds sur les mots clés via une liste", :action => "rebonce_tag", :mode => "l", :unit => "day", :tab => 1 %>
+            </li>
+        </ul>
+        <br/>
+        <h3>Rebonds Profils</h3>
+        <ul>
+            <li>
+                <%= link_to "Nombre de rebonds sur les profils", :action => "rebonce_profil", :mode => "all", :unit => "day", :tab => 1 %>
+            </li>
+        </ul>
+        <br/>
+        <h3>Rebonds Listes</h3>
+        <ul>
+            <li>
+                <%= link_to "Nombre de rebonds sur les listes", :action => "rebonce_liste", :mode => "all", :unit => "day", :tab => 1 %>
+            </li>
+        </ul>
+        <br/>
+        <h3>Facettes</h3>
+        <ul>
+            <li>
+                <%= link_to "Nombre d'action sur les facettes", :action => "facette", :unit => "day", :tab => 1 %>
+            </li>
+        </ul>
+        <h3>RSS</h3>
+        <ul>
+            <li>
+                <%= link_to "Nombre de RSS par même IP", :action => "consult", :mode => "rss", :unit => "day", :tab => 1 %>
+            </li>
+        </ul>
+        
+    </div>
+    
+    <div id="tabs-6">
+        <h3>Mots Clés</h3>
+        <ul>
+            <li>
+                <%= link_to "Nombre de mots clés créés", :action => "tag", :mode => "ct", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de mots clés supprimés", :action => "tag", :mode => "dt", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de mots clés créés sur des notices", :action => "tag", :mode => "cn", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de mots clés supprimés sur des notices", :action => "tag", :mode => "dn", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de mots clés créés sur des listes", :action => "tag", :mode => "cl", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de mots clés supprimés sur des listes", :action => "tag", :mode => "dl", :unit => "day", :tab => 2 %>
+            </li>
+            
+        </ul>
+        
+        <br/>
+        <h3>Consultations Listes</h3>
+        <ul>
+            <li>
+                <%= link_to "Nombre de consultations de listes", :action => "list_consult", :mode => "v", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de consultations par liste", :action => "list_consult", :mode => "vl", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de listes créées", :action => "list_consult", :mode => "c", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de listes supprimées", :action => "list_consult", :mode => "d", :unit => "day", :tab => 2 %>
+            </li>
+        </ul>
+        <h3>Commentaires</h3>
+        <br/>
+        <ul>
+            <li>
+                <%= link_to "Nombre de commentaires créés", :action => "comment", :mode => "ct", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de commentaires supprimés", :action => "comment", :mode => "dt", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de commentaires créés sur des notices", :action => "comment", :mode => "cn", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de commentaires supprimés sur des notices", :action => "comment", :mode => "dn", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de commentaires créés sur des listes", :action => "comment", :mode => "cl", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de commentaires supprimés sur des listes", :action => "comment", :mode => "dl", :unit => "day", :tab => 2 %>
+            </li>
+        </ul>
+        <h3>Notes</h3>
+        <br/>
+        <ul>
+            <li>
+                <%= link_to "Nombre de notes créées", :action => "note", :mode => "ct", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notes supprimées", :action => "note", :mode => "dt", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notes créées sur des notices", :action => "note", :mode => "cn", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notes supprimées sur des notices", :action => "note", :mode => "dn", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notes créées sur des listes", :action => "note", :mode => "cl", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notes supprimées sur des listes", :action => "note", :mode => "dl", :unit => "day", :tab => 2 %>
+            </li>
+        </ul>
+        <h3>Notices sauvegardées</h3>
+        <ul>
+            <li>
+                <%= link_to "Nombre de notices sauvegardées", :action => "save_notice", :mode => "s", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notices sauvegardées dans des listes", :action => "save_notice", :mode => "l", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Nombre de notices sauvegardées dans Mes documents", :action => "save_notice", :mode => "m", :unit => "day", :tab => 2 %>
+            </li>
+        </ul>
+        <br/>
+        <h3>Requetes sauvegardées</h3>
+        <ul>
+            <li>
+                <%= link_to "Nombre de requêtes sauvegardées", :action => "save_request", :mode => "s", :unit => "day", :tab => 2 %>
+            </li>
+        </ul>
+        <h3>Utilisateurs</h3>
+        <ul>
+            <li>
+                <%= link_to "Total de comptes créés", :action => "consult_account", :mode => "s", :unit => "day", :tab => 2 %>
+            </li>
+            <li>
+                <%= link_to "Total de comptes actifs", :action => "consult_account", :mode => "g", :unit => "day", :tab => 2 %>
+            </li>
+        </ul>
+        
+    </div>
+    
+    <div id="tabs-15">
+        <h3>Notices</h3>
+        <ul>
+            <li>
+                <%= link_to "Les notices les mieux notées", :action => "top_notice", :mode => "note", :max => 10, :tab => 4 %>
+            </li>
+            <li>
+                <%= link_to "Les notices les plus commentées ", :action => "top_notice", :mode => "comment", :max => 10, :tab => 4 %>
+            </li>
+            <li>
+                <%= link_to "Les notices les plus exportées ", :action => "top_notice", :mode => "export", :max => 10, :tab => 4 %>
+            </li>
+            <li>
+                <%= link_to "Les notices les plus taggées ", :action => "top_notice", :mode => "tag", :max => 10, :tab => 4 %>
+            </li>
+            <li>
+                <%= link_to "Les notices les plus dans les listes ", :action => "top_notice", :mode => "liste", :max => 10, :tab => 4 %>
+            </li>
+            <li>
+                <%= link_to "Les notices les plus attendues ", :action => "top_notice", :mode => "sub", :max => 10, :tab => 4 %>
+            </li>
+        </ul>
+        <br/>
+        <h3>Listes</h3>
+        <ul>
+            <li>
+                <%= link_to "Les listes les mieux notées", :action => "top_liste", :mode => "note", :max => 10, :tab => 4 %>
+            </li>
+            <li>
+                <%= link_to "Les listes les plus commentées ", :action => "top_liste", :mode => "comment", :max => 10, :tab => 4 %>
+            </li>
+            <li>
+                <%= link_to "Les listes avec le plus grand nombre de notices sauvegardées ", :action => "top_liste", :mode => "notice", :max => 10, :tab => 4 %>
+            </li>
+            <li>
+                <%= link_to "Les listes les plus taggées ", :action => "top_liste", :mode => "tag", :max => 10, :tab => 4 %>
+            </li>
+        </ul>
+    </div>
+</div>
+<br/>

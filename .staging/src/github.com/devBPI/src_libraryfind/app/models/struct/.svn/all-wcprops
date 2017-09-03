@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/models/struct
+END
+tag_struct.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/models/struct/tag_struct.rb
+END
+label.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bpifs/!svn/ver/1321/trunk/bpifs/app/models/struct/label.rb
+END
+user_type_with_comments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/2116/trunk/bpifs/app/models/struct/user_type_with_comments.rb
+END
+params.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/2908/trunk/bpifs/app/models/struct/params.rb
+END
+notice_struct.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/3311/trunk/bpifs/app/models/struct/notice_struct.rb
+END
+examplaire.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/models/struct/examplaire.rb
+END
+subscription_struct.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/2661/trunk/bpifs/app/models/struct/subscription_struct.rb
+END
+list_item.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/2347/trunk/bpifs/app/models/struct/list_item.rb
+END
+user_item.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/1341/trunk/bpifs/app/models/struct/user_item.rb
+END
+alerts_struct.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/2775/trunk/bpifs/app/models/struct/alerts_struct.rb
+END
+profile.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/2949/trunk/bpifs/app/models/struct/profile.rb
+END
+user_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/2727/trunk/bpifs/app/models/struct/user_parameters.rb
+END
+object_tag_struct.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/2661/trunk/bpifs/app/models/struct/object_tag_struct.rb
+END
+note_with_comments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/2116/trunk/bpifs/app/models/struct/note_with_comments.rb
+END
+comment_struct.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/2775/trunk/bpifs/app/models/struct/comment_struct.rb
+END
+list_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/2962/trunk/bpifs/app/models/struct/list_user.rb
+END
+user_searches_preferences.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/2764/trunk/bpifs/app/models/struct/user_searches_preferences.rb
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/lib/adapter_helper
+END
+postgresql.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/lib/adapter_helper/postgresql.rb
+END
+sqlite3.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/lib/adapter_helper/sqlite3.rb
+END
+mysql.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/lib/adapter_helper/mysql.rb
+END
+oracle.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/lib/adapter_helper/oracle.rb
+END
+base.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/lib/adapter_helper/base.rb
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/lib
+END
+ferret_ext.so
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/lib/ferret_ext.so
+END
+ferret.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/lib/ferret.rb
+END
+ferret_version.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/lib/ferret_version.rb
+END

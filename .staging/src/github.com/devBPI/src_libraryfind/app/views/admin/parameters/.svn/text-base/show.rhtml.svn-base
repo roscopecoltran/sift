@@ -1,0 +1,32 @@
+<div id="page_contents">
+	<%= render(:partial => "admin/navigation") %>
+	<h1><%= @parameter.name %></h1>
+	<div id="center" class="column">
+	
+		<div id="edit_form">
+			<div id="form_field">
+				<span class="form_left">
+					<label for="VALUE">
+						<%= translate("VALUE") %>
+					</label>
+				</span>
+				<span class="form_right">
+					<%= @parameter.value %>
+				</span>
+			</div>
+			<div id="form_field">
+				<span class="form_left">
+				<label for="DESCRIPTION">
+						<%= translate("DESCRIPTION") %>
+					</label>
+				</span>
+				<span class="form_right">
+					<%= @parameter.description %>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+

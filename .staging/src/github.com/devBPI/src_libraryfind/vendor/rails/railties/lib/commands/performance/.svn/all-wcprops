@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/lib/commands/performance
+END
+benchmarker.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/lib/commands/performance/benchmarker.rb
+END
+profiler.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/lib/commands/performance/profiler.rb
+END
+request.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/lib/commands/performance/request.rb
+END

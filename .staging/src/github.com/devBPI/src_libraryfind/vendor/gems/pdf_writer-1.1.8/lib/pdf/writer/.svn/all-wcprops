@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/lib/pdf/writer
+END
+fontmetrics.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/lib/pdf/writer/fontmetrics.rb
+END
+graphics.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/lib/pdf/writer/graphics.rb
+END
+state.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/lib/pdf/writer/state.rb
+END
+lang.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/lib/pdf/writer/lang.rb
+END
+oreader.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/lib/pdf/writer/oreader.rb
+END
+ohash.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/lib/pdf/writer/ohash.rb
+END
+object.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/lib/pdf/writer/object.rb
+END
+strokestyle.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/lib/pdf/writer/strokestyle.rb
+END
+arc4.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/lib/pdf/writer/arc4.rb
+END

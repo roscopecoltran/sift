@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/test/activerecord_provider/helpers
+END
+providers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/test/activerecord_provider/helpers/providers.rb
+END
+set_provider.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/oai-0.0.13/test/activerecord_provider/helpers/set_provider.rb
+END

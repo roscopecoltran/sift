@@ -1,0 +1,35 @@
+<div id="error"><%= error_messages_for 'theme' %></div>
+<div id="form_field">
+	<span class="form_left">
+		<label for="reference">
+			<%=translate("REFERENCE") %>
+		</label>
+	</span>
+	<span class="form_right">
+		<%= f.text_field :reference %>
+	</span>
+</div>
+<div id="form_field">
+	<span class="form_left">
+		<label for="label">
+			<%=translate("LABEL") %>
+		</label>
+	</span>
+	<span class="form_right">
+		<%= f.text_field :label %>
+	</span>
+</div>
+<div id="form_field">
+	<span class="form_left">
+		<label for="parent">
+			<%=translate("PARENT") %>
+		</label>
+	</span>
+	<span class="form_right">
+		<%= f.select :parent, @roots, :selected => @theme.parent.nil? ? 0 : @theme.parent.to_i %>
+	</span>
+</div>
+	
+<%= f.submit translate('SAVE'), :id => 'saveButton' %>
+<%= button_to translate('BACK'), admin_themes_path, :method => "get", :id => 'saveButton' %>
+

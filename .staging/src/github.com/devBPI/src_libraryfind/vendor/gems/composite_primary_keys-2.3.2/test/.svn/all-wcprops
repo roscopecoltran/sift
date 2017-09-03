@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test
+END
+test_exists.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_exists.rb
+END
+test_ids.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_ids.rb
+END
+test_find.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_find.rb
+END
+test_update.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_update.rb
+END
+test_composite_arrays.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_composite_arrays.rb
+END
+test_attributes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_attributes.rb
+END
+test_attribute_methods.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_attribute_methods.rb
+END
+test_pagination.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_pagination.rb
+END
+test_dummy.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_dummy.rb
+END
+README_tests.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/README_tests.txt
+END
+test_tutorial_examle.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_tutorial_examle.rb
+END
+test_associations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_associations.rb
+END
+test_clone.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_clone.rb
+END
+test_delete.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_delete.rb
+END
+hash_tricks.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/hash_tricks.rb
+END
+test_create.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_create.rb
+END
+abstract_unit.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/abstract_unit.rb
+END
+test_miscellaneous.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_miscellaneous.rb
+END
+test_polymorphic.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_polymorphic.rb
+END
+test_santiago.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/vendor/gems/composite_primary_keys-2.3.2/test/test_santiago.rb
+END

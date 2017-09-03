@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images
+END
+has_one.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/has_one.png
+END
+has_one_through.png
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/has_one_through.png
+END
+csrf.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/csrf.png
+END
+header_backdrop.png
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/header_backdrop.png
+END
+has_many.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/has_many.png
+END
+has_many_through.png
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/has_many_through.png
+END
+rails_logo_remix.gif
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/rails_logo_remix.gif
+END
+ruby_on_rails_by_mike_rundle2.gif
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/ruby_on_rails_by_mike_rundle2.gif
+END
+session_fixation.png
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/session_fixation.png
+END
+polymorphic.png
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/polymorphic.png
+END
+bullet.gif
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/bullet.gif
+END
+belongs_to.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/belongs_to.png
+END
+habtm.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/images/habtm.png
+END

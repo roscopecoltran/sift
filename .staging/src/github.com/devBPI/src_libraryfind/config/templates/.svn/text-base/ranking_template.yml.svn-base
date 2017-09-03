@@ -1,0 +1,56 @@
+
+
+#=========================================================================
+# 
+# Define / setting of ranking value
+#
+#=========================================================================
+
+SPECIAL_BOOST: @special_boost@
+PREF: @pref@
+
+################### Boost value for solr ############################
+TITLE_SOLR_MATCH : @TITLE_SOLR_MATCH@
+CREATOR_SOLR_MATCH : @CREATOR_SOLR_MATCH@
+SUBJECT_SOLR_MATCH : @SUBJECT_SOLR_MATCH@
+THEME_SOLR_MATCH : @THEME_SOLR_MATCH@
+INDICE_SOLR_MATCH : @INDICE_SOLR_MATCH@
+
+TITLE_SOLR_MATCH_EXACT : @TITLE_SOLR_MATCH_EXACT@
+CREATOR_SOLR_MATCH_EXACT : @CREATOR_SOLR_MATCH_EXACT@
+SUBJECT_SOLR_MATCH_EXACT : @SUBJECT_SOLR_MATCH_EXACT@
+THEME_SOLR_MATCH_EXACT : @THEME_SOLR_MATCH_EXACT@
+
+
+DATE_BOOST : @DATE_BOOST@
+CATALOGUE_BPI_BOOST : @CATALOGUE_BPI_BOOST@
+
+############### Boost value for synchronous search #####################
+# Title of notice for 
+TITLE_PERFECT_MATCH: @title_perfect_match@
+TITLE_PARTIAL_MATCH: @title_partial_match@
+TITLE_PARTIAL_MATCH_OFFSET_1: @title_partial_match_offset_1@
+TITLE_PARTIAL_MATCH_OFFSET_SUP: @title_partial_match_offset_up@
+
+# Creator of notice
+CREATOR_PERFECT_MATCH: @creator_perfect_match@
+CREATOR_PARTIAL_MATCH: @creator_partial_match@
+CREATOR_PARTIAL_MATCH_OFFSET_1: @creator_partial_match_offset_1@
+CREATOR_PARTIAL_MATCH_OFFSET_SUP: @creator_partial_match_offset_sup@
+
+# Subject of notice
+SUBJECT_PERFECT_MATCH: @subject_perfect_match@
+SUBJECT_PARTIAL_MATCH_OFFSET_1: @subject_partial_match_offset_1@
+SUBJECT_PARTIAL_MATCH_OFFSET_SUP: @subject_partial_match_offset_sup@
+
+# Theme of notice
+THEME_PERFECT_MATCH: @theme_perfect_match@
+THEME_PARTIAL_MATCH: @theme_partial_match@
+
+# Indice
+INDICE_PERFECT_MATCH: @indice_perfect_match@
+INDICE_PARTIAL_MATCH : @indice_partial_match@
+INDICE_PARTIAL_MATCH_OFFSET_1 : @indice_partial_match_offset_1@
+INDICE_PARTIAL_MATCH_OFFSET_SUP : @indice_partial_match_offset_sup@
+
+

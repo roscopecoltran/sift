@@ -1,0 +1,57 @@
+<div id="page_contents">
+	<%= render :partial => "admin/navigation" %>
+	<div id="center" class="column">
+		<p style="color: green"><%= flash[:notice] %></p>
+		<p style="color: red">
+			<% if flash[:errors] %>
+				<ul>
+					<% flash[:errors].each do |e| %>
+						<li><%= e %></li>
+					<% end %>
+				</ul>
+			<% end %>
+		</p>
+	<div id="center" class="middle">
+
+		<h1><%= "#{@source} - #{translate('EDIT_THEMES_REFERENCES')} #{Theme.find_by_reference(@theme).full_name unless Theme.find_by_reference(@theme).nil?}" %></h1> 
+
+		<% form_tag update_all_admin_themes_references_path(:source => @source, :theme => @theme), :html => { :method => :put } do |f| %>
+
+			<% unless @references.empty? %>
+				<ul>
+					<% @references.each do |ref| %>
+						<% if ref.errors.any? %>
+							<div id="error">
+								<ul>
+									<% ref.errors.each do |attr, msg| %>
+			 	 						<li><%= msg %></li>
+									<% end %>
+								</ul>
+							</div>
+						<% end %>
+						<% fields_for "references[]", ref do |f| %>
+							<li>
+								<%= f.text_field :ref_source %>
+								<% if @source != 'portfoliodw' %>
+									<% ['F', 'A', 'E'].each do |mode| %>
+										<span><%= f.radio_button :construction_mode, mode, :checked => ref.construction_mode == mode ? true : false, :style => "width:14px" %><%= translate(mode) %></span>
+									<% end %>
+								<% else %>
+									<%= f.check_box :construction_mode, {:checked => ref.construction_mode == 'E' ? true : false}, 'E', 'F' %>
+									<%= translate("E") %>
+								<% end %>
+								<%= check_box_tag "references[#{ref.id}][del]" %>
+								<%= translate("DELETE") %>
+							</li>
+						<% end %>
+					<% end %>
+				</ul>
+			<% end %>
+
+			<%= f.submit translate('SAVE'), :id => 'saveButton' %>
+			<%= link_to translate('BACK'), admin_themes_references_path(:source => @source), :id => 'saveButton' %>
+
+		<% end %>
+
+	</div>
+</div>

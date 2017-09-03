@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/generators/selenium/templates
+END
+selenese.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/generators/selenium/templates/selenese.rhtml
+END
+rselenese.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/generators/selenium/templates/rselenese.rhtml
+END
+rhtml.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/generators/selenium/templates/rhtml.rhtml
+END

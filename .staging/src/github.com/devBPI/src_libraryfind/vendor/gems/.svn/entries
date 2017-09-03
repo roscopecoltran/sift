@@ -1,0 +1,64 @@
+9
+
+dir
+6222
+https://svn.bsiforge.com/svn/bpifs/trunk/bpifs/vendor/gems
+https://svn.bsiforge.com/svn/bpifs
+
+
+
+2012-06-12T11:31:07.178809Z
+5540
+jcarnus
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+171cada2-f8fe-4419-b9ec-09dd45d71e2d
+
+composite_primary_keys-2.3.2
+dir
+
+datanoise-actionwebservice-2.2.2
+dir
+
+opensearch-0.0.1
+dir
+
+ropenurl-0.0.2
+dir
+
+oai-0.0.13
+dir
+
+json-1.1.3
+dir
+
+sru-0.0.5
+dir
+
+ferret-0.11.6
+dir
+
+pdf_writer-1.1.8
+dir
+
+transaction-simple-1.3.0
+dir
+
+color-tools-1.4.0
+dir
+
+wcapi-0.0.1
+dir
+

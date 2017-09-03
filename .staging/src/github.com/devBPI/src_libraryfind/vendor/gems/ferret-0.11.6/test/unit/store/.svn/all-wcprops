@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/store
+END
+tc_ram_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/store/tc_ram_store.rb
+END
+tm_store_lock.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/store/tm_store_lock.rb
+END
+tc_fs_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/store/tc_fs_store.rb
+END
+tm_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/store/tm_store.rb
+END

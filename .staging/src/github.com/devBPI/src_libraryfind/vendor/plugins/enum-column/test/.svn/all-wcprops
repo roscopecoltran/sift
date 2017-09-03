@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/1179/trunk/bpifs/vendor/plugins/enum-column/test
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/1179/trunk/bpifs/vendor/plugins/enum-column/test/test_helper.rb
+END
+enum_mysql_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/1179/trunk/bpifs/vendor/plugins/enum-column/test/enum_mysql_test.rb
+END

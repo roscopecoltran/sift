@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack
+END
+RUNNING_UNIT_TESTS
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/RUNNING_UNIT_TESTS
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/Rakefile
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/CHANGELOG
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/install.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/MIT-LICENSE
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/README
+END

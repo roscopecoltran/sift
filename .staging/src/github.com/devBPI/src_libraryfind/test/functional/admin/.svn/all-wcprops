@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/776/trunk/bpifs/test/functional/admin
+END
+collection_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/functional/admin/collection_controller_test.rb
+END
+user_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/functional/admin/user_controller_test.rb
+END
+editorials_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/776/trunk/bpifs/test/functional/admin/editorials_controller_test.rb
+END
+search_tab_filters_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/bpifs/!svn/ver/240/trunk/bpifs/test/functional/admin/search_tab_filters_controller_test.rb
+END
+collection_group_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/functional/admin/collection_group_controller_test.rb
+END
+dashboard_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/functional/admin/dashboard_controller_test.rb
+END
+site_config_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/functional/admin/site_config_controller_test.rb
+END

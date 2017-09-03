@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations
+END
+has_many_through_associations_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/has_many_through_associations_test.rb
+END
+has_many_associations_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/has_many_associations_test.rb
+END
+join_model_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/join_model_test.rb
+END
+callbacks_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/callbacks_test.rb
+END
+eager_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/eager_test.rb
+END
+eager_singularization_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/eager_singularization_test.rb
+END
+inner_join_association_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/inner_join_association_test.rb
+END
+eager_load_nested_include_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/eager_load_nested_include_test.rb
+END
+cascaded_eager_loading_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/cascaded_eager_loading_test.rb
+END
+has_one_through_associations_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/has_one_through_associations_test.rb
+END
+has_one_associations_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/has_one_associations_test.rb
+END
+eager_load_includes_full_sti_class_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/eager_load_includes_full_sti_class_test.rb
+END
+belongs_to_associations_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/belongs_to_associations_test.rb
+END
+has_and_belongs_to_many_associations_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/has_and_belongs_to_many_associations_test.rb
+END
+extension_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/cases/associations/extension_test.rb
+END

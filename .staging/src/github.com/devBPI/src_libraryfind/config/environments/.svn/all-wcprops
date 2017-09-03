@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bpifs/!svn/ver/1266/trunk/bpifs/config/environments
+END
+test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/97/trunk/bpifs/config/environments/test.rb
+END
+development.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/605/trunk/bpifs/config/environments/development.rb
+END
+production.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/1266/trunk/bpifs/config/environments/production.rb
+END

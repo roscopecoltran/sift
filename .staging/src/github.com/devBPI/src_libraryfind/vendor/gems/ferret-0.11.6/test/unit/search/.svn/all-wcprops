@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/search
+END
+tc_sort.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/search/tc_sort.rb
+END
+tc_sort_field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/search/tc_sort_field.rb
+END
+tc_multiple_search_requests.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/search/tc_multiple_search_requests.rb
+END
+tc_fuzzy_query.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/search/tc_fuzzy_query.rb
+END
+tc_search_and_sort.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/search/tc_search_and_sort.rb
+END
+tc_index_searcher.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/search/tc_index_searcher.rb
+END
+tc_spans.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/search/tc_spans.rb
+END
+tc_filter.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/search/tc_filter.rb
+END
+tc_multi_searcher.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/search/tc_multi_searcher.rb
+END
+tm_searcher.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/search/tm_searcher.rb
+END

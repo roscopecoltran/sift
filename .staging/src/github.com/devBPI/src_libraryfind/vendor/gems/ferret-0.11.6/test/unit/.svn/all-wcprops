@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit
+END
+ts_index.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/ts_index.rb
+END
+ts_largefile.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/ts_largefile.rb
+END
+ts_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/ts_store.rb
+END
+tc_document.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/tc_document.rb
+END
+ts_utils.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/ts_utils.rb
+END
+ts_query_parser.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/ts_query_parser.rb
+END
+ts_analysis.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/ts_analysis.rb
+END
+ts_search.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/ferret-0.11.6/test/unit/ts_search.rb
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord
+END
+RUNNING_UNIT_TESTS
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/RUNNING_UNIT_TESTS
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/Rakefile
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/CHANGELOG
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/install.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/README
+END

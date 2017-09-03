@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics
+END
+methods.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/methods.txt
+END
+index.txt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/index.txt
+END
+filters.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/filters.txt
+END
+request_response_objects.txt
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/request_response_objects.txt
+END
+introduction.txt
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/introduction.txt
+END
+verification.txt
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/verification.txt
+END
+session.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/session.txt
+END
+params.txt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/params.txt
+END
+parameter_filtering.txt
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/parameter_filtering.txt
+END
+rescue.txt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/rescue.txt
+END
+changelog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/changelog.txt
+END
+streaming.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/streaming.txt
+END
+cookies.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/cookies.txt
+END
+csrf.txt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/csrf.txt
+END
+http_auth.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/actioncontroller_basics/http_auth.txt
+END

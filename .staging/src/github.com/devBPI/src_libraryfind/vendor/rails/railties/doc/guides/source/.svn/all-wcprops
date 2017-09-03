@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source
+END
+activerecord_validations_callbacks.txt
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/activerecord_validations_callbacks.txt
+END
+index.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/index.txt
+END
+security.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/security.txt
+END
+routing_outside_in.txt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/routing_outside_in.txt
+END
+configuring.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/configuring.txt
+END
+getting_started_with_rails.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/getting_started_with_rails.txt
+END
+testing_rails_applications.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/testing_rails_applications.txt
+END
+layouts_and_rendering.txt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/layouts_and_rendering.txt
+END
+caching_with_rails.txt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/caching_with_rails.txt
+END
+form_helpers.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/form_helpers.txt
+END
+command_line.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/command_line.txt
+END
+authors.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/authors.txt
+END
+2_2_release_notes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/2_2_release_notes.txt
+END
+finders.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/finders.txt
+END
+debugging_rails_applications.txt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/debugging_rails_applications.txt
+END
+active_record_basics.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/active_record_basics.txt
+END
+association_basics.txt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/association_basics.txt
+END

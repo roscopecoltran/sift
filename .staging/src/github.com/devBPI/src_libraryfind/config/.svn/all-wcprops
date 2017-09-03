@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/bpifs/!svn/ver/6479/trunk/bpifs/config
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bpifs/!svn/ver/6467/trunk/bpifs/config/routes.rb
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bpifs/!svn/ver/97/trunk/bpifs/config/boot.rb
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/bpifs/!svn/ver/6245/trunk/bpifs/config/environment.rb
+END
+profil_postes.yml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/6479/trunk/bpifs/config/profil_postes.yml
+END
+roles_libraryfind.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/3803/trunk/bpifs/config/roles_libraryfind.yml
+END

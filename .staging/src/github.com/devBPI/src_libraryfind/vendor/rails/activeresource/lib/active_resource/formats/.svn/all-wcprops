@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activeresource/lib/active_resource/formats
+END
+json_format.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activeresource/lib/active_resource/formats/json_format.rb
+END
+xml_format.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activeresource/lib/active_resource/formats/xml_format.rb
+END

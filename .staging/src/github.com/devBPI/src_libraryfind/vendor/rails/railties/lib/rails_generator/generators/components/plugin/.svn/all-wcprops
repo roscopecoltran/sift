@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/lib/rails_generator/generators/components/plugin
+END
+USAGE
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/lib/rails_generator/generators/components/plugin/USAGE
+END
+plugin_generator.rb
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/lib/rails_generator/generators/components/plugin/plugin_generator.rb
+END

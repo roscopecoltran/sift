@@ -1,0 +1,61 @@
+<div id="page_contents">
+	<%= render(:partial => "admin/navigation") %>
+	<h1><%=h [@collection.id.to_s, @collection.alt_name].join(" - ") %></h1>
+	<%= link_to translate('EDIT'), :action => 'edit', :id => @collection %>
+	<div id="center" class="column">
+	
+		<!-- Informations sur la moisson -->
+		<%= render(:partial => "harvest") %>
+
+		<!-- Informations sur la collection -->
+		<div id="edit_form">
+			<h2>Collection</h2>
+			<% @fields.each do |column| %>
+				<div id="form_field">
+					<span class="form_left">
+						<label for="<%=column.name %>">
+							<%= translate("#{column.name.upcase}_LABEL") %>
+						</label>
+					</span>
+					<span class="form_right">
+						<% case column.type 
+						when :boolean %>
+							<%= translate(@collection.send(column.name) ? "YES_LABEL" : "NO_LABEL") %>
+						<% when :integer %>
+							<% case  @collection.send(column.name)
+							when 0 %>
+								<%= translate("NO_LABEL") %>
+							<% when 1 %>
+								<%= translate("YES_LABEL") %>
+							<% else %>
+              	<%=h @collection.send(column.name) %>
+							<% end %>
+						<% else %>
+							<%=h @collection.send(column.name) %>
+						<% end %>
+					</span>
+				</div>
+			<% end %>
+
+			<!-- collection groups de la collection -->
+			<div id='form_field'>
+				<span class="form_left">
+					<label for="collection_groups">
+						<%= translate("COLLECTION_GROUPS_LABEL") %>
+					</label>
+				</span>
+				<span class="form_right collection_groups_reduced">
+					<%= collection_groups_links(@collection, false) %>
+					<%= link_to '+', '#', :class => 'display_collection_groups' unless @collection.collection_groups.size <= 5 %>
+				</span>
+				<span class="form_right collection_groups hide">
+					<%= collection_groups_links(@collection, true) %>
+				</span>
+      </div>
+
+		</div>
+	</div>
+</div>
+
+
+

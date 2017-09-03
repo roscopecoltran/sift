@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/console
+END
+breakpointer
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/breakpointer
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/server
+END
+dbconsole
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/dbconsole
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/generate
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/plugin
+END

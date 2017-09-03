@@ -1,0 +1,61 @@
+9
+
+dir
+6222
+https://svn.bsiforge.com/svn/bpifs/trunk/bpifs/vendor/rails/railties/lib/rails_generator/generators/components
+https://svn.bsiforge.com/svn/bpifs
+
+
+
+2009-04-17T11:33:02.130487Z
+127
+ssmati
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+171cada2-f8fe-4419-b9ec-09dd45d71e2d
+
+model
+dir
+
+performance_test
+dir
+
+scaffold
+dir
+
+integration_test
+dir
+
+controller
+dir
+
+observer
+dir
+
+resource
+dir
+
+mailer
+dir
+
+migration
+dir
+
+session_migration
+dir
+
+plugin
+dir
+

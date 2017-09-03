@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activeresource/test/fixtures
+END
+beast.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activeresource/test/fixtures/beast.rb
+END
+customer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activeresource/test/fixtures/customer.rb
+END
+person.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activeresource/test/fixtures/person.rb
+END
+street_address.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activeresource/test/fixtures/street_address.rb
+END

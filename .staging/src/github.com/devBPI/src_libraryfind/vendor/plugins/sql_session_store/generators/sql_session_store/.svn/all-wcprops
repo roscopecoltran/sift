@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/generators/sql_session_store
+END
+USAGE
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/generators/sql_session_store/USAGE
+END
+sql_session_store_generator.rb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/generators/sql_session_store/sql_session_store_generator.rb
+END

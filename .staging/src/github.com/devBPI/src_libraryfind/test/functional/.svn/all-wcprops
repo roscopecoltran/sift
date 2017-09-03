@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bpifs/!svn/ver/776/trunk/bpifs/test/functional
+END
+search_tab_subjects_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/279/trunk/bpifs/test/functional/search_tab_subjects_controller_test.rb
+END
+record_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/functional/record_controller_test.rb
+END
+user_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/functional/user_controller_test.rb
+END
+document_types_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/126/trunk/bpifs/test/functional/document_types_controller_test.rb
+END
+primary_document_types_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/126/trunk/bpifs/test/functional/primary_document_types_controller_test.rb
+END
+cart_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/functional/cart_controller_test.rb
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/transaction-simple-1.3.0/tests
+END
+tc_transaction_simple_group.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/transaction-simple-1.3.0/tests/tc_transaction_simple_group.rb
+END
+tc_transaction_simple.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/transaction-simple-1.3.0/tests/tc_transaction_simple.rb
+END
+testall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/transaction-simple-1.3.0/tests/testall.rb
+END
+tc_transaction_simple_threadsafe.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/transaction-simple-1.3.0/tests/tc_transaction_simple_threadsafe.rb
+END

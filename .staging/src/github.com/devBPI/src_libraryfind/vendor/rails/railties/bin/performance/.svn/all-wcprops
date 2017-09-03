@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/performance
+END
+benchmarker
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/performance/benchmarker
+END
+profiler
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/performance/profiler
+END
+request
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/performance/request
+END

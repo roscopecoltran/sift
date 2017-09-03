@@ -1,0 +1,4 @@
+# Logfile created on Fri Aug 24 13:57:55 +0200 2012 by logger.rb
+2012-08-24 13:57:57 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211", "10.1.2.113:11211", "10.1.2.114:11211"]
+2012-08-24 13:57:58 DEBUG    [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+2012-08-24 13:57:58 DEBUG    [4;35;1mHarvestSchedule Columns (1.1ms)[0m   [0mSHOW FIELDS FROM harvest_schedules[0m

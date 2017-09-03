@@ -5,9 +5,11 @@ set -e
 clear
 echo
 
-DIR=$(dirname "$0")
-echo "$DIR"
-. ${DIR}/common.sh
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+export COMMON_SCRIPT_DIR=$(dirname ${COMMON_SCRIPT})
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
+fi
 
 ## #################################################################
 ## global env variables
@@ -19,7 +21,7 @@ export PROJECT_VCS_BRANCH=${PROJECT_VCS_BRANCH:-"master"}
 export PROJECT_VCS_CLONE_DEPTH=${PROJECT_VCS_CLONE_DEPTH:-"1"}
 export PROJECT_VCS_CLONE_PATH=${PROJECT_VCS_CLONE_PATH:-"/app/$(basename $PROJECT_VCS_URI)"}
 
-ensure_dir ${MS_BOND_VCS_CLONE_PATH}
+ensure_dir ${PROJECT_VCS_CLONE_PATH}
 
 export SRC_BUILD_DEPS="libccv"
 for dep in ${SRC_BUILD_DEPS}; do

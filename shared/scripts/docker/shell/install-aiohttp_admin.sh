@@ -5,9 +5,10 @@ set -e
 clear
 echo
 
-DIR=$(dirname "$0")
-echo "$DIR"
-. ${DIR}/common.sh
+export COMMON_SCRIPT=$(find /app/shared -name "common.sh")
+if [ -f ${COMMON_SCRIPT} ]; then
+	source ${COMMON_SCRIPT}
+fi
 
 ## #################################################################
 ## global env variables

@@ -11,15 +11,10 @@ if [ -f ${COMMON_SCRIPT} ]; then
 fi
 
 # Set temp environment vars
-export CAFFE2_VCS_REPO=https://github.com/caffe2/caffe2.git
-export CAFFE2_VCS_BRANCH=v0.8.1
-export CAFFE2_VCS_PATH=/tmp/caffe2
+export CAFFE_VCS_REPO=https://github.com/caffe2/caffe2.git
+export CAFFE_VCS_BRANCH=v0.8.1
+export CAFFE_VCS_PATH=/tmp/caffe2
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
-
-# Install libgit2
-if [ ! -f /usr/local/bin/cmake ]; then
-	./shared/scripts/docker/shell/install-cmake.sh
-fi
 
 # Install build deps
 apk add --update --no-cache --no-progress --allow-untrusted \
@@ -31,13 +26,16 @@ apk add --update --no-cache --no-progress --allow-untrusted \
 		openblas openblas-dev hdf5-dev hdf5 py3-protobuf \
 		leveldb-dev leveldb snappy-dev snappy lmdb-dev lmdb
 
-if [ -d ${CAFFE2_VCS_PATH} ];then
-	rm -fR ${CAFFE2_VCS_PATH}
-fi
+# clean previous install
+ensure_dir ${CAFFE_VCS_PATH}
 
 export SRC_BUILD_DEPS="cmake"
 for dep in ${SRC_BUILD_DEPS}; do
 	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/common/${dep}.sh ]; then
+			chmod a+x ${COMMON_SCRIPT_DIR}/common/${dep}.sh
+			${COMMON_SCRIPT_DIR}/common/${dep}.sh
+		fi
 		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
 			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
 			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
@@ -50,11 +48,11 @@ done
 
 pip3 install --no-cache numpy
 
-# Compile & Install libgit2 (v0.23)
-git clone -b ${CAFFE2_VCS_BRANCH} --depth 1 -- ${CAFFE2_VCS_REPO} ${CAFFE2_VCS_PATH}
+# Compile & Install 
+git clone -b ${CAFFE_VCS_BRANCH} --depth 1 -- ${CAFFE_VCS_REPO} ${CAFFE_VCS_PATH}
 
-mkdir -p ${CAFFE2_VCS_PATH}/build
-cd ${CAFFE2_VCS_PATH}/build
+mkdir -p ${CAFFE_VCS_PATH}/build
+cd ${CAFFE_VCS_PATH}/build
 
 # -DUSE_ROCKSDB=OFF 
 cmake -DCMAKE_BUILD_TYPE=Release -DUSE_CUDA=OFF ..
@@ -65,4 +63,4 @@ make install
 # apk --no-cache --no-progress del .caffe2-build-deps
 
 # Cleanup
-# rm -r ${CAFFE2_VCS_PATH}
+# rm -r ${CAFFE_VCS_PATH}

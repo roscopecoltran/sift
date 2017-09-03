@@ -25,13 +25,16 @@ apk --no-cache --no-progress --update \
 	--allow-untrusted \
 	--virtual .curlpp-build-deps add rabbitmq-c rabbitmq-c-dev libcrypto1.0
 
-if [ -d ${AMQPCPP_VCS_CLONE_PATH} ];then
-	rm -fR ${AMQPCPP_VCS_CLONE_PATH}
-fi
+# clean previous install
+ensure_dir ${AMQPCPP_VCS_CLONE_PATH}
 
 export SRC_BUILD_DEPS=""
 for dep in ${SRC_BUILD_DEPS}; do
 	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/common/${dep}.sh ]; then
+			chmod a+x ${COMMON_SCRIPT_DIR}/common/${dep}.sh
+			${COMMON_SCRIPT_DIR}/common/${dep}.sh
+		fi
 		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
 			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
 			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
@@ -45,7 +48,7 @@ done
 # clean previous install
 ensure_dir ${AMQPCPP_VCS_CLONE_PATH}
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${AMQPCPP_VCS_CLONE_BRANCH} --recursive --depth ${AMQPCPP_VCS_CLONE_DEPTH} -- ${AMQPCPP_VCS_REPO} ${AMQPCPP_VCS_CLONE_PATH}
 
 mkdir -p ${AMQPCPP_VCS_CLONE_PATH}/build

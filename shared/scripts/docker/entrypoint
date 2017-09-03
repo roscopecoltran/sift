@@ -39,8 +39,8 @@ case "$1" in
 	;;
 
   'dev')
-	DOCKER_SCRIPTS=$(find /app/shared/scripts/docker/shell -name "*.sh")
-	for FILE_PATH in ${DOCKER_SCRIPTS}; do
+	DEFAULT_DOCKER_SCRIPTS=$(find /app/shared/scripts/docker/shell -name "*.sh")
+	for FILE_PATH in ${DEFAULT_DOCKER_SCRIPTS}; do
 		FILE_DIRNAME=$(dirname ${FILE_PATH})
 		FILE_NAME=$(basename ${FILE_PATH})
 		FILE_BASENAME=$(echo $FILE_NAME | cut -f 1 -d '.')

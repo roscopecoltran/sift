@@ -29,6 +29,7 @@ if [ -f ${COMMON_GOLANG_SCRIPT} ]; then
 fi
 
 ensure_dir ${BUILDPATH}
+
 git clone --recursive --depth=1 -b master https://${PROJECT_VCS_URI} ${BUILDPATH}
 cd ${BUILDPATH}
 

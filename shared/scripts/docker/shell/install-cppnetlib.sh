@@ -22,9 +22,11 @@ fi
 
 # Install build deps
 apk --no-cache --no-progress --virtual .cpp-netlib-build-deps add g++ gcc musl-dev make autoconf automake boost-dev gtest-dev gtest ninja pkgconf
-# libmaxminddb libmaxminddb-dev
 
-# Compile & Install libgit2 (v0.23)
+# clean previous install
+ensure_dir ${CPPNETLIB_VCS_PATH}
+
+# Compile & Install 
 git clone -b ${CPPNETLIB_VCS_BRANCH} --recursive --depth 1 -- ${CPPNETLIB_VCS_REPO} ${CPPNETLIB_VCS_PATH}
 
 mkdir -p ${CPPNETLIB_VCS_PATH}/build

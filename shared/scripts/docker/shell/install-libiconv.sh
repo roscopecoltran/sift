@@ -21,9 +21,8 @@ export LIBICONV_VERSION=${LIBICONV_VERSION:-"1.15"}
 apk --no-cache --no-progress --virtual .libiconv-build-deps add g++ gcc musl-dev musl make autoconf automake
 wget -nc http://ftp.gnu.org/pub/gnu/libiconv/libiconv-${LIBICONV_VERSION}.tar.gz -O /tmp/libiconv-${LIBICONV_VERSION}.tar.gz
 
-if [ -d /usr/src/libiconv-${LIBICONV_VERSION} ]; then
-	rm -fR /usr/src/libiconv-${LIBICONV_VERSION}
-fi
+# clean previous install
+ensure_dir /usr/src/libiconv-${LIBICONV_VERSION} 
 
 cd /usr/src/libiconv-${LIBICONV_VERSION}
 ./configure --prefix=/usr/local

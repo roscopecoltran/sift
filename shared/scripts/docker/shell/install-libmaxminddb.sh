@@ -20,11 +20,10 @@ export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 # Install build deps
 apk --no-cache --no-progress --virtual .libmaxminddb-build-deps add g++ gcc musl-dev make autoconf automake perl-ipc-run3 libtool
 
-if [ -d ${LIBMAXMINDDB_VCS_PATH} ];then
-	rm -fR ${LIBMAXMINDDB_VCS_PATH}
-fi
+# clean previous install
+ensure_dir ${LIBMAXMINDDB_VCS_PATH}
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${LIBMAXMINDDB_VCS_BRANCH} --depth 1 -- ${LIBMAXMINDDB_VCS_REPO} ${LIBMAXMINDDB_VCS_PATH}
 
 cd ${LIBMAXMINDDB_VCS_PATH}

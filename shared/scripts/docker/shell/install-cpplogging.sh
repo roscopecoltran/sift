@@ -31,11 +31,10 @@ for dep in ${CPPLOGGING_DEPS}; do
 	fi
 done
 
-if [ -d ${CPPLOGGING_VCS_PATH} ];then
-	rm -fR ${CPPLOGGING_VCS_PATH}
-fi
+# clean previous install
+ensure_dir ${CPPLOGGING_VCS_PATH}
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${CPPLOGGING_VCS_BRANCH} --depth 1 -- ${CPPLOGGING_VCS_REPO} ${CPPLOGGING_VCS_PATH}
 
 cd ${CPPLOGGING_VCS_PATH}/build

@@ -18,14 +18,25 @@ export NEWT_VCS_PATH=${GOPATH}/src/mynewt.apache.org
 # Install build deps
 apk --no-cache --no-progress --virtual build-deps add go gcc musl-dev make cmake openssl-dev libssh2-dev 
 
-# Install libgit2
-if [ ! -d /usr/local/include/git2 ]; then
-	./shared/scripts/docker/shell/install-libgit2.sh
-fi
+export SRC_BUILD_DEPS="golang libgit2"
+for dep in ${SRC_BUILD_DEPS}; do
+	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/common/${dep}.sh ]; then
+			chmod a+x ${COMMON_SCRIPT_DIR}/common/${dep}.sh
+			${COMMON_SCRIPT_DIR}/common/${dep}.sh
+		fi
+		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
+			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
+			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
+			${COMMON_SCRIPT_DIR}/install-${dep}.sh
+		else
+			echo "missing ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
+		fi
+	fi
+done
 
-if [ -d ${NEWT_VCS_PATH} ]; then
-	rm -fR ${NEWT_VCS_PATH}
-fi
+# clean previous install
+ensure_dir ${NEWT_VCS_PATH}
 
 # Compile & Install newt (master)
 git clone -b ${NEWT_VCS_BRANCH} --depth 1 -- ${NEWT_VCS_REPO} ${NEWT_VCS_PATH}

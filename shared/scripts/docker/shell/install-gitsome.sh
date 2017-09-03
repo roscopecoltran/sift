@@ -13,9 +13,8 @@ fi
 # Install build deps
 apk add --no-cache --no-progress --virtual .gits-build-deps python3-dev
 
-if [ -d /app/external/gitsome ]; then
-	rm -fR /app/external/gitsome
-fi
+# clean previous install
+ensure_dir /app/external/gitsome
 
 git clone --recursive --depth=1 https://github.com/donnemartin/gitsome /app/external/gitsome
 cd /app/external/gitsome

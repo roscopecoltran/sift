@@ -28,13 +28,16 @@ apk --no-cache --no-progress --update \
 									 g++ gcc openblas openblas-dev libpng libpng-dev boost-python boost-dev \
 									 libjpeg-turbo libjpeg-turbo-dev jpeg jpeg-dev giflib giflib-dev
 
-if [ -d ${DLIB_VCS_CLONE_PATH} ];then
-	rm -fR ${DLIB_VCS_CLONE_PATH}
-fi
+# clean previous install
+ensure_dir ${DLIB_VCS_CLONE_PATH}
 
 export SRC_BUILD_DEPS=""
 for dep in ${SRC_BUILD_DEPS}; do
 	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/common/${dep}.sh ]; then
+			chmod a+x ${COMMON_SCRIPT_DIR}/common/${dep}.sh
+			${COMMON_SCRIPT_DIR}/common/${dep}.sh
+		fi
 		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
 			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
 			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
@@ -45,7 +48,7 @@ for dep in ${SRC_BUILD_DEPS}; do
 	fi
 done
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${DLIB_VCS_CLONE_BRANCH} --recursive --depth ${DLIB_VCS_CLONE_DEPTH} -- ${DLIB_VCS_REPO} ${DLIB_VCS_CLONE_PATH}
 
 mkdir -p ${DLIB_VCS_CLONE_PATH}/build

@@ -19,9 +19,8 @@ export TF_VERSION=${TF_VERSION:-"$TF_VCS_BRANCH"}
 
 apk add --no-cache --no-progress --virtual .builddeps openjdk8 wget zip build-base bash python3-dev linux-headers 
 
-if [ -d ${TF_VCS_CLONE_PATH} ]; then
-	rm -fR ${TF_VCS_CLONE_PATH}
-fi
+# clean previous install
+ensure_dir ${TF_VCS_CLONE_PATH}
 
 git clone -b ${TF_VCS_BRANCH} --depth ${TF_VCS_CLONE_DEPTH} -- ${TF_VCS_REPO} ${TF_VCS_CLONE_PATH}
 

@@ -22,7 +22,7 @@ ensure_dir ${GOOGLE_BENCHMARK_VCS_PATH}
 # Install build deps
 apk --no-cache --no-progress --virtual .benchmark-build-deps add g++ gcc musl-dev make autoconf automake boost-dev gtest-dev gtest
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${GOOGLE_BENCHMARK_VCS_BRANCH} --depth 1 -- ${GOOGLE_BENCHMARK_VCS_REPO} ${GOOGLE_BENCHMARK_VCS_PATH}
 
 mkdir -p ${GOOGLE_BENCHMARK_VCS_PATH}/build

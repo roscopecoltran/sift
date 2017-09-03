@@ -52,6 +52,7 @@ apk add --no-cache --update --virtual .faiss-deps ${VCS_REPO_DEPS_APK}
 ## #################################################################
 
 ensure_dir ${VCS_REPO_LOCAL_PATH}
+
 git clone -b ${VCS_REPO_BRANCH} --depth ${VCS_REPO_CLONE_DEPTH} -- https://${VCS_REPO_URI} ${VCS_REPO_LOCAL_PATH}
 
 ## #################################################################

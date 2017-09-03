@@ -22,9 +22,9 @@ export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 apk --no-cache --no-progress --virtual .libmaxminddb-build-deps add g++ gcc musl-dev make autoconf automake pcre \
 																	pcre-dev libtool xz-dev xz zlib zlib-dev
 
-if [ -d ${path} ];then
-	rm -fR ${path}
-fi
+
+# clean previous install
+ensure_dir ${path}
 
 mkdir -p ${path}
 cd ${path}

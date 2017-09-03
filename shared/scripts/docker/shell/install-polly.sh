@@ -33,7 +33,7 @@ done
 
 ensure_dir ${CMAKE_POLLY_VCS_PATH}
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${CMAKE_POLLY_VCS_BRANCH} --recursive --depth 1 -- ${CMAKE_POLLY_VCS_REPO} ${CMAKE_POLLY_VCS_PATH}
 
 export PATH=$PATH:${CMAKE_POLLY_VCS_PATH}/bin

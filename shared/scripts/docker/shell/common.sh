@@ -9,6 +9,31 @@ export CONTAINER_MODE=${CONTAINER_MODE-"dev"}
 export CONTAINER_NB_CORES=${CONTAINER_NB_CORES-$(getconf _NPROCESSORS_CONF)}
 export CONTAINER_CMAKE_BUILD_TYPE=${CONTAINER_CMAKE_BUILD_TYPE-"Release"}
 
+export CONTAINER_SCRIPT_DIR=${CONTAINER_SCRIPT_DIR:-"/app/shared/scripts/docker/shell"}
+export COMMON_SCRIPT_DIR=${CONTAINER_SCRIPT_DIR}
+
+export SRC_BUILD_DEPS=""
+for dep in ${SRC_BUILD_DEPS}; do
+	if [ -z "$(which $dep)" ]; then
+		if [ -f ${CONTAINER_SCRIPT_DIR}/helpers/${dep}.sh ]; then
+			echo "found ${CONTAINER_SCRIPT_DIR}/helper-${dep}.sh"
+			chmod a+x ${CONTAINER_SCRIPT_DIR}/helpers/${dep}.sh
+			${CONTAINER_SCRIPT_DIR}/helpers/${dep}.sh
+		else
+			echo "missing ${CONTAINER_SCRIPT_DIR}/helper-${dep}.sh"
+		fi
+	fi
+done
+
+if [ -z "$(which make)" ]; then
+	apk add --no-cache --no-progress --update make
+fi
+
+if [ -z "$(which echolor)" ]; then
+	chmod a+x ${CONTAINER_SCRIPT_DIR}/helpers/*.sh
+	make -f ${CONTAINER_SCRIPT_DIR}/helpers/Makefile all
+fi
+
 function ensure_dir {
 	clear
 	echo -e " "
@@ -33,21 +58,23 @@ function clean_all {
 
 function rebuild_install_scripts_symlinks {
 	clear
-	echo 
-	DEFAULT_SCRIPT_DIR="/app/shared/scripts/docker/shell"	
-	DEFAULT_USR_LOCAL_SBIN_DIR="/usr/local/sbin"	
+	echo 	
+	DEFAULT_SCRIPT_DIR=${CONTAINER_SCRIPT_DIR-"/app/shared/scripts/docker/shell"}
+	DEFAULT_USR_LOCAL_SBIN_DIR=${DEFAULT_USR_LOCAL_SBIN_DIR-"/usr/local/sbin"}
 	chmod a+x ${DEFAULT_SCRIPT_DIR}/*.sh
-	DOCKER_SCRIPTS=$(find ${DEFAULT_SCRIPT_DIR} -name "*.sh")
-	for FILE_PATH in ${DOCKER_SCRIPTS}; do
-		FILE_DIRNAME=$(dirname ${FILE_PATH})
-		FILE_NAME=$(basename ${FILE_PATH})
-		FILE_BASENAME=$(echo $FILE_NAME | cut -f 1 -d '.')
-		echo "FILE_BASENAME: ${FILE_BASENAME} / FILE_NAME: ${FILE_NAME}"		
+	DEFAULT_DOCKER_SCRIPTS=$(find ${DEFAULT_SCRIPT_DIR} -name "*.sh")
+	for DOCKER_INSTALL_FILE_PATH in ${DEFAULT_DOCKER_SCRIPTS}; do
+		DOCKER_INSTALL_FILE_DIRNAME=$(dirname ${DOCKER_INSTALL_FILE_PATH})
+		DOCKER_INSTALL_FILE_NAME=$(basename ${DOCKER_INSTALL_FILE_PATH})
+		DOCKER_INSTALL_FILE_BASENAME=$(echo $DOCKER_INSTALL_FILE_NAME | cut -f 1 -d '.')
+		echo "DOCKER_INSTALL_FILE_BASENAME: ${DOCKER_INSTALL_FILE_BASENAME} / DOCKER_INSTALL_FILE_NAME: ${DOCKER_INSTALL_FILE_NAME}"		
 		echo 	
-		if [ -f ${DEFAULT_USR_LOCAL_SBIN_DIR}/${FILE_BASENAME} ]; then
-			rm -f ${DEFAULT_USR_LOCAL_SBIN_DIR}/${FILE_BASENAME}
+		if [ -f ${DEFAULT_USR_LOCAL_SBIN_DIR}/${DOCKER_INSTALL_FILE_BASENAME} ]; then
+			rm -f ${DEFAULT_USR_LOCAL_SBIN_DIR}/${DOCKER_INSTALL_FILE_BASENAME}
 		fi
-		ln -s ${FILE_PATH} ${DEFAULT_USR_LOCAL_SBIN_DIR}/${FILE_BASENAME}
+		if [ ! -f ${DEFAULT_USR_LOCAL_SBIN_DIR}/${DOCKER_INSTALL_FILE_BASENAME} ]; then		
+			ln -s ${DOCKER_INSTALL_FILE_PATH} ${DEFAULT_USR_LOCAL_SBIN_DIR}/${DOCKER_INSTALL_FILE_BASENAME}
+		fi
 	done
 }
 

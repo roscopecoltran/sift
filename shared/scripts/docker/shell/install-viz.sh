@@ -13,9 +13,8 @@ fi
 # Install build deps
 apk add --no-cache --no-progress --virtual .viz-build-deps python3-dev
 
-if [ -d /app/external/viz ]; then
-	rm -fR /app/external/viz
-fi
+# clean previous install
+ensure_dir /app/external/viz
 
 git clone --recursive --depth=1 https://github.com/donnemartin/viz /app/external/viz
 cd /app/external/viz

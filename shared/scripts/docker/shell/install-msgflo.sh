@@ -23,13 +23,16 @@ export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 apk --no-cache --no-progress --virtual .$(basename $MSGFLO_VCS_REPO)-build-deps add g++ gcc musl-dev make autoconf automake \
 										libev libev-dev pkgconfig libtool py3-amqp 
 
-if [ -d ${MSGFLO_VCS_CLONE_PATH} ];then
-	rm -fR ${MSGFLO_VCS_CLONE_PATH}
-fi
+# clean previous install
+ensure_dir ${MSGFLO_VCS_CLONE_PATH}
 
 export SRC_BUILD_DEPS="cmake mosquitto pip3"
 for dep in ${SRC_BUILD_DEPS}; do
 	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/common/${dep}.sh ]; then
+			chmod a+x ${COMMON_SCRIPT_DIR}/common/${dep}.sh
+			${COMMON_SCRIPT_DIR}/common/${dep}.sh
+		fi
 		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
 			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
 			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
@@ -40,7 +43,7 @@ for dep in ${SRC_BUILD_DEPS}; do
 	fi
 done
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${MSGFLO_VCS_CLONE_BRANCH} --recursive --depth ${MSGFLO_VCS_CLONE_DEPTH} -- ${MSGFLO_VCS_REPO} ${MSGFLO_VCS_CLONE_PATH}
 
 mkdir -p ${MSGFLO_VCS_CLONE_PATH}/build

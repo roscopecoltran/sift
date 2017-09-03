@@ -27,13 +27,16 @@ apk --no-cache --no-progress --update \
 	--virtual .$(basename $XGBOOST_VCS_REPO)-build-deps add musl-dev make g++ gcc openblas openblas-dev graphviz graphviz-dev \
 															libexecinfo-dev doxygen zip boost-dev
 
-if [ -d ${XGBOOST_VCS_CLONE_PATH} ];then
-	rm -fR ${XGBOOST_VCS_CLONE_PATH}
-fi
+# clean previous install
+ensure_dir ${XGBOOST_VCS_CLONE_PATH}
 
 export SRC_BUILD_DEPS="cmake "
 for dep in ${SRC_BUILD_DEPS}; do
 	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/common/${dep}.sh ]; then
+			chmod a+x ${COMMON_SCRIPT_DIR}/common/${dep}.sh
+			${COMMON_SCRIPT_DIR}/common/${dep}.sh
+		fi
 		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
 			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
 			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
@@ -44,7 +47,7 @@ for dep in ${SRC_BUILD_DEPS}; do
 	fi
 done
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${XGBOOST_VCS_CLONE_BRANCH} --recursive --depth ${XGBOOST_VCS_CLONE_DEPTH} -- ${XGBOOST_VCS_REPO} ${XGBOOST_VCS_CLONE_PATH}
 
 mkdir -p ${XGBOOST_VCS_CLONE_PATH}/build

@@ -13,9 +13,8 @@ fi
 # Install build deps
 apk add --update --no-cache --no-progress gcc pkgconfig postgresql-dev 
 
-if [ -d /app/external/repology ]; then
-	rm -fR /app/external/repology
-fi
+# clean previous install
+ensure_dir /app/external/repology
 
 pip3 install --no-cache --no-cache-dir Jinja2
 pip3 install --no-cache --no-cache-dir PyYAML

@@ -21,9 +21,8 @@ export SQLITE_VERSION=${SQLITE_VERSION:-"201708251543"}
 apk --no-cache --no-progress --virtual .libiconv-build-deps add g++ gcc musl-dev musl make autoconf automake wget
 wget -nc http://www.sqlite.org/snapshot/sqlite-snapshot-${SQLITE_VERSION}.tar.gz -O /tmp/sqlite-${SQLITE_VERSION}.tar.gz
 
-if [ -d /tmp/sqlite-${SQLITE_VERSION} ]; then
-	rm -fR /tmp/sqlite-${SQLITE_VERSION}
-fi
+# clean previous install
+ensure_dir /tmp/sqlite-${SQLITE_VERSION}
 
 cd /tmp/sqlite-${SQLITE_VERSION}
 

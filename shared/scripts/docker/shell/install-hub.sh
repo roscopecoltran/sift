@@ -31,7 +31,9 @@ ensure_dir ${PROJECT_VCS_CLONE_PATH}
 export SRC_BUILD_DEPS="golang libgit2"
 for dep in ${SRC_BUILD_DEPS}; do
 	if [ -z "$(which $dep)" ]; then
-		if [ -f ${COMMON_SCRIPT_DIR}/common-${dep}.sh ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/common/${dep}.sh ]; then
+			chmod a+x ${COMMON_SCRIPT_DIR}/common/${dep}.sh
+			${COMMON_SCRIPT_DIR}/common/${dep}.sh
 		fi
 		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
 			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
@@ -43,7 +45,7 @@ for dep in ${SRC_BUILD_DEPS}; do
 	fi
 done
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${PROJECT_VCS_CLONE_BRANCH} --recursive --depth ${PROJECT_VCS_CLONE_DEPTH} -- ${PROJECT_VCS_REPO} ${PROJECT_VCS_CLONE_PATH}
 
 # lib

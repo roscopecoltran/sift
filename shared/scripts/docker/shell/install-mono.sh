@@ -19,9 +19,8 @@ export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 # Install build deps
 apk add --no-cache --no-progress --virtual .mbe-build-deps g++ gcc wget ca-certificates musl-dev tar xz autoconf automake libtool gettext-dev zlib-dev
 
-if [ -d ${MONO_BUILD_PATH} ]; then
-	rm -fR ${MONO_BUILD_PATH}
-fi
+# clean previous install
+ensure_dir ${MONO_BUILD_PATH}
 
 git clone --depth 1 --single-branch --branch mono-${MONO_VERSION} https://github.com/mono/mono.git ${MONO_BUILD_PATH}
 cd ${MONO_BUILD_PATH}

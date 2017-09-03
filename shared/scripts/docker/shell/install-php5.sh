@@ -147,9 +147,8 @@ done
 wget -nc ${PHP5_MIRROR}/get/php-${PHP5_VERSION}.tar.gz/from/this/mirror -O /tmp/php-${PHP5_VERSION}.tar.gz
 wget -nc ${PHP5_MIRROR}/get/php-${PHP5_VERSION}.tar.gz.asc/from/this/mirror -O /tmp/php-${PHP5_VERSION}.tar.gz.asc
 
-if [ -d /tmp/php-${PHP5_VERSION} ];then
-    rm -fR /tmp/php-${PHP5_VERSION}/
-fi
+# clean previous install
+ensure_dir /tmp/php-${PHP5_VERSION}
 
 tar xzvf /tmp/php-${PHP5_VERSION}.tar.gz -C /usr/src
 mv /usr/src/php-${PHP5_VERSION} /usr/src/php

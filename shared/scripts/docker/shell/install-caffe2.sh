@@ -38,6 +38,10 @@ fi
 export SRC_BUILD_DEPS="cmake"
 for dep in ${SRC_BUILD_DEPS}; do
 	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/common/${dep}.sh ]; then
+			chmod a+x ${COMMON_SCRIPT_DIR}/common/${dep}.sh
+			${COMMON_SCRIPT_DIR}/common/${dep}.sh
+		fi
 		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
 			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
 			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
@@ -50,7 +54,7 @@ done
 
 pip3 install --no-cache numpy
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${CAFFE2_VCS_BRANCH} --depth 1 -- ${CAFFE2_VCS_REPO} ${CAFFE2_VCS_PATH}
 
 mkdir -p ${CAFFE2_VCS_PATH}/build

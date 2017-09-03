@@ -22,13 +22,16 @@ export PKG_CONFIG_PATH="/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig/"
 # Install build deps
 apk --no-cache --no-progress --virtual .$(basename $LIBRESSL_VCS_REPO)-build-deps add g++ gcc musl-dev make autoconf automake
 
-if [ -d ${LIBRESSL_VCS_CLONE_PATH} ];then
-	rm -fR ${LIBRESSL_VCS_CLONE_PATH}
-fi
+# clean previous install
+ensure_dir ${LIBRESSL_VCS_CLONE_PATH}
 
 export SRC_BUILD_DEPS=""
 for dep in ${SRC_BUILD_DEPS}; do
 	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/common/${dep}.sh ]; then
+			chmod a+x ${COMMON_SCRIPT_DIR}/common/${dep}.sh
+			${COMMON_SCRIPT_DIR}/common/${dep}.sh
+		fi
 		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
 			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
 			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
@@ -39,7 +42,7 @@ for dep in ${SRC_BUILD_DEPS}; do
 	fi
 done
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${LIBRESSL_VCS_CLONE_BRANCH} --recursive --depth ${LIBRESSL_VCS_CLONE_DEPTH} -- ${LIBRESSL_VCS_REPO} ${LIBRESSL_VCS_CLONE_PATH}
 
 cd ${LIBRESSL_VCS_CLONE_PATH}

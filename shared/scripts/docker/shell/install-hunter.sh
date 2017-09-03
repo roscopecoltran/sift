@@ -33,7 +33,7 @@ done
 
 ensure_dir ${CMAKE_HUNTER_VCS_PATH}
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${CMAKE_HUNTER_VCS_BRANCH} --recursive --depth 1 -- ${CMAKE_HUNTER_VCS_REPO} ${CMAKE_HUNTER_VCS_PATH}
 
 export HUNTER_ROOT=${CMAKE_HUNTER_VCS_PATH}

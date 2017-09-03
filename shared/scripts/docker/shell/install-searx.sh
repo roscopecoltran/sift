@@ -13,11 +13,8 @@ fi
 # Install build deps
 apk add --no-cache --no-progress --virtual .searx-build-deps gcc make python3-dev musl-dev libxml2-dev libxslt-dev libffi-dev
 
-# pip3 install searx
-
-if [ -d /app/external/searx ]; then
-	rm -fR /app/external/searx
-fi
+# clean previous install
+ensure_dir /app/external/searx
 
 git clone --recursive --depth=1 https://github.com/asciimoo/searx /app/external/searx
 cd /app/external/searx

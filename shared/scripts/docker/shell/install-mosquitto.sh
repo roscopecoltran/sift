@@ -42,9 +42,8 @@ function src_install {
 	apk --no-cache --no-progress --virtual .$(basename $MOSQUITTO_VCS_REPO)-build-deps add g++ gcc musl-dev openssl-dev libuuid docbook-xsl \
 																				c-ares c-ares-dev python3-dev
 
-	if [ -d ${MOSQUITTO_VCS_CLONE_PATH} ];then
-		rm -fR ${MOSQUITTO_VCS_CLONE_PATH}
-	fi
+	# clean previous install
+	ensure_dir ${MOSQUITTO_VCS_CLONE_PATH}
 
 	export SRC_BUILD_DEPS="cmake"
 	for dep in ${SRC_BUILD_DEPS}; do
@@ -59,7 +58,7 @@ function src_install {
 		fi
 	done
 
-	# Compile & Install libgit2 (v0.23)
+	# Compile & Install 
 	git clone -b ${MOSQUITTO_VCS_CLONE_BRANCH} --recursive --depth ${MOSQUITTO_VCS_CLONE_DEPTH} -- ${MOSQUITTO_VCS_REPO} ${MOSQUITTO_VCS_CLONE_PATH}
 
 	mkdir -p ${MOSQUITTO_VCS_CLONE_PATH}/build

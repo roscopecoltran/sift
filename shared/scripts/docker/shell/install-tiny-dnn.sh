@@ -25,13 +25,16 @@ apk --no-cache --no-progress --update \
 	--allow-untrusted \
 	--virtual .$(basename $TINY_DNN_VCS_REPO)-build-deps add musl-dev make g++ gcc openblas opencv opencv-dev boost-dev
 
-if [ -d ${TINY_DNN_VCS_CLONE_PATH} ];then
-	rm -fR ${TINY_DNN_VCS_CLONE_PATH}
-fi
+# clean previous install
+ensure_dir ${TINY_DNN_VCS_CLONE_PATH}
 
 export SRC_BUILD_DEPS=""
 for dep in ${SRC_BUILD_DEPS}; do
 	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/common/${dep}.sh ]; then
+			chmod a+x ${COMMON_SCRIPT_DIR}/common/${dep}.sh
+			${COMMON_SCRIPT_DIR}/common/${dep}.sh
+		fi
 		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
 			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
 			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
@@ -42,7 +45,7 @@ for dep in ${SRC_BUILD_DEPS}; do
 	fi
 done
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${TINY_DNN_VCS_CLONE_BRANCH} --recursive --depth ${TINY_DNN_VCS_CLONE_DEPTH} -- ${TINY_DNN_VCS_REPO} ${TINY_DNN_VCS_CLONE_PATH}
 
 mkdir -p ${TINY_DNN_VCS_CLONE_PATH}/build

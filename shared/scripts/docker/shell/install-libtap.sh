@@ -23,7 +23,10 @@ fi
 # Install build deps
 apk --no-cache --no-progress --virtual .libtap-build-deps add g++ gcc musl-dev make autoconf automake boost-dev gtest-dev gtest
 
-# Compile & Install libgit2 (v0.23)
+# clean previous install
+ensure_dir ${LIBTAP_VCS_PATH}
+
+# Compile & Install 
 git clone -b ${LIBTAP_VCS_BRANCH} --depth 1 -- ${LIBTAP_VCS_REPO} ${LIBTAP_VCS_PATH}
 
 mkdir -p ${LIBTAP_VCS_PATH}

@@ -23,6 +23,10 @@ apk --no-cache --no-progress --virtual .CppSerialization-build-deps add g++ gcc 
 export SRC_BUILD_DEPS="cmake"
 for dep in ${SRC_BUILD_DEPS}; do
 	if [ -z "$(which $dep)" ]; then
+		if [ -f ${COMMON_SCRIPT_DIR}/common/${dep}.sh ]; then
+			chmod a+x ${COMMON_SCRIPT_DIR}/common/${dep}.sh
+			${COMMON_SCRIPT_DIR}/common/${dep}.sh
+		fi
 		if [ -f ${COMMON_SCRIPT_DIR}/install-${dep}.sh ]; then
 			echo "found ${COMMON_SCRIPT_DIR}/install-${dep}.sh"
 			chmod a+x ${COMMON_SCRIPT_DIR}/install-${dep}.sh
@@ -33,11 +37,10 @@ for dep in ${SRC_BUILD_DEPS}; do
 	fi
 done
 
-if [ -d ${CPPSERIALIZATION_VCS_PATH} ];then
-	rm -fR ${CPPSERIALIZATION_VCS_PATH}
-fi
+# clean previous install
+ensure_dir ${CPPSERIALIZATION_VCS_PATH}
 
-# Compile & Install libgit2 (v0.23)
+# Compile & Install 
 git clone -b ${CPPSERIALIZATION_VCS_BRANCH} --depth 1 -- ${CPPSERIALIZATION_VCS_REPO} ${CPPSERIALIZATION_VCS_PATH}
 cd ${CPPSERIALIZATION_VCS_PATH}
 git submodule update --init --recursive --remote

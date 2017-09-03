@@ -46,17 +46,21 @@ done
 # Compile & Install libgit2 (v0.23)
 git clone -b ${LIBCCV_VCS_CLONE_BRANCH} --recursive --depth ${LIBCCV_VCS_CLONE_DEPTH} -- ${LIBCCV_VCS_REPO} ${LIBCCV_VCS_CLONE_PATH}
 
-mkdir -p ${LIBCCV_VCS_CLONE_PATH}/build
-cd ${LIBCCV_VCS_CLONE_PATH}/build
-
-cd lib 
+# lib
+cd ${LIBCCV_VCS_CLONE_PATH}/lib 
 ./configure
 make lib -j${CONTAINER_NB_CORES}
-cd ../bin
+
+# bin
+cd ${LIBCCV_VCS_CLONE_PATH}/bin
 make -j${CONTAINER_NB_CORES}
-cd ../site 
+
+# site
+cd ${LIBCCV_VCS_CLONE_PATH}/site 
 make source -j${CONTAINER_NB_CORES}
-cd ../test 
+
+# tests
+cd ${LIBCCV_VCS_CLONE_PATH}/test 
 make -j${CONTAINER_NB_CORES}
 make test
 

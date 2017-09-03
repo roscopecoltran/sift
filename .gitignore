@@ -16,3 +16,8 @@ sift_windows_amd64.exe
 vendor
 vendor/
 vendor/**
+
+.staging
+.staging/
+.staging/**
+

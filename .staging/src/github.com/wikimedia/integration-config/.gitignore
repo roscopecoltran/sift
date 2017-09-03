@@ -1,0 +1,18 @@
+/log
+*.pyc
+/.tox
+# Ignore any dotfile ...
+.*
+# ... but whitelist some:
+!.gitignore
+!.gitreview
+
+# Various temp files
+*~
+*.kate-swp
+.*.swp
+
+/Gemfile.lock
+
+/dockerfiles/*/cache
+/dockerfiles/*/.cache-buster

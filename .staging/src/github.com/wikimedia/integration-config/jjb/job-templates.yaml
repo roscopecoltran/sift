@@ -1,0 +1,200 @@
+# Generic job-templates
+- job:
+    name: 'jsduck'
+    node: contintLabsSlave && UbuntuTrusty
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - jsduck
+
+# Deprecated non-generic jsduck job. You should use the above 'jsduck' job.
+# For repos that need to preserve workspace or have submodules, this is
+# used as workaround.
+- job-template:
+    name: '{name}-jsduck'
+    node: contintLabsSlave && UbuntuTrusty
+    defaults: use-remoteonly-zuul
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - jsduck
+
+- job-template:
+    name: '{name}-jsduck-jessie'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - jsduck
+
+- job-template:
+    name: '{name}-maven'
+    project-type: maven
+    jdk: 'Debian - OpenJdk 8'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: true
+    triggers:
+     - zuul
+    prebuilders:
+     - castor-load
+    maven:
+      goals: clean package
+    publishers:
+     - castor-save
+
+- job: &job_npm-node-6-jessie
+    name: 'npm-node-6-jessie'
+    node: ci-jessie-wikimedia
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - assert-node-version-6
+     # FIXME: we should save node_modules and run npm prune
+     - castor-load
+     - shell: |
+         # For archiving build artifacts
+         mkdir -p "$WORKSPACE/log"
+    # Ensure set-env sets CHROME_BIN so that all npm-test jobs
+    # can run karma-qunit with karma-chrome-launcher, not just
+    # mediawiki-core-qunit.
+     - npm
+    publishers:
+     - archive-log-allow-empty
+     - castor-save
+
+- job-template:
+    !!merge : *job_npm-node-6-jessie
+    name: '{name}-npm-node-6-jessie'
+    # Reinject Zuul parameters since JJB strip for some reason
+    triggers:
+     - zuul
+
+- job-template:
+    name: '{name}-npm-run-{script}-node-6-jessie'
+    node: ci-jessie-wikimedia
+    defaults: use-remoteonly-zuul
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - assert-node-version-6
+     # FIXME: we should save node_modules and run npm prune
+     - castor-load
+     - shell: |
+        . /srv/deployment/integration/slave-scripts/bin/global-set-env.sh
+         # For archiving build artifacts
+         mkdir -p "$WORKSPACE/log"
+         node --version
+         npm --version
+         npm install
+         npm run-script {script}
+    publishers:
+     - archive-log-allow-empty
+     - castor-save
+
+# A very specific job for MobileFrontend which uses a JavaScript test suite
+# which requires mediawiki/core.
+- job-template:
+    name: 'mwext-MobileFrontend-npm-run-lint-modules'
+    node: ci-jessie-wikimedia
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - assert-node-version-6
+     # FIXME: we should save node_modules and run npm prune
+     - castor-load
+     - zuul-cloner:
+         projects: >
+             mediawiki/core
+             mediawiki/extensions/MobileFrontend
+     - shell: |
+         # For archiving build artifacts
+         mkdir -p "$WORKSPACE/log"
+         node --version
+         npm --version
+         cd src/extensions/MobileFrontend
+         npm install
+         npm run-script lint:modules
+    publishers:
+     - archive-log-allow-empty
+     - castor-save
+
+- job-template:
+    name: '{name}-{repository}-npm-node-6-jessie'
+    node: ci-jessie-wikimedia
+    defaults: use-remoteonly-zuul
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - assert-node-version-6
+     # FIXME: we should save node_modules and run npm prune
+     - castor-load
+     - shell: |
+         # For archiving build artifacts
+         mkdir -p "$WORKSPACE/log"
+     - npm-oid:
+         repository: '{repository}'
+    publishers:
+     - archive-log-allow-empty
+     - castor-save
+
+- job-template:
+    name: '{phpflavor}lint'
+    node: contintLabsSlave && phpflavor-{phpflavor}
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: true
+    triggers:
+     - zuul
+    builders:
+     - phplint
+
+- project:
+    name: 'php-all-lint'
+    phpflavor:
+        - 'php55'
+        - 'php56'
+    jobs:
+        - '{phpflavor}lint'
+
+- job-template:
+    name: '{name}-{phpflavor}lint'
+    node: contintLabsSlave && phpflavor-{phpflavor}
+    defaults: use-remote-zuul-no-submodules
+    concurrent: true
+    properties:
+     - build-discarder:
+         days-to-keep: 15
+    triggers:
+     - zuul
+    builders:
+     - phplint
+
+# Verify whether there is any leading tabs in files matching 'fileselector'.
+#
+# 'fileselector': the parameter is passed to grep --include= option and is
+# comma separated.
+#
+- job-template:
+    name: '{name}-tabs'
+    defaults: use-remote-zuul-shallow-clone
+    concurrent: true
+    node: contintLabsSlave && UbuntuTrusty
+    triggers:
+     - zuul
+    builders:
+     - shell: |
+         #!/bin/bash -e
+         echo "Looking for tabulations in files matching: {fileselector}"
+         set -x
+         (grep --recursive -P '^\t' --exclude-dir='.git' --include='{fileselector}' .) && HAS_TAB=1 || HAS_TAB=0
+         exit $HAS_TAB

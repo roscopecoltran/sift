@@ -1,0 +1,14 @@
+.cache
+.tox
+*.egg-info
+.coverage
+*.sublime-project
+*.sublime-workspace
+*.idea/
+*.pyc
+__pycache__
+.vagrant
+Vagrantfile
+build/
+dist/
+htmlcov/

@@ -1,0 +1,10 @@
+/cache/
+/client/tmp/
+/vendor/
+
+/seeker
+/seeker_static
+
+*.out
+*.csv
+*.tsv

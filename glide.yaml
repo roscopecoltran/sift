@@ -1,0 +1,9 @@
+package: github.com/dziemba/seeker
+import:
+- package: github.com/google/go-github
+  subpackages:
+  - github
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - require

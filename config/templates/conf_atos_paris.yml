@@ -1,0 +1,116 @@
+#database.yml
+
+development_adapter : mysql
+development_database : lf_prod
+development_username : root
+development_password : root
+development_host : localhost
+
+test_adapter : mysql
+test_database : lf_test
+test_username : root
+test_password : root
+test_host : localhost
+
+production_adapter : mysql
+production_database : lf_prod
+production_username : root
+production_password : root
+production_host : localhost
+
+#config.yml
+
+libraryfind_indexer : solr
+libraryfind_ferret_path : /home/bpi/ferretIndex
+
+libraryfind_solr_host : http://55.7.128.18/solr
+libraryfind_solr_harvesting_url : http://55.7.128.18/solr
+
+nb_resultat_max : 10
+max_collection_search : 25
+
+parser_type : nokogiri
+language : FR
+languages : FR,EN,ES
+defautl_groups : general
+general_template : general
+images_template : images
+
+ill_url : https://yourlibrary.edu/illiad.dll/OpenURL?
+
+openlibrary_covers : 1
+
+GED_URL_SEPARATOR: /
+GED_URL_PATH: http://adresse_srv/doc/
+GED_NB_CAR_REP: 8
+GED_NAME_FILE: GED_00000000.pdf
+
+CFG_LF_URL_BASE: http://55.7.128.18/
+CFG_LF_TIMEOUT: 30
+CFG_LF_TIMEOUT_SOLR: 300
+
+SMTP_ADRESS: smtp.mail.atosorigin.com
+SMTP_PORT: 465
+SMTP_DOMAIN: web.mail.atosorigin.com
+SMTP_LOGIN: login
+SMTP_PWD: pwd
+SMTP_MAIL_EMETTEUR: no-reply@bpi.fr
+
+LINK_SATISFACTION_URL: http://toot.fr
+LINK_MESSAGERIE_URL: http://taot.fr
+
+WIDGET_SETS: 'g6'
+
+SEE_ALSO_ACTIVATE: '1'
+SEE_ALSO_MAX: 15
+SYNONYMS_FILE_INPUT: '/home/dev/libraryfind/components/synonymes/synonyms.csv'
+SYNONYMS_FILE_OUTPUT_SOLR: '/home/dev/libraryfind/components/synonymes/synonyms.txt'
+SYNONYMS_SEPARATOR_MULTI_VALUES: '@;@'
+SYNONYMS_SEPARATOR_CSV: ';"'
+
+COUNT: 5
+SPELL_ACTIVATE: '1'
+
+LOG_FILE_LOCATION: /srv/stats/
+LOG_NAME_FILE: log_statistic_bpi.log
+
+AMD64: 0
+
+#webservice.yml
+
+ws_username : 'eldemows'
+ws_password : 'ur76Pu73'
+
+proxy_http_adr : ''
+proxy_http_port : ''
+proxy_http_login : ''
+proxy_http_pwd : ''
+
+#ranking.yml
+
+special_boost : 100
+pref : 50000
+
+title_perfect_match : 10000
+title_partial_match : 2000
+title_partial_match_offset_1 : 500
+title_partial_match_offset_up : 300
+
+creator_perfect_match : 5000
+creator_partial_match : 1000
+creator_partial_match_offset_1 : 300 
+creator_partial_match_offset_sup : 75
+
+subject_perfect_match : 5000
+subject_partial_match_offset_1 : 300
+subject_partial_match_offset_sup : 75
+
+theme_perfect_match : 5000
+theme_partial_match : 2000
+
+indice_perfect_match : 5000
+indice_partial_match : 2000
+indice_partial_match_offset_1 : 500
+indice_partial_match_offset_sup : 300
+
+

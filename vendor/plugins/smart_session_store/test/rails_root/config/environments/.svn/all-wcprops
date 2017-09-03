@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/config/environments
+END
+sqlite3.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/config/environments/sqlite3.rb
+END
+mysql.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/config/environments/mysql.rb
+END

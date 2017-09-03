@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/datanoise-actionwebservice-2.2.2/lib/action_web_service/support
+END
+signature_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/datanoise-actionwebservice-2.2.2/lib/action_web_service/support/signature_types.rb
+END
+class_inheritable_options.rb
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/datanoise-actionwebservice-2.2.2/lib/action_web_service/support/class_inheritable_options.rb
+END

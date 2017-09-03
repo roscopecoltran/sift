@@ -1,0 +1,104 @@
+Ce fichier decrit la manière de proceder afin de configurer l'url rewriting sur la BPI
+
+/!\ Ce n'est pas un fichier de conf Apache mais seulement un exemple qu'il faut copier
+et personnaliser
+
+Prérequis :
+ - apache
+ - connaitre le nom de domaine pointant vers ce apache
+ - avoir installe les modules apaches proxy proxy_http proxy_html
+ 
+Sur ubuntu, proxy et proxy_http sont installé par defaut avec apache
+On rajoute le proy_html avec sudo apt-get install libapache2-mod-proxy-html
+
+Il faut les activers :
+A2enmod proxy
+A2enmod proxy_http
+A2enmod proxy_html
+
+Ensuite dans les fichiers de conf apache, rajouter un vhost 
+(ou à defaut rajouter à un existant)
+
+<VirtualHost *:80>
+   ServerAdmin webmaster@localhost
+   servername [nom_dns]
+  
+   # Safety reason ...
+   ProxyRequests Off
+  
+   # Mappage direct
+   ProxyPass /livre http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/BOOK
+   ProxyPass /tout http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/ALL
+   ProxyPass /profil http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/account/profile
+   ProxyPass /panier http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/account/selection
+   ProxyPass /mon_compte http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/account/myaccount
+   ProxyPass /compte http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/account
+   ProxyPass /revues_et_articles http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/ARTICLE
+   ProxyPass /sites_et_bases_de_données http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/SITE
+   ProxyPass /musique http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/MUSIC
+   ProxyPass /films http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/MOVIE
+   ProxyPass /autoformation http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/TRANING
+   ProxyPass / http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/
+
+
+   # Reecriture des link html
+   ProxyHTMLURLMap http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/BOOK /livre
+   ProxyHTMLURLMap http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/ALL /tout
+   ProxyHTMLURLMap http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/account/profil  /profile
+   ProxyHTMLURLMap http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/account/selection  /panier
+   ProxyHTMLURLMap http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/account/myaccount /mon_compte
+   ProxyHTMLURLMap http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/account /compte
+   ProxyHTMLURLMap http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/ARTICLE /revues_et_articles
+   ProxyHTMLURLMap http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/SITE /sites_et_bases_de_données
+   ProxyHTMLURLMap http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/MUSIC  /musique
+   ProxyHTMLURLMap http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/MOVIE  /films
+   ProxyHTMLURLMap http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/TRAINING  /autoformation
+   ProxyHTMLURLMap http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/ /
+ 
+   # Reecriture des headers
+   ProxyPassReverse /livre http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/BOOK
+   ProxyPassReverse /tout http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/ALL
+   ProxyPassReverse /profil http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/account/profile
+   ProxyPassReverse /panier http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/account/selection
+   ProxyPassReverse /mon_compte http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/account/myaccount
+   ProxyPassReverse /moncompte http://127.0.0.1:8080/account
+   ProxyPassReverse /revues_et_articles http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/ARTICLE
+   ProxyPassReverse /sites_et_bases_de_données http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/SITE 
+   ProxyPassReverse /musique http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/MUSIC
+   ProxyPassReverse /films http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/MOVIE
+   ProxyPassReverse /autoformation http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/TRANING
+   ProxyPassReverse / http://%{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT}/
+ 
+   # Activation des reecriture href
+   SetOutputFilter proxy-html
+ 
+   # Activation réecriture CSS & JS
+   ProxyHTMLExtended on
+   # On peut ajouter des balise supplementaires sur lesquels le proxy html va remplacer
+   ProxyHTMLEvents onclick ondblclick onmousedown onmouseup \
+                onmouseover onmousemove onmouseout onkeypress \
+                onkeydown onkeyup onfocus onblur onload \
+                onunload onsubmit onreset onselect onchange value
+</VirtualHost>
+
+
+
+Sur ce fichier, il faut remplacer
+ - [nom_dns] par le bon dns, par exemple bpi.fr ...
+ - et pour toutes les lignes remplacer le %{ENV:BACKEND_LOCATION}:%{ENV:BACKEND_PORT} par la bonne IP/Port de deliverance
+
+Remarque pour l'ajout de redirection :
+- un ajouter d'un redirection doit, pour fonctionner completement etre rajouter 
+  dans ProxyPass, ProxyPassReverse, et ProxyHTMLURLMap. Voir les exemples ci-dessus pour
+  la syntaxe des directives
+- L'ordre des différentes directives ProxyPass est important. Le plus spécifique en premier
+  (= la redicrection est faite sur la premiere règle qui match la directive). 
+  C'est identique pour ProxyReverse et ProxyHTMLURLMap
+  
+Note pour la réecriture du html
+ - le module proxy-html réecrit le contenu meme lorsqu'il trouve un item correspondant 
+   directives ProxyHTMLURLMap. Mais cette recherche n'est pas faite dans l'ensemble du HTML
+   mais uniquement les attributs DOM. Par defaut, on a tous les attributs DOM du HTML 
+   et ceux du JS. La declaration est par defaut faite dans la conf fourni par proxy-html
+   On a egalement ajouter dans ProxyHTMLEvents l'attributs value 
+   (attributs dans lequel un plugin jquery stocke l'adresse à contacter pour l'autocompletion)

@@ -1,0 +1,68 @@
+<div id="page_contents">
+	<%= render :partial => "admin/navigation" %>
+	<div id="center" class="middle">
+
+		<h1><%= "#{translate('NEW_THEMES_REFERENCE')} #{@ref.source}" %></h1> 
+
+		<% form_for [:admin, @ref], :url => {:action => 'create'}, :html => {:id => 'edit_form'} do |f| %>
+
+			<% if @ref.errors.any? %>
+				<div id="error">
+					<ul>
+						<% @ref.errors.each do |attr, msg| %>
+							<li><%= msg %></li>
+						<% end %>
+					</ul>
+				</div>
+			<% end %>
+			<div id="form_field">
+				<span class="form_left">
+					<label for="ref_theme">
+						<%= translate("REF_THEME") %>
+					</label>
+				</span>
+				<span class="form_right">
+					<%= f.select :ref_theme, list_all_themes, :selected => @ref.ref_theme.nil? ? '0' : @ref.ref_theme.to_s %>
+				</span>
+			</div>
+			<div id="form_field">
+				<span class="form_left">
+					<label for="ref_source">
+						<%= translate("REF_SOURCE") %>
+					</label>
+				</span>
+				<span class="form_right">
+					<%= f.text_field :ref_source %>
+				</span>
+			</div>
+			<div id="form_field" class="construction_mode_field">
+				<% if @ref.source != 'portfoliodw' %>
+					<span class="form_left">
+						<label for="fusion">
+							<%= translate("CONSTRUCTION_MODE") %>
+						</label>
+					</span>
+					<span class="form_right">
+						<% ['F', 'A', 'E'].each do |mode| %>
+							<span class="dot"><%= f.radio_button :construction_mode, mode, :style => "width:14px" %><%= translate(mode) %></span>
+						<% end %>
+					</span>
+				<% else %>
+					<span class="form_left">
+						<label for="fusion">
+							<%= translate("EXCLUSION") %>
+						</label>
+					</span>
+					<span class="form_right">
+						<%= f.check_box :construction_mode, {}, 'E', 'F' %>
+					</span>
+				<% end %>
+			</div>
+			<%= f.hidden_field :source %>
+
+			<%= f.submit translate('SAVE'), :id => 'saveButton' %>
+			<%= link_to translate('BACK'), admin_themes_references_path(:source => @source), :id => 'saveButton' %>
+
+		<% end %>
+	</div>
+</div>

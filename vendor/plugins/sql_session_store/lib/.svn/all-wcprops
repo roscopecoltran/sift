@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/lib
+END
+sql_session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/lib/sql_session_store.rb
+END
+sql_session.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/lib/sql_session.rb
+END
+sqlite_session.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/lib/sqlite_session.rb
+END
+postgresql_session.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/lib/postgresql_session.rb
+END
+mysql_session.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/lib/mysql_session.rb
+END
+oracle_session.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/lib/oracle_session.rb
+END

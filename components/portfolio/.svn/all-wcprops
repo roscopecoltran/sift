@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/6473/trunk/bpifs/components/portfolio
+END
+portfolio_theme.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/6473/trunk/bpifs/components/portfolio/portfolio_theme.rb
+END
+init_params_dev.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/6310/trunk/bpifs/components/portfolio/init_params_dev.sql
+END
+init_params_test.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/6311/trunk/bpifs/components/portfolio/init_params_test.sql
+END
+init_params_prod.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/6310/trunk/bpifs/components/portfolio/init_params_prod.sql
+END

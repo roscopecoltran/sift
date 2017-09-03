@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root
+END
+smart_session_test.sqlite3.db
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/smart_session_test.sqlite3.db
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/Rakefile
+END

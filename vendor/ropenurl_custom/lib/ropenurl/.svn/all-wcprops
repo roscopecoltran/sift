@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/ropenurl_custom/lib/ropenurl
+END
+context_object_entity.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/ropenurl_custom/lib/ropenurl/context_object_entity.rb
+END
+context_object.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/ropenurl_custom/lib/ropenurl/context_object.rb
+END
+transport.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/ropenurl_custom/lib/ropenurl/transport.rb
+END

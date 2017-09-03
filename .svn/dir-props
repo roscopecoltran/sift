@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 4
+log
+
+K 13
+svn:mergeinfo
+V 33
+/branches/BPIV2.0/bpifs:5509-5762
+END

@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bpifs/!svn/ver/6486/trunk/bpifs/app/controllers
+END
+log_management.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/controllers/log_management.rb
+END
+community_json_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/controllers/community_json_controller.rb
+END
+community_management.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/controllers/community_management.rb
+END
+user_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/2594/trunk/bpifs/app/controllers/user_controller.rb
+END
+factory_profile.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/6343/trunk/bpifs/app/controllers/factory_profile.rb
+END
+openurl_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/1714/trunk/bpifs/app/controllers/openurl_controller.rb
+END
+factory_user_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/2758/trunk/bpifs/app/controllers/factory_user_parameters.rb
+END
+account_json_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/controllers/account_json_controller.rb
+END
+account_management.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/controllers/account_management.rb
+END
+factory_comment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/2907/trunk/bpifs/app/controllers/factory_comment.rb
+END
+record_set.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/5892/trunk/bpifs/app/controllers/record_set.rb
+END
+cart_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/app/controllers/cart_controller.rb
+END
+factory_tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/controllers/factory_tag.rb
+END
+application.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/6263/trunk/bpifs/app/controllers/application.rb
+END
+community_dispatch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/6343/trunk/bpifs/app/controllers/community_dispatch.rb
+END
+factory_searches_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/2727/trunk/bpifs/app/controllers/factory_searches_parameters.rb
+END
+search_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/4334/trunk/bpifs/app/controllers/search_controller.rb
+END
+query_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/6020/trunk/bpifs/app/controllers/query_controller.rb
+END
+meta_search.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/6486/trunk/bpifs/app/controllers/meta_search.rb
+END
+account_dispatch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/6345/trunk/bpifs/app/controllers/account_dispatch.rb
+END
+factory_subscription.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/2693/trunk/bpifs/app/controllers/factory_subscription.rb
+END
+json_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/6496/trunk/bpifs/app/controllers/json_controller.rb
+END
+log_generic.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/5425/trunk/bpifs/app/controllers/log_generic.rb
+END
+record_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/controllers/record_controller.rb
+END
+document_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/2571/trunk/bpifs/app/controllers/document_controller.rb
+END
+dispatch_abstract.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/1916/trunk/bpifs/app/controllers/dispatch_abstract.rb
+END
+db_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/controllers/db_helper.rb
+END
+community_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/2341/trunk/bpifs/app/controllers/community_controller.rb
+END
+factory_object_tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/2661/trunk/bpifs/app/controllers/factory_object_tag.rb
+END
+euro_presse.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/2738/trunk/bpifs/app/controllers/euro_presse.rb
+END
+dispatch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/6345/trunk/bpifs/app/controllers/dispatch.rb
+END
+json_application_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/app/controllers/json_application_controller.rb
+END
+factory_list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/6382/trunk/bpifs/app/controllers/factory_list.rb
+END
+xml_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/app/controllers/xml_controller.rb
+END
+electre_webservice_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/2320/trunk/bpifs/app/controllers/electre_webservice_controller.rb
+END
+factory_user_type_with_comments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/2116/trunk/bpifs/app/controllers/factory_user_type_with_comments.rb
+END
+rzoom.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/5929/trunk/bpifs/app/controllers/rzoom.rb
+END
+factory_notice.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/controllers/factory_notice.rb
+END
+factory_note_with_comment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/2116/trunk/bpifs/app/controllers/factory_note_with_comment.rb
+END
+rss_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/controllers/rss_controller.rb
+END
+meta_display.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/4695/trunk/bpifs/app/controllers/meta_display.rb
+END

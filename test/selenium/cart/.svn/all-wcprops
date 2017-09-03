@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/selenium/cart
+END
+email_cart.sel
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/selenium/cart/email_cart.sel
+END
+add_to_cart.sel
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/selenium/cart/add_to_cart.sel
+END
+_cart.sel
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/selenium/cart/_cart.sel
+END
+remove_from_cart.sel
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/selenium/cart/remove_from_cart.sel
+END

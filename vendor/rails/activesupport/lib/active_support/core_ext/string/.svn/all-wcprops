@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/string
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb
+END
+multibyte.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/string/multibyte.rb
+END
+behavior.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/string/behavior.rb
+END
+access.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/string/access.rb
+END
+starts_ends_with.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/string/starts_ends_with.rb
+END
+xchar.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/string/xchar.rb
+END
+conversions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/string/conversions.rb
+END
+filters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/string/filters.rb
+END
+iterators.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activesupport/lib/active_support/core_ext/string/iterators.rb
+END

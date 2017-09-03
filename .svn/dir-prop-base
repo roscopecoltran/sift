@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 39
+.project
+indexed_file_errors
+.loadpath
+
+K 13
+svn:mergeinfo
+V 33
+/branches/BPIV2.0/bpifs:5509-5762
+END

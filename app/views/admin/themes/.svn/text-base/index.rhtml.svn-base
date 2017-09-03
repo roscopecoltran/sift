@@ -1,0 +1,31 @@
+<div id="page_contents">
+	<%= render :partial => "admin/navigation" %>
+	<div id="center" class="column">
+		<p style="color: green"><%= flash[:notice] %></p>
+		<p style="color: red">
+			<% if flash[:errors] %>
+				<ul>
+					<% flash[:errors].each do |e| %>
+						<li><%= e %></li>
+					<% end %>
+				</ul>
+			<% end %>
+		</p>
+	<div id="center" class="middle">
+		<h1><%= translate('THEMES_LIST') %></h1>
+		<ul class="spaced">
+			<% @themes.each do |theme| %>
+				<h4><li class="theme" name="<%= theme.reference %>"><%= theme.full_name %>
+				<%= render :partial => 'actions', :locals => {:theme => theme} %></li></h4>
+				<ul class="hide <%= theme.reference %>">
+					<% theme.children.each do |child_theme| %>
+						<h5><li class="theme" name="<%= child_theme.reference %>"><%= child_theme.full_name %>
+						<%= render :partial => 'actions', :locals => {:theme => child_theme} %></li></h5>
+					<% end %>
+				</ul>
+			<% end %>
+		</ul>
+		
+		<span><%= link_to translate("NEW_THEME"), new_admin_theme_path %></span>
+	</div>
+</div>

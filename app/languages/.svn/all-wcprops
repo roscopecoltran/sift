@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bpifs/!svn/ver/6440/trunk/bpifs/app/languages
+END
+document_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/801/trunk/bpifs/app/languages/document_lang.yml
+END
+record_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/3750/trunk/bpifs/app/languages/record_lang.yml
+END
+user_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/app/languages/user_lang.yml
+END
+mail_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/5315/trunk/bpifs/app/languages/mail_lang.yml
+END
+application_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/6440/trunk/bpifs/app/languages/application_lang.yml
+END
+result_mailer_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/languages/result_mailer_lang.yml
+END
+cart_lang.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/3540/trunk/bpifs/app/languages/cart_lang.yml
+END

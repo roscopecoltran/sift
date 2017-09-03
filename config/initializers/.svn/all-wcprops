@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bpifs/!svn/ver/6263/trunk/bpifs/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/6263/trunk/bpifs/config/initializers/inflections.rb
+END
+lf.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/6245/trunk/bpifs/config/initializers/lf.rb
+END
+new_rails_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/97/trunk/bpifs/config/initializers/new_rails_defaults.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/97/trunk/bpifs/config/initializers/mime_types.rb
+END

@@ -1,0 +1,43 @@
+9
+
+dir
+6222
+https://svn.bsiforge.com/svn/bpifs/trunk/bpifs/vendor/rails/activesupport/lib/active_support/vendor
+https://svn.bsiforge.com/svn/bpifs
+
+
+
+2009-04-17T11:33:02.130487Z
+127
+ssmati
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+171cada2-f8fe-4419-b9ec-09dd45d71e2d
+
+xml-simple-1.0.11
+dir
+
+builder-2.1.2
+dir
+
+tzinfo-0.3.12
+dir
+
+i18n-0.0.1
+dir
+
+memcache-client-1.5.1
+dir
+

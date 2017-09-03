@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/migrations/broken
+END
+100_migration_that_raises_exception.rb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/activerecord/test/migrations/broken/100_migration_that_raises_exception.rb
+END

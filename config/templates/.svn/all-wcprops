@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bpifs/!svn/ver/6245/trunk/bpifs/config/templates
+END
+database_template.yml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/562/trunk/bpifs/config/templates/database_template.yml
+END
+config_template.yml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/5780/trunk/bpifs/config/templates/config_template.yml
+END
+shell.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/5774/trunk/bpifs/config/templates/shell.sh
+END
+ranking_template.yml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/5815/trunk/bpifs/config/templates/ranking_template.yml
+END
+harvest.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/6245/trunk/bpifs/config/templates/harvest.sh
+END
+conf_bpi_env.yml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/6099/trunk/bpifs/config/templates/conf_bpi_env.yml
+END
+stats.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/4381/trunk/bpifs/config/templates/stats.sh
+END
+update_rss_feeds.sh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/1882/trunk/bpifs/config/templates/update_rss_feeds.sh
+END
+conf_atos_dev.yml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/6245/trunk/bpifs/config/templates/conf_atos_dev.yml
+END
+conf_atos_paris.yml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/5471/trunk/bpifs/config/templates/conf_atos_paris.yml
+END
+stat_doc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/5913/trunk/bpifs/config/templates/stat_doc.sh
+END
+webservice_template.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/562/trunk/bpifs/config/templates/webservice_template.yml
+END
+conf_bpi_dev.yml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/5471/trunk/bpifs/config/templates/conf_bpi_dev.yml
+END

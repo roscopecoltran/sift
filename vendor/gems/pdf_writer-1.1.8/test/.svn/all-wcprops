@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/test
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/test/helper.rb
+END
+test_page_numbering.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/test/test_page_numbering.rb
+END
+test_image_info.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/784/trunk/bpifs/vendor/gems/pdf_writer-1.1.8/test/test_image_info.rb
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/init.rb
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/install.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/sql_session_store/README
+END

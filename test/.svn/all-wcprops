@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/bpifs/!svn/ver/4739/trunk/bpifs/test
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/test_helper.rb
+END
+clean_solr_index.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/4503/trunk/bpifs/test/clean_solr_index.rb
+END
+solr_indice.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bpifs/!svn/ver/4739/trunk/bpifs/test/solr_indice.rb
+END
+wsdl_example.gzip
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/wsdl_example.gzip
+END

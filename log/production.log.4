@@ -1,0 +1,530 @@
+# Logfile created on Tue Nov 10 15:01:20 +0100 2015 by logger.rb
+2015-11-10 15:01:20 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xb8a13c0 @ip_user=["194.199.7.36"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:01:20 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xb8a13c0> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xb88c1f0>#<ManageDroit:0xb88bb24>#<ManageDroit:0xb88bad4>#<ManageDroit:0xb88ba84>#<ManageDroit:0xb88ba34>#<ManageDroit:0xb88b9a8>#<ManageDroit:0xb88b958>#<ManageDroit:0xb88b908>#<ManageDroit:0xb88b8b8>#<ManageDroit:0xb88b868>#<ManageDroit:0xb88b818>#<ManageDroit:0xb88b7c8>#<ManageDroit:0xb88b778>#<ManageDroit:0xb88b728>#<ManageDroit:0xb88b6d8>#<ManageDroit:0xb88b688>#<ManageDroit:0xb88b638>#<ManageDroit:0xb88b5d4>
+2015-11-10 15:01:20 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5")) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("140")) OR (collection_id:("133")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("125")) OR (collection_id:("71")) OR (collection_id:("101"))) AND ((((keyword:(philosophie des jeux vidéos)) OR title:(philosophie des jeux vidéos)^10000 OR title_no_stemmed:(philosophie des jeux vidéos)^5000 OR creator:(philosophie des jeux vidéos)^5000 OR creator_no_stemmed:(philosophie des jeux vidéos)^2500 OR subject:(philosophie des jeux vidéos)^5000 OR subject_no_stemmed:(philosophie des jeux vidéos)^2500 OR theme:(philosophie des jeux vidéos)^5000 OR theme_no_stemmed:(philosophie des jeux vidéos)^2500 OR indice:(philosophie des jeux vidéos)^5000))) opt: {:facets=>{:fields=>["collection_name_exact"], :mincount=>1, :sort=>"count", :limit=>1000}, :rows=>50, :filter_queries=>"(((keyword:(philosophie des jeux vidéos))))", :start=>0, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"score"=>:descending}]}
+2015-11-10 15:01:27 WARN  #STAT# [RETRIEVE] SearchAsync 7.02
+2015-11-10 15:01:29 INFO  [ManageRole][GetIdLieu] profil EXTERNE found to location_user EXTERNE
+2015-11-10 15:01:29 INFO  Completed in 9247ms (View: 0, DB: 2715) | 200 OK [http://10.1.2.111/json/Search?sets=g1&query[field_filter1]=keyword&query[string1]=philosophie%20des%20jeux%20vid%C3%A9os&query[start]=1&query[max]=50&sort_value=relevance&query[mod]=new_search&tab_template=ALL&query[with_facette]=0&log_cxt=async_search&search_tab_id=None]
+2015-11-10 15:01:30 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.228 at 2015-11-10 15:01:30) [GET]
+2015-11-10 15:01:30 INFO    Parameters: {"id"=>"978-2-336-30981-1"}
+2015-11-10 15:01:32 INFO  Sending data 
+2015-11-10 15:01:32 INFO  Completed in 1633ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-336-30981-1]
+2015-11-10 15:01:32 INFO  
+
+Processing JsonController#ListGroupsSyn (for 10.1.2.221 at 2015-11-10 15:01:32) [GET]
+2015-11-10 15:01:32 INFO    Parameters: {"id_CG"=>"1"}
+2015-11-10 15:01:32 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/ListGroupsSyn?id_CG=1]
+2015-11-10 15:01:34 INFO  
+
+Processing JsonController#Search (for 10.1.2.221 at 2015-11-10 15:01:34) [GET]
+2015-11-10 15:01:34 INFO    Parameters: {"sort_value"=>"relevance", "sets"=>"g1", "tab_template"=>"ALL", "log_cxt"=>"async_search", "search_tab_id"=>"None", "query"=>{"mod"=>"new_search", "max"=>"50", "string1"=>"mécanomorphisme", "with_facette"=>"2", "start"=>"1", "field_filter1"=>"keyword"}}
+2015-11-10 15:01:35 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xb72a730 @ip_user=["82.245.168.218"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:01:35 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xb72a730> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xb712108>#<ManageDroit:0xb711a3c>#<ManageDroit:0xb7119ec>#<ManageDroit:0xb71199c>#<ManageDroit:0xb71194c>#<ManageDroit:0xb7118fc>#<ManageDroit:0xb7118ac>#<ManageDroit:0xb71185c>#<ManageDroit:0xb71180c>#<ManageDroit:0xb7117bc>#<ManageDroit:0xb71176c>#<ManageDroit:0xb71171c>#<ManageDroit:0xb7116cc>#<ManageDroit:0xb71167c>#<ManageDroit:0xb71162c>#<ManageDroit:0xb7115dc>#<ManageDroit:0xb71158c>#<ManageDroit:0xb71153c>
+2015-11-10 15:01:35 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5")) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("140")) OR (collection_id:("133")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("125")) OR (collection_id:("71")) OR (collection_id:("101"))) AND ((((keyword:(mécanomorphisme)) OR title:(mécanomorphisme)^10000 OR title_no_stemmed:(mécanomorphisme)^5000 OR creator:(mécanomorphisme)^5000 OR creator_no_stemmed:(mécanomorphisme)^2500 OR subject:(mécanomorphisme)^5000 OR subject_no_stemmed:(mécanomorphisme)^2500 OR theme:(mécanomorphisme)^5000 OR theme_no_stemmed:(mécanomorphisme)^2500 OR indice:(mécanomorphisme)^5000))) opt: {:facets=>{:queries=>["(dispo_sur_poste:(online) AND dispo_broadcast_group:(\"GD-Articles de presse\") OR dispo_broadcast_group:(\"GD-Ged\") OR dispo_broadcast_group:(\"GD-Journaux en ligne\") OR dispo_broadcast_group:(\"GD-Mezzanine\") OR dispo_broadcast_group:(\"GD-Réel\") OR dispo_broadcast_group:(\"GD-Tous secteurs\")) OR (dispo_avec_access_autorise:(online) AND (collection_id:(5) OR collection_id:(26) OR collection_id:(116) OR collection_id:(120) OR collection_id:(140) OR collection_id:(133) OR collection_id:(80) OR collection_id:(119) OR collection_id:(121) OR collection_id:(118) OR collection_id:(125) OR collection_id:(71) OR collection_id:(101))) ", "(dispo_sur_poste:(onshelf)) OR (dispo_avec_access_autorise:(onshelf) AND (collection_id:(5) OR collection_id:(26) OR collection_id:(116) OR collection_id:(120) OR collection_id:(140) OR collection_id:(133) OR collection_id:(80) OR collection_id:(119) OR collection_id:(121) OR collection_id:(118) OR collection_id:(125) OR collection_id:(71) OR collection_id:(101)))"], :fields=>["theme_exact", "musical_kind_exact", "document_type_exact", "author_exact", "lang_exact", "subject_exact", "collection_name_exact"], :mincount=>1, :dates=>[{"date_document"=>{:include=>"lower", :start=>"1800-01-01T00:00:00Z", :end=>"2015-12-31T23:59:59Z", :gap=>"+1YEAR", :other=>"before"}}], :sort=>"count", :limit=>1000}, :rows=>1, :filter_queries=>"(((keyword:(mécanomorphisme))))", :start=>0, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"score"=>:descending}]}
+2015-11-10 15:01:35 WARN  #STAT# [RETRIEVE] SearchAsync 0.68
+2015-11-10 15:01:35 INFO  Completed in 686ms (View: 0, DB: 61) | 200 OK [http://10.1.2.111/json/Search?sets=g1&query[field_filter1]=keyword&query[string1]=m%C3%A9canomorphisme&query[start]=1&query[max]=50&sort_value=relevance&query[mod]=new_search&tab_template=ALL&query[with_facette]=2&log_cxt=async_search&search_tab_id=None]
+2015-11-10 15:01:35 INFO  
+
+Processing JsonController#SeeAlso (for 10.1.2.221 at 2015-11-10 15:01:35) [GET]
+2015-11-10 15:01:35 INFO    Parameters: {"query"=>"m%C3%A9canomorphisme"}
+2015-11-10 15:01:35 INFO  Completed in 14ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/SeeAlso?query=m%25C3%25A9canomorphisme]
+2015-11-10 15:01:35 INFO  
+
+Processing JsonController#SeeAlso (for 10.1.2.221 at 2015-11-10 15:01:35) [GET]
+2015-11-10 15:01:35 INFO    Parameters: {"query"=>"mécanomorphisme"}
+2015-11-10 15:01:35 INFO  Completed in 13ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/SeeAlso?query=m%C3%A9canomorphisme]
+2015-11-10 15:01:35 INFO  
+
+Processing JsonController#SpellCheck (for 10.1.2.221 at 2015-11-10 15:01:35) [GET]
+2015-11-10 15:01:35 INFO    Parameters: {"query"=>"mécanomorphisme"}
+2015-11-10 15:01:36 INFO  Completed in 822ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/SpellCheck?query=m%C3%A9canomorphisme]
+2015-11-10 15:01:37 INFO  
+
+Processing JsonController#Search (for 10.1.2.228 at 2015-11-10 15:01:37) [GET]
+2015-11-10 15:01:37 INFO    Parameters: {"sort_value"=>"relevance", "sets"=>"g1", "tab_template"=>"ALL", "log_cxt"=>"async_search", "search_tab_id"=>"None", "query"=>{"mod"=>"new_search", "max"=>"50", "string1"=>"philosophie des jeux vidéo", "with_facette"=>"0", "start"=>"1", "field_filter1"=>"keyword"}}
+2015-11-10 15:01:38 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xb6b1ccc @ip_user=["194.199.7.36"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:01:38 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xb6b1ccc> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xbd7ec30>#<ManageDroit:0xbd7ba94>#<ManageDroit:0xbd7b8b4>#<ManageDroit:0xbd7b828>#<ManageDroit:0xbd7b7c4>#<ManageDroit:0xbd7b65c>#<ManageDroit:0xbd7b418>#<ManageDroit:0xbd7b094>#<ManageDroit:0xbd7aab8>#<ManageDroit:0xbd7a84c>#<ManageDroit:0xbd7a450>#<ManageDroit:0xbd79f3c>#<ManageDroit:0xbd79c30>#<ManageDroit:0xbd79758>#<ManageDroit:0xbd79640>#<ManageDroit:0xbd7958c>#<ManageDroit:0xbd791f4>#<ManageDroit:0xbd78d30>
+2015-11-10 15:01:38 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5")) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("140")) OR (collection_id:("133")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("125")) OR (collection_id:("71")) OR (collection_id:("101"))) AND ((((keyword:(philosophie des jeux vidéo)) OR title:(philosophie des jeux vidéo)^10000 OR title_no_stemmed:(philosophie des jeux vidéo)^5000 OR creator:(philosophie des jeux vidéo)^5000 OR creator_no_stemmed:(philosophie des jeux vidéo)^2500 OR subject:(philosophie des jeux vidéo)^5000 OR subject_no_stemmed:(philosophie des jeux vidéo)^2500 OR theme:(philosophie des jeux vidéo)^5000 OR theme_no_stemmed:(philosophie des jeux vidéo)^2500 OR indice:(philosophie des jeux vidéo)^5000))) opt: {:facets=>{:fields=>["collection_name_exact"], :mincount=>1, :sort=>"count", :limit=>1000}, :rows=>50, :filter_queries=>"(((keyword:(philosophie des jeux vidéo))))", :start=>0, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"score"=>:descending}]}
+2015-11-10 15:01:44 WARN  #STAT# [RETRIEVE] SearchAsync 6.04
+2015-11-10 15:01:45 INFO  [ManageRole][GetIdLieu] profil EXTERNE found to location_user EXTERNE
+2015-11-10 15:01:45 INFO  Completed in 7701ms (View: 0, DB: 4073) | 200 OK [http://10.1.2.111/json/Search?sets=g1&query[field_filter1]=keyword&query[string1]=philosophie%20des%20jeux%20vid%C3%A9o&query[start]=1&query[max]=50&sort_value=relevance&query[mod]=new_search&tab_template=ALL&query[with_facette]=0&log_cxt=async_search&search_tab_id=None]
+2015-11-10 15:01:47 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.228 at 2015-11-10 15:01:47) [GET]
+2015-11-10 15:01:47 INFO    Parameters: {"id"=>"978-2-35522-038-8"}
+2015-11-10 15:01:47 INFO  Sending data 
+2015-11-10 15:01:47 INFO  Completed in 732ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-35522-038-8]
+2015-11-10 15:01:48 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.228 at 2015-11-10 15:01:48) [GET]
+2015-11-10 15:01:48 INFO    Parameters: {"id"=>"978-2-36013-297-3"}
+2015-11-10 15:01:48 INFO  Sending data 
+2015-11-10 15:01:48 INFO  Completed in 495ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-36013-297-3]
+2015-11-10 15:01:48 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.228 at 2015-11-10 15:01:48) [GET]
+2015-11-10 15:01:48 INFO    Parameters: {"id"=>"9782760633414"}
+2015-11-10 15:01:49 INFO  Sending data 
+2015-11-10 15:01:49 INFO  Completed in 417ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/9782760633414]
+2015-11-10 15:03:46 INFO  
+
+Processing JsonController#Search (for 10.1.2.119 at 2015-11-10 15:03:46) [GET]
+2015-11-10 15:03:46 INFO    Parameters: {"sort_value"=>"relevance", "sets"=>"g29", "tab_template"=>"None", "log_cxt"=>"get_notice", "search_tab_id"=>"None", "query"=>{"mod"=>"None", "max"=>"1", "string1"=>" Littoral", "with_facette"=>"0", "start"=>"41", "field_filter1"=>"subject"}}
+2015-11-10 15:03:46 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xb9960b4 @ip_user=["66.249.69.75"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:03:47 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xb9960b4> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xb95a758>#<ManageDroit:0xb95a08c>#<ManageDroit:0xb95a03c>#<ManageDroit:0xb959fec>#<ManageDroit:0xb959f9c>#<ManageDroit:0xb959f4c>#<ManageDroit:0xb959efc>#<ManageDroit:0xb959eac>#<ManageDroit:0xb959e5c>#<ManageDroit:0xb959e0c>#<ManageDroit:0xb959dbc>#<ManageDroit:0xb959d6c>#<ManageDroit:0xb959d1c>#<ManageDroit:0xb959ccc>#<ManageDroit:0xb959c7c>#<ManageDroit:0xb959bb4>#<ManageDroit:0xb959b64>#<ManageDroit:0xb959b14>
+2015-11-10 15:03:47 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5") AND (indice:(78*))) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("56")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("71")) OR (collection_id:("125")) OR (collection_id:("101"))) AND ((((subject:(Littoral) OR subject_no_stemmed:("Conservatoire de l\'espace littoral et des rivages lacustres France") OR subject_no_stemmed:("Conservatoire du littoral France") OR subject_no_stemmed:("France Conservatoire de l\'espace littoral et des rivages lacustres") OR subject_no_stemmed:("France Conservatoire du littoral") OR subject_no_stemmed:("Conservatoire du littoral") OR subject_no_stemmed:("France  Service d\'études et d\'aménagement touristique du littoral") OR subject_no_stemmed:("France Direction de l\'urbanisme et des paysages Service d\'études et d\'aménagement touristique du littoral") OR subject_no_stemmed:("France Service de l\'espace et des sites Service d\'études et d\'aménagement touristique du littoral") OR subject_no_stemmed:("France Etude et aménagement touristique du littoral Service") OR subject_no_stemmed:("S.E.A.T.L.") OR subject_no_stemmed:("SEATL") OR subject_no_stemmed:("Groupe de recherches Littoral espaces maritimes et relations internationales La Rochelle") OR subject_no_stemmed:("LEMRI") OR subject_no_stemmed:("Equipe de recherches Littoral espaces maritimes et relations internationales La Rochelle") OR subject_no_stemmed:("Goupe de recherches LEMRI La Rochelle") OR subject_no_stemmed:("Université de La Rochelle Groupe de recherches Littoral espaces maritimes et relations internationales") OR subject_no_stemmed:("Laboratoire Littoral espaces maritimes et relations internationales La Rochelle") OR subject_no_stemmed:("Littoraux") OR subject_no_stemmed:("Bord de mer") OR subject_no_stemmed:("Bords de mer") OR subject_no_stemmed:("Côtes") OR subject_no_stemmed:("Espace littoral") OR subject_no_stemmed:("Estran") OR subject_no_stemmed:("Façade maritime") OR subject_no_stemmed:("Géomorphologie littorale") OR subject_no_stemmed:("Maritimité") OR subject_no_stemmed:("Mer Rivage") OR subject_no_stemmed:("Morphologie littorale") OR subject_no_stemmed:("Régions côtières") OR subject_no_stemmed:("Régions maritimes") OR subject_no_stemmed:("Rivage maritime") OR subject_no_stemmed:("Zones côtières") OR subject_no_stemmed:("Littoral") OR subject_no_stemmed:("Pays sans littoral") OR subject_no_stemmed:("Enclavement \(géopolitique\)") OR subject_no_stemmed:("États sans littoral") OR subject_no_stemmed:("États enclavés") OR subject_no_stemmed:("Pays enclavés") OR subject_no_stemmed:("Pays non riverains") OR subject_no_stemmed:("Pays sans accès à la mer") OR subject_no_stemmed:("Groupe de recherche sur les économies locales Dunkerque Nord") OR subject_no_stemmed:("GREL") OR subject_no_stemmed:("Université du Littoral Dunkerque Nord Groupe de recherche sur les économies locales") OR subject_no_stemmed:("Groupe de recherches sur les économies locales Dunkerque Nord") OR subject_no_stemmed:("Rivage Protection") OR subject_no_stemmed:("Côtes Protection") OR subject_no_stemmed:("Défense des côtes") OR subject_no_stemmed:("Défense du littoral") OR subject_no_stemmed:("Défense du rivage") OR subject_no_stemmed:("Érosion Lutte contre") OR subject_no_stemmed:("Hydraulique maritime") OR subject_no_stemmed:("Littoraux Protection") OR subject_no_stemmed:("Protection des côtes") OR subject_no_stemmed:("Protection des littoraux") OR subject_no_stemmed:("Protection du rivage") OR subject_no_stemmed:("Littoraux Aménagement") OR subject_no_stemmed:("Aménagement du littoral") OR subject_no_stemmed:("Littoraux Gestion") OR subject_no_stemmed:("Rivage Aménagement") OR subject_no_stemmed:("Animaux des rivages") OR subject_no_stemmed:("Animaux côtiers") OR subject_no_stemmed:("Faune côtière") OR subject_no_stemmed:("Faune des rivages") OR subject_no_stemmed:("Faune du littoral") OR subject_no_stemmed:("Faune littorale") OR subject_no_stemmed:("Littoraux Animaux") OR subject_no_stemmed:("Littoraux Faune") OR subject_no_stemmed:("Rivage Animaux") OR subject_no_stemmed:("Rivage Faune") OR subject_no_stemmed:("Tsimshian \(Indiens\)") OR subject_no_stemmed:("Chimmesyan \(Indiens\)") OR subject_no_stemmed:("Tsimpshean \(Indiens\)") OR subject_no_stemmed:("Tsimshian du littoral \(Indiens\)") OR subject_no_stemmed:("Tsimshiam \(Indiens\)") OR subject_no_stemmed:("Tsinshan \(Indiens\)") OR subject_no_stemmed:("Zimshian \(Indiens\)")) OR title:(Littoral)^10000 OR title_no_stemmed:(Littoral)^5000 OR creator:(Littoral)^5000 OR creator_no_stemmed:(Littoral)^2500 OR subject:(Littoral)^5000 OR subject_no_stemmed:(Littoral)^2500 OR theme:(Littoral)^5000 OR theme_no_stemmed:(Littoral)^2500 OR indice:(Littoral)^5000))) opt: {:facets=>{:fields=>["collection_name_exact"], :mincount=>1, :sort=>"count", :limit=>1000}, :rows=>1, :filter_queries=>"(((subject:(Littoral) OR subject_no_stemmed:(\"Conservatoire de l\\'espace littoral et des rivages lacustres France\") OR subject_no_stemmed:(\"Conservatoire du littoral France\") OR subject_no_stemmed:(\"France Conservatoire de l\\'espace littoral et des rivages lacustres\") OR subject_no_stemmed:(\"France Conservatoire du littoral\") OR subject_no_stemmed:(\"Conservatoire du littoral\") OR subject_no_stemmed:(\"France  Service d\\'études et d\\'aménagement touristique du littoral\") OR subject_no_stemmed:(\"France Direction de l\\'urbanisme et des paysages Service d\\'études et d\\'aménagement touristique du littoral\") OR subject_no_stemmed:(\"France Service de l\\'espace et des sites Service d\\'études et d\\'aménagement touristique du littoral\") OR subject_no_stemmed:(\"France Etude et aménagement touristique du littoral Service\") OR subject_no_stemmed:(\"S.E.A.T.L.\") OR subject_no_stemmed:(\"SEATL\") OR subject_no_stemmed:(\"Groupe de recherches Littoral espaces maritimes et relations internationales La Rochelle\") OR subject_no_stemmed:(\"LEMRI\") OR subject_no_stemmed:(\"Equipe de recherches Littoral espaces maritimes et relations internationales La Rochelle\") OR subject_no_stemmed:(\"Goupe de recherches LEMRI La Rochelle\") OR subject_no_stemmed:(\"Université de La Rochelle Groupe de recherches Littoral espaces maritimes et relations internationales\") OR subject_no_stemmed:(\"Laboratoire Littoral espaces maritimes et relations internationales La Rochelle\") OR subject_no_stemmed:(\"Littoraux\") OR subject_no_stemmed:(\"Bord de mer\") OR subject_no_stemmed:(\"Bords de mer\") OR subject_no_stemmed:(\"Côtes\") OR subject_no_stemmed:(\"Espace littoral\") OR subject_no_stemmed:(\"Estran\") OR subject_no_stemmed:(\"Façade maritime\") OR subject_no_stemmed:(\"Géomorphologie littorale\") OR subject_no_stemmed:(\"Maritimité\") OR subject_no_stemmed:(\"Mer Rivage\") OR subject_no_stemmed:(\"Morphologie littorale\") OR subject_no_stemmed:(\"Régions côtières\") OR subject_no_stemmed:(\"Régions maritimes\") OR subject_no_stemmed:(\"Rivage maritime\") OR subject_no_stemmed:(\"Zones côtières\") OR subject_no_stemmed:(\"Littoral\") OR subject_no_stemmed:(\"Pays sans littoral\") OR subject_no_stemmed:(\"Enclavement \\(géopolitique\\)\") OR subject_no_stemmed:(\"États sans littoral\") OR subject_no_stemmed:(\"États enclavés\") OR subject_no_stemmed:(\"Pays enclavés\") OR subject_no_stemmed:(\"Pays non riverains\") OR subject_no_stemmed:(\"Pays sans accès à la mer\") OR subject_no_stemmed:(\"Groupe de recherche sur les économies locales Dunkerque Nord\") OR subject_no_stemmed:(\"GREL\") OR subject_no_stemmed:(\"Université du Littoral Dunkerque Nord Groupe de recherche sur les économies locales\") OR subject_no_stemmed:(\"Groupe de recherches sur les économies locales Dunkerque Nord\") OR subject_no_stemmed:(\"Rivage Protection\") OR subject_no_stemmed:(\"Côtes Protection\") OR subject_no_stemmed:(\"Défense des côtes\") OR subject_no_stemmed:(\"Défense du littoral\") OR subject_no_stemmed:(\"Défense du rivage\") OR subject_no_stemmed:(\"Érosion Lutte contre\") OR subject_no_stemmed:(\"Hydraulique maritime\") OR subject_no_stemmed:(\"Littoraux Protection\") OR subject_no_stemmed:(\"Protection des côtes\") OR subject_no_stemmed:(\"Protection des littoraux\") OR subject_no_stemmed:(\"Protection du rivage\") OR subject_no_stemmed:(\"Littoraux Aménagement\") OR subject_no_stemmed:(\"Aménagement du littoral\") OR subject_no_stemmed:(\"Littoraux Gestion\") OR subject_no_stemmed:(\"Rivage Aménagement\") OR subject_no_stemmed:(\"Animaux des rivages\") OR subject_no_stemmed:(\"Animaux côtiers\") OR subject_no_stemmed:(\"Faune côtière\") OR subject_no_stemmed:(\"Faune des rivages\") OR subject_no_stemmed:(\"Faune du littoral\") OR subject_no_stemmed:(\"Faune littorale\") OR subject_no_stemmed:(\"Littoraux Animaux\") OR subject_no_stemmed:(\"Littoraux Faune\") OR subject_no_stemmed:(\"Rivage Animaux\") OR subject_no_stemmed:(\"Rivage Faune\") OR subject_no_stemmed:(\"Tsimshian \\(Indiens\\)\") OR subject_no_stemmed:(\"Chimmesyan \\(Indiens\\)\") OR subject_no_stemmed:(\"Tsimpshean \\(Indiens\\)\") OR subject_no_stemmed:(\"Tsimshian du littoral \\(Indiens\\)\") OR subject_no_stemmed:(\"Tsimshiam \\(Indiens\\)\") OR subject_no_stemmed:(\"Tsinshan \\(Indiens\\)\") OR subject_no_stemmed:(\"Zimshian \\(Indiens\\)\"))))", :start=>40, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"score"=>:descending}]}
+2015-11-10 15:03:48 WARN  #STAT# [RETRIEVE] SearchAsync 1.69
+2015-11-10 15:03:48 INFO  [ManageRole][GetIdLieu] profil EXTERNE found to location_user EXTERNE
+2015-11-10 15:03:49 INFO  Completed in 2982ms (View: 0, DB: 1453) | 200 OK [http://10.1.2.111/json/Search?sets=g29&query[field_filter1]=subject&query[string1]=%20Littoral&query[start]=41&query[max]=1&sort_value=relevance&query[mod]=None&tab_template=None&query[with_facette]=0&log_cxt=get_notice&search_tab_id=None]
+2015-11-10 15:03:49 INFO  
+
+Processing CommunityJsonController#GetTagsByObject (for 10.1.2.119 at 2015-11-10 15:03:49) [GET]
+2015-11-10 15:03:49 INFO    Parameters: {"uuid"=>"", "object_uid"=>"oai:revues.org:echogeo/13275;125;0", "sort"=>"RAND()", "object_type"=>"1"}
+2015-11-10 15:03:49 INFO  Completed in 12ms (View: 0, DB: 11) | 200 OK [http://10.1.2.111/community_json/GetTagsByObject?&object_type=1&object_uid=oai%3Arevues.org%3Aechogeo/13275%3B125%3B0&uuid=&sort=RAND()]
+2015-11-10 15:03:49 INFO  
+
+Processing JsonController#ListGroupsSyn (for 10.1.2.119 at 2015-11-10 15:03:49) [GET]
+2015-11-10 15:03:49 INFO    Parameters: {"id_CG"=>"29"}
+2015-11-10 15:03:49 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/ListGroupsSyn?id_CG=29]
+2015-11-10 15:03:50 INFO  
+
+Processing CommunityJsonController#GetRandomNotices (for 10.1.2.119 at 2015-11-10 15:03:50) [GET]
+2015-11-10 15:03:50 INFO    Parameters: {"max_notices"=>"5", "doc_id"=>"oai:revues.org:echogeo/13275;125;0"}
+2015-11-10 15:03:50 INFO  Completed in 2ms (View: 0, DB: 2) | 200 OK [http://10.1.2.111/community_json/GetRandomNotices?doc_id=oai%3Arevues.org%3Aechogeo/13275%3B125%3B0&max_notices=5]
+2015-11-10 15:04:00 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.221 at 2015-11-10 15:04:00) [GET]
+2015-11-10 15:04:00 INFO    Parameters: {"id"=>"978-2-08-124125-1"}
+2015-11-10 15:04:05 ERROR  [Webservice] [getImage] error Message :  HTTP response code 503
+2015-11-10 15:04:05 INFO  Sending data 
+2015-11-10 15:04:05 INFO  Completed in 5061ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-08-124125-1]
+2015-11-10 15:04:06 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.221 at 2015-11-10 15:04:06) [GET]
+2015-11-10 15:04:06 INFO    Parameters: {"id"=>"88-208-0390-9"}
+2015-11-10 15:04:06 ERROR  [Webservice] [getImage] error Message :  HTTP response code 503
+2015-11-10 15:04:06 INFO  Sending data 
+2015-11-10 15:04:06 INFO  Completed in 53ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/88-208-0390-9]
+2015-11-10 15:04:06 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.221 at 2015-11-10 15:04:06) [GET]
+2015-11-10 15:04:06 INFO    Parameters: {"id"=>"9780230104068"}
+2015-11-10 15:04:06 INFO  Sending data 
+2015-11-10 15:04:06 INFO  Completed in 393ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/9780230104068]
+2015-11-10 15:04:06 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.221 at 2015-11-10 15:04:06) [GET]
+2015-11-10 15:04:06 INFO    Parameters: {"id"=>"88-8491-286-5"}
+2015-11-10 15:04:06 ERROR  [Webservice] [getImage] error Message :  HTTP response code 503
+2015-11-10 15:04:06 INFO  Sending data 
+2015-11-10 15:04:06 INFO  Completed in 56ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/88-8491-286-5]
+2015-11-10 15:04:06 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.221 at 2015-11-10 15:04:06) [GET]
+2015-11-10 15:04:06 INFO    Parameters: {"id"=>"2-84975-105-7"}
+2015-11-10 15:04:06 ERROR  [Webservice] [getImage] error Message :  HTTP response code 503
+2015-11-10 15:04:06 INFO  Sending data 
+2015-11-10 15:04:06 INFO  Completed in 80ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/2-84975-105-7]
+2015-11-10 15:04:06 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.221 at 2015-11-10 15:04:06) [GET]
+2015-11-10 15:04:06 INFO    Parameters: {"id"=>"978-3-89955-332-1"}
+2015-11-10 15:04:06 ERROR  [Webservice] [getImage] error Message :  HTTP response code 503
+2015-11-10 15:04:06 INFO  Sending data 
+2015-11-10 15:04:06 INFO  Completed in 69ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-3-89955-332-1]
+2015-11-10 15:04:15 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.227 at 2015-11-10 15:04:15) [GET]
+2015-11-10 15:04:15 INFO    Parameters: {"id"=>"2-7178-1404-3"}
+2015-11-10 15:04:16 INFO  Sending data 
+2015-11-10 15:04:16 INFO  Completed in 437ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/2-7178-1404-3]
+2015-11-10 15:04:16 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.227 at 2015-11-10 15:04:16) [GET]
+2015-11-10 15:04:16 INFO    Parameters: {"id"=>"0-19-925169-X"}
+2015-11-10 15:04:16 INFO  Sending data 
+2015-11-10 15:04:16 INFO  Completed in 368ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/0-19-925169-X]
+2015-11-10 15:04:33 INFO  
+
+Processing JsonController#AutoComplete (for 10.1.2.119 at 2015-11-10 15:04:33) [GET]
+2015-11-10 15:04:33 INFO    Parameters: {"word"=>"fran", "field"=>"keyword"}
+2015-11-10 15:04:36 INFO  Completed in 2487ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/AutoComplete?word=fran&field=keyword]
+2015-11-10 15:04:36 INFO  
+
+Processing JsonController#AutoComplete (for 10.1.2.119 at 2015-11-10 15:04:36) [GET]
+2015-11-10 15:04:36 INFO    Parameters: {"word"=>"français dans le monde", "field"=>"keyword"}
+2015-11-10 15:04:36 INFO  Completed in 12ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/AutoComplete?word=fran%C3%A7ais%20dans%20le%20monde&field=keyword]
+2015-11-10 15:04:37 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.228 at 2015-11-10 15:04:37) [GET]
+2015-11-10 15:04:37 INFO    Parameters: {"id"=>"2-7089-8187-0"}
+2015-11-10 15:04:38 INFO  Sending data 
+2015-11-10 15:04:38 INFO  Completed in 531ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/2-7089-8187-0]
+2015-11-10 15:04:39 INFO  
+
+Processing AccountJsonController#GetProfile (for 10.1.2.119 at 2015-11-10 15:04:39) [GET]
+2015-11-10 15:04:39 INFO    Parameters: {"uuid"=>"PUB-6-TST-009"}
+2015-11-10 15:04:39 INFO  Completed in 103ms (View: 0, DB: 99) | 200 OK [http://10.1.2.111/account_json/GetProfile?uuid=PUB-6-TST-009]
+2015-11-10 15:04:39 INFO  
+
+Processing JsonController#ListGroupsSyn (for 10.1.2.119 at 2015-11-10 15:04:39) [GET]
+2015-11-10 15:04:39 INFO    Parameters: {"id_CG"=>"1"}
+2015-11-10 15:04:39 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/ListGroupsSyn?id_CG=1]
+2015-11-10 15:04:41 INFO  
+
+Processing JsonController#Search (for 10.1.2.119 at 2015-11-10 15:04:41) [GET]
+2015-11-10 15:04:41 INFO    Parameters: {"sort_value"=>"relevance", "sets"=>"g29", "tab_template"=>"None", "log_cxt"=>"get_notice", "search_tab_id"=>"None", "query"=>{"mod"=>"None", "max"=>"1", "string1"=>"variations", "with_facette"=>"0", "start"=>"4", "field_filter1"=>"subject"}}
+2015-11-10 15:04:41 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xbc5d70c @ip_user=["66.249.69.91"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:04:41 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xbc5d70c> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xbc03a04>#<ManageDroit:0xbc03298>#<ManageDroit:0xbc03248>#<ManageDroit:0xbc031f8>#<ManageDroit:0xbc031a8>#<ManageDroit:0xbc0311c>#<ManageDroit:0xbc02ff0>#<ManageDroit:0xbc02f78>#<ManageDroit:0xbc02f28>#<ManageDroit:0xbc02ed8>#<ManageDroit:0xbc02e74>#<ManageDroit:0xbc02e10>#<ManageDroit:0xbc02dac>#<ManageDroit:0xbc02d5c>#<ManageDroit:0xbc02d0c>#<ManageDroit:0xbc02cbc>#<ManageDroit:0xbc02adc>#<ManageDroit:0xbc02a8c>
+2015-11-10 15:04:41 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5") AND (indice:(78*))) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("56")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("71")) OR (collection_id:("125")) OR (collection_id:("101"))) AND ((((subject:(variations) OR subject_no_stemmed:("Variations symphoniques sur un thème original Op. 78") OR subject_no_stemmed:("Variations Dvorák Antonín. Já jsem huslar B 66 n° 3 Orchestre B 70") OR subject_no_stemmed:("Symphonic variations S 48") OR subject_no_stemmed:("Variations on an original theme Op. 36") OR subject_no_stemmed:("Enigma variations Op. 36") OR subject_no_stemmed:("Variations Enigma Op. 36") OR subject_no_stemmed:("Variations \(musique\)") OR subject_no_stemmed:("Thème et variations") OR subject_no_stemmed:("Partitas") OR subject_no_stemmed:("Variations musicales") OR subject_no_stemmed:("Variation \(musique\)") OR subject_no_stemmed:("Les Variations") OR subject_no_stemmed:("Variations") OR subject_no_stemmed:("Ensemble Variations") OR subject_no_stemmed:("Variations \(Ensemble\)") OR subject_no_stemmed:("6 variations Op. 34 Fa majeur") OR subject_no_stemmed:("6 Variationen über ein eigenes Thema Op. 34") OR subject_no_stemmed:("Variations piano N° 16 op.34uiFa majeur") OR subject_no_stemmed:("33 variations Piano N° 22 op. 120 Diabelli ut majeur") OR subject_no_stemmed:("Variations Diabelli Op. 120") OR subject_no_stemmed:("Diabelli Variationen Op. 120") OR subject_no_stemmed:("15 variations et fugue Op. 35 Mi bémol majeur") OR subject_no_stemmed:("Variations Eroica Op. 35") OR subject_no_stemmed:("Variation Piano Héroïque Op. 35 Mi bémol majeur") OR subject_no_stemmed:("Variationen über ein Thema von J. Haydn Op. 56a") OR subject_no_stemmed:("Variations sur un thème de J. Haydn Op. 56a") OR subject_no_stemmed:("St Anthony variations Op. 56a") OR subject_no_stemmed:("Calcul des variations") OR subject_no_stemmed:("Calcul variationnel") OR subject_no_stemmed:("Problèmes isopérimétriques") OR subject_no_stemmed:("Variations Calcul des")) OR title:(variations)^10000 OR title_no_stemmed:(variations)^5000 OR creator:(variations)^5000 OR creator_no_stemmed:(variations)^2500 OR subject:(variations)^5000 OR subject_no_stemmed:(variations)^2500 OR theme:(variations)^5000 OR theme_no_stemmed:(variations)^2500 OR indice:(variations)^5000))) opt: {:facets=>{:fields=>["collection_name_exact"], :mincount=>1, :sort=>"count", :limit=>1000}, :rows=>1, :filter_queries=>"(((subject:(variations) OR subject_no_stemmed:(\"Variations symphoniques sur un thème original Op. 78\") OR subject_no_stemmed:(\"Variations Dvorák Antonín. Já jsem huslar B 66 n° 3 Orchestre B 70\") OR subject_no_stemmed:(\"Symphonic variations S 48\") OR subject_no_stemmed:(\"Variations on an original theme Op. 36\") OR subject_no_stemmed:(\"Enigma variations Op. 36\") OR subject_no_stemmed:(\"Variations Enigma Op. 36\") OR subject_no_stemmed:(\"Variations \\(musique\\)\") OR subject_no_stemmed:(\"Thème et variations\") OR subject_no_stemmed:(\"Partitas\") OR subject_no_stemmed:(\"Variations musicales\") OR subject_no_stemmed:(\"Variation \\(musique\\)\") OR subject_no_stemmed:(\"Les Variations\") OR subject_no_stemmed:(\"Variations\") OR subject_no_stemmed:(\"Ensemble Variations\") OR subject_no_stemmed:(\"Variations \\(Ensemble\\)\") OR subject_no_stemmed:(\"6 variations Op. 34 Fa majeur\") OR subject_no_stemmed:(\"6 Variationen über ein eigenes Thema Op. 34\") OR subject_no_stemmed:(\"Variations piano N° 16 op.34uiFa majeur\") OR subject_no_stemmed:(\"33 variations Piano N° 22 op. 120 Diabelli ut majeur\") OR subject_no_stemmed:(\"Variations Diabelli Op. 120\") OR subject_no_stemmed:(\"Diabelli Variationen Op. 120\") OR subject_no_stemmed:(\"15 variations et fugue Op. 35 Mi bémol majeur\") OR subject_no_stemmed:(\"Variations Eroica Op. 35\") OR subject_no_stemmed:(\"Variation Piano Héroïque Op. 35 Mi bémol majeur\") OR subject_no_stemmed:(\"Variationen über ein Thema von J. Haydn Op. 56a\") OR subject_no_stemmed:(\"Variations sur un thème de J. Haydn Op. 56a\") OR subject_no_stemmed:(\"St Anthony variations Op. 56a\") OR subject_no_stemmed:(\"Calcul des variations\") OR subject_no_stemmed:(\"Calcul variationnel\") OR subject_no_stemmed:(\"Problèmes isopérimétriques\") OR subject_no_stemmed:(\"Variations Calcul des\"))))", :start=>3, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"score"=>:descending}]}
+2015-11-10 15:04:45 WARN  #STAT# [RETRIEVE] SearchAsync 4.03
+2015-11-10 15:04:45 INFO  [ManageRole][GetIdLieu] profil EXTERNE found to location_user EXTERNE
+2015-11-10 15:04:47 INFO  Completed in 5808ms (View: 0, DB: 2061) | 200 OK [http://10.1.2.111/json/Search?sets=g29&query[field_filter1]=subject&query[string1]=variations&query[start]=4&query[max]=1&sort_value=relevance&query[mod]=None&tab_template=None&query[with_facette]=0&log_cxt=get_notice&search_tab_id=None]
+2015-11-10 15:04:48 INFO  
+
+Processing CommunityJsonController#GetTagsByObject (for 10.1.2.119 at 2015-11-10 15:04:48) [GET]
+2015-11-10 15:04:48 INFO    Parameters: {"uuid"=>"", "object_uid"=>"oai:revues.org:corela/2614;125;0", "sort"=>"RAND()", "object_type"=>"1"}
+2015-11-10 15:04:48 INFO  Completed in 20ms (View: 0, DB: 19) | 200 OK [http://10.1.2.111/community_json/GetTagsByObject?&object_type=1&object_uid=oai%3Arevues.org%3Acorela/2614%3B125%3B0&uuid=&sort=RAND()]
+2015-11-10 15:04:50 INFO  
+
+Processing JsonController#SeeAlso (for 10.1.2.119 at 2015-11-10 15:04:50) [GET]
+2015-11-10 15:04:50 INFO    Parameters: {"query"=>"fran%C3%A7ais%20dans%20le%20monde"}
+2015-11-10 15:04:50 INFO  Completed in 11ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/SeeAlso?query=fran%25C3%25A7ais%2520dans%2520le%2520monde]
+2015-11-10 15:04:50 INFO  
+
+Processing JsonController#ListGroupsSyn (for 10.1.2.119 at 2015-11-10 15:04:50) [GET]
+2015-11-10 15:04:50 INFO    Parameters: {"id_CG"=>"29"}
+2015-11-10 15:04:50 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/ListGroupsSyn?id_CG=29]
+2015-11-10 15:04:50 INFO  
+
+Processing JsonController#SeeAlso (for 10.1.2.119 at 2015-11-10 15:04:50) [GET]
+2015-11-10 15:04:50 INFO    Parameters: {"query"=>"français dans le monde"}
+2015-11-10 15:04:50 INFO  Completed in 9ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/SeeAlso?query=fran%C3%A7ais%20dans%20le%20monde]
+2015-11-10 15:04:50 INFO  
+
+Processing CommunityJsonController#GetRandomNotices (for 10.1.2.119 at 2015-11-10 15:04:50) [GET]
+2015-11-10 15:04:50 INFO    Parameters: {"max_notices"=>"5", "doc_id"=>"oai:revues.org:corela/2614;125;0"}
+2015-11-10 15:04:50 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/community_json/GetRandomNotices?doc_id=oai%3Arevues.org%3Acorela/2614%3B125%3B0&max_notices=5]
+2015-11-10 15:05:31 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.119 at 2015-11-10 15:05:31) [GET]
+2015-11-10 15:05:31 INFO    Parameters: {"id"=>"2-234-00341-5"}
+2015-11-10 15:05:31 INFO  Sending data 
+2015-11-10 15:05:31 INFO  Completed in 293ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/2-234-00341-5]
+2015-11-10 15:05:32 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.119 at 2015-11-10 15:05:32) [GET]
+2015-11-10 15:05:32 INFO    Parameters: {"id"=>"978-2-7298-3860-7"}
+2015-11-10 15:05:32 INFO  Sending data 
+2015-11-10 15:05:32 INFO  Completed in 375ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-7298-3860-7]
+2015-11-10 15:05:33 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.119 at 2015-11-10 15:05:33) [GET]
+2015-11-10 15:05:33 INFO    Parameters: {"id"=>"978-2-7056-8970-4"}
+2015-11-10 15:05:33 ERROR  [Webservice] [getImage] error Message :  HTTP response code 503
+2015-11-10 15:05:33 INFO  Sending data 
+2015-11-10 15:05:33 INFO  Completed in 73ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-7056-8970-4]
+2015-11-10 15:05:33 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.119 at 2015-11-10 15:05:33) [GET]
+2015-11-10 15:05:33 INFO    Parameters: {"id"=>"2-87678-240-5"}
+2015-11-10 15:05:33 ERROR  [Webservice] [getImage] error Message :  HTTP response code 503
+2015-11-10 15:05:33 INFO  Sending data 
+2015-11-10 15:05:33 INFO  Completed in 72ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/2-87678-240-5]
+2015-11-10 15:05:33 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.119 at 2015-11-10 15:05:33) [GET]
+2015-11-10 15:05:33 INFO    Parameters: {"id"=>"978-2-84788-317-6"}
+2015-11-10 15:05:34 INFO  Sending data 
+2015-11-10 15:05:34 INFO  Completed in 370ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-84788-317-6]
+2015-11-10 15:05:34 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.119 at 2015-11-10 15:05:34) [GET]
+2015-11-10 15:05:34 INFO    Parameters: {"id"=>"978-2-7143-1137-5"}
+2015-11-10 15:05:34 ERROR  [Webservice] [getImage] error Message :  HTTP response code 503
+2015-11-10 15:05:34 INFO  Sending data 
+2015-11-10 15:05:34 INFO  Completed in 71ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-7143-1137-5]
+2015-11-10 15:05:34 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.119 at 2015-11-10 15:05:34) [GET]
+2015-11-10 15:05:34 INFO    Parameters: {"id"=>"2-225-81248-9"}
+2015-11-10 15:05:34 ERROR  [Webservice] [getImage] error Message :  HTTP response code 503
+2015-11-10 15:05:34 INFO  Sending data 
+2015-11-10 15:05:34 INFO  Completed in 62ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/2-225-81248-9]
+2015-11-10 15:05:35 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.119 at 2015-11-10 15:05:35) [GET]
+2015-11-10 15:05:35 INFO    Parameters: {"id"=>"2-84049-304-7"}
+2015-11-10 15:05:35 INFO  Sending data 
+2015-11-10 15:05:35 INFO  Completed in 349ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/2-84049-304-7]
+2015-11-10 15:10:07 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.224 at 2015-11-10 15:10:07) [GET]
+2015-11-10 15:10:07 INFO    Parameters: {"id"=>"978-2-10-057467-4"}
+2015-11-10 15:10:13 INFO  Sending data 
+2015-11-10 15:10:13 INFO  Completed in 5433ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-10-057467-4]
+2015-11-10 15:10:13 INFO  
+
+Processing CommunityJsonController#GetRandomNotices (for 10.1.2.119 at 2015-11-10 15:10:13) [GET]
+2015-11-10 15:10:13 INFO    Parameters: {"max_notices"=>"5", "doc_id"=>"oai:cairn.info:RAC_023_0361;26;0"}
+2015-11-10 15:10:13 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/community_json/GetRandomNotices?doc_id=oai%3Acairn.info%3ARAC_023_0361%3B26%3B0&max_notices=5]
+2015-11-10 15:10:13 INFO  
+
+Processing JsonController#AutoComplete (for 10.1.2.228 at 2015-11-10 15:10:13) [GET]
+2015-11-10 15:10:13 INFO    Parameters: {"word"=>"vieillissement et érosion des défenses", "field"=>"keyword"}
+2015-11-10 15:10:13 INFO  Completed in 13ms (View: 0, DB: 3) | 200 OK [http://10.1.2.111/json/AutoComplete?word=vieillissement%20et%20%C3%A9rosion%20des%20d%C3%A9fenses&field=keyword]
+2015-11-10 15:10:19 INFO  
+
+Processing JsonController#AutoComplete (for 10.1.2.228 at 2015-11-10 15:10:19) [GET]
+2015-11-10 15:10:19 INFO    Parameters: {"word"=>"vieillissementérosion des défenses", "field"=>"keyword"}
+2015-11-10 15:10:19 INFO  Completed in 7ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/AutoComplete?word=vieillissement%C3%A9rosion%20des%20d%C3%A9fenses&field=keyword]
+2015-11-10 15:10:21 INFO  
+
+Processing JsonController#AutoComplete (for 10.1.2.228 at 2015-11-10 15:10:21) [GET]
+2015-11-10 15:10:21 INFO    Parameters: {"word"=>"vieillissement érosion des défenses", "field"=>"keyword"}
+2015-11-10 15:10:21 INFO  Completed in 10ms (View: 0, DB: 2) | 200 OK [http://10.1.2.111/json/AutoComplete?word=vieillissement%20%C3%A9rosion%20des%20d%C3%A9fenses&field=keyword]
+2015-11-10 15:10:21 INFO  
+
+Processing JsonController#ListGroupsSyn (for 10.1.2.228 at 2015-11-10 15:10:21) [GET]
+2015-11-10 15:10:21 INFO    Parameters: {"id_CG"=>"1"}
+2015-11-10 15:10:21 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/ListGroupsSyn?id_CG=1]
+2015-11-10 15:10:24 INFO  
+
+Processing JsonController#Search (for 10.1.2.228 at 2015-11-10 15:10:24) [GET]
+2015-11-10 15:10:24 INFO    Parameters: {"sort_value"=>"relevance", "sets"=>"g1", "tab_template"=>"ALL", "log_cxt"=>"async_search", "search_tab_id"=>"None", "query"=>{"mod"=>"new_search", "max"=>"50", "string1"=>"vieillissement érosion des défenses", "with_facette"=>"2", "start"=>"1", "field_filter1"=>"keyword"}}
+2015-11-10 15:10:24 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xb77e54c @ip_user=["79.81.251.74"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:10:24 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xb77e54c> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xb769c3c>#<ManageDroit:0xb769570>#<ManageDroit:0xb769520>#<ManageDroit:0xb7694d0>#<ManageDroit:0xb769480>#<ManageDroit:0xb769430>#<ManageDroit:0xb7693e0>#<ManageDroit:0xb769390>#<ManageDroit:0xb769340>#<ManageDroit:0xb7692f0>#<ManageDroit:0xb7692a0>#<ManageDroit:0xb769250>#<ManageDroit:0xb769200>#<ManageDroit:0xb7691b0>#<ManageDroit:0xb769160>#<ManageDroit:0xb769110>#<ManageDroit:0xb7690c0>#<ManageDroit:0xb769070>
+2015-11-10 15:10:24 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5")) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("140")) OR (collection_id:("133")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("125")) OR (collection_id:("71")) OR (collection_id:("101"))) AND ((((keyword:(vieillissement érosion des défenses)) OR title:(vieillissement érosion des défenses)^10000 OR title_no_stemmed:(vieillissement érosion des défenses)^5000 OR creator:(vieillissement érosion des défenses)^5000 OR creator_no_stemmed:(vieillissement érosion des défenses)^2500 OR subject:(vieillissement érosion des défenses)^5000 OR subject_no_stemmed:(vieillissement érosion des défenses)^2500 OR theme:(vieillissement érosion des défenses)^5000 OR theme_no_stemmed:(vieillissement érosion des défenses)^2500 OR indice:(vieillissement érosion des défenses)^5000))) opt: {:facets=>{:queries=>["(dispo_sur_poste:(online) AND dispo_broadcast_group:(\"GD-Articles de presse\") OR dispo_broadcast_group:(\"GD-Ged\") OR dispo_broadcast_group:(\"GD-Journaux en ligne\") OR dispo_broadcast_group:(\"GD-Mezzanine\") OR dispo_broadcast_group:(\"GD-Réel\") OR dispo_broadcast_group:(\"GD-Tous secteurs\")) OR (dispo_avec_access_autorise:(online) AND (collection_id:(5) OR collection_id:(26) OR collection_id:(116) OR collection_id:(120) OR collection_id:(140) OR collection_id:(133) OR collection_id:(80) OR collection_id:(119) OR collection_id:(121) OR collection_id:(118) OR collection_id:(125) OR collection_id:(71) OR collection_id:(101))) ", "(dispo_sur_poste:(onshelf)) OR (dispo_avec_access_autorise:(onshelf) AND (collection_id:(5) OR collection_id:(26) OR collection_id:(116) OR collection_id:(120) OR collection_id:(140) OR collection_id:(133) OR collection_id:(80) OR collection_id:(119) OR collection_id:(121) OR collection_id:(118) OR collection_id:(125) OR collection_id:(71) OR collection_id:(101)))"], :fields=>["theme_exact", "musical_kind_exact", "document_type_exact", "author_exact", "lang_exact", "subject_exact", "collection_name_exact"], :mincount=>1, :dates=>[{"date_document"=>{:include=>"lower", :start=>"1800-01-01T00:00:00Z", :end=>"2015-12-31T23:59:59Z", :gap=>"+1YEAR", :other=>"before"}}], :sort=>"count", :limit=>1000}, :rows=>1, :filter_queries=>"(((keyword:(vieillissement érosion des défenses))))", :start=>0, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"score"=>:descending}]}
+2015-11-10 15:10:29 WARN  #STAT# [RETRIEVE] SearchAsync 4.83
+2015-11-10 15:10:29 INFO  Completed in 4838ms (View: 0, DB: 30) | 200 OK [http://10.1.2.111/json/Search?sets=g1&query[field_filter1]=keyword&query[string1]=vieillissement%20%C3%A9rosion%20des%20d%C3%A9fenses&query[start]=1&query[max]=50&sort_value=relevance&query[mod]=new_search&tab_template=ALL&query[with_facette]=2&log_cxt=async_search&search_tab_id=None]
+2015-11-10 15:10:29 INFO  
+
+Processing JsonController#SeeAlso (for 10.1.2.228 at 2015-11-10 15:10:29) [GET]
+2015-11-10 15:10:29 INFO    Parameters: {"query"=>"vieillissement%20%C3%A9rosion%20des%20d%C3%A9fenses"}
+2015-11-10 15:10:29 INFO  Completed in 12ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/SeeAlso?query=vieillissement%2520%25C3%25A9rosion%2520des%2520d%25C3%25A9fenses]
+2015-11-10 15:10:29 INFO  
+
+Processing JsonController#SeeAlso (for 10.1.2.228 at 2015-11-10 15:10:29) [GET]
+2015-11-10 15:10:29 INFO    Parameters: {"query"=>"vieillissement érosion des défenses"}
+2015-11-10 15:10:29 INFO  Completed in 9ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/SeeAlso?query=vieillissement%20%C3%A9rosion%20des%20d%C3%A9fenses]
+2015-11-10 15:10:29 INFO  
+
+Processing JsonController#SpellCheck (for 10.1.2.228 at 2015-11-10 15:10:29) [GET]
+2015-11-10 15:10:29 INFO    Parameters: {"query"=>"vieillissement érosion des défenses"}
+2015-11-10 15:10:30 INFO  Completed in 1130ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/SpellCheck?query=vieillissement%20%C3%A9rosion%20des%20d%C3%A9fenses]
+2015-11-10 15:10:31 INFO  
+
+Processing JsonController#AutoComplete (for 10.1.2.224 at 2015-11-10 15:10:31) [GET]
+2015-11-10 15:10:31 INFO    Parameters: {"word"=>"methodes actuarielles de l'a", "field"=>"keyword"}
+2015-11-10 15:10:31 INFO  Completed in 9ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/AutoComplete?word=methodes%20actuarielles%20de%20l%27a&field=keyword]
+2015-11-10 15:10:35 INFO  
+
+Processing JsonController#Search (for 10.1.2.224 at 2015-11-10 15:10:35) [GET]
+2015-11-10 15:10:35 INFO    Parameters: {"sort_value"=>"relevance", "sets"=>"g1", "tab_template"=>"ALL", "log_cxt"=>"async_search", "search_tab_id"=>"None", "query"=>{"mod"=>"new_search", "max"=>"50", "string1"=>"methodes actuarielles de l'assurance vie", "with_facette"=>"0", "start"=>"1", "field_filter1"=>"keyword"}}
+2015-11-10 15:10:35 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xbcf7e10 @ip_user=["193.55.99.142"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:10:35 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xbcf7e10> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xbc966d8>#<ManageDroit:0xbc94720>#<ManageDroit:0xbc9466c>#<ManageDroit:0xbc945a4>#<ManageDroit:0xbc943b0>#<ManageDroit:0xbc93fdc>#<ManageDroit:0xbc93b90>#<ManageDroit:0xbc93a14>#<ManageDroit:0xbc937bc>#<ManageDroit:0xbc93528>#<ManageDroit:0xbc93244>#<ManageDroit:0xbc92718>#<ManageDroit:0xbc90ef4>#<ManageDroit:0xbc9047c>#<ManageDroit:0xbc8ff04>#<ManageDroit:0xbc8fbf8>#<ManageDroit:0xbc8f6e4>#<ManageDroit:0xbc8dce0>
+2015-11-10 15:10:35 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5")) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("140")) OR (collection_id:("133")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("125")) OR (collection_id:("71")) OR (collection_id:("101"))) AND ((((keyword:(methodes actuarielles de l\'assurance vie)) OR title:(methodes actuarielles de l\'assurance vie)^10000 OR title_no_stemmed:(methodes actuarielles de l\'assurance vie)^5000 OR creator:(methodes actuarielles de l\'assurance vie)^5000 OR creator_no_stemmed:(methodes actuarielles de l\'assurance vie)^2500 OR subject:(methodes actuarielles de l\'assurance vie)^5000 OR subject_no_stemmed:(methodes actuarielles de l\'assurance vie)^2500 OR theme:(methodes actuarielles de l\'assurance vie)^5000 OR theme_no_stemmed:(methodes actuarielles de l\'assurance vie)^2500 OR indice:(methodes actuarielles de l\'assurance vie)^5000))) opt: {:facets=>{:fields=>["collection_name_exact"], :mincount=>1, :sort=>"count", :limit=>1000}, :rows=>50, :filter_queries=>"(((keyword:(methodes actuarielles de l\\'assurance vie))))", :start=>0, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"score"=>:descending}]}
+2015-11-10 15:10:38 WARN  #STAT# [RETRIEVE] SearchAsync 3.01
+2015-11-10 15:10:40 INFO  [ManageRole][GetIdLieu] profil EXTERNE found to location_user EXTERNE
+2015-11-10 15:10:40 INFO  Completed in 5010ms (View: 0, DB: 2009) | 200 OK [http://10.1.2.111/json/Search?sets=g1&query[field_filter1]=keyword&query[string1]=methodes%20actuarielles%20de%20l%27assurance%20vie&query[start]=1&query[max]=50&sort_value=relevance&query[mod]=new_search&tab_template=ALL&query[with_facette]=0&log_cxt=async_search&search_tab_id=None]
+2015-11-10 15:10:50 INFO  
+
+Processing JsonController#AutoComplete (for 10.1.2.223 at 2015-11-10 15:10:50) [GET]
+2015-11-10 15:10:50 INFO    Parameters: {"word"=>"economie in", "field"=>"keyword"}
+2015-11-10 15:10:50 INFO  Completed in 359ms (View: 0, DB: 2) | 200 OK [http://10.1.2.111/json/AutoComplete?word=economie%20in&field=keyword]
+2015-11-10 15:10:52 INFO  
+
+Processing JsonController#AutoComplete (for 10.1.2.223 at 2015-11-10 15:10:52) [GET]
+2015-11-10 15:10:52 INFO    Parameters: {"word"=>"economie internationale", "field"=>"keyword"}
+2015-11-10 15:10:52 INFO  Completed in 11ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/AutoComplete?word=economie%20internationale&field=keyword]
+2015-11-10 15:11:04 INFO  
+
+Processing JsonController#Search (for 10.1.2.119 at 2015-11-10 15:11:04) [GET]
+2015-11-10 15:11:04 INFO    Parameters: {"sort_value"=>"relevance", "sets"=>"g29", "tab_template"=>"None", "log_cxt"=>"get_notice", "search_tab_id"=>"None", "query"=>{"mod"=>"None", "max"=>"1", "string1"=>" democratization", "with_facette"=>"0", "start"=>"15", "field_filter1"=>"subject"}}
+2015-11-10 15:11:04 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xb93ed28 @ip_user=["66.249.69.75"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:11:04 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xb93ed28> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xb929b80>#<ManageDroit:0xb928f3c>#<ManageDroit:0xb928ed8>#<ManageDroit:0xb928e24>#<ManageDroit:0xb928dac>#<ManageDroit:0xb928d5c>#<ManageDroit:0xb928d0c>#<ManageDroit:0xb928cbc>#<ManageDroit:0xb928c6c>#<ManageDroit:0xb928c1c>#<ManageDroit:0xb928bcc>#<ManageDroit:0xb928b7c>#<ManageDroit:0xb928b2c>#<ManageDroit:0xb928adc>#<ManageDroit:0xb928a8c>#<ManageDroit:0xb928a3c>#<ManageDroit:0xb9289ec>#<ManageDroit:0xb928974>
+2015-11-10 15:11:04 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5") AND (indice:(78*))) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("56")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("71")) OR (collection_id:("125")) OR (collection_id:("101"))) AND ((((subject:(democratization)) OR title:(democratization)^10000 OR title_no_stemmed:(democratization)^5000 OR creator:(democratization)^5000 OR creator_no_stemmed:(democratization)^2500 OR subject:(democratization)^5000 OR subject_no_stemmed:(democratization)^2500 OR theme:(democratization)^5000 OR theme_no_stemmed:(democratization)^2500 OR indice:(democratization)^5000))) opt: {:facets=>{:fields=>["collection_name_exact"], :mincount=>1, :sort=>"count", :limit=>1000}, :rows=>1, :filter_queries=>"(((subject:(democratization))))", :start=>14, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"score"=>:descending}]}
+2015-11-10 15:11:05 WARN  #STAT# [RETRIEVE] SearchAsync 0.75
+2015-11-10 15:11:05 INFO  [ManageRole][GetIdLieu] profil EXTERNE found to location_user EXTERNE
+2015-11-10 15:11:06 INFO  Completed in 2447ms (View: 0, DB: 1894) | 200 OK [http://10.1.2.111/json/Search?sets=g29&query[field_filter1]=subject&query[string1]=%20democratization&query[start]=15&query[max]=1&sort_value=relevance&query[mod]=None&tab_template=None&query[with_facette]=0&log_cxt=get_notice&search_tab_id=None]
+2015-11-10 15:11:06 INFO  
+
+Processing CommunityJsonController#GetTagsByObject (for 10.1.2.119 at 2015-11-10 15:11:06) [GET]
+2015-11-10 15:11:06 INFO    Parameters: {"uuid"=>"", "object_uid"=>"oai:cairn.info:DRS_080_0031;26;0", "sort"=>"RAND()", "object_type"=>"1"}
+2015-11-10 15:11:06 INFO  Completed in 10ms (View: 0, DB: 8) | 200 OK [http://10.1.2.111/community_json/GetTagsByObject?&object_type=1&object_uid=oai%3Acairn.info%3ADRS_080_0031%3B26%3B0&uuid=&sort=RAND()]
+2015-11-10 15:11:07 INFO  
+
+Processing JsonController#ListGroupsSyn (for 10.1.2.119 at 2015-11-10 15:11:07) [GET]
+2015-11-10 15:11:07 INFO    Parameters: {"id_CG"=>"29"}
+2015-11-10 15:11:07 INFO  Completed in 5ms (View: 0, DB: 4) | 200 OK [http://10.1.2.111/json/ListGroupsSyn?id_CG=29]
+2015-11-10 15:11:07 INFO  
+
+Processing JsonController#AutoComplete (for 10.1.2.228 at 2015-11-10 15:11:07) [GET]
+2015-11-10 15:11:07 INFO    Parameters: {"word"=>"mots de l", "field"=>"keyword"}
+2015-11-10 15:11:07 INFO  Completed in 442ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/AutoComplete?word=mots%20de%20l&field=keyword]
+2015-11-10 15:11:09 INFO  
+
+Processing JsonController#AutoComplete (for 10.1.2.228 at 2015-11-10 15:11:09) [GET]
+2015-11-10 15:11:09 INFO    Parameters: {"word"=>"mots de la démence", "field"=>"keyword"}
+2015-11-10 15:11:09 INFO  Completed in 12ms (View: 0, DB: 2) | 200 OK [http://10.1.2.111/json/AutoComplete?word=mots%20de%20la%20d%C3%A9mence&field=keyword]
+2015-11-10 15:11:12 INFO  
+
+Processing JsonController#Search (for 10.1.2.228 at 2015-11-10 15:11:12) [GET]
+2015-11-10 15:11:12 INFO    Parameters: {"sort_value"=>"relevance", "sets"=>"g1", "tab_template"=>"ALL", "log_cxt"=>"async_search", "search_tab_id"=>"None", "query"=>{"mod"=>"new_search", "max"=>"50", "string1"=>"mots de la démence", "with_facette"=>"2", "start"=>"1", "field_filter1"=>"keyword"}}
+2015-11-10 15:11:12 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xb8a5eac @ip_user=["79.81.251.74"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:11:12 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xb8a5eac> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xb89168c>#<ManageDroit:0xb890fc0>#<ManageDroit:0xb890f70>#<ManageDroit:0xb890f20>#<ManageDroit:0xb890ed0>#<ManageDroit:0xb890e80>#<ManageDroit:0xb890e30>#<ManageDroit:0xb890de0>#<ManageDroit:0xb890d90>#<ManageDroit:0xb890d40>#<ManageDroit:0xb890cf0>#<ManageDroit:0xb890ca0>#<ManageDroit:0xb890c50>#<ManageDroit:0xb890c00>#<ManageDroit:0xb890bb0>#<ManageDroit:0xb890b60>#<ManageDroit:0xb890b10>#<ManageDroit:0xb890ac0>
+2015-11-10 15:11:12 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5")) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("140")) OR (collection_id:("133")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("125")) OR (collection_id:("71")) OR (collection_id:("101"))) AND ((((keyword:(mots de la démence)) OR title:(mots de la démence)^10000 OR title_no_stemmed:(mots de la démence)^5000 OR creator:(mots de la démence)^5000 OR creator_no_stemmed:(mots de la démence)^2500 OR subject:(mots de la démence)^5000 OR subject_no_stemmed:(mots de la démence)^2500 OR theme:(mots de la démence)^5000 OR theme_no_stemmed:(mots de la démence)^2500 OR indice:(mots de la démence)^5000))) opt: {:facets=>{:queries=>["(dispo_sur_poste:(online) AND dispo_broadcast_group:(\"GD-Articles de presse\") OR dispo_broadcast_group:(\"GD-Ged\") OR dispo_broadcast_group:(\"GD-Journaux en ligne\") OR dispo_broadcast_group:(\"GD-Mezzanine\") OR dispo_broadcast_group:(\"GD-Réel\") OR dispo_broadcast_group:(\"GD-Tous secteurs\")) OR (dispo_avec_access_autorise:(online) AND (collection_id:(5) OR collection_id:(26) OR collection_id:(116) OR collection_id:(120) OR collection_id:(140) OR collection_id:(133) OR collection_id:(80) OR collection_id:(119) OR collection_id:(121) OR collection_id:(118) OR collection_id:(125) OR collection_id:(71) OR collection_id:(101))) ", "(dispo_sur_poste:(onshelf)) OR (dispo_avec_access_autorise:(onshelf) AND (collection_id:(5) OR collection_id:(26) OR collection_id:(116) OR collection_id:(120) OR collection_id:(140) OR collection_id:(133) OR collection_id:(80) OR collection_id:(119) OR collection_id:(121) OR collection_id:(118) OR collection_id:(125) OR collection_id:(71) OR collection_id:(101)))"], :fields=>["theme_exact", "musical_kind_exact", "document_type_exact", "author_exact", "lang_exact", "subject_exact", "collection_name_exact"], :mincount=>1, :dates=>[{"date_document"=>{:include=>"lower", :start=>"1800-01-01T00:00:00Z", :end=>"2015-12-31T23:59:59Z", :gap=>"+1YEAR", :other=>"before"}}], :sort=>"count", :limit=>1000}, :rows=>1, :filter_queries=>"(((keyword:(mots de la démence))))", :start=>0, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"score"=>:descending}]}
+2015-11-10 15:11:16 WARN  #STAT# [RETRIEVE] SearchAsync 3.84
+2015-11-10 15:11:16 INFO  Completed in 3850ms (View: 0, DB: 35) | 200 OK [http://10.1.2.111/json/Search?sets=g1&query[field_filter1]=keyword&query[string1]=mots%20de%20la%20d%C3%A9mence&query[start]=1&query[max]=50&sort_value=relevance&query[mod]=new_search&tab_template=ALL&query[with_facette]=2&log_cxt=async_search&search_tab_id=None]
+2015-11-10 15:11:17 INFO  
+
+Processing JsonController#SeeAlso (for 10.1.2.228 at 2015-11-10 15:11:17) [GET]
+2015-11-10 15:11:17 INFO    Parameters: {"query"=>"mots%20de%20la%20d%C3%A9mence"}
+2015-11-10 15:11:17 INFO  Completed in 11ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/SeeAlso?query=mots%2520de%2520la%2520d%25C3%25A9mence]
+2015-11-10 15:11:17 INFO  
+
+Processing JsonController#SeeAlso (for 10.1.2.228 at 2015-11-10 15:11:17) [GET]
+2015-11-10 15:11:17 INFO    Parameters: {"query"=>"mots de la démence"}
+2015-11-10 15:11:17 INFO  Completed in 8ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/SeeAlso?query=mots%20de%20la%20d%C3%A9mence]
+2015-11-10 15:11:17 INFO  
+
+Processing JsonController#SpellCheck (for 10.1.2.228 at 2015-11-10 15:11:17) [GET]
+2015-11-10 15:11:17 INFO    Parameters: {"query"=>"mots de la démence"}
+2015-11-10 15:11:17 INFO  Completed in 313ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/SpellCheck?query=mots%20de%20la%20d%C3%A9mence]
+2015-11-10 15:12:01 INFO  
+
+Processing JsonController#GetTheme (for 10.1.2.122 at 2015-11-10 15:12:01) [GET]
+2015-11-10 15:12:01 INFO    Parameters: {"theme"=>"ARTICLE"}
+2015-11-10 15:12:02 INFO  Completed in 622ms (View: 0, DB: 6) | 200 OK [http://10.1.2.111/json/GetTheme?theme=ARTICLE]
+2015-11-10 15:12:02 INFO  
+
+Processing AccountJsonController#GetProfile (for 10.1.2.122 at 2015-11-10 15:12:02) [GET]
+2015-11-10 15:12:02 INFO    Parameters: {"uuid"=>"PUB-2-PRS-034"}
+2015-11-10 15:12:02 INFO  Completed in 135ms (View: 0, DB: 133) | 200 OK [http://10.1.2.111/account_json/GetProfile?uuid=PUB-2-PRS-034]
+2015-11-10 15:12:02 INFO  
+
+Processing JsonController#ListAlpha (for 10.1.2.122 at 2015-11-10 15:12:02) [GET]
+2015-11-10 15:12:02 INFO    Parameters: {"tab_id"=>"ARTICLE"}
+2015-11-10 15:12:02 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/ListAlpha?tab_id=ARTICLE]
+2015-11-10 15:12:02 INFO  
+
+Processing JsonController#Search (for 10.1.2.119 at 2015-11-10 15:12:02) [GET]
+2015-11-10 15:12:02 INFO    Parameters: {"sort_value"=>"relevance", "sets"=>"g29", "tab_template"=>"None", "log_cxt"=>"get_notice", "search_tab_id"=>"None", "query"=>{"mod"=>"None", "max"=>"1", "string1"=>" Rivers", "with_facette"=>"0", "start"=>"41", "field_filter1"=>"subject"}}
+2015-11-10 15:12:02 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xbc832f4 @ip_user=["66.249.69.75"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:12:02 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xbc832f4> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xbc203fc>#<ManageDroit:0xbc1f81c>#<ManageDroit:0xbc1f754>#<ManageDroit:0xbc1f6a0>#<ManageDroit:0xbc1f63c>#<ManageDroit:0xbc1f5ec>#<ManageDroit:0xbc1f588>#<ManageDroit:0xbc1f4d4>#<ManageDroit:0xbc1f40c>#<ManageDroit:0xbc1f330>#<ManageDroit:0xbc1f2e0>#<ManageDroit:0xbc1f268>#<ManageDroit:0xbc1f1f0>#<ManageDroit:0xbc1f13c>#<ManageDroit:0xbc1f074>#<ManageDroit:0xbc1efc0>#<ManageDroit:0xbc1ef70>#<ManageDroit:0xbc1ef0c>
+2015-11-10 15:12:02 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5") AND (indice:(78*))) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("56")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("71")) OR (collection_id:("125")) OR (collection_id:("101"))) AND ((((subject:(Rivers)) OR title:(Rivers)^10000 OR title_no_stemmed:(Rivers)^5000 OR creator:(Rivers)^5000 OR creator_no_stemmed:(Rivers)^2500 OR subject:(Rivers)^5000 OR subject_no_stemmed:(Rivers)^2500 OR theme:(Rivers)^5000 OR theme_no_stemmed:(Rivers)^2500 OR indice:(Rivers)^5000))) opt: {:facets=>{:fields=>["collection_name_exact"], :mincount=>1, :sort=>"count", :limit=>1000}, :rows=>1, :filter_queries=>"(((subject:(Rivers))))", :start=>40, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"score"=>:descending}]}
+2015-11-10 15:12:03 WARN  #STAT# [RETRIEVE] SearchAsync 0.20
+2015-11-10 15:12:03 INFO  [ManageRole][GetIdLieu] profil EXTERNE found to location_user EXTERNE
+2015-11-10 15:12:03 INFO  Completed in 221ms (View: 0, DB: 25) | 200 OK [http://10.1.2.111/json/Search?sets=g29&query[field_filter1]=subject&query[string1]=%20Rivers&query[start]=41&query[max]=1&sort_value=relevance&query[mod]=None&tab_template=None&query[with_facette]=0&log_cxt=get_notice&search_tab_id=None]
+2015-11-10 15:12:03 INFO  
+
+Processing CommunityJsonController#GetTagsByObject (for 10.1.2.119 at 2015-11-10 15:12:03) [GET]
+2015-11-10 15:12:03 INFO    Parameters: {"uuid"=>"", "object_uid"=>"oai:revues.org:lisa/833;125;0", "sort"=>"RAND()", "object_type"=>"1"}
+2015-11-10 15:12:03 INFO  Completed in 21ms (View: 0, DB: 19) | 200 OK [http://10.1.2.111/community_json/GetTagsByObject?&object_type=1&object_uid=oai%3Arevues.org%3Alisa/833%3B125%3B0&uuid=&sort=RAND()]
+2015-11-10 15:12:03 INFO  
+
+Processing JsonController#ListGroupsSyn (for 10.1.2.119 at 2015-11-10 15:12:03) [GET]
+2015-11-10 15:12:03 INFO    Parameters: {"id_CG"=>"29"}
+2015-11-10 15:12:03 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/ListGroupsSyn?id_CG=29]
+2015-11-10 15:12:04 INFO  
+
+Processing CommunityJsonController#GetRandomNotices (for 10.1.2.119 at 2015-11-10 15:12:04) [GET]
+2015-11-10 15:12:04 INFO    Parameters: {"max_notices"=>"5", "doc_id"=>"oai:revues.org:lisa/833;125;0"}
+2015-11-10 15:12:04 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/community_json/GetRandomNotices?doc_id=oai%3Arevues.org%3Alisa/833%3B125%3B0&max_notices=5]
+2015-11-10 15:12:53 INFO  
+
+Processing JsonController#Search (for 10.1.2.119 at 2015-11-10 15:12:53) [GET]
+2015-11-10 15:12:53 INFO    Parameters: {"sort_value"=>"relevance", "sets"=>"g29", "tab_template"=>"None", "log_cxt"=>"get_notice", "search_tab_id"=>"None", "query"=>{"mod"=>"None", "max"=>"1", "string1"=>"  Desmet, Huguette Jean-Pierre  Pourtois", "with_facette"=>"0", "start"=>"7", "field_filter1"=>"creator"}}
+2015-11-10 15:12:53 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xba0d394 @ip_user=["66.249.69.75"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:12:53 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xba0d394> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xb9f3ac0>#<ManageDroit:0xb9f33e0>#<ManageDroit:0xb9f337c>#<ManageDroit:0xb9f332c>#<ManageDroit:0xb9f32dc>#<ManageDroit:0xb9f328c>#<ManageDroit:0xb9f323c>#<ManageDroit:0xb9f31d8>#<ManageDroit:0xb9f3188>#<ManageDroit:0xb9f3124>#<ManageDroit:0xb9f30d4>#<ManageDroit:0xb9f3070>#<ManageDroit:0xb9f3020>#<ManageDroit:0xb9f2fd0>#<ManageDroit:0xb9f2f80>#<ManageDroit:0xb9f2f30>#<ManageDroit:0xb9f2ee0>#<ManageDroit:0xb9f2e90>
+2015-11-10 15:12:53 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5") AND (indice:(78*))) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("56")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("71")) OR (collection_id:("125")) OR (collection_id:("101"))) AND ((((creator:(Desmet, Huguette Jean\-Pierre  Pourtois)) OR title:(Desmet, Huguette Jean\-Pierre  Pourtois)^10000 OR title_no_stemmed:(Desmet, Huguette Jean\-Pierre  Pourtois)^5000 OR creator:(Desmet, Huguette Jean\-Pierre  Pourtois)^5000 OR creator_no_stemmed:(Desmet, Huguette Jean\-Pierre  Pourtois)^2500 OR subject:(Desmet, Huguette Jean\-Pierre  Pourtois)^5000 OR subject_no_stemmed:(Desmet, Huguette Jean\-Pierre  Pourtois)^2500 OR theme:(Desmet, Huguette Jean\-Pierre  Pourtois)^5000 OR theme_no_stemmed:(Desmet, Huguette Jean\-Pierre  Pourtois)^2500 OR indice:(Desmet, Huguette Jean\-Pierre  Pourtois)^5000))) opt: {:facets=>{:fields=>["collection_name_exact"], :mincount=>1, :sort=>"count", :limit=>1000}, :rows=>1, :filter_queries=>"(((creator:(Desmet, Huguette Jean\\-Pierre  Pourtois))))", :start=>6, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"score"=>:descending}]}
+2015-11-10 15:12:57 WARN  #STAT# [RETRIEVE] SearchAsync 4.20
+2015-11-10 15:12:57 INFO  [ManageRole][GetIdLieu] profil EXTERNE found to location_user EXTERNE
+2015-11-10 15:12:59 INFO  Completed in 5616ms (View: 0, DB: 1679) | 200 OK [http://10.1.2.111/json/Search?sets=g29&query[field_filter1]=creator&query[string1]=%20%20Desmet%2C%20Huguette%20Jean-Pierre%20%20Pourtois&query[start]=7&query[max]=1&sort_value=relevance&query[mod]=None&tab_template=None&query[with_facette]=0&log_cxt=get_notice&search_tab_id=None]
+2015-11-10 15:12:59 INFO  
+
+Processing CommunityJsonController#GetTagsByObject (for 10.1.2.119 at 2015-11-10 15:12:59) [GET]
+2015-11-10 15:12:59 INFO    Parameters: {"uuid"=>"", "object_uid"=>"oai:cairn.info:DBU_PITHO_2008_01_0075;26;0", "sort"=>"RAND()", "object_type"=>"1"}
+2015-11-10 15:12:59 INFO  Completed in 10ms (View: 0, DB: 9) | 200 OK [http://10.1.2.111/community_json/GetTagsByObject?&object_type=1&object_uid=oai%3Acairn.info%3ADBU_PITHO_2008_01_0075%3B26%3B0&uuid=&sort=RAND()]
+2015-11-10 15:12:59 INFO  
+
+Processing JsonController#ListGroupsSyn (for 10.1.2.119 at 2015-11-10 15:12:59) [GET]
+2015-11-10 15:12:59 INFO    Parameters: {"id_CG"=>"29"}
+2015-11-10 15:12:59 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/ListGroupsSyn?id_CG=29]
+2015-11-10 15:12:59 INFO  
+
+Processing CommunityJsonController#GetRandomNotices (for 10.1.2.119 at 2015-11-10 15:12:59) [GET]
+2015-11-10 15:12:59 INFO    Parameters: {"max_notices"=>"5", "doc_id"=>"oai:cairn.info:DBU_PITHO_2008_01_0075;26;0"}
+2015-11-10 15:12:59 INFO  Completed in 3ms (View: 0, DB: 2) | 200 OK [http://10.1.2.111/community_json/GetRandomNotices?doc_id=oai%3Acairn.info%3ADBU_PITHO_2008_01_0075%3B26%3B0&max_notices=5]
+2015-11-10 15:13:04 INFO  
+
+Processing RssController#search (for 10.1.2.221 at 2015-11-10 15:13:04) [GET]
+2015-11-10 15:13:04 INFO    Parameters: {"filter"=>"", "sort_value"=>"relevance", "sets"=>"g1", "query"=>{"max"=>"1000", "string1"=>"litterature italienne", "field_filter1"=>"keyword"}}
+2015-11-10 15:13:04 INFO  [RssController] search : {"filter"=>"", "action"=>"search", "sort_value"=>"relevance", "sets"=>"g1", "controller"=>"rss", "query"=>{"string1"=>"litterature italienne", "max"=>"1000", "field_filter1"=>"keyword"}}
+2015-11-10 15:13:04 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xb9525bc @ip_user=["66.249.69.75"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:13:04 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xb9525bc> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xb92574c>#<ManageDroit:0xb925080>#<ManageDroit:0xb925030>#<ManageDroit:0xb924fe0>#<ManageDroit:0xb924f68>#<ManageDroit:0xb924ef0>#<ManageDroit:0xb924ea0>#<ManageDroit:0xb924e50>#<ManageDroit:0xb924e00>#<ManageDroit:0xb924db0>#<ManageDroit:0xb924d60>#<ManageDroit:0xb924cfc>#<ManageDroit:0xb924cac>#<ManageDroit:0xb924c5c>#<ManageDroit:0xb924c0c>#<ManageDroit:0xb924bbc>#<ManageDroit:0xb924b30>#<ManageDroit:0xb924ae0>
+2015-11-10 15:13:04 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5")) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("140")) OR (collection_id:("133")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("125")) OR (collection_id:("71")) OR (collection_id:("101"))) AND ((((keyword:(litterature italienne) OR keyword_no_stemmed:("Littérature suisse de langue italienne") OR keyword_no_stemmed:("Littérature suisse Auteurs italiens") OR keyword_no_stemmed:("Littérature italienne Suisse") OR keyword_no_stemmed:("Littérature italienne Avant 1400") OR keyword_no_stemmed:("Littérature italienne Moyen âge") OR keyword_no_stemmed:("Littérature italienne 15e siècle") OR keyword_no_stemmed:("Littérature italienne Moyen âge") OR keyword_no_stemmed:("Littérature italienne") OR keyword_no_stemmed:("Littérature italienne 19e siècle") OR keyword_no_stemmed:("Littérature religieuse italienne") OR keyword_no_stemmed:("Littérature populaire italienne") OR keyword_no_stemmed:("Littérature italienne 20e siècle") OR keyword_no_stemmed:("Littérature italienne 16e siècle") OR keyword_no_stemmed:("Littérature fantastique italienne"))))) opt: {:facets=>{:fields=>["collection_name_exact"], :mincount=>1, :sort=>"count", :limit=>1000}, :rows=>200, :filter_queries=>"(((keyword:(litterature italienne) OR keyword_no_stemmed:(\"Littérature suisse de langue italienne\") OR keyword_no_stemmed:(\"Littérature suisse Auteurs italiens\") OR keyword_no_stemmed:(\"Littérature italienne Suisse\") OR keyword_no_stemmed:(\"Littérature italienne Avant 1400\") OR keyword_no_stemmed:(\"Littérature italienne Moyen âge\") OR keyword_no_stemmed:(\"Littérature italienne 15e siècle\") OR keyword_no_stemmed:(\"Littérature italienne Moyen âge\") OR keyword_no_stemmed:(\"Littérature italienne\") OR keyword_no_stemmed:(\"Littérature italienne 19e siècle\") OR keyword_no_stemmed:(\"Littérature religieuse italienne\") OR keyword_no_stemmed:(\"Littérature populaire italienne\") OR keyword_no_stemmed:(\"Littérature italienne 20e siècle\") OR keyword_no_stemmed:(\"Littérature italienne 16e siècle\") OR keyword_no_stemmed:(\"Littérature fantastique italienne\"))))", :start=>0, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"harvesting_date"=>:descending}]}
+2015-11-10 15:13:22 WARN  #STAT# [RETRIEVE] SearchAsync 17.75
+2015-11-10 15:13:22 INFO  Rendering rss/search
+2015-11-10 15:13:22 INFO  Completed in 17920ms (View: 164, DB: 132) | 200 OK [http://10.1.2.111/rss/search?query[string1]=litterature%20italienne&query[field_filter1]=keyword&query[max]=1000&sets=g1&sort_value=relevance&filter=]
+2015-11-10 15:18:22 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.221 at 2015-11-10 15:18:22) [GET]
+2015-11-10 15:18:22 INFO    Parameters: {"id"=>"978-2-216-13131-0"}
+2015-11-10 15:18:23 INFO  Sending data 
+2015-11-10 15:18:23 INFO  Completed in 530ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-216-13131-0]
+2015-11-10 15:18:23 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.224 at 2015-11-10 15:18:23) [GET]
+2015-11-10 15:18:23 INFO    Parameters: {"id"=>"978-2-10-072171-9"}
+2015-11-10 15:18:23 INFO  Sending data 
+2015-11-10 15:18:23 INFO  Completed in 588ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-10-072171-9]
+2015-11-10 15:18:41 INFO  
+
+Processing JsonController#GetId (for 10.1.2.119 at 2015-11-10 15:18:41) [GET]
+2015-11-10 15:18:41 INFO    Parameters: {"idSearch"=>"0", "log_cxt"=>"notice", "idDoc"=>"492285", "idCollection"=>"5", "log_action"=>"consult"}
+2015-11-10 15:18:41 INFO  [ManageRole][GetIdLieu] profil EXTERNE found to location_user EXTERNE
+2015-11-10 15:18:41 INFO  Completed in 53ms (View: 0, DB: 39) | 200 OK [http://10.1.2.111/json/GetId?&log_action=consult&log_cxt=notice&idDoc=492285&idCollection=5&idSearch=0]
+2015-11-10 15:18:41 INFO  
+
+Processing CommunityJsonController#GetTagsByObject (for 10.1.2.119 at 2015-11-10 15:18:41) [GET]
+2015-11-10 15:18:41 INFO    Parameters: {"uuid"=>"", "object_uid"=>"492285;5;0", "sort"=>"RAND()", "object_type"=>"1"}
+2015-11-10 15:18:41 INFO  Completed in 20ms (View: 0, DB: 19) | 200 OK [http://10.1.2.111/community_json/GetTagsByObject?&object_type=1&object_uid=492285%3B5%3B0&uuid=&sort=RAND()]
+2015-11-10 15:18:42 INFO  
+
+Processing CommunityJsonController#GetRandomNotices (for 10.1.2.119 at 2015-11-10 15:18:42) [GET]
+2015-11-10 15:18:42 INFO    Parameters: {"max_notices"=>"5", "doc_id"=>"492285;5;0"}
+2015-11-10 15:18:42 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/community_json/GetRandomNotices?doc_id=492285%3B5%3B0&max_notices=5]
+2015-11-10 15:19:08 INFO  
+
+Processing Admin::DashboardController#index (for 10.1.2.71 at 2015-11-10 15:19:08) [GET]
+2015-11-10 15:19:08 INFO  Redirected to controller/useractionlogin
+2015-11-10 15:19:08 INFO  Filter chain halted as [:authorize] rendered_or_redirected.
+2015-11-10 15:19:08 INFO  Completed in 8ms (DB: 9) | 302 Found [http://10.1.2.111/admin]
+2015-11-10 15:19:16 INFO  
+
+Processing JsonController#Search (for 10.1.2.119 at 2015-11-10 15:19:16) [GET]
+2015-11-10 15:19:16 INFO    Parameters: {"sort_value"=>"relevance", "sets"=>"g1", "tab_template"=>"None", "log_cxt"=>"get_notice", "search_tab_id"=>"None", "query"=>{"mod"=>"None", "max"=>"1", "string1"=>" Muller, Stéphane", "with_facette"=>"0", "start"=>"13", "field_filter1"=>"creator"}}
+2015-11-10 15:19:16 INFO  [SearchAsync] INFOS_USER_CONTROL : true @infos_user : #<Struct::Params:0xbaf0298 @ip_user=["66.249.69.75"], @name_user="", @location_user="EXTERNE", @state_user="False", @uuid_user="">
+2015-11-10 15:19:16 INFO  [ManageDroit] [GetCollectionsAndPermissions] infos_user : #<Struct::Params:0xbaf0298> [roles: anonym, lien: EXTERNE]=> #<ManageDroit:0xba3bf50>#<ManageDroit:0xba370a4>#<ManageDroit:0xba36e4c>#<ManageDroit:0xba36ce4>#<ManageDroit:0xba36a00>#<ManageDroit:0xba36280>#<ManageDroit:0xba35c90>#<ManageDroit:0xba35934>#<ManageDroit:0xba357b8>#<ManageDroit:0xba355b0>#<ManageDroit:0xba34e58>#<ManageDroit:0xba34a5c>#<ManageDroit:0xba34408>#<ManageDroit:0xba333b4>#<ManageDroit:0xba33328>#<ManageDroit:0xba332d8>#<ManageDroit:0xba33288>#<ManageDroit:0xba32d9c>
+2015-11-10 15:19:16 INFO  [UtilFormat] [generateRequestSolr] => ((collection_id:("5")) OR (collection_id:("-1")) OR (collection_id:("6")) OR (collection_id:("26")) OR (collection_id:("116")) OR (collection_id:("120")) OR (collection_id:("140")) OR (collection_id:("133")) OR (collection_id:("80")) OR (collection_id:("119")) OR (collection_id:("121")) OR (collection_id:("118")) OR (collection_id:("125")) OR (collection_id:("71")) OR (collection_id:("101"))) AND ((((creator:(Muller, Stéphane)) OR title:(Muller, Stéphane)^10000 OR title_no_stemmed:(Muller, Stéphane)^5000 OR creator:(Muller, Stéphane)^5000 OR creator_no_stemmed:(Muller, Stéphane)^2500 OR subject:(Muller, Stéphane)^5000 OR subject_no_stemmed:(Muller, Stéphane)^2500 OR theme:(Muller, Stéphane)^5000 OR theme_no_stemmed:(Muller, Stéphane)^2500 OR indice:(Muller, Stéphane)^5000))) opt: {:facets=>{:fields=>["collection_name_exact"], :mincount=>1, :sort=>"count", :limit=>1000}, :rows=>1, :filter_queries=>"(((creator:(Muller, Stéphane))))", :start=>12, :field_list=>["id", "harvesting_date", "theme", "date_end_new"], :sort=>[{"score"=>:descending}]}
+2015-11-10 15:19:19 WARN  #STAT# [RETRIEVE] SearchAsync 2.61
+2015-11-10 15:19:19 INFO  [ManageRole][GetIdLieu] profil EXTERNE found to location_user EXTERNE
+2015-11-10 15:19:20 INFO  Completed in 4079ms (View: 0, DB: 1788) | 200 OK [http://10.1.2.111/json/Search?sets=g1&query[field_filter1]=creator&query[string1]=%20Muller%2C%20St%C3%A9phane&query[start]=13&query[max]=1&sort_value=relevance&query[mod]=None&tab_template=None&query[with_facette]=0&log_cxt=get_notice&search_tab_id=None]
+2015-11-10 15:19:20 INFO  
+
+Processing CommunityJsonController#GetTagsByObject (for 10.1.2.119 at 2015-11-10 15:19:20) [GET]
+2015-11-10 15:19:20 INFO    Parameters: {"uuid"=>"", "object_uid"=>"oai:revues.org:remi/636;125;0", "sort"=>"RAND()", "object_type"=>"1"}
+2015-11-10 15:19:20 INFO  Completed in 12ms (View: 0, DB: 11) | 200 OK [http://10.1.2.111/community_json/GetTagsByObject?&object_type=1&object_uid=oai%3Arevues.org%3Aremi/636%3B125%3B0&uuid=&sort=RAND()]
+2015-11-10 15:19:21 INFO  
+
+Processing JsonController#getCollectionAuthenticationInfo (for 10.1.2.227 at 2015-11-10 15:19:21) [GET]
+2015-11-10 15:19:21 INFO    Parameters: {"collection_id"=>"125"}
+2015-11-10 15:19:21 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/getCollectionAuthenticationInfo?collection_id=125]
+2015-11-10 15:19:21 INFO  
+
+Processing JsonController#ListGroupsSyn (for 10.1.2.119 at 2015-11-10 15:19:21) [GET]
+2015-11-10 15:19:21 INFO    Parameters: {"id_CG"=>"1"}
+2015-11-10 15:19:21 INFO  Completed in 2ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/json/ListGroupsSyn?id_CG=1]

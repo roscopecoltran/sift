@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/lib/color
+END
+palette.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/lib/color/palette.rb
+END
+yiq.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/lib/color/yiq.rb
+END
+cmyk.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/lib/color/cmyk.rb
+END
+hsl.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/lib/color/hsl.rb
+END
+css.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/lib/color/css.rb
+END
+rgb-colors.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/lib/color/rgb-colors.rb
+END
+grayscale.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/lib/color/grayscale.rb
+END
+rgb.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/lib/color/rgb.rb
+END

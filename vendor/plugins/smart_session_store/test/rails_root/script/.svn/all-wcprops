@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/script/console
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/script/destroy
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/script/about
+END

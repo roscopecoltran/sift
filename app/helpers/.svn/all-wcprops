@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/helpers
+END
+document_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/2322/trunk/bpifs/app/helpers/document_helper.rb
+END
+emailer_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/2741/trunk/bpifs/app/helpers/emailer_helper.rb
+END
+record_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/1104/trunk/bpifs/app/helpers/record_helper.rb
+END
+user_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/helpers/user_helper.rb
+END
+document_types_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/app/helpers/document_types_helper.rb
+END
+application_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/6174/trunk/bpifs/app/helpers/application_helper.rb
+END
+collection_admin_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/helpers/collection_admin_helper.rb
+END
+openurl_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/app/helpers/openurl_helper.rb
+END
+primary_document_types_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/app/helpers/primary_document_types_helper.rb
+END
+query_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/helpers/query_helper.rb
+END
+search_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/helpers/search_helper.rb
+END
+rzoom_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/helpers/rzoom_helper.rb
+END
+cart_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bpifs/!svn/ver/1224/trunk/bpifs/app/helpers/cart_helper.rb
+END
+meta_search_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/helpers/meta_search_helper.rb
+END

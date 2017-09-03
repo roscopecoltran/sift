@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/config
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/config/routes.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/config/database.yml
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/config/boot.rb
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/config/environment.rb
+END

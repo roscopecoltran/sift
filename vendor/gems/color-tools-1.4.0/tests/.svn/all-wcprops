@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/tests
+END
+test_yiq.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/tests/test_yiq.rb
+END
+test_cmyk.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/tests/test_cmyk.rb
+END
+test_hsl.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/tests/test_hsl.rb
+END
+test_monocontrast.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/tests/test_monocontrast.rb
+END
+test_css.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/tests/test_css.rb
+END
+testall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/tests/testall.rb
+END
+test_grayscale.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/tests/test_grayscale.rb
+END
+test_rgb.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/tests/test_rgb.rb
+END
+test_gimp.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/790/trunk/bpifs/vendor/gems/color-tools-1.4.0/tests/test_gimp.rb
+END

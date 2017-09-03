@@ -1,0 +1,51 @@
+<div id="page_contents">
+	<%= render :partial => "admin/navigation" %>
+	<%= render :partial => "filter_form" %>
+	<div id="center" class="column">
+		<p style="color: green">
+			<%= flash[:notice] %>
+		</p>
+		<p style="color: red">
+			<% if flash[:errors] %>
+				<ul>
+					<% flash[:errors].each do |e| %>
+						<li><%= e %></li>
+					<% end %>
+				</ul>
+			<% end %>
+		</p>
+	</div>
+	<span>
+		<div id="center" class="column">
+			<span><h2><%=translate('COLLECTIONS_HEADER') %></h2></span>
+			<br/>
+			<%= link_to translate('ADD_A_NEW_COLLECTION'), new_admin_collection_path %>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@collection_pages, :params=> params} %>
+			<div id="edit_form">
+				<div class="admin-list">
+					<% @display_columns.each do |column| %>
+						<label class="<%= class_name(column) %>">
+							<%= translate("#{@columns_hash[column].name.upcase}_COLUMN") %>
+						</label>
+					<% end %>
+					<label class="medium-column">
+						<%= translate('COLLECTION_GROUPS_COLUMN') %>
+					</label>
+
+					<label class="action-links">&nbsp;&nbsp</label>
+				</div>
+
+				<br/>
+
+				<% @collections.each do |collection| %>
+					<div id="row_collection_<%= collection.id %>" class="admin-list">
+						<%= render :partial => "toggle" , :locals=>{:collection => collection} %>
+					</div>
+					<br/>
+				<% end %>
+
+			</div>
+		</div>
+		<%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@collection_pages, :params=> params} %>
+	</span>
+</div>

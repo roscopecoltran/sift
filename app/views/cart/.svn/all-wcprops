@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bpifs/!svn/ver/855/trunk/bpifs/app/views/cart
+END
+list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/792/trunk/bpifs/app/views/cart/list.rhtml
+END
+_navigation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/855/trunk/bpifs/app/views/cart/_navigation.rhtml
+END
+message.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/847/trunk/bpifs/app/views/cart/message.rhtml
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/test/fixtures/respond_to/layouts
+END
+missing.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/test/fixtures/respond_to/layouts/missing.html.erb
+END
+standard.iphone.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/test/fixtures/respond_to/layouts/standard.iphone.erb
+END
+standard.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/actionpack/test/fixtures/respond_to/layouts/standard.html.erb
+END

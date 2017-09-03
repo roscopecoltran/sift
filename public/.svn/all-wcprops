@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/bpifs/!svn/ver/6220/trunk/bpifs/public
+END
+dispatch.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bpifs/!svn/ver/97/trunk/bpifs/public/dispatch.cgi
+END
+dispatch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bpifs/!svn/ver/97/trunk/bpifs/public/dispatch.rb
+END
+dispatch.fcgi
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/bpifs/!svn/ver/97/trunk/bpifs/public/dispatch.fcgi
+END
+robots.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bpifs/!svn/ver/97/trunk/bpifs/public/robots.txt
+END
+401.html
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bpifs/!svn/ver/97/trunk/bpifs/public/401.html
+END
+404.html
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/bpifs/!svn/ver/97/trunk/bpifs/public/404.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bpifs/!svn/ver/97/trunk/bpifs/public/index.html
+END
+index_orig.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/97/trunk/bpifs/public/index_orig.html
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/bpifs/!svn/ver/97/trunk/bpifs/public/.htaccess
+END
+url_rewriting_apache.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/5492/trunk/bpifs/public/url_rewriting_apache.txt
+END
+favicon.ico
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bpifs/!svn/ver/97/trunk/bpifs/public/favicon.ico
+END

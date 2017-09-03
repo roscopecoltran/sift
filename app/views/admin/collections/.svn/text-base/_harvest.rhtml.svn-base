@@ -1,0 +1,55 @@
+<div id="edit_form">
+	<h2><%= translate("HARVEST")%></h2>
+	<% if @collection.harvested.nil? && @collection.harvesting_start_time.nil? %>
+		<div id="form_field">
+			<span class="form_left">
+				<%= translate('NO_HARVEST') %>
+			</span>
+		</div>
+	<% else %>
+		<div id="form_field">
+			<span class="form_left">
+				<label for="harvested">
+					<%= translate("HARVESTED_LABEL") %>
+				</label>
+			</span>
+			<span class="form_right">
+				<%=h @collection.get_last_harvest_duration %>
+			</span>
+		</div>
+		<div id="form_field">
+			<span class="form_left">
+				<label for="full_harvest">
+					<%= translate("FULL_HARVEST_LABEL") %>
+				</label>
+			</span>
+			<span class="form_right">
+				<%=h translate(@collection.full_harvest ? "YES_LABEL" : "NO_LABEL") %>
+			</span>
+		</div>
+		<div id="form_field">
+			<span class="form_left">
+				<label for="nb_result">
+					<%= translate("NB_RESULT_LABEL") %>
+				</label>
+			</span>
+			<span class="form_right">
+				<%=h @collection.nb_result %>
+			</span>
+		</div>
+	<% end %>
+	<div id="form_field">
+		<span class="form_left">
+			<label for="harvest_day">
+				<%= translate("HARVEST_DAY_LABEL") %>
+			</label>
+		</span>
+		<span class="form_right">
+			<ul>
+				<% @schedules.each do |schedule| %>
+					<li><%= "#{translate(schedule.day.to_s.upcase)} : #{schedule.time.strftime('%H:%M')}" %></li>
+				<% end %>
+			</ul>
+		</span>
+	</div>
+</div>	

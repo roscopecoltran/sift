@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/1838/trunk/bpifs/app/views/admin/manage_roles
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/1835/trunk/bpifs/app/views/admin/manage_roles/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/1835/trunk/bpifs/app/views/admin/manage_roles/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/1838/trunk/bpifs/app/views/admin/manage_roles/show.html.erb
+END

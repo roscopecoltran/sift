@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/migrations
+END
+foreign_keys.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/migrations/foreign_keys.txt
+END
+anatomy_of_a_migration.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/migrations/anatomy_of_a_migration.txt
+END
+creating_a_migration.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/migrations/creating_a_migration.txt
+END
+changelog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/migrations/changelog.txt
+END
+index.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/migrations/index.txt
+END
+rakeing_around.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/migrations/rakeing_around.txt
+END
+using_models_in_migrations.txt
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/migrations/using_models_in_migrations.txt
+END
+writing_a_migration.txt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/migrations/writing_a_migration.txt
+END
+scheming.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/doc/guides/source/migrations/scheming.txt
+END

@@ -1,0 +1,593 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/bpifs/!svn/ver/6481/trunk/bpifs/app/models
+END
+cache_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/cache_search_class.rb
+END
+filter_list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/2807/trunk/bpifs/app/models/filter_list.rb
+END
+oai_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/6275/trunk/bpifs/app/models/oai_search_class.rb
+END
+hit.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/models/hit.rb
+END
+objects_tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/6142/trunk/bpifs/app/models/objects_tag.rb
+END
+xpath.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bpifs/!svn/ver/1779/trunk/bpifs/app/models/xpath.rb
+END
+util_format.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/6417/trunk/bpifs/app/models/util_format.rb
+END
+history_search.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/6347/trunk/bpifs/app/models/history_search.rb
+END
+harvest_schedule.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/1165/trunk/bpifs/app/models/harvest_schedule.rb
+END
+collection.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/6422/trunk/bpifs/app/models/collection.rb
+END
+coverage.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/bpifs/!svn/ver/627/trunk/bpifs/app/models/coverage.rb
+END
+tree.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/app/models/tree.rb
+END
+search_tab_filter.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/6388/trunk/bpifs/app/models/search_tab_filter.rb
+END
+objects_count.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/models/objects_count.rb
+END
+log_doc.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/bpifs/!svn/ver/5763/trunk/bpifs/app/models/log_doc.rb
+END
+portfolio_data.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/3388/trunk/bpifs/app/models/portfolio_data.rb
+END
+collection_group.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/6467/trunk/bpifs/app/models/collection_group.rb
+END
+users_history_search.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/3365/trunk/bpifs/app/models/users_history_search.rb
+END
+mediaview_document.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/app/models/mediaview_document.rb
+END
+manage_role.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/6475/trunk/bpifs/app/models/manage_role.rb
+END
+roles_libraryfind.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/1805/trunk/bpifs/app/models/roles_libraryfind.rb
+END
+list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/models/list.rb
+END
+tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/models/tag.rb
+END
+log_tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_tag.rb
+END
+calc_rank.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/bpifs/!svn/ver/5481/trunk/bpifs/app/models/calc_rank.rb
+END
+text_mailer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/2733/trunk/bpifs/app/models/text_mailer.rb
+END
+emailer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/bpifs/!svn/ver/3723/trunk/bpifs/app/models/emailer.rb
+END
+see_also_search.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/see_also_search.rb
+END
+control.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/bpifs/!svn/ver/1289/trunk/bpifs/app/models/control.rb
+END
+log_consult_ressource.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_consult_ressource.rb
+END
+job_item.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/bpifs/!svn/ver/3917/trunk/bpifs/app/models/job_item.rb
+END
+manage_droit.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bpifs/!svn/ver/6475/trunk/bpifs/app/models/manage_droit.rb
+END
+log_rebonce_profil.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_rebonce_profil.rb
+END
+provider.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/app/models/provider.rb
+END
+rss_feed.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/bpifs/!svn/ver/2730/trunk/bpifs/app/models/rss_feed.rb
+END
+search_tab.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/6467/trunk/bpifs/app/models/search_tab.rb
+END
+manage_permission.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/1805/trunk/bpifs/app/models/manage_permission.rb
+END
+log_save_notice.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_save_notice.rb
+END
+notices_check.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/3717/trunk/bpifs/app/models/notices_check.rb
+END
+electre_webservice.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/3245/trunk/bpifs/app/models/electre_webservice.rb
+END
+themes_reference.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/6222/trunk/bpifs/app/models/themes_reference.rb
+END
+z3950_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/5454/trunk/bpifs/app/models/z3950_search_class.rb
+END
+note.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/bpifs/!svn/ver/5444/trunk/bpifs/app/models/note.rb
+END
+community_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/models/community_users.rb
+END
+list_user_record.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/6382/trunk/bpifs/app/models/list_user_record.rb
+END
+users_tabs_searches_preferences.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/app/models/users_tabs_searches_preferences.rb
+END
+book_covers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/models/book_covers.rb
+END
+comments_alert.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/3725/trunk/bpifs/app/models/comments_alert.rb
+END
+editorial.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/app/models/editorial.rb
+END
+reject.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/6142/trunk/bpifs/app/models/reject.rb
+END
+user_record.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/6376/trunk/bpifs/app/models/user_record.rb
+END
+log_cart_usage.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_cart_usage.rb
+END
+record.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/6481/trunk/bpifs/app/models/record.rb
+END
+editorial_group_member.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/775/trunk/bpifs/app/models/editorial_group_member.rb
+END
+multiple_collection_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/6481/trunk/bpifs/app/models/multiple_collection_search_class.rb
+END
+metadata.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/bpifs/!svn/ver/3296/trunk/bpifs/app/models/metadata.rb
+END
+proxy.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/models/proxy.rb
+END
+sru_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/sru_search_class.rb
+END
+mediaview_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/6275/trunk/bpifs/app/models/mediaview_search_class.rb
+END
+subscription.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bpifs/!svn/ver/3917/trunk/bpifs/app/models/subscription.rb
+END
+log_consult.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_consult.rb
+END
+site_config.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/models/site_config.rb
+END
+cached_search.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/cached_search.rb
+END
+log_rss_usage.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/app/models/log_rss_usage.rb
+END
+log_account.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_account.rb
+END
+comment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/app/models/comment.rb
+END
+theme.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bpifs/!svn/ver/6142/trunk/bpifs/app/models/theme.rb
+END
+log_comment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_comment.rb
+END
+log_note.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_note.rb
+END
+result_mailer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/2272/trunk/bpifs/app/models/result_mailer.rb
+END
+authorize.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/models/authorize.rb
+END
+google_spell.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/613/trunk/bpifs/app/models/google_spell.rb
+END
+job_queue.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/job_queue.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/models/user.rb
+END
+document_type.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/document_type.rb
+END
+parameter.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/bpifs/!svn/ver/6310/trunk/bpifs/app/models/parameter.rb
+END
+notice.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/notice.rb
+END
+log_print_usage.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/app/models/log_print_usage.rb
+END
+primary_document_type.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/6275/trunk/bpifs/app/models/primary_document_type.rb
+END
+users_preferences.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/3400/trunk/bpifs/app/models/users_preferences.rb
+END
+log_list_consult.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_list_consult.rb
+END
+collection_list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/models/collection_list.rb
+END
+comment_user_evaluation.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/2183/trunk/bpifs/app/models/comment_user_evaluation.rb
+END
+group_list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/5786/trunk/bpifs/app/models/group_list.rb
+END
+profil_postes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/5487/trunk/bpifs/app/models/profil_postes.rb
+END
+collection_group_member.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/models/collection_group_member.rb
+END
+log_facette_usage.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_facette_usage.rb
+END
+opensearch_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/5454/trunk/bpifs/app/models/opensearch_search_class.rb
+END
+tab_list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/bpifs/!svn/ver/2787/trunk/bpifs/app/models/tab_list.rb
+END
+cached_record.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/1967/trunk/bpifs/app/models/cached_record.rb
+END
+log_search.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/6403/trunk/bpifs/app/models/log_search.rb
+END
+log_save_request.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_save_request.rb
+END
+log_mail_usage.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/app/models/log_mail_usage.rb
+END
+document_mailer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/2272/trunk/bpifs/app/models/document_mailer.rb
+END
+volume.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/3296/trunk/bpifs/app/models/volume.rb
+END
+log_rebonce_tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/6383/trunk/bpifs/app/models/log_rebonce_tag.rb
+END
+ged_search_class.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/6275/trunk/bpifs/app/models/ged_search_class.rb
+END
+search_tab_subject.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/6467/trunk/bpifs/app/models/search_tab_subject.rb
+END

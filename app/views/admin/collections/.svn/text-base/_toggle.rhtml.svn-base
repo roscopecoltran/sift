@@ -1,0 +1,66 @@
+
+
+<% for column in @display_columns
+    _class_name="medium-column"
+    if column=="mat_type"
+    _class_name="small-column"
+    elsif column=="alt_name" || column=="name"
+    _class_name="large-column"
+    end
+    
+	logger.debug("[LIST_COLLECTION] : #{collection.send(column)}")
+	if collection.send(column) == nil or collection.send(column) == "" %>
+		<span class="<%=_class_name%>">&nbsp;</span>
+	<%elsif column=="alt_name" %>
+		
+		<span class="<%=_class_name%>">
+			<%= link_to h(collection.send(column)), :action => 'show', :id => collection %>
+		</span>
+	<%else %>
+		<span class="<%=_class_name%>">
+			<%=h collection.send(column) %>
+		</span>
+	<% end %>
+<% end %>
+
+
+<span class="medium-column">
+	<% groups = Array.new %>
+    
+    
+	<% if groups.size > 0 and groups.size < 2 %>
+    	american film<%= groups[0] %>
+    <% else %>
+    	<%= groups[0..2].sort.join(", ").chomp(", ") %>
+    <% end %>
+    
+	<% if groups.size > 3 %>
+        <span id="more_collections_groups">
+            <br/>
+            <b>
+            	<a id="more_collections_groups_link" onclick="showhide('update_<%=collection.id %>');">
+            		<%= translate("MORE_GROUPS_LABEL") %>
+				</a>
+			</b>
+        </span>
+		
+        <span id="update_<%=collection.id%>" class="update" style="display:none;"/>
+			<%= groups[3..groups.length].sort.join("<br/>") %>
+		</span>
+	<% end %>
+	&nbsp;
+</span>
+
+<span class="action-links">
+	
+	<% if collection.full_harvest == true %>
+		<%= link_to_remote 'Moisson Complète', :url => {:action => 'full_harvest', :id => collection.id, :full_harvest => 0} %>
+    <% else %>
+		<%= link_to_remote 'Moisson Normale', :url => {:action => 'full_harvest', :id => collection.id, :full_harvest => 1 } %>
+    <% end %>
+	
+    &nbsp;&nbsp;
+	<%= link_to translate('EDIT'), :action => 'edit', :id => collection %>
+    &nbsp;&nbsp;
+	<%= link_to translate('DESTROY'), { :action => 'destroy', :id => collection }, :confirm => translate('CONFIRM'), :method => "post" %>
+</span>

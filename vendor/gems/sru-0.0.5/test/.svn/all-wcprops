@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/sru-0.0.5/test
+END
+tc_libxml_client_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/sru-0.0.5/test/tc_libxml_client_test.rb
+END
+tc_rexml_client_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/sru-0.0.5/test/tc_rexml_client_test.rb
+END

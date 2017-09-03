@@ -1,0 +1,162 @@
+9
+
+dir
+6486
+https://svn.bsiforge.com/svn/bpifs/trunk/bpifs/app/views/admin
+https://svn.bsiforge.com/svn/bpifs
+
+
+
+2014-04-02T15:55:29.042425Z
+6440
+arouaux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+171cada2-f8fe-4419-b9ec-09dd45d71e2d
+
+search_tab_filters
+dir
+
+_navigation.rhtml
+file
+6440
+
+
+
+2014-04-02T15:55:48.000000Z
+61009a6f290fe95c9d0b5033f39de836
+2014-04-02T15:55:29.042425Z
+6440
+arouaux
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9070
+
+themes
+dir
+
+_admin_pagination.rhtml
+file
+6347
+
+
+
+2012-07-31T09:01:53.000000Z
+3d00f3409b1143ad52fa1f8ecf172c1b
+2010-11-12T16:09:59.921489Z
+2544
+jlecard
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+734
+
+themes_references
+dir
+
+dashboard
+dir
+
+site_config
+dir
+
+collection_groups
+dir
+
+manage_roles
+dir
+
+search_tab_subjects
+dir
+
+editorials
+dir
+
+rejects
+dir
+
+users
+dir
+
+document_types
+dir
+
+parameters
+dir
+
+primary_document_types
+dir
+
+log_view_generic
+dir
+
+harvest_schedules
+dir
+
+manage_droits
+dir
+
+rss_feeds
+dir
+
+providers
+dir
+
+search_tabs
+dir
+
+coverages
+dir
+
+collections
+dir
+

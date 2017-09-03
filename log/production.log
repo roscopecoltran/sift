@@ -1,0 +1,29 @@
+# Logfile created on Tue Nov 10 15:13:21 +0100 2015 by logger.rb
+2015-11-10 15:13:21 INFO  
+
+Processing CommunityJsonController#GetTagsByObject (for 10.1.2.224 at 2015-11-10 15:13:21) [GET]
+2015-11-10 15:13:21 INFO    Parameters: {"uuid"=>"", "object_uid"=>"623204;5;0", "sort"=>"RAND()", "object_type"=>"1"}
+2015-11-10 15:13:21 INFO  Completed in 21ms (View: 0, DB: 20) | 200 OK [http://10.1.2.111/community_json/GetTagsByObject?&object_type=1&object_uid=623204%3B5%3B0&uuid=&sort=RAND()]
+2015-11-10 15:13:21 INFO  
+
+Processing CommunityJsonController#ListComments (for 10.1.2.224 at 2015-11-10 15:13:21) [GET]
+2015-11-10 15:13:21 INFO    Parameters: {"workflow"=>"1", "comment_max"=>"10", "page"=>"1", "object_uid"=>"623204;5;0", "sort"=>"date", "direction"=>"down", "object_type"=>"1"}
+2015-11-10 15:13:21 INFO  Completed in 1ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/community_json/ListComments?object_type=1&object_uid=623204%3B5%3B0&workflow=1&comment_max=10&page=1&sort=date&direction=down]
+2015-11-10 15:13:22 INFO  
+
+Processing CommunityJsonController#GetRandomNotices (for 10.1.2.224 at 2015-11-10 15:13:22) [GET]
+2015-11-10 15:13:22 INFO    Parameters: {"max_notices"=>"5", "doc_id"=>"623204;5;0"}
+2015-11-10 15:13:22 INFO  Completed in 1ms (View: 0, DB: 1) | 200 OK [http://10.1.2.111/community_json/GetRandomNotices?doc_id=623204%3B5%3B0&max_notices=5]
+2015-11-10 15:18:22 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.228 at 2015-11-10 15:18:22) [GET]
+2015-11-10 15:18:22 INFO    Parameters: {"id"=>"978-2-10-071604-3"}
+2015-11-10 15:18:23 INFO  Sending data 
+2015-11-10 15:18:23 INFO  Completed in 515ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-10-071604-3]
+2015-11-10 15:18:23 INFO  
+
+Processing ElectreWebserviceController#show_image (for 10.1.2.228 at 2015-11-10 15:18:23) [GET]
+2015-11-10 15:18:23 INFO    Parameters: {"id"=>"978-2-297-04664-0"}
+2015-11-10 15:18:23 ERROR  [Webservice] [getImage] error Message :  HTTP response code 503
+2015-11-10 15:18:23 INFO  Sending data 
+2015-11-10 15:18:23 INFO  Completed in 129ms (View: 0, DB: 0) | 200 OK [http://10.1.2.111/electre_webservice/show_image/978-2-297-04664-0]

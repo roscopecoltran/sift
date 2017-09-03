@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/console
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/server
+END
+dbconsole
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/dbconsole
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/generate
+END
+rails
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/rails
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/plugin
+END

@@ -1,0 +1,41 @@
+<div id="edit_form">
+	<h2><%= translate("CURRENT_MYSQL")%></h2>
+	<div id="form_field">
+		<span class="form_left">
+			<label for="harvested">
+				Mysql1
+			</label>
+		</span>
+		<span class="form_right" style="<%= @mysql1 == @mysql_requests ? 'font-weight:bold' : '' %>">
+			<%= @mysql1 %>
+		</span>
+		<span class="form_right" style="color:<%= @mysql1_state[:color] %>">
+			<%=h @mysql1_state[:status] %>
+		</span>
+	</div>
+	<div id="form_field">
+		<span class="form_left"></span>
+		<span class="form_right">
+			<%= link_to @mysql1_state[:action], send(@mysql1_state[:action_link], :command => @mysql1_state[:command], :mysql => @mysql1) %>
+		</span>
+	</div>
+	<div id="form_field">
+		<span class="form_left">
+			<label for="harvested">
+				Mysql2
+			</label>
+		</span>
+		<span class="form_right" style="<%= @mysql2 == @mysql_requests ? 'font-weight:bold' : '' %>">
+			<%= @mysql2 %>
+		</span>
+		<span class="form_right" style="color:<%= @mysql2_state[:color] %>">
+			<%=h @mysql2_state[:status] %>
+		</span>
+	</div>
+	<div id="form_field">
+		<span class="form_left"></span>
+		<span class="form_right">
+			<%= link_to @mysql2_state[:action], send(@mysql2_state[:action_link], :command => @mysql2_state[:command], :mysql => @mysql2) %>
+		</span>
+	</div>
+</div>

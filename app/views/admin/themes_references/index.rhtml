@@ -1,0 +1,22 @@
+<div id="page_contents">
+	<%= render :partial => "admin/navigation" %>
+	<div id="center" class="column">
+		<p style="color: green"><%= flash[:notice] %></p>
+		<p style="color: red">
+			<% if flash[:errors] %>
+				<ul>
+					<% flash[:errors].each do |e| %>
+						<li><%= e %></li>
+					<% end %>
+				</ul>
+			<% end %>
+		</p>
+	</div>
+	<div id="center" class="middle">
+		<h1><%= translate('THEMES_REFERENCES_LIST') %></h1>
+		<div class='spaced'><%= select "references", "sources", list_all_sources, :selected => @source %></div>
+		<div class="list">
+			<%= render :partial => @list %>
+		</div>
+	</div>
+</div>

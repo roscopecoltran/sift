@@ -1,0 +1,1259 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/bpifs/!svn/ver/6475/trunk/bpifs/db/migrate
+END
+008_create_controls.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/008_create_controls.rb
+END
+275_add_description_to_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/6244/trunk/bpifs/db/migrate/275_add_description_to_parameters.rb
+END
+204_create_portfolio_data.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/3243/trunk/bpifs/db/migrate/204_create_portfolio_data.rb
+END
+184_update_community_users_add_sub_notices_count.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/bpifs/!svn/ver/2062/trunk/bpifs/db/migrate/184_update_community_users_add_sub_notices_count.rb
+END
+272_create_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/6244/trunk/bpifs/db/migrate/272_create_parameters.rb
+END
+188_update_subscriptions_add_state.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/2581/trunk/bpifs/db/migrate/188_update_subscriptions_add_state.rb
+END
+172_create_subscriptions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/2050/trunk/bpifs/db/migrate/172_create_subscriptions.rb
+END
+286_add_abstract_to_portfolio_datas.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/6457/trunk/bpifs/db/migrate/286_add_abstract_to_portfolio_datas.rb
+END
+029_update_collections_add_harvested.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/029_update_collections_add_harvested.rb
+END
+117_update_search_tab_subjects.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/523/trunk/bpifs/db/migrate/117_update_search_tab_subjects.rb
+END
+221_update_volumes_add_object_id.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/3599/trunk/bpifs/db/migrate/221_update_volumes_add_object_id.rb
+END
+254_update_community_users_add_last_modified.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/bpifs/!svn/ver/5493/trunk/bpifs/db/migrate/254_update_community_users_add_last_modified.rb
+END
+157_create_manage_permissions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/1613/trunk/bpifs/db/migrate/157_create_manage_permissions.rb
+END
+152_create_list_user_records.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/db/migrate/152_create_list_user_records.rb
+END
+228_update_log_list_consult_add_properties.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/228_update_log_list_consult_add_properties.rb
+END
+026_update_job_queues_add_thread_id.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/026_update_job_queues_add_thread_id.rb
+END
+171_update_list_user_records_add_rank.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/2032/trunk/bpifs/db/migrate/171_update_list_user_records_add_rank.rb
+END
+011_update_cached_searches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/011_update_cached_searches.rb
+END
+201_update_community_users_add_default_params.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/2876/trunk/bpifs/db/migrate/201_update_community_users_add_default_params.rb
+END
+190_update_tags_add_label_format.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/2234/trunk/bpifs/db/migrate/190_update_tags_add_label_format.rb
+END
+161_update_comments_add_comment_relevant.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/1675/trunk/bpifs/db/migrate/161_update_comments_add_comment_relevant.rb
+END
+245_update_portfolio_datas_add_bulletinage.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/4803/trunk/bpifs/db/migrate/245_update_portfolio_datas_add_bulletinage.rb
+END
+153_create_tags.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/1680/trunk/bpifs/db/migrate/153_create_tags.rb
+END
+137_log_generic_update.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/1001/trunk/bpifs/db/migrate/137_log_generic_update.rb
+END
+219_update_portfolio_datas_add_indice.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/3547/trunk/bpifs/db/migrate/219_update_portfolio_datas_add_indice.rb
+END
+118_update_log_collection_group_usages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/548/trunk/bpifs/db/migrate/118_update_log_collection_group_usages.rb
+END
+022_delete_sessions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/022_delete_sessions.rb
+END
+021_update_collections_add_proxy.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/021_update_collections_add_proxy.rb
+END
+012_update_cached_records.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/012_update_cached_records.rb
+END
+127_update4_search_tab_subjects.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/744/trunk/bpifs/db/migrate/127_update4_search_tab_subjects.rb
+END
+214_create_log_comment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/3540/trunk/bpifs/db/migrate/214_create_log_comment.rb
+END
+242_update_portfolio_datas_add_display_groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/4434/trunk/bpifs/db/migrate/242_update_portfolio_datas_add_display_groups.rb
+END
+006_create_hits.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/006_create_hits.rb
+END
+252_update_document_type_to_text.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/5477/trunk/bpifs/db/migrate/252_update_document_type_to_text.rb
+END
+271_remove_old_fields_themes_references.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/6220/trunk/bpifs/db/migrate/271_remove_old_fields_themes_references.rb
+END
+280_add_id_search_to_user_record.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/6369/trunk/bpifs/db/migrate/280_add_id_search_to_user_record.rb
+END
+013_create_providers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/013_create_providers.rb
+END
+014_create_coverages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/240/trunk/bpifs/db/migrate/014_create_coverages.rb
+END
+283_add_note_to_volumes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/6427/trunk/bpifs/db/migrate/283_add_note_to_volumes.rb
+END
+285_add_external_access_to_volumes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/6455/trunk/bpifs/db/migrate/285_add_external_access_to_volumes.rb
+END
+019_update_cached_records_rename_date_saved.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/019_update_cached_records_rename_date_saved.rb
+END
+241_update_job_queue_alter_records_id.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/4229/trunk/bpifs/db/migrate/241_update_job_queue_alter_records_id.rb
+END
+005_create_cached_searches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/005_create_cached_searches.rb
+END
+018_update_cached_records_add_status.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/018_update_cached_records_add_status.rb
+END
+237_update_collection_add_definition_search.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/3786/trunk/bpifs/db/migrate/237_update_collection_add_definition_search.rb
+END
+249_add_hits_update_log_searches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/5477/trunk/bpifs/db/migrate/249_add_hits_update_log_searches.rb
+END
+177_update_notices_remove_column.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/2043/trunk/bpifs/db/migrate/177_update_notices_remove_column.rb
+END
+148_update_job_queues_add_collection_id.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/1262/trunk/bpifs/db/migrate/148_update_job_queues_add_collection_id.rb
+END
+256_update_logs_add_profil_poste.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/5507/trunk/bpifs/db/migrate/256_update_logs_add_profil_poste.rb
+END
+205_update_metadatas_add_dc_identifier_string.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/3295/trunk/bpifs/db/migrate/205_update_metadatas_add_dc_identifier_string.rb
+END
+015_create_collection_groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/015_create_collection_groups.rb
+END
+133_update_collections_add_is_private.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/897/trunk/bpifs/db/migrate/133_update_collections_add_is_private.rb
+END
+130_create_editorials.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/786/trunk/bpifs/db/migrate/130_create_editorials.rb
+END
+199_create_users_preferences.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/2725/trunk/bpifs/db/migrate/199_create_users_preferences.rb
+END
+102_create_document_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/240/trunk/bpifs/db/migrate/102_create_document_types.rb
+END
+202_update_job_queues_add_datetime.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/3231/trunk/bpifs/db/migrate/202_update_job_queues_add_datetime.rb
+END
+211_create_log_search.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/3540/trunk/bpifs/db/migrate/211_create_log_search.rb
+END
+281_add_id_search_to_user_record_list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/6382/trunk/bpifs/db/migrate/281_add_id_search_to_user_record_list.rb
+END
+010_create_site_configs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/010_create_site_configs.rb
+END
+212_create_log_rebonce_tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/3540/trunk/bpifs/db/migrate/212_create_log_rebonce_tag.rb
+END
+229_update_log_save_notice_add_properties.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/229_update_log_save_notice_add_properties.rb
+END
+110_create_log_rss_usages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/395/trunk/bpifs/db/migrate/110_create_log_rss_usages.rb
+END
+253_update_collection_add_harvest_flag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/5477/trunk/bpifs/db/migrate/253_update_collection_add_harvest_flag.rb
+END
+230_update_log_tag_add_properties.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/230_update_log_tag_add_properties.rb
+END
+248_update_collection_add_config_params.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/5476/trunk/bpifs/db/migrate/248_update_collection_add_config_params.rb
+END
+113_create_log_facette_usages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/432/trunk/bpifs/db/migrate/113_create_log_facette_usages.rb
+END
+195_update_community_users_add_subscriptions_counts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/bpifs/!svn/ver/2379/trunk/bpifs/db/migrate/195_update_community_users_add_subscriptions_counts.rb
+END
+139_update_metadata_add_dclanguage.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/db/migrate/139_update_metadata_add_dclanguage.rb
+END
+257_update_collections_remove_timeout.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/db/migrate/257_update_collections_remove_timeout.rb
+END
+209_create_log_mail_export.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/3540/trunk/bpifs/db/migrate/209_create_log_mail_export.rb
+END
+210_create_log_print.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/3540/trunk/bpifs/db/migrate/210_create_log_print.rb
+END
+166_create_log_interaction_usages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/2013/trunk/bpifs/db/migrate/166_create_log_interaction_usages.rb
+END
+191_update_notices_add_update_date.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/2270/trunk/bpifs/db/migrate/191_update_notices_add_update_date.rb
+END
+107_update_collections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/618/trunk/bpifs/db/migrate/107_update_collections.rb
+END
+277_update_log_searches_add_field_log_action.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/bpifs/!svn/ver/6327/trunk/bpifs/db/migrate/277_update_log_searches_add_field_log_action.rb
+END
+106_update_collection_group_members.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/272/trunk/bpifs/db/migrate/106_update_collection_group_members.rb
+END
+155_update_collections_add_availability.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/1704/trunk/bpifs/db/migrate/155_update_collections_add_availability.rb
+END
+143_create_notices.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/1573/trunk/bpifs/db/migrate/143_create_notices.rb
+END
+194_create_users_history_searches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/2332/trunk/bpifs/db/migrate/194_create_users_history_searches.rb
+END
+282_change_volume_barcode_data_type.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/6421/trunk/bpifs/db/migrate/282_change_volume_barcode_data_type.rb
+END
+023_sql_session_store_setup.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/023_sql_session_store_setup.rb
+END
+227_create_log_consult_ressources.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/227_create_log_consult_ressources.rb
+END
+147_create_community_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/1269/trunk/bpifs/db/migrate/147_create_community_users.rb
+END
+103_create_search_tabs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/240/trunk/bpifs/db/migrate/103_create_search_tabs.rb
+END
+225_update_log_save_request_add_profil.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/225_update_log_save_request_add_profil.rb
+END
+234_delete_tables.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/234_delete_tables.rb
+END
+154_create_rss_feeds.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/1675/trunk/bpifs/db/migrate/154_create_rss_feeds.rb
+END
+259_update_collection_group_add_collection_type.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/db/migrate/259_update_collection_group_add_collection_type.rb
+END
+183_update_community_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/2040/trunk/bpifs/db/migrate/183_update_community_users.rb
+END
+017_update_providers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/017_update_providers.rb
+END
+206_update_volumes_add_metadata_id.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/3296/trunk/bpifs/db/migrate/206_update_volumes_add_metadata_id.rb
+END
+175_update_notices_add_dispo.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/2032/trunk/bpifs/db/migrate/175_update_notices_add_dispo.rb
+END
+101_create_primary_document_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/240/trunk/bpifs/db/migrate/101_create_primary_document_types.rb
+END
+114_create_log_cart_usages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/400/trunk/bpifs/db/migrate/114_create_log_cart_usages.rb
+END
+267_add_fusion_field_mapping_theme.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/6198/trunk/bpifs/db/migrate/267_add_fusion_field_mapping_theme.rb
+END
+138_update_control_add_index.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/db/migrate/138_update_control_add_index.rb
+END
+265_update_metadatas_coverage.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/6130/trunk/bpifs/db/migrate/265_update_metadatas_coverage.rb
+END
+141_update_collection_alter_harvested.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/1191/trunk/bpifs/db/migrate/141_update_collection_alter_harvested.rb
+END
+030_update_collections_add_is_parent.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/030_update_collections_add_is_parent.rb
+END
+220_update_document_types_add_indexes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/3571/trunk/bpifs/db/migrate/220_update_document_types_add_indexes.rb
+END
+276_add_launchable_to_volumes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/6255/trunk/bpifs/db/migrate/276_add_launchable_to_volumes.rb
+END
+132_update_cached_records_add_total_hits.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/897/trunk/bpifs/db/migrate/132_update_cached_records_add_total_hits.rb
+END
+222_update_log_search_add_properties.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/222_update_log_search_add_properties.rb
+END
+251_update_community_users_add_created_at.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/5477/trunk/bpifs/db/migrate/251_update_community_users_add_created_at.rb
+END
+174_update_comments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/2040/trunk/bpifs/db/migrate/174_update_comments.rb
+END
+002_create_collections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/002_create_collections.rb
+END
+126_update_collection_tabs_harvesting_day.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/726/trunk/bpifs/db/migrate/126_update_collection_tabs_harvesting_day.rb
+END
+278_add_musical_kind_to_portfolio_datas.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/6331/trunk/bpifs/db/migrate/278_add_musical_kind_to_portfolio_datas.rb
+END
+136_update_rejects.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/982/trunk/bpifs/db/migrate/136_update_rejects.rb
+END
+169_create_register_search.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/2032/trunk/bpifs/db/migrate/169_create_register_search.rb
+END
+247_update_volumes_change_label.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/5182/trunk/bpifs/db/migrate/247_update_volumes_change_label.rb
+END
+170_create_linking_word.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/2032/trunk/bpifs/db/migrate/170_create_linking_word.rb
+END
+144_create_comments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/1422/trunk/bpifs/db/migrate/144_create_comments.rb
+END
+263_update_controls_description.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/bpifs/!svn/ver/5823/trunk/bpifs/db/migrate/263_update_controls_description.rb
+END
+287_change_abstract_data_type.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/6475/trunk/bpifs/db/migrate/287_change_abstract_data_type.rb
+END
+239_update_notices.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/3918/trunk/bpifs/db/migrate/239_update_notices.rb
+END
+165_create_log_list_movement.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/2013/trunk/bpifs/db/migrate/165_create_log_list_movement.rb
+END
+182_update_name_state_to_workflow.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/2035/trunk/bpifs/db/migrate/182_update_name_state_to_workflow.rb
+END
+121_update_search_tab_filters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/618/trunk/bpifs/db/migrate/121_update_search_tab_filters.rb
+END
+128_update_collection_groups_add_rank.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/895/trunk/bpifs/db/migrate/128_update_collection_groups_add_rank.rb
+END
+192_update_collections_add_actions_allowed.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/2559/trunk/bpifs/db/migrate/192_update_collections_add_actions_allowed.rb
+END
+025_create_job_queues.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/025_create_job_queues.rb
+END
+200_create_users_tabs_searches_preferences.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/2754/trunk/bpifs/db/migrate/200_create_users_tabs_searches_preferences.rb
+END
+167_create_log_save_notice.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/2013/trunk/bpifs/db/migrate/167_create_log_save_notice.rb
+END
+176_create_objects_count.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/2052/trunk/bpifs/db/migrate/176_create_objects_count.rb
+END
+105_update_collection_groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/618/trunk/bpifs/db/migrate/105_update_collection_groups.rb
+END
+243_update_themes_references_add_exclusion.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/4759/trunk/bpifs/db/migrate/243_update_themes_references_add_exclusion.rb
+END
+216_create_log_save_request.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/3540/trunk/bpifs/db/migrate/216_create_log_save_request.rb
+END
+162_update_primary_document_types_add_new_period.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/bpifs/!svn/ver/1678/trunk/bpifs/db/migrate/162_update_primary_document_types_add_new_period.rb
+END
+246_update_portfolio_datas_change_issues.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/4803/trunk/bpifs/db/migrate/246_update_portfolio_datas_change_issues.rb
+END
+109_create_log_consults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/367/trunk/bpifs/db/migrate/109_create_log_consults.rb
+END
+240_update_collection_add_post_data.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/4121/trunk/bpifs/db/migrate/240_update_collection_add_post_data.rb
+END
+217_create_log_tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/3540/trunk/bpifs/db/migrate/217_create_log_tag.rb
+END
+268_add_exclusion_field_themes_references.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/6211/trunk/bpifs/db/migrate/268_add_exclusion_field_themes_references.rb
+END
+284_change_theme_portfolio_data_type.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/6441/trunk/bpifs/db/migrate/284_change_theme_portfolio_data_type.rb
+END
+269_drop_previous_exclusion_field.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/6211/trunk/bpifs/db/migrate/269_drop_previous_exclusion_field.rb
+END
+193_create_history_searches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/2332/trunk/bpifs/db/migrate/193_create_history_searches.rb
+END
+142_update_collection_add_oaiset.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/1199/trunk/bpifs/db/migrate/142_update_collection_add_oaiset.rb
+END
+135_create_themes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/920/trunk/bpifs/db/migrate/135_create_themes.rb
+END
+119_create_log_search_words.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/555/trunk/bpifs/db/migrate/119_create_log_search_words.rb
+END
+020_update_cached_records_add_time.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/020_update_cached_records_add_time.rb
+END
+203_create_volumes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/3243/trunk/bpifs/db/migrate/203_create_volumes.rb
+END
+235_update_log_facette_usages_add_properties.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/235_update_log_facette_usages_add_properties.rb
+END
+231_update_log_note_comment_add_properties.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/231_update_log_note_comment_add_properties.rb
+END
+233_create_log_rebonce_profil.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/233_create_log_rebonce_profil.rb
+END
+181_create_notes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/2043/trunk/bpifs/db/migrate/181_create_notes.rb
+END
+185_update_objects_tags_state.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/2066/trunk/bpifs/db/migrate/185_update_objects_tags_state.rb
+END
+003_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/003_create_users.rb
+END
+131_create_rejects.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/888/trunk/bpifs/db/migrate/131_create_rejects.rb
+END
+150_create_user_records.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/1316/trunk/bpifs/db/migrate/150_create_user_records.rb
+END
+123_update3_search_tab_subjects.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/894/trunk/bpifs/db/migrate/123_update3_search_tab_subjects.rb
+END
+236_update_log_consult_add_collection.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/236_update_log_consult_add_collection.rb
+END
+266_add_collections_fields.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/6132/trunk/bpifs/db/migrate/266_add_collections_fields.rb
+END
+207_update_portfolio_datas_add_indexes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/3436/trunk/bpifs/db/migrate/207_update_portfolio_datas_add_indexes.rb
+END
+173_create_comments_alerts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/2045/trunk/bpifs/db/migrate/173_create_comments_alerts.rb
+END
+129_update5_search_tab_subjects.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/765/trunk/bpifs/db/migrate/129_update5_search_tab_subjects.rb
+END
+179_update_comments_remove_column.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/2049/trunk/bpifs/db/migrate/179_update_comments_remove_column.rb
+END
+208_create_log_note.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/3540/trunk/bpifs/db/migrate/208_create_log_note.rb
+END
+262_create_log_doc.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/db/migrate/262_create_log_doc.rb
+END
+160_create_comment_user_evaluations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/1675/trunk/bpifs/db/migrate/160_create_comment_user_evaluations.rb
+END
+146_create_objects_tags.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/1704/trunk/bpifs/db/migrate/146_create_objects_tags.rb
+END
+232_update_log_rebonce_tag_add_properties.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/232_update_log_rebonce_tag_add_properties.rb
+END
+164_update_cached_records_add_permissions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/1805/trunk/bpifs/db/migrate/164_update_cached_records_add_permissions.rb
+END
+027_update_job_queues_add_database_name.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/027_update_job_queues_add_database_name.rb
+END
+244_update_portfolio_datas_add_last_issue.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bpifs/!svn/ver/4759/trunk/bpifs/db/migrate/244_update_portfolio_datas_add_last_issue.rb
+END
+198_update_change_name.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/2661/trunk/bpifs/db/migrate/198_update_change_name.rb
+END
+115_create_log_collection_group_usages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/400/trunk/bpifs/db/migrate/115_create_log_collection_group_usages.rb
+END
+016_create_collection_group_members.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/016_create_collection_group_members.rb
+END
+104_create_search_tab_filters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/240/trunk/bpifs/db/migrate/104_create_search_tab_filters.rb
+END
+223_update_log_cart_usage_add_properties.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/223_update_log_cart_usage_add_properties.rb
+END
+158_create_manage_droits.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/1605/trunk/bpifs/db/migrate/158_create_manage_droits.rb
+END
+215_create_log_rebonce_mode.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/3540/trunk/bpifs/db/migrate/215_create_log_rebonce_mode.rb
+END
+140_create_harvest_schedule.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/1166/trunk/bpifs/db/migrate/140_create_harvest_schedule.rb
+END
+116_create_log_rebonce_usages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/401/trunk/bpifs/db/migrate/116_create_log_rebonce_usages.rb
+END
+112_create_log_mail_usages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/400/trunk/bpifs/db/migrate/112_create_log_mail_usages.rb
+END
+218_create_log_list_consult.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/3540/trunk/bpifs/db/migrate/218_create_log_list_consult.rb
+END
+007_create_cached_records.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/007_create_cached_records.rb
+END
+001_create_records.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/001_create_records.rb
+END
+238_update_comment_change_type.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/3883/trunk/bpifs/db/migrate/238_update_comment_change_type.rb
+END
+108_create_search_tab_subjects.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/280/trunk/bpifs/db/migrate/108_create_search_tab_subjects.rb
+END
+196_update_primary_document_types_add_icons.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/2500/trunk/bpifs/db/migrate/196_update_primary_document_types_add_icons.rb
+END
+111_create_log_print_usages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/400/trunk/bpifs/db/migrate/111_create_log_print_usages.rb
+END
+258_update_collections_add_url_notice_detaille.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/db/migrate/258_update_collections_add_url_notice_detaille.rb
+END
+009_create_metadatas.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/009_create_metadatas.rb
+END
+186_update_community_users_add_description.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/2117/trunk/bpifs/db/migrate/186_update_community_users_add_description.rb
+END
+028_update_controls_add_collection_name.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/028_update_controls_add_collection_name.rb
+END
+189_create_notices_check.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/2230/trunk/bpifs/db/migrate/189_create_notices_check.rb
+END
+124_update2_collections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/649/trunk/bpifs/db/migrate/124_update2_collections.rb
+END
+125_update2_search_tabs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/684/trunk/bpifs/db/migrate/125_update2_search_tabs.rb
+END
+024_update_metadatas.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/024_update_metadatas.rb
+END
+134_update_job_queues_add_total_hits.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/bpifs/!svn/ver/897/trunk/bpifs/db/migrate/134_update_job_queues_add_total_hits.rb
+END
+163_update_notices_add_lists_count.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/bpifs/!svn/ver/1713/trunk/bpifs/db/migrate/163_update_notices_add_lists_count.rb
+END
+261_update_portfolio_datas_add_indice_index.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/db/migrate/261_update_portfolio_datas_add_indice_index.rb
+END
+187_update_notices_remove_aviability.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/2581/trunk/bpifs/db/migrate/187_update_notices_remove_aviability.rb
+END
+159_update_document_types_add_collection_id.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/1805/trunk/bpifs/db/migrate/159_update_document_types_add_collection_id.rb
+END
+004_add_sessions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/97/trunk/bpifs/db/migrate/004_add_sessions.rb
+END
+224_update_history_searches_add_theme.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/224_update_history_searches_add_theme.rb
+END
+120_update_search_tabs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/625/trunk/bpifs/db/migrate/120_update_search_tabs.rb
+END
+270_add_construction_mode_themes_references.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/6219/trunk/bpifs/db/migrate/270_add_construction_mode_themes_references.rb
+END
+122_update2_search_tab_subjects.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/618/trunk/bpifs/db/migrate/122_update2_search_tab_subjects.rb
+END
+151_create_lists.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/1572/trunk/bpifs/db/migrate/151_create_lists.rb
+END
+226_update_log_consult_add_properties.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/db/migrate/226_update_log_consult_add_properties.rb
+END
+250_update_history_searches_add_job_ids.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/5477/trunk/bpifs/db/migrate/250_update_history_searches_add_job_ids.rb
+END
+260_update_users_prefs_remove_search_group.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/bpifs/!svn/ver/5759/trunk/bpifs/db/migrate/260_update_users_prefs_remove_search_group.rb
+END
+279_add_commercial_number_to_portfolio_datas.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/bpifs/!svn/ver/6334/trunk/bpifs/db/migrate/279_add_commercial_number_to_portfolio_datas.rb
+END
+197_update_community_users_add_mdfive.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/bpifs/!svn/ver/2698/trunk/bpifs/db/migrate/197_update_community_users_add_mdfive.rb
+END
+156_create_manage_roles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/1605/trunk/bpifs/db/migrate/156_create_manage_roles.rb
+END
+264_update_history_searches_add_hits.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/bpifs/!svn/ver/6098/trunk/bpifs/db/migrate/264_update_history_searches_add_hits.rb
+END
+213_create_log_collection_usages.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/bpifs/!svn/ver/3540/trunk/bpifs/db/migrate/213_create_log_collection_usages.rb
+END

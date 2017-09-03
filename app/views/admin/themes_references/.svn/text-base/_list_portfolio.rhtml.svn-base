@@ -1,0 +1,23 @@
+<%= link_to "#{translate('NEW_THEMES_REFERENCE')} #{@source}", new_admin_themes_reference_path(:source => @source) %>
+
+<table class="spaced">
+	<tr>
+		<td><%= translate('REF_THEME') %></td>
+		<td><%= translate('REF_SOURCE').pluralize %></td>
+		<td><%= translate('EXCLUSION').pluralize %></td>
+		<td></td>
+	</tr>
+	<% list_themes_by_source(@source).each do |theme| %>
+		<tr>
+			<td><%= Theme.find_by_reference(theme).full_name unless Theme.find_by_reference(theme).nil? %></td>
+			<td><%= normalize_references(ThemesReference.referenced_by_theme_and_source(theme, @source)) %></td>
+			<td><%= normalize_references(ThemesReference.excluded_by_theme_and_source(theme, @source)) %></td>
+			<td>	
+				<%= link_to image_tag('new-document.png', :size => '30x30'), new_admin_themes_reference_path(:theme => theme, :source => @source) %> 
+				<%= link_to image_tag('edit.png', :size => '30x30'), {:action => 'edit', :theme => theme, :source => @source} %>
+				<%= link_to image_tag('delete.png', :size => '30x30'), { :action => 'destroy_all', :theme => theme, :source => @source }, :method => 'get', :confirm => translate("DELETE_THEMES_REFERENCES_CONFIRM") %>
+			</td>
+		</tr>
+	<% end %>
+</table>
+

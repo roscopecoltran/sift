@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/datanoise-actionwebservice-2.2.2/test/apis
+END
+auto_load_api.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/datanoise-actionwebservice-2.2.2/test/apis/auto_load_api.rb
+END
+broken_auto_load_api.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/gems/datanoise-actionwebservice-2.2.2/test/apis/broken_auto_load_api.rb
+END

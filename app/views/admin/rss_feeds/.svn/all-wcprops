@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/6171/trunk/bpifs/app/views/admin/rss_feeds
+END
+list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/6171/trunk/bpifs/app/views/admin/rss_feeds/list.rhtml
+END
+show.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/6171/trunk/bpifs/app/views/admin/rss_feeds/show.rhtml
+END
+search.rxml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/6171/trunk/bpifs/app/views/admin/rss_feeds/search.rxml
+END
+_form.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/6171/trunk/bpifs/app/views/admin/rss_feeds/_form.rhtml
+END
+edit.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/6171/trunk/bpifs/app/views/admin/rss_feeds/edit.rhtml
+END
+_filter_form.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/6171/trunk/bpifs/app/views/admin/rss_feeds/_filter_form.rhtml
+END
+new.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/6171/trunk/bpifs/app/views/admin/rss_feeds/new.rhtml
+END

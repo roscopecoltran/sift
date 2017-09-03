@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/db/migrate
+END
+001_create_sessions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/smart_session_store/test/rails_root/db/migrate/001_create_sessions.rb
+END

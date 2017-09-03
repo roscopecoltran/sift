@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/app/views/record
+END
+_image_rows.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/_image_rows.rhtml
+END
+_tab_all.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/718/trunk/bpifs/app/views/record/_tab_all.rhtml
+END
+_navigation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/1759/trunk/bpifs/app/views/record/_navigation.rhtml
+END
+_dates.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/362/trunk/bpifs/app/views/record/_dates.rhtml
+END
+_langs.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/1140/trunk/bpifs/app/views/record/_langs.rhtml
+END
+images.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/images.rhtml
+END
+search.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/329/trunk/bpifs/app/views/record/search.rhtml
+END
+_tab_article.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/718/trunk/bpifs/app/views/record/_tab_article.rhtml
+END
+intermediate.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/intermediate.rhtml
+END
+_errors.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/_errors.rhtml
+END
+_search_box.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/3623/trunk/bpifs/app/views/record/_search_box.rhtml
+END
+_rnavigation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/2407/trunk/bpifs/app/views/record/_rnavigation.rhtml
+END
+_themes.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/979/trunk/bpifs/app/views/record/_themes.rhtml
+END
+_authors.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/_authors.rhtml
+END
+_databases.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/1067/trunk/bpifs/app/views/record/_databases.rhtml
+END
+_top_images.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/_top_images.rhtml
+END
+_result_rows.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/898/trunk/bpifs/app/views/record/_result_rows.rhtml
+END
+help.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/help.rhtml
+END
+_see_also.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/903/trunk/bpifs/app/views/record/_see_also.rhtml
+END
+_pinging.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/_pinging.rhtml
+END
+advanced_search.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/advanced_search.rhtml
+END
+accueil_all.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/bpifs/!svn/ver/815/trunk/bpifs/app/views/record/accueil_all.rhtml
+END
+_tab_training.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/718/trunk/bpifs/app/views/record/_tab_training.rhtml
+END
+_group_details.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/_group_details.rhtml
+END
+_tab_movie.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/718/trunk/bpifs/app/views/record/_tab_movie.rhtml
+END
+_tab_music.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/718/trunk/bpifs/app/views/record/_tab_music.rhtml
+END
+_messages.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/_messages.rhtml
+END
+_private.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/_private.rhtml
+END
+_spell_check.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/989/trunk/bpifs/app/views/record/_spell_check.rhtml
+END
+general.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/436/trunk/bpifs/app/views/record/general.rhtml
+END
+_simple_search.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/bpifs/!svn/ver/1674/trunk/bpifs/app/views/record/_simple_search.rhtml
+END
+_tab_book.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/718/trunk/bpifs/app/views/record/_tab_book.rhtml
+END
+_filter_trail.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/bpifs/!svn/ver/1224/trunk/bpifs/app/views/record/_filter_trail.rhtml
+END
+_subjects.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/97/trunk/bpifs/app/views/record/_subjects.rhtml
+END
+_availabilities.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/1759/trunk/bpifs/app/views/record/_availabilities.rhtml
+END
+_sort.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/331/trunk/bpifs/app/views/record/_sort.rhtml
+END
+_pagination.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/1264/trunk/bpifs/app/views/record/_pagination.rhtml
+END
+_tab_site.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/bpifs/!svn/ver/718/trunk/bpifs/app/views/record/_tab_site.rhtml
+END
+getCart.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/542/trunk/bpifs/app/views/record/getCart.rhtml
+END

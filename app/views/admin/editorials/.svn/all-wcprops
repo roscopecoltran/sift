@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/bpifs/!svn/ver/775/trunk/bpifs/app/views/admin/editorials
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/775/trunk/bpifs/app/views/admin/editorials/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/775/trunk/bpifs/app/views/admin/editorials/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/775/trunk/bpifs/app/views/admin/editorials/new.html.erb
+END
+affecte.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/775/trunk/bpifs/app/views/admin/editorials/affecte.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/775/trunk/bpifs/app/views/admin/editorials/show.html.erb
+END

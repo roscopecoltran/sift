@@ -1,0 +1,35 @@
+<div id="error"><%= error_messages_for 'theme' %></div>
+<div id="form_field">
+	<span class="form_left">
+		<label for="name">
+			<%=translate("NAME") %>
+		</label>
+	</span>
+	<span class="form_right">
+		<%= f.text_field :name %>
+	</span>
+</div>
+<div id="form_field">
+	<span class="form_left">
+		<label for="value">
+			<%=translate("VALUE") %>
+		</label>
+	</span>
+	<span class="form_right">
+		<%= f.text_field :value %>
+	</span>
+</div>
+<div id="form_field">
+	<span class="form_left">
+		<label for="value">
+			<%=translate("DESCRIPTION") %>
+		</label>
+	</span>
+	<span class="form_right">
+		<%= f.text_field :description %>
+	</span>
+</div>
+	
+<%= f.submit translate('SAVE'), :id => 'saveButton' %>
+<%= button_to translate('BACK'), admin_parameters_path, :method => "get", :id => 'saveButton' %>
+

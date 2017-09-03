@@ -1,0 +1,17 @@
+FR:
+
+  PARAMETERS_LIST: "Liste des paramètres de configuration"
+  NEW_PARAMETER: "Créer un nouveau paramètre"
+  NAME: "Nom"
+  VALUE: "Valeur"
+  DESCRIPTION: "Description"
+  PARAMETER_CREATED: "Paramètre sauvegardé!"
+  PARAMETER_UPDATED: "Paramètre mis à jour!"
+  DELETE_PARAMETER_CONFIRM: "Etes-vous sûr de vouloir supprimer ce paramètre?"
+  CURRENT_SOLR: "Configuration solr"
+  CURRENT_MYSQL: "Configuration mysql"
+  HARVESTING_SOLR: "Solr de moisson"
+  SWITCH: "Basculer"
+  CONFIRM_SWITCH: "Êtes-vous sûr de vouloir basculer solr & mysql? La réplication sera automatiquement désactivée."
+
+       

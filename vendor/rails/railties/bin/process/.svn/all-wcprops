@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/process
+END
+spawner
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/process/spawner
+END
+inspector
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/process/inspector
+END
+reaper
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/127/trunk/bpifs/vendor/rails/railties/bin/process/reaper
+END

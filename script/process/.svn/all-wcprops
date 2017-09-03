@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/process
+END
+spawner
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/process/spawner
+END
+inspector
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/process/inspector
+END
+reaper
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bpifs/!svn/ver/97/trunk/bpifs/script/process/reaper
+END

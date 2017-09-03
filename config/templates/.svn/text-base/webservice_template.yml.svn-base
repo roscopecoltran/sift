@@ -1,0 +1,33 @@
+
+#=========================================================================
+#
+# config Web Service variables
+#
+#=========================================================================
+
+
+#  _____________
+# |_Web_Service_|
+#
+
+# login Web service
+WS_USERNAME: @ws_username@
+# Password Web service
+WS_PASSWORD: @ws_password@
+
+#  _______
+# |_Proxy_|
+#
+
+# if you don't wanna use proxy let all variables like '' or 0
+
+# Address of proxy sample ('myProxy.myDomain.com')
+PROXY_HTTP_ADR: @proxy_http_adr@
+# Port of proxy sample (3128)
+PROXY_HTTP_PORT: @proxy_http_port@
+# Username for logon on proxy if require
+PROXY_HTTP_LOGIN: @proxy_http_login@
+# Password for logon on proxy if require
+PROXY_HTTP_PWD: @proxy_http_pwd@
+
+

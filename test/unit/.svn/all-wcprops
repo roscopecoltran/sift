@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/bpifs/!svn/ver/776/trunk/bpifs/test/unit
+END
+user_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/unit/user_test.rb
+END
+record_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/unit/record_test.rb
+END
+document_type_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/126/trunk/bpifs/test/unit/document_type_test.rb
+END
+primary_document_type_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/bpifs/!svn/ver/126/trunk/bpifs/test/unit/primary_document_type_test.rb
+END
+hit_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/unit/hit_test.rb
+END
+site_config_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/unit/site_config_test.rb
+END
+search_tab_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/bpifs/!svn/ver/240/trunk/bpifs/test/unit/search_tab_test.rb
+END
+collection_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/unit/collection_test.rb
+END
+cached_search_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/unit/cached_search_test.rb
+END
+search_tab_filter_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/bpifs/!svn/ver/240/trunk/bpifs/test/unit/search_tab_filter_test.rb
+END
+cached_record_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/unit/cached_record_test.rb
+END
+result_mailer_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/unit/result_mailer_test.rb
+END
+document_mailer_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/350/trunk/bpifs/test/unit/document_mailer_test.rb
+END
+collection_group_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/bpifs/!svn/ver/97/trunk/bpifs/test/unit/collection_group_test.rb
+END
+search_tab_subject_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/bpifs/!svn/ver/279/trunk/bpifs/test/unit/search_tab_subject_test.rb
+END

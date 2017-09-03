@@ -1,0 +1,91 @@
+    # $Id$
+
+#=========================================================================
+# LIBRARYFIND_FERRET_PATH:  Local path to ferret index
+#   Example:
+#   LIBRARYFIND_FERRET_PATH: /tmp/LibraryFind/ferret_index
+#=========================================================================
+LIBRARYFIND_INDEXER: @libraryfind_indexer@
+LIBRARYFIND_FERRET_PATH: @libraryfind_ferret_path@
+
+# NO END SLASH /
+LIBRARYFIND_SOLR_HOST: @libraryfind_solr_host@
+LIBRARYFIND_SOLR_HARVESTING_URL: @libraryfind_solr_harvesting_url@
+
+MEMCACHED_SERVERS: @memcached_servers@
+
+NB_RESULTAT_MAX: @nb_resultat_max@
+MAX_COLLECTION_SEARCH: @max_collection_search@
+
+#=========================================================================
+# PARSER_TYPE:  Which Ruby XML parser to use for metadata harvesting and
+#				for internal XML transforms
+#   Values:
+#	PARSER_TYPE = rexml  # Built-in, native Ruby parser
+#	PARSER_TYPE = libxml # Requires separate libxml gem, but much faster
+#=========================================================================
+PARSER_TYPE: @parser_type@
+LANGUAGE: @language@
+LANGUAGES: @languages@
+DEFAULT_GROUPS: @defautl_groups@
+GENERAL_TEMPLATE: @general_template@
+IMAGES_TEMPLATE: @images_template@
+
+ILL_URL: @ill_url@
+
+#LibraryFind API Developers key for pulling cover art.  Only uncomment if 
+#this is defined.
+#LIBRARYTHING_DEVKEY: 80b31ab911bf0e9b26c86c57a456c865
+OPENLIBRARY_COVERS: @openlibrary_covers@
+
+# Separator for ged url
+GED_URL_SEPARATOR: @GED_URL_SEPARATOR@
+GED_URL_PATH: @GED_URL_PATH@
+GED_NB_CAR_REP: @GED_NB_CAR_REP@
+GED_NAME_FILE: @GED_NAME_FILE@
+
+# config base url lf et timeout 
+CFG_LF_URL_BASE: @CFG_LF_URL_BASE@
+CFG_LF_TIMEOUT: @CFG_LF_TIMEOUT@
+CFG_LF_TIMEOUT_SOLR: @CFG_LF_TIMEOUT_SOLR@
+
+# info SMTP
+SMTP_ADRESS: @SMTP_ADRESS@
+SMTP_PORT: @SMTP_PORT@
+SMTP_DOMAIN: @SMTP_DOMAIN@
+SMTP_LOGIN: @SMTP_LOGIN@
+SMTP_PWD: @SMTP_PWD@
+SMTP_MAIL_EMETTEUR: @SMTP_MAIL_EMETTEUR@
+
+LINK_SATISFACTION_URL: @LINK_SATISFACTION_URL@
+LINK_MESSAGERIE_URL: @LINK_MESSAGERIE_URL@
+
+# info Widget
+WIDGET_SETS: @WIDGET_SETS@
+
+# see also activate
+SEE_ALSO_ACTIVATE: @SEE_ALSO_ACTIVATE@
+SEE_ALSO_MAX: @SEE_ALSO_MAX@
+SYNONYMS_FILE_INPUT: @SYNONYMS_FILE_INPUT@
+SYNONYMS_FILE_OUTPUT_SOLR: @SYNONYMS_FILE_OUTPUT_SOLR@
+SYNONYMS_SEPARATOR_MULTI_VALUES: @SYNONYMS_SEPARATOR_MULTI_VALUES@
+SYNONYMS_SEPARATOR_CSV: @SYNONYMS_SEPARATOR_CSV@
+
+# SpellCheck
+
+SPELL_COUNT: @COUNT@
+SPELL_ACTIVATE: @SPELL_ACTIVATE@
+
+
+# Save log from file to DataBases
+# with / at the end
+# eg: LOG_FILE_LOCATION: /var/log/ (/!\ dont forget permission)
+
+LOG_FILE_LOCATION: @LOG_FILE_LOCATION@
+LOG_NAME_FILE: @LOG_NAME_FILE@
+
+FREE_ACCESS_GROUPS: @FREE_ACCESS_GROUPS@
+
+# indicate if LF run on AMD64
+AMD64: @AMD64@
+

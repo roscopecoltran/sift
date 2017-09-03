@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/lib/builder
+END
+blankslate.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/lib/builder/blankslate.rb
+END
+xmlmarkup.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/lib/builder/xmlmarkup.rb
+END
+xchar.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/lib/builder/xchar.rb
+END
+xmlevents.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/lib/builder/xmlevents.rb
+END
+xmlbase.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/builder-2.0.0/lib/builder/xmlbase.rb
+END

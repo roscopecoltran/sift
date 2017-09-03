@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/lib/views
+END
+layout.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/lib/views/layout.rhtml
+END
+record.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/lib/views/record.rhtml
+END
+setup.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/lib/views/setup.rhtml
+END
+test_suite.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/bpifs/!svn/ver/97/trunk/bpifs/vendor/plugins/selenium-on-rails/lib/views/test_suite.rhtml
+END

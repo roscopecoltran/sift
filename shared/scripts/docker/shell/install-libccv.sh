@@ -23,8 +23,8 @@ apk upgrade
 apk --no-cache --no-progress --update \
 	--repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
 	--allow-untrusted \
-	--virtual .$(basename $LIBCCV_VCS_REPO)-build-deps add musl-dev make g++ gcc jpeg jpeg-dev libpng libpng-dev \
-							gsl-dev gsl openblas openblas-dev
+	--virtual .$(basename $LIBCCV_VCS_REPO)-build-deps add musl musl-dev make g++ gcc jpeg jpeg-dev libpng libpng-dev \
+							gsl-dev gsl openblas openblas-dev linux-headers libtool pkgconfig clang
 
 if [ -d ${LIBCCV_VCS_CLONE_PATH} ];then
 	rm -fR ${LIBCCV_VCS_CLONE_PATH}
@@ -49,19 +49,19 @@ git clone -b ${LIBCCV_VCS_CLONE_BRANCH} --recursive --depth ${LIBCCV_VCS_CLONE_D
 # lib
 cd ${LIBCCV_VCS_CLONE_PATH}/lib 
 ./configure
-make lib -j${CONTAINER_NB_CORES}
+make lib # -j${CONTAINER_NB_CORES}
 
 # bin
 cd ${LIBCCV_VCS_CLONE_PATH}/bin
-make -j${CONTAINER_NB_CORES}
+make # -j${CONTAINER_NB_CORES}
 
 # site
 cd ${LIBCCV_VCS_CLONE_PATH}/site 
-make source -j${CONTAINER_NB_CORES}
+make source # -j${CONTAINER_NB_CORES}
 
 # tests
 cd ${LIBCCV_VCS_CLONE_PATH}/test 
-make -j${CONTAINER_NB_CORES}
+make # -j${CONTAINER_NB_CORES}
 make test
 
 # Remove build deps

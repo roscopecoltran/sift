@@ -25,3 +25,7 @@ Godeps/**
 ./external/*
 ./external/**
 
+.staging
+.staging/
+.staging/**
+

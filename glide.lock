@@ -1,0 +1,27 @@
+hash: 8bed16dbdcf38f71ee9a1ea1922568505c9314c16a7f1ed1be08c6e059728161
+updated: 2017-09-06T13:12:18.360483441+02:00
+imports:
+- name: github.com/agrison/go-tablib
+  version: 4930582c22eec7bfc0e5b47e0246d5048a78fe49
+- name: github.com/jinzhu/configor
+  version: 6c409036e1aea1420f2e1a196f95c0e3c4aef091
+- name: github.com/roscopecoltran/sift
+  version: 5910add38b5a5384206d8de9d3fa0a30ea2e109d
+  subpackages:
+  - gitignore
+- name: github.com/spf13/cobra
+  version: b78744579491c1ceeaaa3b40205e56b0591b93a3
+- name: github.com/svent/go-flags
+  version: 4bcbad344f0318adaf7aabc16929701459009aa3
+- name: github.com/svent/go-nbreader
+  version: 7cef48da76dca6a496faa7fe63e39ed665cbd219
+- name: golang.org/x/crypto
+  version: 81e90905daefcd6fd217b62423c0908922eadb30
+  subpackages:
+  - ssh/terminal
+- name: golang.org/x/sys
+  version: 9aade4d3a3b7e6d876cd3823ad20ec45fc035402
+  subpackages:
+  - unix
+  - windows
+testImports: []

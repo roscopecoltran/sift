@@ -1,13 +1,14 @@
-package: github.com/roscopecoltran/sift
+package: github.com/roscopecoltran/sniperkit-sift
 import:
-- package: github.com/roscopecoltran/sniperkit-sift
-  subpackages:
-  - sift
 - package: github.com/svent/go-flags
+  version: master
 - package: github.com/svent/go-nbreader
+  version: master
 - package: github.com/agrison/go-tablib
   version: master
 - package: github.com/jinzhu/configor
+  version: master
+- package: github.com/spf13/cobra
   version: master
 - package: github.com/roscopecoltran/sift
   subpackages:

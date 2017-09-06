@@ -110,7 +110,6 @@ printvars-short:
 printvars-env:
  	@$(foreach V,$(sort $(.VARIABLES)),$(if $(filter-out environment% default automatic,$(origin $V)),$(warning $V=$($V) ($(value $V)))))
 
-
 info/%:
 	@clear
 	@echo "PREFIX_BY: $(shell echo $* | tr '[:lower:]' '[:upper:]')_"

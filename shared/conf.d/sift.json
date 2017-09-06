@@ -1,0 +1,556 @@
+{
+  "sift": {
+    "binary_skip": true,
+    "binary_as_text": false,
+    "blocksize": "",
+    "color": "auto",
+    "cores": 4,
+    "include_dirs": null,
+    "err_show_line_length": false,
+    "err_skip_line_length": false,
+    "exclude_dirs": [
+      ".git",
+      "node_modules",
+      "vendor",
+      "bundle",
+      ".cache"
+    ],
+    "include_extensions": "",
+    "exclude_extensions": "",
+    "include_files": null,
+    "exclude_files": null,
+    "include_path": "",
+    "include_ipath": "",
+    "exclude_path": "",
+    "exclude_ipath": "",
+    "include_types": "",
+    "exclude_types": "",
+    "custom_types": {
+      "scala": "*.scala",
+      "maven_version": "pom.xml;^(\\d+.\\d+.\\d+)(-SNAPSHOT)?",
+      "py3": "*.py,*.pyw,*.pyx,SConstruct or first line matches;/^#!.*\\bpython3[0-9.]*\\b/"
+    },
+    "custom_tags": {
+      "brands": {
+        "google": [
+          "google",
+          "angular",
+          "googlecloudplatform",
+          "googlechrome",
+          "golang",
+          "gwtproject",
+          "zxing",
+          "v8"
+        ],
+        "twitter": [
+          "twbs",
+          "twitter",
+          "bower",
+          "flightjs"
+        ],
+        "facebook": [
+          "facebook",
+          "facebookarchive",
+          "boltsframework"
+        ],
+        "github": [
+          "atom",
+          "github"
+        ],
+        "microsoft": [
+          "microsoft",
+          "dotnet",
+          "aspnet",
+          "exceptionless",
+          "mono",
+          "winjs"
+        ]
+      },
+      "keywords": {
+        "node": [
+          "node",
+          "nodejs"
+        ],
+        "jquery": [
+          "jquery",
+          "jq",
+          "/^jq[\\-]?/"
+        ],
+        "grunt": [
+          "grunt",
+          "gruntjs"
+        ],
+        "angular": [
+          "angular",
+          "angularjs",
+          "ng",
+          "/^ng(?!inx)\\-]?/"
+        ],
+        "ember": [
+          "emberjs",
+          "ember"
+        ],
+        "meteor": [
+          "meteor",
+          "meteorjs"
+        ],
+        "gulp": [
+          "gulp"
+        ],
+        "express": [
+          "express",
+          "expressjs"
+        ],
+        "d3": [
+          "d3"
+        ],
+        "polymer": [
+          "polymer"
+        ],
+        "ionic": [
+          "ionic"
+        ],
+        "seajs": [
+          "seajs"
+        ],
+        "yeoman": [
+          "yeoman"
+        ],
+        "browserify": [
+          "browserify"
+        ],
+        "requirejs": [
+          "requirejs"
+        ],
+        "underscore": [
+          "underscore",
+          "underscorejs"
+        ],
+        "modernizr": [
+          "modernizr"
+        ],
+        "phantom": [
+          "phantom",
+          "phantomjs"
+        ],
+        "metalsmith": [
+          "metalsmith"
+        ],
+        "bootstrap": [
+          "bootstrap"
+        ],
+        "django": [
+          "django"
+        ],
+        "bottle": [
+          "bottlepy",
+          "bottle"
+        ],
+        "web2py": [
+          "web2py"
+        ],
+        "webpy": [
+          "webpy"
+        ],
+        "flask": [
+          "flask"
+        ],
+        "ipython": [
+          "ipython"
+        ],
+        "fabric": [
+          "fabric"
+        ],
+        "celery": [
+          "celery"
+        ],
+        "language/python": [
+          "python",
+          "/^py/"
+        ],
+        "language/ruby": [
+          "ruby"
+        ],
+        "language/clojure": [
+          "coffeescript"
+        ],
+        "language/lisp": [
+          "lisp"
+        ],
+        "language/rust": [
+          "rust"
+        ],
+        "language/erlang": [
+          "erlang"
+        ],
+        "language/go": [
+          "golang",
+          "go"
+        ],
+        "language/javascript": [
+          "javascript",
+          "js"
+        ],
+        "language/php": [
+          "php"
+        ],
+        "language/perl": [
+          "perl"
+        ],
+        "language/swift": [
+          "swift"
+        ],
+        "language/css": [
+          "css",
+          "stylesheet"
+        ],
+        "ios": [
+          "ios"
+        ],
+        "osx": [
+          "osx"
+        ],
+        "unix": [
+          "unix"
+        ],
+        "android": [
+          "android"
+        ],
+        "linux": [
+          "linux"
+        ],
+        "windows": [
+          "windows"
+        ],
+        "deprecated": [
+          "deprecated"
+        ],
+        "pdf": [
+          "pdf"
+        ],
+        "polyfill": [
+          "polyfill"
+        ],
+        "framework": [
+          "framework"
+        ],
+        "dropbox": [
+          "dropbox"
+        ],
+        "webkit": [
+          "webkit"
+        ],
+        "sql": [
+          "sql"
+        ],
+        "svg": [
+          "svg"
+        ],
+        "boilerplate": [
+          "boilerplate",
+          "seed"
+        ],
+        "rails": [
+          "rails",
+          "rails3"
+        ],
+        "vim": [
+          "vim",
+          "vi"
+        ],
+        "git": [
+          "git"
+        ],
+        "backbone": [
+          "backbone"
+        ],
+        "docker": [
+          "docker"
+        ],
+        "emacs": [
+          "emacs"
+        ],
+        "redis": [
+          "redis"
+        ],
+        "chrome": [
+          "chrome"
+        ],
+        "sublime": [
+          "sublime"
+        ],
+        "vagrant": [
+          "vagrant"
+        ],
+        "wordpress": [
+          "wordpress",
+          "/^wp\\-/"
+        ],
+        "youtube": [
+          "youtube"
+        ],
+        "apache": [
+          "apache"
+        ],
+        "jekyll": [
+          "jekyll"
+        ],
+        "puppet": [
+          "puppet"
+        ],
+        "sass": [
+          "sass",
+          "scss"
+        ],
+        "nginx": [
+          "nginx"
+        ],
+        "markdown": [
+          "markdown"
+        ],
+        "elasticsearch": [
+          "elasticsearch"
+        ],
+        "chef": [
+          "chef"
+        ],
+        "mongodb": [
+          "mongodb",
+          "mongo"
+        ],
+        "cordova": [
+          "cordova"
+        ],
+        "phonegap": [
+          "phonegap"
+        ],
+        "ansible": [
+          "ansible"
+        ],
+        "openshift": [
+          "openshift"
+        ],
+        "mysql": [
+          "mysql"
+        ],
+        "couchbase": [
+          "couchbase"
+        ],
+        "firebase": [
+          "firebase"
+        ],
+        "homebrew": [
+          "homebrew"
+        ],
+        "openstack": [
+          "openstack"
+        ],
+        "maven": [
+          "maven"
+        ],
+        "hadoop": [
+          "hadoop"
+        ],
+        "spark": [
+          "spark"
+        ],
+        "jasmine": [
+          "jasmine"
+        ],
+        "hubot": [
+          "hubot"
+        ],
+        "jruby": [
+          "jruby"
+        ],
+        "couchdb": [
+          "couchdb"
+        ],
+        "travis": [
+          "travis"
+        ],
+        "bash": [
+          "bash"
+        ],
+        "coreos": [
+          "coreos"
+        ],
+        "mustache": [
+          "mustache"
+        ],
+        "zsh": [
+          "zsh"
+        ],
+        "jenkins": [
+          "jenkins"
+        ],
+        "cassandra": [
+          "cassandra"
+        ],
+        "statsd": [
+          "statsd"
+        ],
+        "eclipse": [
+          "eclipse"
+        ],
+        "knockout": [
+          "knockout"
+        ],
+        "graphite": [
+          "graphite"
+        ],
+        "textmate": [
+          "textmate"
+        ],
+        "jed": [
+          "jed"
+        ],
+        "memcached": [
+          "memcached"
+        ],
+        "mesos": [
+          "mesos"
+        ],
+        "rabbitmq": [
+          "rabbitmq"
+        ],
+        "firefox": [
+          "firefox",
+          "ff"
+        ],
+        "postgres": [
+          "postgres",
+          "postgresql"
+        ],
+        "selenium": [
+          "selenium"
+        ],
+        "gems": [
+          "gems",
+          "rubygems"
+        ],
+        "zeromq": [
+          "zeromq",
+          "zmq",
+          "0mq"
+        ],
+        "tmux": [
+          "tmux"
+        ],
+        "cyanogenmod": [
+          "cyanogenmod"
+        ],
+        "tornado": [
+          "tornado"
+        ],
+        "octopress": [
+          "octopress"
+        ],
+        "dokku": [
+          "dokku"
+        ],
+        "karma": [
+          "karma"
+        ],
+        "bitcoin": [
+          "bitcoin"
+        ],
+        "handlebars": [
+          "handlebars"
+        ],
+        "qt": [
+          "qt"
+        ],
+        "minecraft": [
+          "minecraft"
+        ],
+        "unity": [
+          "unity"
+        ],
+        "cocos2d": [
+          "cocos2d"
+        ],
+        "openssl": [
+          "openssl"
+        ],
+        "amqp": [
+          "amqp"
+        ],
+        "logstash": [
+          "logstash"
+        ],
+        "sqlite": [
+          "sqlite"
+        ],
+        "v8": [
+          "v8"
+        ],
+        "fuse": [
+          "fuse"
+        ],
+        "cocoa": [
+          "cocoa"
+        ],
+        "curl": [
+          "curl"
+        ],
+        "ffmpeg": [
+          "ffmpeg"
+        ],
+        "hhvm": [
+          "hhvm"
+        ],
+        "rake": [
+          "rake"
+        ],
+        "drupal": [
+          "drupal"
+        ],
+        "gevent": [
+          "gevent"
+        ],
+        "nagios": [
+          "nagios"
+        ],
+        "chromium": [
+          "chromium"
+        ],
+        "jenkinsci": [
+          "jenkinsci"
+        ],
+        "etcd": [
+          "etcd"
+        ],
+        "kubernetes": [
+          "kubernetes"
+        ],
+        "react": [
+          "react",
+          "reactjs"
+        ]
+      }
+    },
+    "field_separator": ":",
+    "files_with_matches": false,
+    "files_without_match": false,
+    "follow_symlinks": false,
+    "git": true,
+    "group_by_file": true,
+    "ignore_case": true,
+    "smart_case": true,
+    "limit": 0,
+    "literal": false,
+    "multiline": false,
+    "output_limit": 0,
+    "output_unix_path": false,
+    "recursive": true,
+    "show_filename": "auto",
+    "show_line_numbers": true,
+    "show_column_numbers": false,
+    "show_byte_offset": false,
+    "stats": false,
+    "targets_only": false,
+    "word_regexp": false,
+    "zip": false
+  }
+}

@@ -1,11 +1,13 @@
 
 # determine platform
 ifeq (Darwin, $(findstring Darwin, $(shell uname -a)))
-  PLATFORM 			:= OSX
+  PLATFORM 			:= MacOSX
+  PLATFORM_SLUG 	:= macosx
   GO_BUILD_OS 		:= darwin
 else
   PLATFORM 			:= Linux
-  GO_BUILD_OS 		:= linux
+  PLATFORM_SLUG 	:= linux
+  GO_BUILD_OS 		:= $(PLATFORM_SLUG)
 endif
 
 # git
@@ -16,15 +18,17 @@ GIT_TOP_LEVEL		:= $(shell git rev-parse --show-toplevel)
 
 # app
 APP_NAME 			:= sift
+APP_NAME_UCFIRST 	:= Sift
 APP_BRANCH 			:= pkg
 APP_DIST_DIR 		:= "$(CURDIR)/dist"
 
+APP_PKG 			:= $(APP_NAME)
 APP_PKGS 			:= $(shell go list ./... | grep -v /vendor/)
 APP_VER				:= $(APP_VER)
 APP_VER_FILE 		:= $(shell if [ -f ./VERSION ]; then cat ./VERSION ; fi)
 
 # golang
-GO_BUILD_LDFLAGS 	:= -a -ldflags="-X github.com/roscopecoltran/sniperkit-sift/sift.SiftVersion=${APP_VER}"
+GO_BUILD_LDFLAGS 	:= -a -ldflags="-X github.com/roscopecoltran/sniperkit-$(APP_NAME)/$(APP_PKG).$(APP_NAME_UCFIRST)Version=${APP_VER}"
 GO_BUILD_PREFIX		:= $(APP_DIST_DIR)/all/$(APP_NAME)
 GO_BUILD_URI		:= github.com/roscopecoltran/sniperkit-$(APP_NAME)/cmd/$(APP_NAME)
 GO_BUILD_VARS 		:= GOARCH=amd64 CGO_ENABLED=0
@@ -42,7 +46,24 @@ GO_UNCONVERT		:= $(shell which unconvert)
 GO_INTERFACER		:= $(shell which interfacer)
 
 # general - helper
-TR_EXEC				:=	$(shell which tr)
+TR_EXEC				:= $(shell which tr)
+AG_EXEC				:= $(shell which ag)
+GIT_EXEC			:= $(shell which git)
+
+# package managers
+BREW_EXEC			:= $(shell which brew)
+MACPORTS_EXEC		:= $(shell which ports)
+APT_EXEC			:= $(shell which apt-get)
+APK_EXEC			:= $(shell which apk)
+YUM_EXEC			:= $(shell which yum)
+DNF_EXEC			:= $(shell which dnf)
+
+EMERGE_EXEC			:= $(shell which emerge)
+PACMAN_EXEC			:= $(shell which pacmane)
+SLACKWARE_EXEC		:= $(shell which sbopkg)
+ZYPPER_EXEC			:= $(shell which zypper)
+PKG_EXEC			:= $(shell which pkg)
+PKG_ADD_EXEC		:= $(shell which pkg_add)
 
 # APP_SRCS 			:= $(shell git ls-files '*.go' | grep -v '^vendor/')
 # GIT_BRANCH 		:= $(subst heads/,,$(shell git rev-parse --abbrev-ref HEAD 2>/dev/null))
@@ -87,51 +108,82 @@ git: ## checkout/check the app active branch for building the project
 	@echo "GIT_TOP_LEVEL: $(GIT_TOP_LEVEL)"
 	@echo ""
 
-push-tag:
-	git checkout ${APP_BRANCH}
-	git pull origin ${APP_BRANCH}
-	git tag ${GIT_VERSION}
-	git push origin ${APP_BRANCH} --tags
+golang-fix-all: golang-fork-fix golang-logrus-fix
 
-print-%: ; @echo $*=$($*)
+pkg-uri-clean:
+	@rm -fR $(CURDIR)/vendor/github.com/roscopecoltran/sniperkit-sift
+	@rm -fR $(CURDIR)/vendor/github.com/svent/sift
 
-print-%:
-	@echo $* = $($*)
-
-.PHONY: printvars printvars-short
-printvars:
-	@$(foreach V,$(sort $(.VARIABLES)), $(warning $V=$($V)))
-
-printvars-short:
-	@$(foreach V,$(sort $(.VARIABLES)), \
-	$(if $(filter-out environment% default automatic, \
-	$(origin $V)),$(warning $V=$($V) ($(value $V)))))
-
-printvars-env:
- 	@$(foreach V,$(sort $(.VARIABLES)),$(if $(filter-out environment% default automatic,$(origin $V)),$(warning $V=$($V) ($(value $V)))))
-
-info/%:
+clear-screen:
 	@clear
-	@echo "PREFIX_BY: $(shell echo $* | tr '[:lower:]' '[:upper:]')_"
-	@$(foreach v, $(filter $(shell echo $* | tr '[:lower:]' '[:upper:]')_%,$(.VARIABLES)), $(echo $(v) = $($(v))))
-		# $(foreach v, $(filter $(PREFIX_BY)%,$(.VARIABLES)), $(info $(v) = $($(v))))
+	@echo ""
 
-.PHONY: variables
-vars/%:
-	@$(foreach \
-		v, \
-		$(sort $(.VARIABLES)), \
-		$(if \
-			$(filter-out \
-				$(shell echo $* | tr '[:lower:]' '[:upper:]')_, \
-				$(origin $v)), \
-			$(info $v = $($v) ($(value $v)))))                         
-	@true
+pkg-uri-fix: install-ag pkg-uri-clean clear-screen ## fix sniperkit-sift pkg uri for golang package import
+	@echo "fix sniperkit-sift pkg uri for golang package import"
+	@$(AG_EXEC) -l 'github.com/svent/sift' --ignore Makefile --ignore *.md . | xargs sed -i -e 's/svent\/sift/roscopecoltran\/sniperkit-sift/g'
+	@find . -name "*-e" -exec rm -f {} \; 
 
-.PHONY: variable-%
-variable-%:
-	$(info $* = $($*) ($(value $*)))
-	@true
+pkg-uri-revert: install-ag pkg-uri-clean clear-screen ## fix sift, fork, pkg uri for golang package import
+	@echo "fix sift, fork, pkg uri for golang package import"
+	@$(AG_EXEC) -l 'github.com/roscopecoltran/sniperkit-sift' --ignore Makefile --ignore *.md . | xargs sed -i -e 's/roscopecoltran\/sniperkit-sift/svent\/sift/g'
+	@find . -name "*-e" -exec rm -f {} \;
+
+golang-logrus-fix: install-ag clear-screen ## fix logrus case for golang package import
+	@if [ -d $(CURDIR)/vendor/github.com/Sirupsen ]; then rm -fr vendor/github.com/Sirupsen ; fi
+	@$(AG_EXEC) -l 'github.com/Sirupsen/logrus' vendor | xargs sed -i 's/Sirupsen/sirupsen/g'
+
+go-github-fix:
+	@if [ -d ./vendor/github.com/google/go-github/github ]; then find ./vendor/github.com/google/go-github/github -name activity_star.go -exec sed -i 's/mediaTypeStarringPreview/mediaTypeTopicsPreview/g' {} + ; fi
+
+install-ag: install-ag-$(PLATFORM_SLUG) ## install the silver searcher (aka. ag)
+
+# if [ "$choice" == 'y' ] && [ "$choice1" == 'y' ]; then
+install-ag-macosx: clear-screen ## install the silver searcher on Apple/MacOSX platforms
+	@echo "install the silver searcher on Apple/MacOSX platforms"
+	@if [ -f $(BREW_EXEC) ] && [ ! -f $(AG_EXEC) ]; 		then $(BREW_EXEC) install the_silver_searcher; fi 
+	@if [ -f $(MACPORTS_EXEC) ] && [ ! -f $(AG_EXEC) ]; 	then $(MACPORTS_EXEC) install the_silver_searcher ; fi	
+
+install-ag-linux: clear-screen ## install the silver searcher on Linux platforms
+	@echo "install the silver searcher on Linux platforms"
+	@if [ -f $(APK_EXEC) ] && [ ! -f $(AG_EXEC) ]; 			then $(APK_EXEC) add --no-cache --update the_silver_searcher ; fi 
+	@if [ -f $(APT_EXEC) ] && [ ! -f $(AG_EXEC) ]; 			then $(APT_EXEC) install -f --no-recommend silversearcher-ag ; fi 
+	@if [ -f $(YUM_EXEC) ] && [ ! -f $(AG_EXEC) ]; 			then $(YUM_EXEC) install the_silver_searcher ; fi
+	@if [ -f $(DNF_EXEC) ] && [ ! -f $(AG_EXEC) ]; 			then $(DNF_EXEC) install the_silver_searcher ; fi
+	@if [ -f $(EMERGE_EXEC) ] && [ ! -f $(AG_EXEC) ]; 		then $(EMERGE_EXEC) -a sys-apps/the_silver_searcher ; fi
+	@if [ -f $(PACMAN_EXEC) ] && [ ! -f $(AG_EXEC) ]; 		then $(PACMAN_EXEC) -S the_silver_searcher ; fi
+	@if [ -f $(SLACKWARE_EXEC) ] && [ ! -f $(AG_EXEC) ]; 	then $(SLACKWARE_EXEC) -i the_silver_searcher ; fi
+	@if [ -f $(ZYPPER_EXEC) ] && [ ! -f $(AG_EXEC) ]; 		then $(ZYPPER_EXEC) install the_silver_searcher ; fi
+	@if [ -f $(PKG_EXEC) ] && [ ! -f $(AG_EXEC) ]; 			then $(PKG_EXEC) install the_silver_searcher ; fi
+	@if [ -f $(PKG_ADD_EXEC) ] && [ ! -f $(AG_EXEC) ]; 		then $(PKG_ADD_EXEC) the_silver_searcher ; fi
+
+push-tag:
+	$(GIT_EXEC) checkout ${APP_BRANCH}
+	$(GIT_EXEC) pull origin ${APP_BRANCH}
+	$(GIT_EXEC) tag ${GIT_VERSION}
+	$(GIT_EXEC) push origin ${APP_BRANCH} --tags
+
+# print-%: ; @echo $*=$($*)
+
+# print-%:
+# 	@echo $* = $($*)
+
+# .PHONY: printvars printvars-short
+# printvars:
+# 	@$(foreach V,$(sort $(.VARIABLES)), $(warning $V=$($V)))
+
+# printvars-short:
+# 	@$(foreach V,$(sort $(.VARIABLES)), \
+# 	$(if $(filter-out environment% default automatic, \
+# 	$(origin $V)),$(warning $V=$($V) ($(value $V)))))
+
+# printvars-env:
+#  	@$(foreach V,$(sort $(.VARIABLES)),$(if $(filter-out environment% default automatic,$(origin $V)),$(warning $V=$($V) ($(value $V)))))
+
+#info/%:
+#	@clear
+#	@echo "PREFIX_BY: $(shell echo $* | tr '[:lower:]' '[:upper:]')_"
+#	@$(foreach v, $(filter $(shell echo $* | tr '[:lower:]' '[:upper:]')_%,$(.VARIABLES)), $(echo $(v) = $($(v))))
+#		# $(foreach v, $(filter $(PREFIX_BY)%,$(.VARIABLES)), $(info $(v) = $($(v))))
 
 app-info:
 	@clear

@@ -1,7 +1,0 @@
-[run]
-branch = True
-source = sanic
-omit = site-packages, sanic/utils.py
-
-[html]
-directory = coverage

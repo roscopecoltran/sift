@@ -1,7 +1,0 @@
-################### Dockerhubbeat Configuration Example #########################
-
-############################# Dockerhubbeat ######################################
-
-dockerhubbeat:
-  # Defines how often an event is sent to the output
-  period: 1m

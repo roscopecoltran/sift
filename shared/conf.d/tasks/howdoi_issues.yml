@@ -1,9 +1,0 @@
----
-tasks:
-  howdoi:
-    search:
-      providers:
-      - answerhub
-      - reddit
-      - hackernews
-      - stackoverflow

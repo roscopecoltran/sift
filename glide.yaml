@@ -1,39 +1,13 @@
-package: github.com/roscopecoltran/sniperkit-sift
+package: github.com/roscopecoltran/sift
 import:
-- package: gopkg.in/libgit2/git2go.v25
-- package: github.com/coreos/etcd
+- package: github.com/roscopecoltran/sniperkit-sift
   subpackages:
-  - client
-- package: github.com/google/go-github
-  subpackages:
-  - github
-- package: github.com/sirupsen/logrus
-- package: github.com/spf13/viper
+  - sift
 - package: github.com/svent/go-flags
 - package: github.com/svent/go-nbreader
+- package: github.com/svent/sift
+  subpackages:
+  - gitignore
 - package: golang.org/x/crypto
   subpackages:
   - ssh/terminal
-- package: golang.org/x/net
-  subpackages:
-  - context
-# - package: gopkg.in/src-d/go-billy.v3
-- package: gopkg.in/src-d/core-retrieval.v0
-# - package: gopkg.in/src-d/framework.v0
-- package: github.com/boltdb/boltd
-- package: github.com/kelseyhightower/envconfig
-- package: github.com/joho/godotenv
-- package: github.com/dorsha/lennon
-  subpackages:
-  - factory
-  - utils
-# - package: github.com/couchbase/cbft
-# - package: github.com/nhurel/dim
-# - package: 
-# - package: 
-# - package: 
-# - package: 
-# - package: 
-# - package: 
-# https://github.com/redite/kleng/blob/feature/populate/core/gh.go
-# https://github.com/dorsha/lennon/blob/master/lennon.go

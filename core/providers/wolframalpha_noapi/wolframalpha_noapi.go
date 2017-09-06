@@ -1,3 +1,0 @@
-package wolframalpha_noapi 
-
-

@@ -20,3 +20,5 @@ vendor/**
 .staging
 .staging/
 .staging/**
+
+sift-alpine.env

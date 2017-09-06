@@ -5,7 +5,11 @@ import:
   - sift
 - package: github.com/svent/go-flags
 - package: github.com/svent/go-nbreader
-- package: github.com/svent/sift
+- package: github.com/agrison/go-tablib
+  version: master
+- package: github.com/jinzhu/configor
+  version: master
+- package: github.com/roscopecoltran/sift
   subpackages:
   - gitignore
 - package: golang.org/x/crypto

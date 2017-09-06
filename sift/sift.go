@@ -33,7 +33,7 @@ import (
 
 	"github.com/svent/go-flags"
 	"github.com/svent/go-nbreader"
-	"github.com/svent/sift/gitignore"
+	"github.com/roscopecoltran/sift"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

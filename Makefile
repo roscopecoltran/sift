@@ -8,13 +8,20 @@ else
   GO_BUILD_OS 		:= linux
 endif
 
+# git
+GIT_BRANCH			:= $(shell git rev-parse --abbrev-ref HEAD)
+GIT_VERSION			:= $(shell git describe --always --long --dirty --tags)
+GIT_REMOTE_URL		:= $(shell git config --get remote.origin.url)
+GIT_TOP_LEVEL		:= $(shell git rev-parse --show-toplevel)
+
 # app
 APP_NAME 			:= sift
 APP_BRANCH 			:= pkg
 APP_DIST_DIR 		:= "$(CURDIR)/dist"
 
 APP_PKGS 			:= $(shell go list ./... | grep -v /vendor/)
-APP_VER				:= $(shell git describe --always --long --dirty --tags)
+APP_VER				:= $(APP_VER)
+APP_VER_FILE 		:= $(shell if [ -f ./VERSION ]; then cat ./VERSION ; fi)
 
 # golang
 GO_BUILD_LDFLAGS 	:= -a -ldflags="-X github.com/roscopecoltran/sniperkit-sift/sift.SiftVersion=${APP_VER}"
@@ -33,6 +40,9 @@ GO_DEP				:= $(shell which dep)
 GO_ERRCHECK			:= $(shell which errcheck)
 GO_UNCONVERT		:= $(shell which unconvert)
 GO_INTERFACER		:= $(shell which interfacer)
+
+# general - helper
+TR_EXEC				:=	$(shell which tr)
 
 # APP_SRCS 			:= $(shell git ls-files '*.go' | grep -v '^vendor/')
 # GIT_BRANCH 		:= $(subst heads/,,$(shell git rev-parse --abbrev-ref HEAD 2>/dev/null))
@@ -67,8 +77,72 @@ clean: glide-clean ## clean temporary files from previous build(s)
 	go clean && rm -rf $(APP_DIST_DIR)
 
 git: ## checkout/check the app active branch for building the project
+	@clear
+	@git submodule update --init
 	@git checkout $(APP_BRANCH)
+	@echo ""
+	@echo "GIT_VERSION: $(GIT_VERSION)"
 	@echo "GIT_BRANCH: $(GIT_BRANCH)"
+	@echo "GIT_REMOTE_URL: $(GIT_REMOTE_URL)"
+	@echo "GIT_TOP_LEVEL: $(GIT_TOP_LEVEL)"
+	@echo ""
+
+push-tag:
+	git checkout ${APP_BRANCH}
+	git pull origin ${APP_BRANCH}
+	git tag ${GIT_VERSION}
+	git push origin ${APP_BRANCH} --tags
+
+print-%: ; @echo $*=$($*)
+
+print-%:
+	@echo $* = $($*)
+
+.PHONY: printvars printvars-short
+printvars:
+	@$(foreach V,$(sort $(.VARIABLES)), $(warning $V=$($V)))
+
+printvars-short:
+	@$(foreach V,$(sort $(.VARIABLES)), \
+	$(if $(filter-out environment% default automatic, \
+	$(origin $V)),$(warning $V=$($V) ($(value $V)))))
+
+printvars-env:
+ 	@$(foreach V,$(sort $(.VARIABLES)),$(if $(filter-out environment% default automatic,$(origin $V)),$(warning $V=$($V) ($(value $V)))))
+
+
+info/%:
+	@clear
+	@echo "PREFIX_BY: $(shell echo $* | tr '[:lower:]' '[:upper:]')_"
+	@$(foreach v, $(filter $(shell echo $* | tr '[:lower:]' '[:upper:]')_%,$(.VARIABLES)), $(echo $(v) = $($(v))))
+		# $(foreach v, $(filter $(PREFIX_BY)%,$(.VARIABLES)), $(info $(v) = $($(v))))
+
+.PHONY: variables
+vars/%:
+	@$(foreach \
+		v, \
+		$(sort $(.VARIABLES)), \
+		$(if \
+			$(filter-out \
+				$(shell echo $* | tr '[:lower:]' '[:upper:]')_, \
+				$(origin $v)), \
+			$(info $v = $($v) ($(value $v)))))                         
+	@true
+
+.PHONY: variable-%
+variable-%:
+	$(info $* = $($*) ($(value $*)))
+	@true
+
+app-info:
+	@clear
+	@echo ""
+	@echo "APP_NAME: $(APP_NAME)"
+	@echo "APP_BRANCH: $(APP_BRANCH)"
+	@echo "APP_DIST_DIR: $(APP_DIST_DIR)"
+	@echo "APP_VER: $(APP_VER)"
+	@echo "APP_VER_FILE: $(APP_VER_FILE)"
+	@echo ""
 
 git-status: ## checkout/check the app active branch for building the project
 	@git status

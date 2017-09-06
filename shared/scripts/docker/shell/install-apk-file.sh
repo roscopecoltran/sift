@@ -12,8 +12,8 @@ if [ -f ${COMMON_SCRIPT} ]; then
 fi
 
 # Set temp environment vars
-export PROJECT_VCS_REPO=github.com/hoop33/limo
-export PROJECT_VCS_CLONE_BRANCH=master
+export PROJECT_VCS_REPO=github.com/roscopecoltran/apk-file
+export PROJECT_VCS_CLONE_BRANCH=multi_formats
 
 export PROJECT_VCS_CLONE_DEPTH=1
 export PROJECT_VCS_CLONE_PATH="${GOPATH}/src/${PROJECT_VCS_REPO}"
@@ -67,8 +67,8 @@ if [ -f glide.yaml ]; then
 fi
 
 # macros
-gox -verbose -os="linux" -arch="amd64" -output="/usr/local/sbin/{{.Dir}}" $(glide novendor)
-# make build-cli
+# gox -verbose -os="linux" -arch="amd64" -output="{{.Dir}}" $(glide novendor)
+make build-cli
 # golang_cross_build `pwd`
 
 # Remove build deps

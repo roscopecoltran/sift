@@ -12,7 +12,7 @@ if [ -f ${COMMON_SCRIPT} ]; then
 fi
 
 # Set temp environment vars
-export PROJECT_VCS_REPO=github.com/hoop33/limo
+export PROJECT_VCS_REPO=github.com/dahernan/gopherscraper
 export PROJECT_VCS_CLONE_BRANCH=master
 
 export PROJECT_VCS_CLONE_DEPTH=1
@@ -68,7 +68,7 @@ fi
 
 # macros
 gox -verbose -os="linux" -arch="amd64" -output="/usr/local/sbin/{{.Dir}}" $(glide novendor)
-# make build-cli
+make build-cli
 # golang_cross_build `pwd`
 
 # Remove build deps

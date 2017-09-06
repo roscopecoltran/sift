@@ -67,7 +67,7 @@ if [ -f glide.yaml ]; then
 fi
 
 # macros
-gox -verbose -os="linux" -arch="amd64" -output="{{.Dir}}" $(glide novendor)
+# gox -verbose -os="linux" -arch="amd64" -output="{{.Dir}}" $(glide novendor)
 make build-cli
 # golang_cross_build `pwd`
 

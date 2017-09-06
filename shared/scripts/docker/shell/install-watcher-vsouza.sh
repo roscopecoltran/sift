@@ -12,7 +12,7 @@ if [ -f ${COMMON_SCRIPT} ]; then
 fi
 
 # Set temp environment vars
-export PROJECT_VCS_REPO=github.com/hoop33/limo
+export PROJECT_VCS_REPO=github.com/vsouza/watcher
 export PROJECT_VCS_CLONE_BRANCH=master
 
 export PROJECT_VCS_CLONE_DEPTH=1

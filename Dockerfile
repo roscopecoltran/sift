@@ -12,7 +12,6 @@
 
 ## LEVEL1 ###############################################################################################################
 
-# FROM frolvlad/alpine-glibc:alpine-3.6
 FROM alpine:3.6
 LABEL maintainer "Luc Michalski <michalski.luc@gmail.com>"
 

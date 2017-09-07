@@ -1,4 +1,4 @@
-package: github.com/svent/sift
+package: github.com/roscopecoltran/snipersift
 import:
 - package: github.com/svent/go-flags
   version: master
@@ -10,9 +10,6 @@ import:
   version: master
 - package: github.com/spf13/cobra
   version: master
-- package: github.com/roscopecoltran/snipersift
-  subpackages:
-  - gitignore
 - package: golang.org/x/crypto
   subpackages:
   - ssh/terminal

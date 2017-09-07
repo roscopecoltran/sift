@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/svent/sift/sift"
+	"github.com/roscopecoltran/sniperkit-sift/sift"
 )
 
 func main() {

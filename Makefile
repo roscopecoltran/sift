@@ -200,8 +200,11 @@ git-status: ## checkout/check the app active branch for building the project
 
 gox: golang-install-deps gox-xbuild ## install missing dependencies and cross-compile app for macosx, linux and windows platforms
 
+gox-darwin: ## generate all binaries for Mac/Apple platforms for the project with gox utility
+	@gox -verbose -os="darwin" -arch="amd64" -output="{{.Dir}}_{{.OS}}_{{.Arch}}" $(APP_PKGS) # $(glide novendor)
+
 gox-dist: ## generate all binaries for the project with gox utility
-	@gox -verbose -os="darwin linux windows" -arch="amd64" -output="$(APP_DIST_DIR)/{{.Os}}/{{.Dir}}_{{.Os}}_{{.Arch}}" $(APP_PKGS) # $(glide novendor)
+	@gox -verbose -os="darwin linux windows" -arch="amd64" -output="$(APP_DIST_DIR)/{{.OS}}/{{.Dir}}_{{.Os}}_{{.Arch}}" $(APP_PKGS) # $(glide novendor)
 
 glide: glide-create glide-install ## install and manage all project dependencies via glide utility
 
@@ -234,10 +237,6 @@ golang-test-deps: ## install unit-tests/debugging dependencies
 	go get -u github.com/opennota/check/...
 	go get -u github.com/yosssi/goat/...
 	go get -u honnef.co/go/tools/...
-
-golang-logrus-fix: ## fix logrus case for golang package import
-	@if [ -d $(CURDIR)/vendor/github.com/Sirupsen ]; then rm -fr vendor/github.com/Sirupsen ; fi
-	@if [ -d $(CURDIR)/vendor ]; then find vendor -type f -exec sed -i 's/Sirupsen/sirupsen/g' {} + ; fi
 
 # golang-go-github-fix:
 # 	@if [ -d $(CURDIR)/vendor/github.com/google/go-github/github ]; then find . -type f -name "*.go" -exec sed -i 's/Starred/Topics/g' {} + ; fi

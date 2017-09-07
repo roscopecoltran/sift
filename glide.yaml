@@ -1,4 +1,4 @@
-package: github.com/roscopecoltran/snipersift
+package: github.com/roscopecoltran/sniperkit-sift
 import:
 - package: github.com/svent/go-flags
   version: master
